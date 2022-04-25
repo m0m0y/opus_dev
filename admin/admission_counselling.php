@@ -29,8 +29,8 @@ $user = $auth->getSession("name");
                     <?= $admission_counselling->getContent() ?>
                 </div>
 
-                <div class="modal fade updateModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                <div class="modal fade updateModal" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
 
                             <form action="controller/controller.contact_info.php?mode=admissionUpdate" method="post" enctype="">
@@ -43,12 +43,12 @@ $user = $auth->getSession("name");
 
                                 <div class="modal-body">
                                     <div class="d-none">
-                                        <input type="hidden" id="info_id" name="info_id" class="form-control" readonly>
+                                        <input type="hidden" id="content_id" name="content_id" class="form-control" readonly>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label">Description:</label>
-                                        <input type="text" class="form-control" name="desc" id="desc">
+                                        <label class="form-label">Title:</label>
+                                        <input type="text" class="form-control" name="title" id="title">
                                     </div>
 
                                     <div class="mb-3">
@@ -89,15 +89,18 @@ $user = $auth->getSession("name");
     <?php require_once "assets/common/logout_modal.php"; ?>
 
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js""></script>
 
     <script>
          $(function(){
             // update();
         });
 
-        function update(content_id) {
+        function update(content_id, section, title, content, status) {
             $('.updateModal').modal('show');
+            $('#modalTitle').val(section);
+            $('#content_id').val(content_id);
+            $('#title').val(title);
         }
     </script>
 

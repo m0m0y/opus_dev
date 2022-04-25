@@ -61,6 +61,6 @@ $auth->redirect("auth", false, "home.php");
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js""></script>
 
 </body>

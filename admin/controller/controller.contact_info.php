@@ -24,13 +24,12 @@ switch($mode) {
 
         
     case "updateDesc";
-        $id = $_POST["info_id"];
+        $id = $_POST["id"];
         $description = $_POST["desc"];
         $status = $_POST["status"];
         $contact_info = $contact_info->updateInformation($id, $description, $status);
 
         $response = array("message" => "Success Update");
-        header('location: ../contact_info.php');
         break;
 
 

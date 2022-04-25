@@ -81,69 +81,67 @@ $user = $auth->getSession("name");
 
                     </div>
 
-                    <div class="modal fade updateModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal fade updateModal" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                         <div class="modal-dialog">
                             <div class="modal-content">
 
-                                <form action="controller/controller.footer_links.php?mode=updateLinks" method="post" enctype="">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="modalTitle"></h5>
-                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">×</span>
-                                        </button>
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitle"></h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="d-none">
+                                        <input type="hidden" id="link_id" name="link_id" class="form-control" readonly>
                                     </div>
 
-                                    <div class="modal-body">
-                                        <div class="d-none">
-                                            <input type="hidden" id="link_id" name="link_id" class="form-control" readonly>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Title:</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="title" name="title" placeholder="Title">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">URL:</label>
-                                            <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="url" name="url" placeholder="Type Here...">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Sort:</label>
-                                            <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="sort" name="sort" placeholder="">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Label:</label>
-                                            <div class="col-sm-10">
-                                            <select class="form-control" id="label" name="label">
-                                                <option value="Useful Links">Useful Links</option>
-                                                <option value="Our Services">Our Services</option>
-                                            </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Status:</label>
-                                            <div class="col-sm-10">
-                                            <select class="form-control" id="status" name="status">
-                                                <option value="0">Enabled</option>
-                                                <option value="1">Disabled</option>
-                                            </select>
-                                            </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Title:</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
                                         </div>
                                     </div>
 
-                                    <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">URL:</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="url" name="url" placeholder="Type Here...">
+                                        </div>
                                     </div>
-                                </form>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Sort:</label>
+                                        <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="sort" name="sort" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Label:</label>
+                                        <div class="col-sm-10">
+                                        <select class="form-control" id="label" name="label">
+                                            <option value="Useful Links">Useful Links</option>
+                                            <option value="Our Services">Our Services</option>
+                                        </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Status:</label>
+                                        <div class="col-sm-10">
+                                        <select class="form-control" id="status" name="status">
+                                            <option value="0">Enabled</option>
+                                            <option value="1">Disabled</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary submit"><i class="fas fa-save"></i> Save</button>
+                                </div>
 
                             </div>
                         </div>
@@ -163,11 +161,18 @@ $user = $auth->getSession("name");
     <?php require_once "assets/common/logout_modal.php"; ?>
 
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/alert.js"></script>
 
     <script>
          $(function(){
             footerLinks();
+
+            var status_module =  window.localStorage.getItem("stat");
+            if(status_module == "success"){
+                sucessAlert();
+                localStorage.clear();
+            }
         });
 
         function footerLinks() {
@@ -207,6 +212,40 @@ $user = $auth->getSession("name");
             $('#sort').val(sort);
             $('#label').val(label);
             $('#status').val(status);
+
+            $('.submit').on('click', function(){
+                var id = $('#link_id').val();
+                var url = $('#url').val();
+                var title = $('#title').val();
+                var sort = $('#sort').val();
+                var label = $('#label').val();
+                var status = $('#status').val();
+
+                if(url == "" || title == "") {
+                    errorAlert();
+                } else {
+                    submit(id, url, title, sort, label, status);
+                }
+            });
+        }
+
+        function submit(id, url, title, sort, label, status) {
+            $.ajax({
+                url: 'controller/controller.footer_links.php?mode=updateLinks',
+                method: 'POST',
+                data: {
+                    id:id,
+                    url:url,
+                    title:title,
+                    sort:sort,
+                    label:label,
+                    status:status
+                },
+                success:function() {
+                    window.localStorage.setItem("stat", "success");
+                    window.location.href="footer_links.php";
+                }
+            });
         }
     </script>
 

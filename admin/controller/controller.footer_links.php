@@ -57,7 +57,7 @@ switch($mode) {
 
 
     case "updateLinks";
-        $link_id = $_POST["link_id"];
+        $link_id = $_POST["id"];
         $title = $_POST["title"];
         $url = $_POST["url"];
         $sort = $_POST["sort"];

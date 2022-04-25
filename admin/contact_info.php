@@ -52,11 +52,11 @@ $user = $auth->getSession("name");
 
             </div>
 
-            <div class="modal fade updateModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade updateModal" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div class="modal-dialog">
                     <div class="modal-content">
 
-                        <form action="controller/controller.contact_info.php?mode=updateDesc" method="post" enctype="">
+                        <!-- <form action="controller/controller.contact_info.php?mode=updateDesc" method="post" enctype=""> -->
                             <div class="modal-header">
                                 <h5 class="modal-title" id="modalTitle"></h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -71,7 +71,7 @@ $user = $auth->getSession("name");
 
                                 <div class="mb-3">
                                     <label class="form-label">Description:</label>
-                                    <input type="text" class="form-control" name="desc" id="desc">
+                                    <input type="text" class="form-control" name="desc" id="desc" placeholder="Type Here...">
                                 </div>
 
                                 <div class="mb-3">
@@ -84,9 +84,9 @@ $user = $auth->getSession("name");
                             </div>
 
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
+                                <button type="submit" class="btn btn-primary submit"><i class="fas fa-save"></i> Save</button>
                             </div>
-                        </form>
+                        <!-- </form> -->
 
                     </div>
                 </div>
@@ -110,11 +110,18 @@ $user = $auth->getSession("name");
     <?php require_once "assets/common/logout_modal.php"; ?>
 
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/alert.js"></script>
 
-    <script> 
+    <script type="text/javascript"> 
         $(function(){
             contactTable();
+
+            var status_module =  window.localStorage.getItem("stat");
+            if(status_module == "success"){
+                sucessAlert();
+                localStorage.clear();
+            }
         });
 
         function contactTable() {
@@ -136,8 +143,35 @@ $user = $auth->getSession("name");
             $('#info_id').val(id);
             $('#desc').val(desc);
             $('#contact_detail_status').val(status);
+
+            $('.submit').on('click', function(){
+                var id = $('#info_id').val();
+                var desc = $('#desc').val();
+                var status = $('#contact_detail_status').val();
+
+                if(desc == "") {
+                    errorAlert();
+                } else {
+                    submit(id, desc, status);
+                }
+            });
         }
 
+        function submit(id, desc, status) {
+            $.ajax({
+                url: 'controller/controller.contact_info.php?mode=updateDesc',
+                method: 'POST',
+                data: {
+                    id:id,
+                    desc:desc,
+                    status:status
+                },
+                success:function(){
+                    window.localStorage.setItem("stat", "success");
+                    window.location.href="contact_info.php";
+                }
+            });
+        }
 
     </script>
 </body>

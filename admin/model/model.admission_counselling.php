@@ -18,15 +18,15 @@ class AdmissionCounselling extends db_conn_mysql {
                             <span class="badge rounded-pill bg-secondary" style="color: white;"></span>
                         </h6>
 
-                        <button onclick="update(\''.$v['admission_id'].'\')" class="btn btn-primary">Update</button>
+                        <button onclick="update(\''.$v['admission_id'].'\',\''.$v['section'].'\',\''.$v['title'].'\',\''.$v['content'].'\',\''.$v['status'].'\')" class="btn btn-primary">Update</button>
 
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="container">
-                        <h5>'.$v["title"].'</h5>
+                        <h5 class="skeleton title_load">'.$v["title"].'</h5>
 
-                        <p>'.$v["content"].'</p>
+                        <p class="skeleton content_load">'.$v["content"].'</p>
                     </div>
                 </div>
                 </div>';

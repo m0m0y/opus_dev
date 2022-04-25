@@ -350,7 +350,7 @@ $role = $auth->getSession("role");
     <?php require_once "assets/common/logout_modal.php"; ?>
     
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js""></script>
 </body>
 
 </html>
