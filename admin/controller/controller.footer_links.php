@@ -24,10 +24,11 @@ switch($mode) {
             
             $footer_links[$k]["action"] = '
             <center>
-                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-sm fa-pencil-alt"></i></button>
+                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-sm fa-pencil-alt"></i> Update</button>
             </center>
             ';
         }
+        
         $response = array("data" => $footer_links);
         break;
 
@@ -47,7 +48,7 @@ switch($mode) {
             
             $footer_links[$k]["action"] = '
             <center>
-                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-sm fa-pencil-alt"></i></button>
+                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-sm fa-pencil-alt"></i> Update</button>
             </center>
             ';
         }
@@ -70,7 +71,7 @@ switch($mode) {
         break;
     
     default:
-        echo "404";
+        header("Location: ../admin/404.php");
 
 }
 

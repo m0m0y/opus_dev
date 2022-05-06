@@ -28,8 +28,8 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="logi.html">Home</a>
-                <a class="collapse-item" href="register.html">Register</a>
+                <a class="collapse-item" href="home_page.php">Home</a>
+                <a class="collapse-item" href="about_us.php">About Us</a>
                 <a class="collapse-item" href="admission_counselling.php">Admission Counselling</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
@@ -62,15 +62,15 @@
     </div>
 
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-users"></i>
-            <span>Users</span></a>
+        <a class="nav-link" href="card.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Cards Content</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-users"></i>
+            <span>Users</span></a>
     </li>
 
     <hr class="sidebar-divider d-none d-md-block">

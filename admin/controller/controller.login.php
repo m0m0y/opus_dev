@@ -32,7 +32,7 @@ switch($mode) {
         break;
 
     default:
-        echo "404";
+        header("Location: ../admin/404.php");
 }
 
 echo json_encode($response);

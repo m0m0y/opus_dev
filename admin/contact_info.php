@@ -70,12 +70,12 @@ $user = $auth->getSession("name");
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Description:</label>
+                                    <label class="form-label">Description: <span class="required">*</span></label>
                                     <input type="text" class="form-control" name="desc" id="desc" placeholder="Type Here...">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Status:</label>
+                                    <label class="form-label">Status: <span class="required">*</span></label>
                                     <select class="form-control" id="contact_detail_status" name="status">
                                         <option value="0">Enabled</option>
                                         <option value="1">Disabled</option>
@@ -102,6 +102,8 @@ $user = $auth->getSession("name");
         </div>
 
     </div>
+
+    <div id="preloader" style="display: none;"></div>
 
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
@@ -167,6 +169,7 @@ $user = $auth->getSession("name");
                     status:status
                 },
                 success:function(){
+                    $('#preloader').show();
                     window.localStorage.setItem("stat", "success");
                     window.location.href="contact_info.php";
                 }

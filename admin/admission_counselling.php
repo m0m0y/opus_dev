@@ -11,10 +11,13 @@ $admission_counselling = new AdmissionCounselling();
 $isLoggedIn = $auth->getSession("auth");
 $auth->redirect("auth", true, "index.php");
 $user = $auth->getSession("name");
-
 ?>
 
+<link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
+<script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+
 <body id="page-top">
+
     <div id="wrapper">
         <?php require_once "assets/common/side_bar.php"; ?>
 
@@ -23,52 +26,18 @@ $user = $auth->getSession("name");
             <div id="content">
 
                 <?php require_once "assets/common/top_bar.php"; ?>
-                
-                <div class="container-fluid">
-                    <h1 class="h3 mb-4 text-gray-800">Admission Counselling Content</h1>
-                    <?= $admission_counselling->getContent() ?>
+
+                    <div class="container-fluid">
+                        <h1 class="h3 mb-4 text-gray-800">Admission Counselling Page</h1>
+                        <?php
+                            if(isset($_GET["update"])){
+                                $admission_id = $_GET["update"];
+                                echo $admission_counselling->getContentWhere($admission_id);
+                            } else {
+                                echo $admission_counselling->getContent();
+                            }
+                        ?>
                 </div>
-
-                <div class="modal fade updateModal" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-
-                            <form action="controller/controller.contact_info.php?mode=admissionUpdate" method="post" enctype="">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modalTitle"></h5>
-                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <div class="d-none">
-                                        <input type="hidden" id="content_id" name="content_id" class="form-control" readonly>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">Title:</label>
-                                        <input type="text" class="form-control" name="title" id="title">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">Status:</label>
-                                        <select class="form-control" id="contact_detail_status" name="status">
-                                            <option value="0">Enabled</option>
-                                            <option value="1">Disabled</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <footer class="sticky-footer bg-white">
@@ -82,6 +51,8 @@ $user = $auth->getSession("name");
 
     </div>
 
+    <div id="preloader" style="display: none;"></div>
+
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
@@ -89,19 +60,74 @@ $user = $auth->getSession("name");
     <?php require_once "assets/common/logout_modal.php"; ?>
 
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js""></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/alert.js"></script>
 
-    <script>
-         $(function(){
-            // update();
+    <script type="text/javascript"> 
+        $(function(){
+            $('#page_content').summernote({
+                height: 300,
+                placeholder: 'Type Here...',
+                disableDragAndDrop: true,
+                blockqouteBreakingLevel: 2,
+                fontSizeUnit: 'pt',
+                lineHeight: 20,
+                dialogsInBody: true,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
+                    ['para', ['paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen']],
+                ],
+            });
+
+            var status_module =  window.localStorage.getItem("stat");
+            if(status_module == "success"){
+                sucessAlert();
+                localStorage.clear();
+            }
+
+            $('#btn-save').on('click', function(){
+                var id = $('#admission_id').val();
+                var title = $('#title').val();
+                var content = $('#page_content').val();
+                var status = $('#status').val();
+
+                var card_id = $('#card_id').val();
+                var card_title = $('#card_title').val();
+                var card_content = $('#card_content').val();
+
+                if(title == "" || content == "") {
+                    errorAlert();
+                } else {
+                    submit(id, title, content, status, card_id, card_title, card_content);
+                }
+            });
         });
 
-        function update(content_id, section, title, content, status) {
-            $('.updateModal').modal('show');
-            $('#modalTitle').val(section);
-            $('#content_id').val(content_id);
-            $('#title').val(title);
+        function submit(id, title, content, status, card_id, card_title, card_content) {
+            $.ajax({
+                url: 'controller/controller.admission_counselling.php?mode=updateContent',
+                method: 'POST',
+                data: {
+                    id:id,
+                    title:title, 
+                    content:content, 
+                    status:status,
+                    card_id:card_id,
+                    card_title:card_title,
+                    card_content:card_content
+                },
+                success:function(){
+                    $('#preloader').show();
+                    window.localStorage.setItem("stat", "success");
+                    window.location.href="admission_counselling.php";
+                }
+            });
         }
     </script>
 
 </body>
+

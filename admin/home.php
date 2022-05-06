@@ -8,7 +8,6 @@ $auth = new Auth();
 $isLoggedIn = $auth->getSession("auth");
 $auth->redirect("auth", true, "index.php");
 $user = $auth->getSession("name");
-$role = $auth->getSession("role");
 ?>
 
 <body id="page-top">
@@ -350,7 +349,7 @@ $role = $auth->getSession("role");
     <?php require_once "assets/common/logout_modal.php"; ?>
     
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js""></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

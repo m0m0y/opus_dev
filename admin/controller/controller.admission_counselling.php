@@ -8,32 +8,32 @@ $mode = isset($_GET["mode"]) ?  $_GET["mode"] : NULL;
 
 switch($mode) {
 
-    case "tableDetail";
-        $contact_info = $contact_info->getInformation();
-        foreach($contact_info as $k=>$v) {
-            $contact_info[$k]["title"] = $v["title"];
-            $contact_info[$k]["description"] = $v["description"];
-            $contact_info[$k]["contact_info_status"] = $v["contact_info_status"];
-            $contact_info[$k]["action"] = '
-            <center><button onclick="update(\''.$v['id'].'\',\''.$v['title'].'\',\''.$v['description'].'\',\''.$v['contact_info_status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i> Update</button></center>
-            ';
-        }
-        $response = array("data" => $contact_info);
-        break;
-
-        
-    case "updateDesc";
-        $id = $_POST["info_id"];
-        $description = $_POST["desc"];
+    case "updateContent";
+        $id = $_POST["id"];
+        $title = $_POST["title"];
+        $content = $_POST["content"];
         $status = $_POST["status"];
-        $contact_info = $contact_info->updateInformation($id, $description, $status);
+        $card_id = $_POST["card_id"];
+        $card_title = $_POST["card_title"];
+        $card_content = $_POST["card_content"];
+        $admission_counselling = $admission_counselling->updateContent($id, $title, $content, $status, $card_id, $card_title, $card_content);
 
         $response = array("message" => "Success Update");
-        header('location: ../contact_info.php');
         break;
 
+    case "cardTableDetail";
+        $admission_counselling = $admission_counselling->getContentCard();
+        foreach($admission_counselling as $k => $v) {
+            $admission_counselling[$k]['section'] = $v['section'];
+            $admission_counselling[$k]['title'] = $v['title'];
+            $admission_counselling[$k]['content'] = $v['content'];
+            $admission_counselling[$k]['status'] = $v['status'];
+            $admission_counselling[$k]['date_updated'] = $v['date_updated'];
+            $admission_counselling[$k]['action'] = '<button onclick="update(\''.$v['card_id'].'\',\''.$v['title'].'\',\''.$v['content'].'\',\''.$v['link'].'\',\''.$v['page'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i> Update</button>';
+        }
+        break;
 
     default:
-        echo "404";
+        header("Location: ../admin/404.php");
 
 }

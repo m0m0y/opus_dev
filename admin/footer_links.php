@@ -20,65 +20,59 @@ $user = $auth->getSession("name");
         <div id="content-wrapper" class="d-flex flex-column">
 
             <div id="content">
+
                 <?php require_once "assets/common/top_bar.php"; ?>
 
                 <div class="container-fluid">
+
                     <h1 class="h3 mb-4 text-gray-800">Footer Links</h1>
 
-                    <div class="row">
-
-                        <div class="col-lg-6 mb-4">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Useful Links</h6>
-                                </div>
-
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="usefulLinksTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Title</th>
-                                                    <th>URL</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Useful Links</h6>
                         </div>
 
-                        <div class="col-lg-6 mb-4">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Our Services</h6>
-                                </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="usefulLinksTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>URL</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="ourServicesTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Title</th>
-                                                    <th>URL</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                    </div>
+                
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Our Services</h6>
+                        </div>
 
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="ourServicesTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>URL</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="modal fade updateModal" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
@@ -93,19 +87,20 @@ $user = $auth->getSession("name");
                                 </div>
 
                                 <div class="modal-body">
+
                                     <div class="d-none">
                                         <input type="hidden" id="link_id" name="link_id" class="form-control" readonly>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Title:</label>
+                                        <label class="col-sm-2 col-form-label"> <span class="required">*</span> Title:</label>
                                         <div class="col-sm-10">
                                         <input type="text" class="form-control" id="title" name="title" placeholder="Title">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">URL:</label>
+                                        <label class="col-sm-2 col-form-label"><span class="required">*</span> URL: </label>
                                         <div class="col-sm-10">
                                         <input type="text" class="form-control" id="url" name="url" placeholder="Type Here...">
                                         </div>
@@ -119,7 +114,7 @@ $user = $auth->getSession("name");
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Label:</label>
+                                        <label class="col-sm-2 col-form-label"><span class="required">*</span> Label:</label>
                                         <div class="col-sm-10">
                                         <select class="form-control" id="label" name="label">
                                             <option value="Useful Links">Useful Links</option>
@@ -137,6 +132,7 @@ $user = $auth->getSession("name");
                                         </select>
                                         </div>
                                     </div>
+
                                 </div>
 
                                 <div class="modal-footer">
@@ -146,13 +142,14 @@ $user = $auth->getSession("name");
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
 
         </div>
     </div>
+
+    <div id="preloader" style="display: none;"></div>
 
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
@@ -205,7 +202,7 @@ $user = $auth->getSession("name");
 
         function update(id, url, title, sort, label, status) {
             $('.updateModal').modal('show');
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> Update ' +title);
+            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' +title);
             $('#link_id').val(id);
             $('#url').val(url);
             $('#title').val(title);
@@ -242,6 +239,7 @@ $user = $auth->getSession("name");
                     status:status
                 },
                 success:function() {
+                    $('#preloader').show();
                     window.localStorage.setItem("stat", "success");
                     window.location.href="footer_links.php";
                 }
