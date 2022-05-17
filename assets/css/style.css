@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body * {
+  /* outline: 1px solid red; */
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #313030;
@@ -23,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 .text-underline {
   text-decoration: underline;
 }
+
+.required {
+  color: red;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -432,6 +441,7 @@ section {
   padding: 15px 0;
   background: #f4f2f2;
   margin-bottom: 40px;
+  margin-top: 25px;
 }
 .breadcrumbs h2 {
   font-size: 28px;

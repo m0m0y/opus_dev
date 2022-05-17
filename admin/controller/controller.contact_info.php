@@ -5,7 +5,7 @@ require_once "../model/model.contact_info.php";
 
 $contact_info = new ContactInfo();
 
-$mode = isset($_GET["mode"]) ?  $_GET["mode"] : NULL;
+$mode = isset($_GET["mode"]) ? $_GET["mode"] : NULL;
 
 switch($mode) {
 
@@ -16,7 +16,12 @@ switch($mode) {
             $contact_info[$k]["description"] = $v["description"];
             $contact_info[$k]["contact_info_status"] = $v["contact_info_status"];
             $contact_info[$k]["action"] = '
-            <center><button onclick="update(\''.$v['id'].'\',\''.$v['title'].'\',\''.$v['description'].'\',\''.$v['contact_info_status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i> Update</button></center>
+            <center>
+                <button onclick="update(\''.$v['id'].'\',\''.$v['title'].'\',\''.$v['description'].'\',\''.$v['contact_info_status'].'\')" class="btn btn-sm btn-info btn-icon-split">
+                    <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+                    <span class="text">Update</span>
+                </button>
+            </center>
             ';
         }
         $response = array("data" => $contact_info);

@@ -3,8 +3,11 @@ function errorAlert() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: false
+        timer: 5000,
+        timerProgressBar: false,
+        customClass: {
+            padding: "padding-toast"
+        }
     })
     
     Toast.fire({
@@ -18,12 +21,12 @@ function sucessAlert() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: false,
+        timer: 4000,
+        timerProgressBar: true,
     })
     
     Toast.fire({
         icon: 'success',
-        title: 'Data Updated Successfully'
+        title: 'Successfully Sent'
     })
 }

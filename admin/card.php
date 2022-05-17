@@ -99,6 +99,7 @@ $user = $auth->getSession("name");
                                         <label class="col-sm-2 col-form-label text-right"> Link:</label>
                                         <div class="col-sm-10">
                                             <input type="url" class="form-control" name="link" id="link" placeholder="Type Here...">
+                                            <small style="color: red;">(Optional)</small>
                                         </div>
                                     </div>
 
@@ -122,7 +123,20 @@ $user = $auth->getSession("name");
                             </div>
 
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary submit"><i class="fas fa-save"></i> Save</button>
+                                <button type="close" class="btn btn-sm btn-secondary btn-icon-split" data-dismiss="modal">
+                                    <span class="icon"><i class="fas fa-window-close"></i></span>
+                                    <span class="text">Close</span>
+                                </button>
+
+                                <button type="submit" class="btn btn-sm btn-danger btn-icon-split clear">
+                                    <span class="icon"><i class="fas fa-trash"></i></span>
+                                    <span class="text">Clear Form</span>
+                                </button>
+
+                                <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit">
+                                    <span class="icon"><i class="fas fa-save"></i></span>
+                                    <span class="text">Save</span>
+                                </button>
                             </div>
                         <!-- </form> -->
 
@@ -170,6 +184,11 @@ $user = $auth->getSession("name");
                 sucessAlert();
                 localStorage.clear();
             }
+
+            $('.clear').click(function(){
+                $('input[type=text], input[type=url]').val('');
+                $('#card_content').summernote('code', '');
+            });
         });
 
         function cardTable() {

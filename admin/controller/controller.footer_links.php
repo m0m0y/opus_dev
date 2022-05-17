@@ -24,7 +24,10 @@ switch($mode) {
             
             $footer_links[$k]["action"] = '
             <center>
-                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-sm fa-pencil-alt"></i> Update</button>
+                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info btn-icon-split">
+                    <span class="icon"><i class="fas fa-sm fa-pencil-alt"></i></span>
+                    <span class="text">Update</span>
+                </button>
             </center>
             ';
         }
@@ -48,7 +51,10 @@ switch($mode) {
             
             $footer_links[$k]["action"] = '
             <center>
-                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-sm fa-pencil-alt"></i> Update</button>
+                <button onclick="update(\''.$v['id'].'\',\''.$v['url'].'\',\''.$v['title'].'\',\''.$v['sort'].'\',\''.$v['label'].'\',\''.$v['status'].'\')" class="btn btn-sm btn-info btn-icon-split">
+                    <span class="icon"><i class="fas fa-sm fa-pencil-alt"></i></span>
+                    <span class="text">Update</span>
+                </button>
             </center>
             ';
         }

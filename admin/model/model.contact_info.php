@@ -13,8 +13,8 @@ class ContactInfo extends db_conn_mysql {
 
     public function updateInformation($id, $description, $status) {
         $conn = $this->db_conn();
-        $query = $conn->prepare("UPDATE contact_info SET description='$description', contact_info_status='$status' WHERE id='$id'");
-        $query->execute();
+        $query = $conn->prepare("UPDATE contact_info SET description = ?, contact_info_status = ? WHERE id = ?");
+        $query->execute($description, $status, $id);
     }
 
 }

@@ -136,7 +136,15 @@ $user = $auth->getSession("name");
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary submit"><i class="fas fa-save"></i> Save</button>
+                                    <button type="close" class="btn btn-sm btn-secondary btn-icon-split" data-dismiss="modal">
+                                        <span class="icon"><i class="fas fa-window-close"></i></span>
+                                        <span class="text">Close</span>
+                                    </button>
+
+                                    <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit">
+                                        <span class="icon"><i class="fas fa-save"></i></span>
+                                        <span class="text">Save</span>
+                                    </button>
                                 </div>
 
                             </div>

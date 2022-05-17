@@ -13,8 +13,8 @@ class Cards extends db_conn_mysql {
 
     public function updateContent($card_id, $section, $card_title, $card_content, $link, $page, $status) {
         $conn = $this->db_conn();
-        $query = $conn->prepare("UPDATE card_content SET section='$section', card_title='$card_title', content='$card_content', link='$link', page='$page', card_status='$status' WHERE card_id='$card_id'");
-        $query->execute();
+        $query = $conn->prepare("UPDATE card_content SET section = ?, card_title = ?, content = ?, link = ?, page = ?, card_status = ? WHERE card_id = ?");
+        $query->execute([$section, $card_title, $card_content, $link, $page, $status, $card_id]);
     }
 
 }

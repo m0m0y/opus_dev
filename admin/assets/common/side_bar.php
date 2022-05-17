@@ -31,9 +31,11 @@
                 <a class="collapse-item" href="home_page.php">Home</a>
                 <a class="collapse-item" href="about_us.php">About Us</a>
                 <a class="collapse-item" href="admission_counselling.php">Admission Counselling</a>
+                <a class="collapse-item" href="summer_camps.php">Summer Camps</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
-                <a class="collapse-item" href="404.html">404 Page</a>
+                <a class="collapse-item" href="careers.php">Careers</a>
+                <a class="collapse-item" href="history_and_team.php">History and Team</a>
                 <a class="collapse-item" href="blank.html">Blank Page</a>
             </div>
         </div>

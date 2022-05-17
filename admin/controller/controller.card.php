@@ -28,7 +28,12 @@ switch($mode) {
             $card_details[$k]["link"] = $v["link"];
             $card_details[$k]["page"] = $v["page"];
             $card_details[$k]["action"] = '
-            <center><button onclick="update(\''.$v['card_id'].'\',\''.$v['section'].'\',\''.$v['card_title'].'\',\''.$v['content'].'\',\''.$v['link'].'\',\''.$v['page'].'\',\''.$v['card_status'].'\')" class="btn btn-sm btn-info"><i class="fas fa-pencil-alt"></i> Update</button></center>
+            <center>
+                <button onclick="update(\''.$v['card_id'].'\',\''.$v['section'].'\',\''.$v['card_title'].'\',\''.$v['content'].'\',\''.$v['link'].'\',\''.$v['page'].'\',\''.$v['card_status'].'\')" class="btn btn-sm btn-info btn-icon-split">
+                    <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+                    <span class="text">Update</span>
+                </button>
+            </center>
             ';
         }
 
@@ -52,4 +57,5 @@ switch($mode) {
         header("Location: ../admin/404.php");
 
 }
+
 echo json_encode($response);

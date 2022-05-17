@@ -13,8 +13,8 @@ class AboutUs extends db_conn_mysql {
 
     public function getContentWhere($about_id) {
         $conn = $this->db_conn();
-        $query = $conn->prepare("SELECT * FROM about_us WHERE id='$about_id'");
-        $query->execute();
+        $query = $conn->prepare("SELECT * FROM about_us WHERE id = ?");
+        $query->execute([$about_id]);
         $response = $query->fetch();
 
         return $response;
@@ -22,8 +22,8 @@ class AboutUs extends db_conn_mysql {
 
     public function updateContent($about_id, $title, $about_content, $status) {
         $conn = $this->db_conn();
-        $query = $conn->prepare("UPDATE about_us SET title='$title', content='$about_content', status='$status' WHERE id='$about_id'");
-        $query->execute();
+        $query = $conn->prepare("UPDATE about_us SET title = ?, content = ?, status = ? WHERE id = ?");
+        $query->execute([$title, $about_content, $status, $about_id]);
     }
 
 }

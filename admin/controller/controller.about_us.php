@@ -23,4 +23,6 @@ switch($mode) {
 
 }
 
+echo json_encode($response);
+
 ?>

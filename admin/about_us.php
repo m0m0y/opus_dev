@@ -6,8 +6,8 @@ require_once "controller/controller.db.php";
 require_once "model/model.about_us.php";
 
 $auth = new Auth();
-$aboutUs = new AboutUs();
-$about = $aboutUs->getContent();
+$about = new AboutUs();
+$aboutContent = $about->getContent();
 
 $isLoggedIn = $auth->getSession("auth");
 $auth->redirect("auth", true, "index.php");
@@ -33,15 +33,29 @@ $user = $auth->getSession("name");
                     <?php
                         if(isset($_GET["update"])){
                             $about_id = $_GET["update"];
-                            $aboutWhere = $aboutUs->getContentWhere($about_id);
+                            $aboutWhere = $about->getContentWhere($about_id);
                             ?>
 
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
 
-                                    <div class="d-sm-flex align-items-center justify-content-end">
-                                        <button id="btn-save" class="btn btn-sm btn-primary m-1"><i class="fas fa-save"></i> Save</button>
-                                        <a href="about_us.php" class="btn btn-sm btn-secondary"><i class="fas fa-arrow-alt-circle-left"></i> Back</a>        
+                                <div class="d-sm-flex align-items-center justify-content-between">
+
+                                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-sm fa-edit"></i> <?= $aboutWhere["section"] ?>
+                                            <span class="badge rounded-pill bg-secondary" style="color: white;"></span>
+                                        </h6>
+
+                                        <div class="d-sm-flex align-items-center justify-content-between">
+                                            <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
+                                                <span class="icon"><i class="fas fa-save"></i></span>
+                                                <span class="text">Save</span>
+                                            </button>
+
+                                            <a href="about_us.php" class="btn btn-sm btn-secondary btn-icon-split">
+                                                <span class="icon"><i class="fas fa-arrow-left"></i> </span>
+                                                <span class="text">Back</span>
+                                            </a>
+                                        </div>
                                     </div>
                                     
                                 </div>
@@ -82,8 +96,8 @@ $user = $auth->getSession("name");
                             <?php
                         } else {
 
-                            if(!empty($about)) {
-                                foreach ($about as $k=>$v) {
+                            if(!empty($aboutContent)) {
+                                foreach ($aboutContent as $k=>$v) {
                                     $id = $v["id"];
                                     $title = $v["title"];
                                     $content = $v["content"];
@@ -96,11 +110,14 @@ $user = $auth->getSession("name");
 
                                         <div class="d-sm-flex align-items-center justify-content-between">
                                             <h5 class="m-0 font-weight-bold text-primary">
-                                                <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_added ?></span>
+                                                <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
                                             </h5>
 
-                                            <a href="about_us.php?update=<?= $id ?>" class="btn btn-sm btn-info"><i class="fas fa-pen"></i> Update</a>
+                                            <a href="about_us.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
+                                                <span class="icon"><i class="fas fa-pen"></i> </span>
+                                                <span class="text">Update</span>
+                                            </a>
                                         </div>
                                         
                                     </div>
