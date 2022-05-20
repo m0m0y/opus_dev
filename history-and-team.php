@@ -44,7 +44,7 @@ require_once "assets/common/header.php";
                 <div class="col-lg-8 col-md-12">
                     <p>In 2002, Dr. Janette Lim founded Opus Academy stemming from her joy working with young people globally and her passion for inspiring students to maximize their potential.<br><br>
 
-                    She has extensive experience in education and non-education fields such as Insurance & Finance, Hospitality, and International Business. Over decades of working with immigrant and local families and in the corporate world, Dr. Lim observed overarching themes that emerge in business, education and global leadership – namely that the ability to communicate well, with a firm academic foundation and strong character, empower people to achieve their goals and be their best selves. Dr. Lim’s passion for helping young people acquire superior education led her to establish Opus Academy.<br><br>
+                    She has extensive experience in education and non-education fields such as Insurance & Finance, Hospitality, and International Business. Over decades of working with immigrant and local families and in the corporate world, Dr. Lim observed overarching themes that emerge in business, education and global leadership - namely that the ability to communicate well, with a firm academic foundation and strong character, empower people to achieve their goals and be their best selves. Dr. Lim's passion for helping young people acquire superior education led her to establish Opus Academy.<br><br>
 
                     Dr. Janette Lim holds an Ed.D from Pepperdine University, MBA from Queens University (Canada) and M.Ed. from University of Calgary. In addition, she holds industry-specific designations which give her diverse knowledge and expertise. She is a Professional Member of the Independent Educational Consultant Association (IECA) and a member of National Association for College Admissions Counselling (NACAC).</p>
 
@@ -61,7 +61,7 @@ require_once "assets/common/header.php";
                 <div class="col-lg-4 col-md-12 d-flex align-items-stretch">
                     <div class="member">
                         <div class="member-img">
-                            <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="team-img" width="600">
+                            <img src="admin/assets/img/team/team-6.jpg" class="img-fluid" alt="team-img" width="600">
                         </div>
 
                         <div class="member-info">
@@ -83,18 +83,26 @@ require_once "assets/common/header.php";
 
     <section class="team">
         <div class="container">
-            <div class="row">
+            <div class="col-xl-12 col-lg-12 d-flex">
+                <div class="icon-boxes d-flex flex-column justify-content-center">
+                    <div class="row">
 
-                <div class="col-lg-6 col-md-12">
-                    <h3 class="title">Teachers</h3>
-                    <p>Our teachers motivate and inspire students. They have subject area expertise and are committed to students’ success. They guide students not only to understand but also to master foundational and advanced materials, equipping students with the skills necessary to succeed in school, college and beyond. Our teachers push students to achieve their personal best, academically and socially. Their goal is to expand the intellectual curiosity of each student while helping to develop character.</p>
+                        <div class="col-xl-6 d-flex align-items-stretch">
+                            <div class="icon-box mt-4 mt-xl-0">
+                                <h3 class="title">Teachers</h3>
+                                <p>Our teachers motivate and inspire students. They have subject area expertise and are committed to students' success. They guide students not only to understand but also to master foundational and advanced materials, equipping students with the skills necessary to succeed in school, college and beyond. Our teachers push students to achieve their personal best, academically and socially. Their goal is to expand the intellectual curiosity of each student while helping to develop character.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 d-flex align-items-stretch">
+                            <div class="icon-box mt-4 mt-xl-0">
+                                <h3 class="title">University Counsellors</h3>
+                                <p>Our counsellors are experienced and knowledgeable in the university admissions process, with a deep understanding of many universities and their offerings, as well as university applications, and the all-important personal essay. Our counsellors stay in touch with current trends and spend time touring campuses, talking with university counselling professionals and admission officers. They have the knowledge and tools to help students succeed in the university selection process.</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-
-                <div class="col-lg-6 col-md-12">
-                    <h3 class="title">University Counsellors</h3>
-                    <p>Our counsellors are experienced and knowledgeable in the university admissions process, with a deep understanding of many universities and their offerings, as well as university applications, and the all-important personal essay. Our counsellors stay in touch with current trends and spend time touring campuses, talking with university counselling professionals and admission officers. They have the knowledge and tools to help students succeed in the university selection process.</p>
-                </div>
-
             </div>
         </div>
     </section>

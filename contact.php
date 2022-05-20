@@ -38,6 +38,8 @@ require_once "assets/common/header.php";
                     <p>service@opusacademy.com</p>
                     <h5><i class="bx bx-message"></i> Wechat ID:</h5>
                     <p>opusacademy5635</p>
+                    
+                    <a href="testimonials.php" class="bogs-link">bogs</a>
 
                 </div>
 

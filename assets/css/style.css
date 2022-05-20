@@ -713,6 +713,14 @@ section {
   color: #656262;
 }
 
+.team .icon-boxes .icon-box {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 20px 15px rgb(0 0 0/ 10%);
+  padding: 30px 80px;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Careers
 --------------------------------------------------------------*/
@@ -1066,20 +1074,313 @@ section {
   text-decoration: none;
   color: #29176e;
 }
-/* #footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #313030;
+
+/*--------------------------------------------------------------
+# Competitive Debate Programs
+--------------------------------------------------------------*/
+#debate-programs-page-hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/hero/hero-2.jpg") center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -200px;
+}
+#debate-programs-page-hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.debate-programs-sub-title {
+  position: absolute; 
+  z-index: 1; 
+  top: 48%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.competitive-debate-programs {
+  padding: 0 0 30px 0;
+  position: relative;
+  z-index: 3;  
+}
+
+.competitive-debate-programs .content {
+  padding: 30px;
+  background: #29176edb;
+  border-radius: 4px;
+  color: #fff;
+}
+.why-learn-to-debate h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.why-learn-with-us h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.our-program-structure h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.academy-and-harvard-debate-council h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.academy-and-harvard-debate-council .content {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 16px 15px;
+}
+.harvard-debate-council-program h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.competitive-debate-opus h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.speech-and-debate-transform h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+
+/*--------------------------------------------------------------
+# Academic Enrichment
+--------------------------------------------------------------*/
+.why-learn-to-debate h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.academic-subject-tutoring h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.early-learning h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.early-learning .icon-boxes .icon-box {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgb(0 0 0/ 10%);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.crw_img{
+  background: url("../img/academic-enrichment/crw.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.academic-subject-tutoring .tutor-img {
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -120px;
+}
+.academic-subject-tutoring .content {
+  position: relative;
+  padding: 30px;
+  background: #29176edb;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Classical Music Program
+--------------------------------------------------------------*/
+.music-program h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.music-studies h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.course-include h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.additional-learning-opportunities h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.application-procedure h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+
+/*--------------------------------------------------------------
+# Test Preparation
+--------------------------------------------------------------*/
+.standard-test-preparation .content {
+  position: relative;
+  padding: 30px;
+  background: #29176edb;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# McGraw Hill Education Courses Programs
+--------------------------------------------------------------*/
+.academic-enrichment h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.mcGraw-hill-education h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.redbird-mathematics h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.redbird-mathematics .list {
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  border-radius: 3px;
+}
+.redbird-language h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.assesment-and-learning h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.academic-enrichment .icon-boxes .icon-box {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 5px 15px rgb(0 0 0/ 10%);
+  padding: 25px 30px;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.communication-arts-speech h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.public-debate h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.interview-course h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.university-admission h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.private-school-counselling h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.standart-test-preparation h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.early-learners h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.general h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.parent-testimonials h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.interview-skill-courses h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.ap-courses h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+.summer-camps h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
+
+.testimonials-page-section .icon-boxes .icon-box {
+  /* border-radius: 10px; */
+  background: #fff;
+  box-shadow: 0px 2px 20px rgb(0 0 0/ 10%);
+  padding: 25px 30px;
+  width: 100%;
+}
+.sidebar .sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 0 0;
+  margin: 0 0 15px 0;
+  color: #473d3a;
+  position: relative;
+}
+.sidebar .categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .categories ul li + li {
+  padding-top: 15px;
+}
+
+/* .sidebar {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  height: 300px;
+  padding: 30px 0;
+  color: #fff;
+  top: 10px;
+  bottom: auto;
 } */
 
+.test .row {
+  background: #f8f9fa;
+  margin-top: 30px;
+  padding: 20px 0;
+}
 
+.test .col {
+  border: solid 1px #6c757d;
+}
 
+.test .fixed-sidebar {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  height: 300px;
+  padding: 30px 0;
+  background: #555;
+  color: #fff;
+  top: 10px;
+  bottom: auto;
+}
 
-
-
-
-
-
+.test .blog-entry-content {
+  padding: 0 20px;
+}
 
 
 

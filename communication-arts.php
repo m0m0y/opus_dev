@@ -9,7 +9,7 @@ require_once "assets/common/header.php";
         <div class="container">
         <ol>
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">Programs</a></li>
+            <li>Programs</li>
             <li>Communication Arts</li>
         </ol>
         <h2>Opus Communication Arts</h2>
@@ -27,29 +27,29 @@ require_once "assets/common/header.php";
 
             <p>Our expert instructors are experienced public speakers and educators, holding advanced degrees from highly established universities. They not only bring their expertise to the classroom, but also their passion for teaching. By engaging, inspiring, and motivating students to develop effective communication skills, our instructors are exemplary role models, instilling a love of learning and sharing their skills with students as they venture into the exciting world of public speaking.</p>
             
-            <div class="row portfolio-container">
+            <div class="row portfolio-container mt-5">
 
-                <div class="col col-sm-8">
-                    <img src="assets/img/portfolio/p-8.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
+                <div class="col col-sm-8 d-flex">
+                    <img src="assets/img/portfolio/p-8.jpg" class="mb-5" alt="" style="width: 100%;">
                 </div>
 
-                <div class="col col-sm-4">
-                    <img src="assets/img/portfolio/p-7.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
-                </div>
-
-                <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                    <img src="assets/img/portfolio/p-1.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
-                    <img src="assets/img/portfolio/p-4.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
+                <div class="col col-sm-4 d-flex">
+                    <img src="assets/img/portfolio/p-7.jpg" class="mb-5" alt="" style="width: 100%;">
                 </div>
 
                 <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                    <img src="assets/img/portfolio/p-3.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
-                    <img src="assets/img/portfolio/p-5.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
+                    <img src="assets/img/portfolio/p-1.jpg" class="mb-5" alt="" style="width: 100%;">
+                    <img src="assets/img/portfolio/p-4.jpg" class="mb-5" alt="" style="width: 100%;">
                 </div>
 
                 <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                    <img src="assets/img/portfolio/p-2.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
-                    <img src="assets/img/portfolio/p-6.jpg" class="mb-5" alt="" style="width: 100%; height: auto;">
+                    <img src="assets/img/portfolio/p-3.jpg" class="mb-5" alt="" style="width: 100%;">
+                    <img src="assets/img/portfolio/p-5.jpg" class="mb-5" alt="" style="width: 100%;">
+                </div>
+
+                <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
+                    <img src="assets/img/portfolio/p-2.jpg" class="mb-5" alt="" style="width: 100%;">
+                    <img src="assets/img/portfolio/p-6.jpg" class="mb-5" alt="" style="width: 100%;">
                 </div>
 
             </div>
@@ -566,9 +566,7 @@ require_once "assets/common/header.php";
     </section>
 </main>
 
-<?php
-require_once "assets/common/footer.php"; 
-?>
+<?php require_once "assets/common/footer.php"; ?>
 
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

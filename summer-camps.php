@@ -10,7 +10,7 @@ require_once "assets/common/header.php";
             <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">Summer Programs</a></li>
+                    <li>Summer Programs</li>
                     <li>Summer Camps</li>
                 </ol>
                 <h2>Opus Summer Camps</h2>

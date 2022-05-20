@@ -23,7 +23,7 @@
 						<li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
 						<li><i class="bx bx-chevron-right"></i> <a href="history-and-team.php">History and Our Teams</a></li>
 						<li><i class="bx bx-chevron-right"></i> <a href="careers.php">Careers</a></li>
-						<li><i class="bx bx-chevron-right"></i> <a href="#">Teach Works</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="https://opusacademy.com/login/">Teach Works</a></li>
 					</ul>
 				</div>
 
@@ -31,11 +31,11 @@
 					<h4>Our Services</h4>
 					<ul>
 						<li><i class="bx bx-chevron-right"></i> <a href="summer-camps.php">Opus Summer</a></li>
-						<li><i class="bx bx-chevron-right"></i> <a href="#">Opus Communication Arts</a></li>
-						<li><i class="bx bx-chevron-right"></i> <a href="#">McGraw Hill Education Courses</a></li>
-						<li><i class="bx bx-chevron-right"></i> <a href="#">Opus Academic Subject Enrichment</a></li>
-						<li><i class="bx bx-chevron-right"></i> <a href="#">Opus Early Learning</a></li>
-						<li><i class="bx bx-chevron-right"></i> <a href="#">Opus Classical Music</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="communication-arts.php">Opus Communication Arts</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="mcgraw-hill-education-courses.php">McGraw Hill Education Courses</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="academic-enrichment.php">Opus Academic Subject Enrichment</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="early-learning.php">Opus Early Learning</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="classical-music.php">Opus Classical Music</a></li>
 					</ul>
 				</div>
 

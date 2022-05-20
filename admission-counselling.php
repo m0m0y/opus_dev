@@ -5,7 +5,7 @@ require_once "assets/common/header.php";
 
     <main id="main">
 
-        <section id="breadcrumbs" class="breadcrumbs" style="margin-bottom: 0;">
+        <section id="breadcrumbs" class="breadcrumbs mb-0">
             <div class="container">
                 <ol>
                 <li><a href="index.php">Home</a></li>

@@ -59,14 +59,14 @@
 						<li><a href="communication-arts.php">Opus Communication Arts</a></li>
 						<li class="dropdown"><a href="#"><span>Competitive Debate Programs</span> <i class="bi bi-chevron-right"></i></a>
 							<ul>
-								<li><a href="#">Canada</a></li>
-								<li><a href="#">Phillippines</a></li>
+								<li><a href="competitive-debate-programs.php?canada">Canada</a></li>
+								<li><a href="competitive-debate-programs.php?ph">Phillippines</a></li>
 							</ul>
 						</li>
-						<li><a href="#">McGraw Hill Education Courses</a></li>
-						<li><a href="#">Opus Academic Subject Enrichment</a></li>
-						<li><a href="#">Opus Standardized Test Preparation</a></li>
-						<li><a href="#">Opus Early Learning</a></li>
+						<li><a href="mcgraw-hill-education-courses.php">McGraw Hill Education Courses</a></li>
+						<li><a href="academic-enrichment.php">Opus Academic Subject Enrichment</a></li>
+						<li><a href="test-preparation.php">Opus Standardized Test Preparation</a></li>
+						<li><a href="early-learning.php">Opus Early Learning</a></li>
 						<li><a href="classical-music.php">Opus Classical Music</a></li>
 					</ul>
 				</li>
@@ -95,9 +95,9 @@
 						<li><a href="careers.php">Careers</a></li>
 					</ul>
 				</li>
-				<li><a class="nav-link" href="">Testimonials</a></li>
+				<li><a class="nav-link" href="testimonials.php">Testimonials</a></li>
 				<li><a class="nav-link" href="contact.php">Contact</a></li>
-				<li><a href="#">Teach Works</a></li>
+				<li><a href="https://opusacademy.com/login/">Teach Works</a></li>
 			</ul>
 			<i class="bi bi-list mobile-nav-toggle"></i>
 		</nav>

@@ -219,7 +219,7 @@ require_once "assets/common/header.php";
                     <p>Our multifaceted programs train students in speech arts and drama, while helping to discover and hone young voices through a creative mix literary art forms. As they progress, students challenge themselves by participating in competition and receiving certifications...</p>
 
                     <div class="text-center">
-                      <a href="#" class="more-btn">Learn More</a>
+                      <a href="communication-arts.php" target="blank" class="more-btn">Learn More</a>
                     </div>  
                   </div>
                 </div>
@@ -230,7 +230,7 @@ require_once "assets/common/header.php";
                     <p>We are proud to offer English andMathematic enrichment courses developed by Stanford University through our relationship with McGraw Hill Education.Coursework is composed of supplemental materials which will assist students to excel in whichever field they choose...</p>
 
                     <div class="text-center">
-                      <a href="#" class="more-btn">Learn More</a>
+                      <a href="mcgraw-hill-education-courses.php" target="blank" class="more-btn">Learn More</a>
                     </div>  
                   </div>
                 </div>
@@ -241,7 +241,7 @@ require_once "assets/common/header.php";
                     <p>We provide counselling services, essay coaching, and interview training for admissions into private day/boarding schools, universities, and graduate schools across the United States, Canada, the United Kingdom, and abroad...</p>
 
                     <div class="text-center">
-                      <a href="admission-counselling.php" class="more-btn">Learn More</a>
+                      <a href="admission-counselling.php" target="blank" class="more-btn">Learn More</a>
                     </div>  
                   </div>
                 </div>
@@ -265,7 +265,7 @@ require_once "assets/common/header.php";
                   <p>Effective speaking skills are crucial for success. Our multilevel public speaking & debate programs train students the fine art of speaking, argumentation and persuasion. Students also gain exposure to interview technique and negotiation...</p>
 
                   <div class="text-center">
-                    <a href="#" class="more-btn">Learn More</a>
+                    <a href="communication-arts.php" target="blank" class="more-btn">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -276,7 +276,7 @@ require_once "assets/common/header.php";
                   <p>We provide academic enrichment in core academic subjects and Advanced Placement courses. We also offer Standardized Test preparation for SAT, ACT, Subject Tests, SSAT, and ISEE necessary for university and private school admissions...</p>
 
                   <div class="text-center">
-                    <a href="#" class="more-btn">Learn More</a>
+                    <a href="test-preparation.php" target="blank" class="more-btn">Learn More</a>
                   </div>  
                 </div>
               </div>
@@ -287,7 +287,7 @@ require_once "assets/common/header.php";
                   <p>Our programs emphasize speech and language arts specifically geared towards early childhood, and assist with the development of interactive oral communication, confidence, as well as etiquette and emotional intelligence...</p>
 
                   <div class="text-center">
-                    <a href="#" class="more-btn">Learn More</a>
+                    <a href="early-learning.php" target="blank" class="more-btn">Learn More</a>
                   </div>  
                 </div>
               </div>
