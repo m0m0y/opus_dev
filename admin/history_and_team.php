@@ -51,15 +51,17 @@ $user = $auth->getSession("name");
                                     </h6>
 
                                     <div class="d-sm-flex align-items-center justify-content-between">
-                                        <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
-                                            <span class="icon"><i class="fas fa-save"></i></span>
-                                            <span class="text">Save</span>
-                                        </button>
 
                                         <a href="history_and_team.php" class="btn btn-sm btn-secondary btn-icon-split">
                                             <span class="icon"><i class="fas fa-arrow-left"></i> </span>
                                             <span class="text">Back</span>
                                         </a>
+
+                                        <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
+                                            <span class="icon"><i class="fas fa-save"></i></span>
+                                            <span class="text">Save</span>
+                                        </button>
+                                        
                                     </div>
                                     
                                 </div>
@@ -190,43 +192,73 @@ $user = $auth->getSession("name");
                             <h5 class="modal-title" id="modalTitle"></h5>
                         </div>
 
-                        <form name="form" method="post" action="controller/controller.history_and_team.php?mode=updateTeamInfo" enctype="multipart/form-data">
-                            <div class="modal-body">
-                                <div class="">
-                                    <input type="text" id="id" name="id" class="form-control" readonly>
+                        <form name="form" method="post" action="controller/controller.history_and_team.php?mode=updateTeamInfo" enctype="multipart/form-data" id="modalForm">
+                            <div class="modal-body mt-3">
+
+                                <div class="d-none">
+                                    <input type="hidden" id="id" name="id" readonly>
                                 </div>
 
-                                <div class="mb-3">
-                                    <label class="form-label">Fullname: <span class="required">*</span></label>
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Type Here...">
-                                </div>
+                                <div class="mb-5">
+                                    <div class="row">
 
-                                <div class="mb-3">
-                                    <label class="form-label">Upload Image: </label> <small style="color: red;">(Optional)</small>
-                                    
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" name="image" id="image">
-                                        <label class="custom-file-label">Choose file</label>
+                                        <div class="col-xl-4 col-sm-12">
+
+                                            <center>
+                                                <div id="tumbnail-container" class="img-tumbnail-container">
+                                                    <img src="" alt="" id="team-image">
+                                                </div>
+                                            </center>
+                                           
+                                        </div>
+
+                                        <div class="col-xl-8 col-sm-12">
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Fullname: <span class="required">*</span></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Type Here...">
+                                            </div>
+
+                                            <label class="form-label">Upload Image: </label> <small style="color: red;">(Optional)</small>
+                                            
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="image" id="image">
+                                                <label class="custom-file-label">Choose file</label>
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
 
-                                <div class="mb-3">
-                                    <label class="form-label">Position: <span class="required">*</span></label>
-                                    <input type="text" class="form-control" name="position" id="position" placeholder="Type Here...">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Position: </label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="position" name="position" placeholder="Type Here...">
+                                    </div>
                                 </div>
 
-                                <div class="mb-3">
-                                    <label class="form-label">Introduction: <span class="required">*</span></label>
-                                    <textarea name="page_content" id="page_content"></textarea>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Introduction: </label>
+
+                                    <div class="col-sm-10">
+                                        <textarea name="introduction" id="introduction"></textarea>
+                                        <small class="text-danger">Note: Please do not use single quote symbols (') or the system will automatically remove.</small>
+                                    </div>
                                 </div>
 
-                                <div class="mb-3">
-                                    <label class="form-label">Status: <span class="required">*</span></label>
-                                    <select class="form-control" id="status" name="status">
-                                        <option value="0">Enabled</option>
-                                        <option value="1">Disabled</option>
-                                    </select>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label text-right">Status:</label>
+
+                                    <div class="col-sm-10">
+                                        <select class="form-control" id="status" name="status">
+                                            <option value="0">Enabled</option>
+                                            <option value="1">Disabled</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                
                             </div>
 
                             <div class="modal-footer">
@@ -235,7 +267,7 @@ $user = $auth->getSession("name");
                                     <span class="text">Close</span>
                                 </button>
 
-                                <button type="reset" class="btn btn-sm btn-danger btn-icon-split">
+                                <button type="button" class="btn btn-sm btn-danger btn-icon-split resetBtn">
                                     <span class="icon"><i class="fas fa-trash"></i></span>
                                     <span class="text">Clear Form</span>
                                 </button>
@@ -276,7 +308,7 @@ $user = $auth->getSession("name");
     <script src="assets/js/alert.js"></script>
 
     <script>
-       $(function() {
+        $(function() {
             $('#page_content').summernote({
                 height: 300,
                 placeholder: 'Type Here...',
@@ -295,6 +327,24 @@ $user = $auth->getSession("name");
                 ],
             });
 
+            $('#introduction').summernote({
+                height: 300,
+                placeholder: 'Type Here...',
+                disableDragAndDrop: true,
+                blockqouteBreakingLevel: 2,
+                fontSizeUnit: 'pt',
+                lineHeight: 20,
+                dialogsInBody: true,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
+                    ['para', ['paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture']],
+                    ['view', ['fullscreen']],
+                ],
+            });
+
             $('#btn-save').on('click', function() {
                 var id = $('#history_id').val();
                 var title = $('#title').val();
@@ -309,15 +359,55 @@ $user = $auth->getSession("name");
             });
 
             var status_module =  window.localStorage.getItem("stat");
+
             if(status_module == "success"){
                 sucessAlert();
+                localStorage.clear();
+            } else if (status_module == "error") {
+                errorAlert();
+                localStorage.clear();
+            } else if (status_module == "errorUpload") {
+                errorUpload();
+                localStorage.clear();
+            } else if (status_module == "invalidFormat") {
+                invalidFormat();
                 localStorage.clear();
             }
 
             listTeams();
-       });
+        });
 
-       function submitHistoryData(id, title, page_content, status) {
+        function errorUpload() {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: false,
+            })
+            
+            Toast.fire({
+                icon: 'warning',
+                title: 'The file you trying to upload is already exists'
+            })
+        }
+
+        function invalidFormat() {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: false,
+            })
+            
+            Toast.fire({
+                icon: 'warning',
+                title: 'Invalid File Format'
+            })
+        }
+
+        function submitHistoryData(id, title, page_content, status) {
             $.ajax({
                 url: 'controller/controller.history_and_team.php?mode=updateHistoryContent',
                 method: 'POST',
@@ -332,7 +422,7 @@ $user = $auth->getSession("name");
                     window.location.href="history_and_team.php";
                 }
             });
-       }
+        }
 
         function listTeams() {
             $('#dataTable').DataTable({
@@ -349,7 +439,7 @@ $user = $auth->getSession("name");
             });
         }
 
-        function updateTeamsTable(id, img, name, position, status, date_added) {
+        function updateTeamsTable(id, img, name, position, introduction, status) {
             $('#staticBackdrop').addClass('staticModal'+id);
 
             $('.staticModal'+id).modal('show');
@@ -358,11 +448,27 @@ $user = $auth->getSession("name");
             $('#id').val(id);
             $('#name').val(name);
             $('#position').val(position);
+            $('#introduction').summernote('code', introduction);
             $('#status').val(status);
-            $('#date_added').val(date_added);
+
+            if (img != "") {
+                $('#tumbnail-container').removeClass('img-tumbnail-container');
+                $('#team-image').addClass('team-img');
+                $('#team-image').attr('src', img);
+            } else {
+                $('#tumbnail-container').addClass('img-tumbnail-container');
+                $('#team-image').removeClass('team-img');
+                $('#team-image').attr('src', img);
+            }
             
             $('.closeBtn').on('click', function() {
                 $('#staticBackdrop').removeClass('staticModal'+id);
+            });
+
+            $('.resetBtn').on('click', function() {
+                $(':input', '#modalForm').not("#id").val('');
+                $('#status').val(0);
+                $('#introduction').summernote('code', '');
             });
         }
     </script>

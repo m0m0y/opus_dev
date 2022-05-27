@@ -27,8 +27,8 @@ switch($mode) {
         $auth->setSession("name", $user_accounts[1] . " " . $user_accounts[2]);
         $auth->setSession("id", $user_accounts[0]);
         
-        $response = array("code"=>5, "message"=>"Welcome back ". $auth->getSession("name"));
-        header('location: ../home.php');
+        // $response = array("code"=>5, "message"=>"Welcome back ". $auth->getSession("name"));
+        $response = array("message"=>"Success");
         break;
 
     default:

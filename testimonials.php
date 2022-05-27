@@ -19,7 +19,7 @@ require_once "assets/common/header.php";
 
             <div class="row">
 
-                <div class="col-xl-8 col-sm-12">
+                <div class="col-xl-8 col-sm-12 testimonial-content">
 
                     <div class="communication-arts-speech mb-5" id="communication-arts-speech">
 

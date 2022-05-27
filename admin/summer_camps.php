@@ -46,15 +46,17 @@ $user = $auth->getSession("name");
 
 
                                 <div class="d-sm-flex align-items-center justify-content-between">
-                                    <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
-                                        <span class="icon"><i class="fas fa-save"></i></span>
-                                        <span class="text">Save</span>
-                                    </button>
 
                                     <a href="summer_camps.php" class="btn btn-sm btn-secondary btn-icon-split">
                                         <span class="icon"><i class="fas fa-arrow-left"></i> </span>
                                         <span class="text">Back</span>
                                     </a> 
+
+                                    <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
+                                        <span class="icon"><i class="fas fa-save"></i></span>
+                                        <span class="text">Save</span>
+                                    </button>
+
                                 </div>
                         
                             </div>

@@ -44,15 +44,15 @@ $user = $auth->getSession("name");
 
                                 <div class="d-sm-flex align-items-center justify-content-end">
 
-                                    <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
-                                        <span class="icon"><i class="fas fa-save"></i></span>
-                                        <span class="text">Save</span>
-                                    </button>
-
                                     <a href="careers.php" class="btn btn-sm btn-secondary btn-icon-split">
                                         <span class="icon"><i class="fas fa-arrow-left"></i> </span>
                                         <span class="text">Back</span>
                                     </a> 
+
+                                    <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
+                                        <span class="icon"><i class="fas fa-save"></i></span>
+                                        <span class="text">Save</span>
+                                    </button>
                             
                                 </div>
                                 
@@ -143,7 +143,7 @@ $user = $auth->getSession("name");
                                     <button type="button" id="addPosition" class="btn btn-sm btn-primary btn-icon-split">
                                         <span class="icon"><i class="fas fa-plus-square"></i> </span>
                                         <span class="text">Add Position</span>
-                                    </a>
+                                    </button>
                                 </div>
 
                             </div>

@@ -1,10 +1,14 @@
 <?php
 
 class SummerCamps extends db_conn_mysql {
+    private $conn;
+
+    public function __construct() {
+        $this->conn = $this->db_conn();  
+    }
 
     public function getContent() {
-        $conn = $this->db_conn();
-        $query = $conn->prepare("SELECT * FROM summer_camps");
+        $query = $this->conn->prepare("SELECT * FROM summer_camps");
         $query->execute();
         $response = $query->fetchAll();
 
@@ -12,8 +16,7 @@ class SummerCamps extends db_conn_mysql {
     }
 
     public function getContentWhere($summer_camps_id) {
-        $conn = $this->db_conn();
-        $query = $conn->prepare("SELECT * FROM summer_camps WHERE id='$summer_camps_id'");
+        $query = $this->conn->prepare("SELECT * FROM summer_camps WHERE id='$summer_camps_id'");
         $query->execute();
         $response = $query->fetch();
 
@@ -21,8 +24,7 @@ class SummerCamps extends db_conn_mysql {
     }
 
     public function updateContent($summer_camps_id, $title, $summer_camps_content, $status) {
-        $conn = $this->db_conn();
-        $query = $conn->prepare("UPDATE summer_camps SET title='$title', content='$summer_camps_content', status='$status' WHERE id='$summer_camps_id'");
+        $query = $this->conn->prepare("UPDATE summer_camps SET title='$title', content='$summer_camps_content', status='$status' WHERE id='$summer_camps_id'");
         $query->execute();
     }
 

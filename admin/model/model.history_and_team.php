@@ -35,16 +35,17 @@ class HistoryAndTeams extends db_conn_mysql {
         return $response;
     }
 
-    public function getTeamWhere() {
-        $conn = $this->db_conn();
-        $query = $conn->prepare("SELECT * FROM team WHERE id = ?");
-        $query->execute();
-        $response = $query->fetch();
+    public function updateTeamInfo($id, $name, $position, $introduction, $status) {
+        $introduction = str_replace(array("'", "&qout"), "", htmlspecialchars($introduction));
 
-        return $response;
+        $conn = $this->db_conn();
+        $query = $conn->prepare("UPDATE team SET name = ?, position = ?, introduction = ?, status = ? WHERE id = ?");
+        $query->execute([$name, $position, $introduction, $status, $id]);
     }
 
-    public function updateTeamInfo($id, $path_filename_ext, $name, $position, $introduction, $status) {
+    public function updateInfoWithUpload($id, $path_filename_ext, $name, $position, $introduction, $status) {
+        $introduction = str_replace(array("'", "&qout"), "", htmlspecialchars($introduction));
+
         $conn = $this->db_conn();
         $query = $conn->prepare("UPDATE team SET img = ?, name = ?, position = ?, introduction = ?, status = ? WHERE id = ?");
         $query->execute([$path_filename_ext, $name, $position, $introduction, $status, $id]);

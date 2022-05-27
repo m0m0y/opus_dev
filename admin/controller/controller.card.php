@@ -15,17 +15,7 @@ switch($mode) {
             $card_details[$k]["card_title"] = $v["card_title"];
             $card_details[$k]["section"] = $v["section"];
 
-            // Use for manage the lenght of description
-            if(strlen($v["content"]) > 45){
-                $stringCut = substr($v["content"], 0, 30);
-                $endPoint = strrpos($stringCut, ' ');
-
-                $shortContent = $endPoint ? substr($stringCut, 0, $endPoint).'...' : substr($stringCut, 0);
-
-                $card_details[$k]["content"] = $shortContent;
-            }
-
-            $card_details[$k]["link"] = $v["link"];
+            $card_details[$k]["card_status"] = ($v["card_status"] == 1 ? "Disabled" : "Enabled");
             $card_details[$k]["page"] = $v["page"];
             $card_details[$k]["action"] = '
             <center>

@@ -38,8 +38,8 @@ $user = $auth->getSession("name");
                                         <tr>
                                             <th>Title</th>
                                             <th>Section</th>
-                                            <th>Content</th>
                                             <th>Page</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -58,87 +58,93 @@ $user = $auth->getSession("name");
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
 
-                        <!-- <form action="controller/controller.contact_info.php?mode=updateDesc" method="post" enctype=""> -->
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalTitle"></h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
+                        <div class="modal-header">
 
-                            <div class="modal-body">
-                                <div class="container">
-                                    <div class="d-none">
-                                        <input type="hidden" id="card_id" name="card_id" class="form-control" readonly>
-                                    </div>
+                            <h5 class="modal-title" id="modalTitle"></h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            
+                        </div>
 
-                                    <div class="row mt-4">
-                                        <label class="col-sm-2 col-form-label text-right">Section:</label>
-                                        <div class="col-sm-10">
-                                            <select class="form-control" id="section" name="section">
-                                                <option value="Section I">Section I</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                        <div class="modal-body">
 
-                                    <div class="row mt-4">
-                                        <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Title:</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="card_title" id="card_title" placeholder="Type Here...">
-                                        </div>
-                                    </div>
+                            <div class="container">
+                                <div class="d-none">
+                                    <input type="hidden" id="card_id" name="card_id" readonly>
+                                </div>
 
-                                    <div class="row mt-4">
-                                        <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Content:</label>
-                                        <div class="col-sm-10">
-                                            <textarea name="card_content" id="card_content" class="form-control"></textarea>
-                                        </div>
+                                <div class="row mt-4">
+                                    <label class="col-sm-2 col-form-label text-right">Section:</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" id="section" name="section" disabled>
+                                            <option value="Section I">Section I</option>
+                                        </select>
                                     </div>
+                                </div>
 
-                                    <div class="row mt-4">
-                                        <label class="col-sm-2 col-form-label text-right"> Link:</label>
-                                        <div class="col-sm-10">
-                                            <input type="url" class="form-control" name="link" id="link" placeholder="Type Here...">
-                                            <small style="color: red;">(Optional)</small>
-                                        </div>
+                                <div class="row mt-4">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Title:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="card_title" id="card_title" placeholder="Type Here...">
                                     </div>
+                                </div>
 
-                                    <div class="row mt-4">
-                                        <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Page:</label>
-                                        <div class="col-sm-10">
-                                            <input type="url" class="form-control" name="page" id="page" placeholder="Type Here...">
-                                        </div>
+                                <div class="row mt-4">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Content:</label>
+                                    <div class="col-sm-10">
+                                        <textarea name="card_content" id="card_content" class="form-control"></textarea>
                                     </div>
-                                    
-                                    <div class="row mt-4">
-                                        <label class="col-sm-2 col-form-label text-right">Status:</label>
-                                        <div class="col-sm-10">
-                                            <select class="form-control" id="status" name="status">
-                                                <option value="0">Enabled</option>
-                                                <option value="1">Disabled</option>
-                                            </select>
-                                        </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <label class="col-sm-2 col-form-label text-right"> Link:</label>
+                                    <div class="col-sm-10">
+                                        <input type="url" class="form-control" name="link" id="link" placeholder="Type Here...">
+                                        <small style="color: red;">(Optional)</small>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Page:</label>
+                                    <div class="col-sm-10">
+                                        <input type="url" class="form-control" name="page" id="page" placeholder="Type Here...">
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-4">
+                                    <label class="col-sm-2 col-form-label text-right">Status:</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" id="status" name="status">
+                                            <option value="0">Enabled</option>
+                                            <option value="1">Disabled</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="modal-footer">
-                                <button type="close" class="btn btn-sm btn-secondary btn-icon-split" data-dismiss="modal">
-                                    <span class="icon"><i class="fas fa-window-close"></i></span>
-                                    <span class="text">Close</span>
-                                </button>
+                            <div class="alert alert-warning mt-4" role="alert"><b>Note:</b> Please avoid using single quote symbols (') or the system will automatically remove.</div>
 
-                                <button type="submit" class="btn btn-sm btn-danger btn-icon-split clear">
-                                    <span class="icon"><i class="fas fa-trash"></i></span>
-                                    <span class="text">Clear Form</span>
-                                </button>
+                        </div>
 
-                                <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit">
-                                    <span class="icon"><i class="fas fa-save"></i></span>
-                                    <span class="text">Save</span>
-                                </button>
-                            </div>
-                        <!-- </form> -->
+                        <div class="modal-footer">
+
+                            <button type="close" class="btn btn-sm btn-secondary btn-icon-split" data-dismiss="modal">
+                                <span class="icon"><i class="fas fa-window-close"></i></span>
+                                <span class="text">Close</span>
+                            </button>
+
+                            <button type="button" class="btn btn-sm btn-danger btn-icon-split resetBtn">
+                                <span class="icon"><i class="fas fa-trash"></i></span>
+                                <span class="text">Clear Form</span>
+                            </button>
+
+                            <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit">
+                                <span class="icon"><i class="fas fa-save"></i></span>
+                                <span class="text">Save</span>
+                            </button>
+
+                        </div>
 
                     </div>
                 </div>
@@ -184,11 +190,6 @@ $user = $auth->getSession("name");
                 sucessAlert();
                 localStorage.clear();
             }
-
-            $('.clear').click(function(){
-                $('input[type=text], input[type=url]').val('');
-                $('#card_content').summernote('code', '');
-            });
         });
 
         function cardTable() {
@@ -199,8 +200,8 @@ $user = $auth->getSession("name");
                 "columns" : [
                     { "data" : "card_title" },
                     { "data" : "section" },
-                    { "data" : "content" },
                     { "data" : "page" },
+                    { "data" : "card_status" },
                     { "data" : "action" }
                 ],
             });
@@ -233,6 +234,12 @@ $user = $auth->getSession("name");
                     submit(card_id, section, card_title, card_content, link, page, status);
                 }
             });
+
+            $('.resetBtn').on('click', function() {
+                $('input[type=text], input[type=url]').val('');
+                $('#status').val(0);
+                $('#card_content').summernote('code', '');
+            })
         }
 
         function submit(card_id, section, card_title, card_content, link, page, status) {

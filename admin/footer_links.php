@@ -93,28 +93,28 @@ $user = $auth->getSession("name");
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label"> <span class="required">*</span> Title:</label>
+                                        <label class="col-sm-2 col-form-label text-right"> <span class="required">*</span> Title:</label>
                                         <div class="col-sm-10">
                                         <input type="text" class="form-control" id="title" name="title" placeholder="Title">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label"><span class="required">*</span> URL: </label>
+                                        <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> URL: </label>
                                         <div class="col-sm-10">
                                         <input type="text" class="form-control" id="url" name="url" placeholder="Type Here...">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Sort:</label>
+                                        <label class="col-sm-2 col-form-label text-right">Sort:</label>
                                         <div class="col-sm-10">
                                         <input type="number" class="form-control" id="sort" name="sort" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label"><span class="required">*</span> Label:</label>
+                                        <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Label:</label>
                                         <div class="col-sm-10">
                                         <select class="form-control" id="label" name="label">
                                             <option value="Useful Links">Useful Links</option>
@@ -124,7 +124,7 @@ $user = $auth->getSession("name");
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Status:</label>
+                                        <label class="col-sm-2 col-form-label text-right">Status:</label>
                                         <div class="col-sm-10">
                                         <select class="form-control" id="status" name="status">
                                             <option value="0">Enabled</option>

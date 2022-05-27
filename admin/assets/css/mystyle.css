@@ -11322,3 +11322,17 @@ body.sidebar-toggled footer.sticky-footer {
     transform: rotate(360deg);
   }
 }
+.img-tumbnail-container {
+  border: 1px solid black;
+  min-height: 160px;
+  min-width: 100%;
+  background: url("../img/default-image.jpg") center center;
+  background-size: cover;
+}
+
+.team-img {
+  padding: 1%;
+  border: 1px solid black;
+  max-height: 160px;
+  max-width: 100%;
+}

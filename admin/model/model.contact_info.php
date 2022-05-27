@@ -1,10 +1,14 @@
 <?php
 
 class ContactInfo extends db_conn_mysql {
+    private $conn;
+
+    public function __construct() {
+        $this->conn = $this->db_conn();  
+    }
 
     public function getInformation() {
-        $conn = $this->db_conn();
-        $query = $conn->prepare("SELECT * FROM contact_info");
+        $query = $this->conn->prepare("SELECT * FROM contact_info");
         $query->execute();
         $response = $query->fetchAll();
 
@@ -12,8 +16,7 @@ class ContactInfo extends db_conn_mysql {
     }
 
     public function updateInformation($id, $description, $status) {
-        $conn = $this->db_conn();
-        $query = $conn->prepare("UPDATE contact_info SET description = ?, contact_info_status = ? WHERE id = ?");
+        $query = $this->conn->prepare("UPDATE contact_info SET description = ?, contact_info_status = ? WHERE id = ?");
         $query->execute($description, $status, $id);
     }
 
