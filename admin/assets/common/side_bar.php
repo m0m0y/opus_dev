@@ -1,3 +1,9 @@
+<?php 
+$url = $_SERVER["REQUEST_URI"];
+$url_implode = explode("/", $url);
+
+$page = $url_implode[3];
+?>
 
 <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -10,7 +16,7 @@
 
     <hr class="sidebar-divider my-0">
 
-    <li class="nav-item active">
+    <li class="nav-item <?= ($page == "home.php" ? "active" : "") ?>">
         <a class="nav-link" href="home.php"><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a>
     </li>
 
@@ -21,22 +27,37 @@
     </div>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages"
             aria-expanded="true" aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
             <span>Pages</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="home_page.php">Home</a>
-                <a class="collapse-item" href="about_us.php">About Us</a>
-                <a class="collapse-item" href="admission_counselling.php">Admission Counselling</a>
-                <a class="collapse-item" href="summer_camps.php">Summer Camps</a>
+                <a class="collapse-item <?= ($page == "home_page.php" ? "active" : "") ?>" href="home_page.php">Home</a>
+                <a class="collapse-item <?= ($page == "admission_counselling.php" ? "active" : "") ?>" href="admission_counselling.php">Admission Counselling</a>
+                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Testimonials</a>
+
                 <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Other Pages:</h6>
-                <a class="collapse-item" href="careers.php">Careers</a>
-                <a class="collapse-item" href="history_and_team.php">History and Team</a>
-                <a class="collapse-item" href="blank.html">Blank Page</a>
+                <h6 class="collapse-header">Opus Programs:</h6>
+                <a class="collapse-item <?= ($page == "summer_camps.php" ? "active" : "") ?>" href="summer_camps.php">Communication Arts</a>
+                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Competitive Debate</a>
+                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">McGraw Hill Education <br>Courses</a>
+                <a class="collapse-item <?= ($page == "academic_enrichment.php" ? "active" : "") ?>" href="academic_enrichment.php"> Academic Enrichment II</a>
+                <a class="collapse-item <?= ($page == "standard_test_preparation.php" ? "active" : "") ?>" href="standard_test_preparation.php"> Standardized Test <br> Preparation</a>
+                <a class="collapse-item <?= ($page == "early_learning.php" ? "active" : "") ?>" href="early_learning.php"> Early Learning</a>
+                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href=""> Classical Music</a>
+
+                <div class="collapse-divider"></div>
+                <h6 class="collapse-header">Summer Camps:</h6>
+                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Summer Camps</a>
+
+                <div class="collapse-divider"></div>
+                <h6 class="collapse-header">About Us:</h6>
+                <a class="collapse-item <?= ($page == "about_us.php" ? "active" : "") ?>" href="about_us.php">About Us</a>
+                <a class="collapse-item <?= ($page == "careers.php" ? "active" : "") ?>" href="careers.php">Careers</a>
+                <a class="collapse-item <?= ($page == "history_and_team.php" ? "active" : "") ?>" href="history_and_team.php">History and Team</a>
+                
             </div>
         </div>
     </li>
@@ -51,8 +72,8 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Customize Information:</h6>
-                <a class="collapse-item" href="contact_info.php">Contact Info</a>
-                <a class="collapse-item" href="footer_links.php">Footer Links</a>
+                <a class="collapse-item <?= ($page == "contact_info.php" ? "active" : "") ?>" href="contact_info.php">Contact Info</a>
+                <a class="collapse-item <?= ($page == "footer_links.php" ? "active" : "") ?>" href="footer_links.php">Footer Links</a>
             </div>
         </div>
     </li>
@@ -62,12 +83,6 @@
     <div class="sidebar-heading">
         Addons
     </div>
-
-    <li class="nav-item">
-        <a class="nav-link" href="card.php">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Cards Content</span></a>
-    </li>
 
     <li class="nav-item">
         <a class="nav-link" href="charts.html">

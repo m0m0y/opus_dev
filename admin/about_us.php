@@ -111,10 +111,10 @@ $user = $auth->getSession("name");
                                     <div class="card-header py-3">
 
                                         <div class="d-sm-flex align-items-center justify-content-between">
-                                            <h5 class="m-0 font-weight-bold text-primary">
+                                            <h6 class="m-0 font-weight-bold text-primary">
                                                 <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
-                                            </h5>
+                                            </h6>
 
                                             <a href="about_us.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
                                                 <span class="icon"><i class="fas fa-pen"></i> </span>
@@ -169,7 +169,7 @@ $user = $auth->getSession("name");
     <script>
         $(function(){
             $('#about_content').summernote({
-                height: 300,
+                height: 500,
                 placeholder: 'Type Here...',
                 disableDragAndDrop: true,
                 blockqouteBreakingLevel: 2,

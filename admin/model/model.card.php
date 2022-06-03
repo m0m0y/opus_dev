@@ -23,12 +23,12 @@ class Cards extends db_conn_mysql {
         return $response;
     }
 
-    public function updateContent($card_id, $section, $card_title, $card_content, $link, $page, $status) {
-        $card_content = str_replace(array("'", "&qout"), "", htmlspecialchars($card_content));
-        $card_title = str_replace(array("'", "&qout"), "", htmlspecialchars($card_title));
+    // public function updateContent($card_id, $section, $card_title, $card_content, $link, $page, $status) {
+    //     $card_content = str_replace(array("'", "&qout"), "", htmlspecialchars($card_content));
+    //     $card_title = str_replace(array("'", "&qout"), "", htmlspecialchars($card_title));
 
-        $query = $this->conn->prepare("UPDATE card_content SET section = ?, card_title = ?, content = ?, link = ?, page = ?, card_status = ? WHERE card_id = ?");
-        $query->execute([$section, $card_title, $card_content, $link, $page, $status, $card_id]);
-    }
+    //     $query = $this->conn->prepare("UPDATE card_content SET section = ?, card_title = ?, content = ?, link = ?, page = ?, card_status = ? WHERE card_id = ?");
+    //     $query->execute([$section, $card_title, $card_content, $link, $page, $status, $card_id]);
+    // }
 
 }

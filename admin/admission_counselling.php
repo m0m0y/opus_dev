@@ -113,12 +113,14 @@ $user = $auth->getSession("name");
                             <div class="card-header py-3">
 
                                 <div class="d-sm-flex align-items-center justify-content-between">
-                                    <h5 class="m-0 font-weight-bold text-primary">Card Contents</span></h5>
+                                    <h6 class="m-0 font-weight-bold text-primary">Card Contents</span></h6>
                                 </div>
 
                             </div>
 
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 d-flex">
+
                                 <?php
 
                                     if (!empty($cardContent)) {
@@ -134,35 +136,42 @@ $user = $auth->getSession("name");
                                             $date_update = $v["date_update"];
                                             ?>
 
-                                            <div class="col-lg-4 col-sm-12">
+                                            <div class="d-flex flex-column justify-content-center">
 
-                                                <div class="card-body">
+                                                <div class="card-body col-xl-12 d-flex align-items-stretch">
                                                     <div class="container card shadow py-4">
                                                         
                                                         <div class="d-sm-flex align-items-center justify-content-end">
-                                                            <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
+                                                            <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $img ?>', '<?= $content ?>', '<?= $link ?>', '<?= $card_status ?>')">Update &rarr; </a>
                                                         </div>
 
-                                                        <div class="mt-3">
-                                                            <h5 class="text-gray-900"><?= $card_title ?></h5>
-                                                            <?= html_entity_decode($content) ?>
-                                                        </div>
+                                                            <div class="d-flex flex-column justify-content-center">
 
-                                                        <hr></hr>
+                                                                <div class="card-body align-items-stretch">
 
-                                                        <div class="d-flex justify-content-end">
-                                                            <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $img ?>', '<?= $content ?>', '<?= $link ?>', '<?= $page ?>', '<?= $card_status ?>')">Update &rarr; </a>
-                                                        </div>
+                                                                    <h5 class="text-gray-900"><?= $card_title ?> <?= ($card_status == 0 ? "" : '<small class="badge bg-warning" style="color: black;">Disabled</small>') ?></h5>
+                                                                    <?= html_entity_decode($content) ?>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="d-flex justify-content-end">
+                                                                <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
+                                                            </div>
+                                                        
                                                     </div>
                                                 </div>
-
-                                            </div>
+                                            </div> 
                                 
                                             <?php
                                         }
                                     }
 
                                 ?>
+
+                          
+                                </div>
                             </div>
 
                         </div>
@@ -184,10 +193,10 @@ $user = $auth->getSession("name");
                                     <div class="card-header py-3">
 
                                         <div class="d-sm-flex align-items-center justify-content-between">
-                                            <h5 class="m-0 font-weight-bold text-primary">
+                                            <h6 class="m-0 font-weight-bold text-primary">
                                                 <?= $v["title"] ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $v['date_update'] ?></span>
                                                 <?= ($v['status'] == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
-                                            </h5>
+                                            </h6>
 
                                             <a href="admission_counselling.php?update=<?= $v['admission_id'] ?>" class="btn btn-sm btn-info btn-icon-split">
                                                 <span class="icon"><i class="fas fa-pen"></i> </span>
@@ -280,14 +289,6 @@ $user = $auth->getSession("name");
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Page: </label>
-
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="page" name="page" placeholder="Type Here...">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
                                     <label class="col-sm-2 col-form-label text-right">Status:</label>
 
                                     <div class="col-sm-10">
@@ -350,7 +351,7 @@ $user = $auth->getSession("name");
     <script type="text/javascript"> 
         $(function(){
             $('#page_content').summernote({
-                height: 300,
+                height: 500,
                 placeholder: 'Type Here...',
                 disableDragAndDrop: true,
                 blockqouteBreakingLevel: 2,
@@ -388,6 +389,15 @@ $user = $auth->getSession("name");
             if(status_module == "success"){
                 sucessAlert();
                 localStorage.clear();
+            } else if(status_module == "error") {
+                errorAlert();
+                localStorage.clear();
+            } else if(status_module == "errorUpload") {
+                errorUpload();
+                localStorage.clear();
+            } else if (status_module == "invalidFormat") {
+                invalidFormat();
+                localStorage.clear();
             }
 
             $('#btn-save').on('click', function(){
@@ -422,7 +432,7 @@ $user = $auth->getSession("name");
             });
         }
 
-        function updateLink(card_id, card_title, img, content, link, page, card_status) {
+        function updateLink(card_id, card_title, img, content, link, card_status) {
             $('#staticBackdrop').modal('show');
             $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + card_title);
 
@@ -430,7 +440,6 @@ $user = $auth->getSession("name");
             $('#card_title').val(card_title);
             $('#card_content').summernote('code', content);
             $('#link').val(link);
-            $('#page').val(page);
             $('#status').val(card_status);
 
             if (img != "") {

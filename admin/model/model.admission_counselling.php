@@ -28,19 +28,19 @@ class AdmissionCounselling extends db_conn_mysql {
         $query->execute([$title, $content, $status, $id]);
     }
 
-    public function updateCards($card_id, $card_title, $card_content, $link, $page, $status) {
+    public function updateCards($card_id, $card_title, $card_content, $link, $status) {
         $card_title = str_replace(array("'", "&qout"), "", htmlspecialchars($card_title));
         $card_content = str_replace(array("'", "&qout"), "", htmlspecialchars($card_content));
 
-        $query = $this->conn->prepare("UPDATE card_content SET card_title = ?, content = ?, link = ?, page = ?, card_status = ? WHERE card_id = ?");
-        $query->execute([$card_title, $card_content, $link, $page, $status, $card_id]);
+        $query = $this->conn->prepare("UPDATE card_content SET card_title = ?, content = ?, link = ?, card_status = ? WHERE card_id = ?");
+        $query->execute([$card_title, $card_content, $link, $status, $card_id]);
     }
 
-    public function updateCardsWithUpload($card_id, $card_title, $path_filename_ext, $card_content, $link, $page, $status) {
+    public function updateCardsWithUpload($card_id, $card_title, $path_filename_ext, $card_content, $link, $status) {
         $card_title = str_replace(array("'", "&qout"), "", htmlspecialchars($card_title));
         $card_content = str_replace(array("'", "&qout"), "", htmlspecialchars($card_content));
 
-        $query = $this->conn->prepare("UPDATE card_content SET card_title = ?, img = ?, content = ?, link = ?, page = ?, card_status = ? WHERE card_id = ?");
-        $query->execute([$card_title, $path_filename_ext, $card_content, $link, $page, $status, $card_id]);
+        $query = $this->conn->prepare("UPDATE card_content SET card_title = ?, img = ?, content = ?, link = ?, card_status = ? WHERE card_id = ?");
+        $query->execute([$card_title, $path_filename_ext, $card_content, $link, $status, $card_id]);
     }
 }   

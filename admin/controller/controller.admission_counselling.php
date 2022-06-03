@@ -25,7 +25,6 @@ switch($mode) {
             $card_title = $_POST["card_title"];
             $card_content = $_POST["card_content"];
             $link = $_POST["link"];
-            $page = $_POST["page"];
             $status = $_POST["status"];
 
             if($_FILES["image"]["type"] != "image/jpeg") {
@@ -33,7 +32,7 @@ switch($mode) {
                 echo '
                     <script>
                         window.localStorage.setItem("stat", "invalidFormat");
-                        window.location.href = "../history_and_team.php";
+                        window.location.href = "../admission_counselling.php";
                     </script>
                 ';
                 die();
@@ -52,16 +51,23 @@ switch($mode) {
 
                 $response = array("message" => "The file you trying to upload is already exists");
 
+                echo '
+                    <script>
+                        window.localStorage.setItem("stat", "errorUpload");
+                        window.location.href = "../admission_counselling.php";
+                    </script>
+                ';
+
             } else {
 
-                if ($card_title == "" || $card_content == "" || $page == "") {
+                if ($card_title == "" || $card_content == "") {
 
                     $response = array("message" => "Error Update");
 
                     echo '
                         <script>
                             window.localStorage.setItem("stat", "error");
-                            window.location.href = "../history_and_team.php";
+                            window.location.href = "../admission_counselling.php";
                         </script>
                     ';
 
@@ -69,16 +75,16 @@ switch($mode) {
                     
                     move_uploaded_file($temp_name,$path_filename_ext);
 
-                    $admission_counselling = $admission_counselling->updateCardsWithUpload($card_id, $card_title, $path_filename_ext, $card_content, $link, $page, $status);
+                    $admission_counselling = $admission_counselling->updateCardsWithUpload($card_id, $card_title, $path_filename_ext, $card_content, $link, $status);
     
                     $response = array("message" => "Success Uploading Image");
     
-                    // echo '
-                    //     <script>
-                    //         window.localStorage.setItem("stat", "success");
-                    //         window.location.href = "../history_and_team.php";
-                    //     </script>
-                    // ';
+                    echo '
+                        <script>
+                            window.localStorage.setItem("stat", "success");
+                            window.location.href = "../admission_counselling.php";
+                        </script>
+                    ';
 
                 }
 
@@ -90,18 +96,31 @@ switch($mode) {
             $card_title = $_POST["card_title"];
             $card_content = $_POST["card_content"];
             $link = $_POST["link"];
-            $page = $_POST["page"];
             $status = $_POST["status"];
 
-            if($card_title == "" || $card_content == "<br>" || $page == "") {
+            if($card_title == "" || $card_content == "<br>") {
 
                 $response = array("message" => "Error Update");
 
+                echo '
+                    <script>
+                        window.localStorage.setItem("stat", "error");
+                        window.location.href = "../admission_counselling.php";
+                    </script>
+                ';
+
             } else {
 
-                $admission_counselling = $admission_counselling->updateCards($card_id, $card_title, $card_content, $link, $page, $status);
+                $admission_counselling = $admission_counselling->updateCards($card_id, $card_title, $card_content, $link, $status);
 
                 $response = array("message" => "Success Update Content");
+
+                echo '
+                    <script>
+                        window.localStorage.setItem("stat", "success");
+                        window.location.href = "../admission_counselling.php";
+                    </script>
+                ';
                 
             }
 

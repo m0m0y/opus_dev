@@ -106,10 +106,10 @@ $user = $auth->getSession("name");
                                     <div class="card-header py-3">
             
                                         <div class="d-sm-flex align-items-center justify-content-between">
-                                            <h5 class="m-0 font-weight-bold text-primary">
+                                            <h6 class="m-0 font-weight-bold text-primary">
                                                 <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
-                                            </h5>
+                                            </h6>
             
                                             <a href="careers.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
                                                 <span class="icon"><i class="fas fa-pen"></i> </span>
@@ -138,7 +138,7 @@ $user = $auth->getSession("name");
                             <div class="card-header py-3">
 
                                 <div class="d-sm-flex align-items-center justify-content-between">
-                                    <h5 class="m-0 font-weight-bold text-primary">Vacant Positions</span></h5>
+                                    <h6 class="m-0 font-weight-bold text-primary">Vacant Positions</span></h6>
 
                                     <button type="button" id="addPosition" class="btn btn-sm btn-primary btn-icon-split">
                                         <span class="icon"><i class="fas fa-plus-square"></i> </span>
@@ -275,7 +275,7 @@ $user = $auth->getSession("name");
     <script>
         $(function(){
             $('#careers_content').summernote({
-                height: 300,
+                height: 500,
                 placeholder: 'Type Here...',
                 disableDragAndDrop: true,
                 blockqouteBreakingLevel: 2,
@@ -371,7 +371,7 @@ $user = $auth->getSession("name");
 
         function deleteLink(id) {
             Swal.fire({
-            title: 'Are you sure?',
+            title: 'Please confirm to Delete',
             text: "You won't be able to revert this!",
             icon: 'warning',
             showCancelButton: true,

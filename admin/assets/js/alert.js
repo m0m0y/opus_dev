@@ -42,3 +42,33 @@ function loginIvalid() {
         title: 'Invalid Credentials'
     })
 }
+
+function errorUpload() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: false,
+    })
+    
+    Toast.fire({
+        icon: 'warning',
+        title: 'The file you trying to upload is already exists'
+    })
+}
+
+function invalidFormat() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: false,
+    })
+    
+    Toast.fire({
+        icon: 'warning',
+        title: 'Invalid File Format'
+    })
+}

@@ -115,10 +115,10 @@ $user = $auth->getSession("name");
                                     <div class="card-header py-3">
             
                                         <div class="d-sm-flex align-items-center justify-content-between">
-                                            <h5 class="m-0 font-weight-bold text-primary">
+                                            <h6 class="m-0 font-weight-bold text-primary">
                                                 <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
-                                            </h5>
+                                            </h6>
             
                                             <a href="history_and_team.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
                                                 <span class="icon"><i class="fas fa-pen"></i> </span>
@@ -244,7 +244,6 @@ $user = $auth->getSession("name");
 
                                     <div class="col-sm-10">
                                         <textarea name="introduction" id="introduction"></textarea>
-                                        <small class="text-danger">Note: Please do not use single quote symbols (') or the system will automatically remove.</small>
                                     </div>
                                 </div>
 
@@ -258,6 +257,8 @@ $user = $auth->getSession("name");
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="alert alert-warning mt-4" role="alert"><b>Note:</b> Please avoid using single quote symbols (') or the system will automatically remove.</div>
                                 
                             </div>
 
@@ -376,36 +377,6 @@ $user = $auth->getSession("name");
 
             listTeams();
         });
-
-        function errorUpload() {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 4000,
-                timerProgressBar: false,
-            })
-            
-            Toast.fire({
-                icon: 'warning',
-                title: 'The file you trying to upload is already exists'
-            })
-        }
-
-        function invalidFormat() {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 4000,
-                timerProgressBar: false,
-            })
-            
-            Toast.fire({
-                icon: 'warning',
-                title: 'Invalid File Format'
-            })
-        }
 
         function submitHistoryData(id, title, page_content, status) {
             $.ajax({
