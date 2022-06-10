@@ -1,8 +1,12 @@
 <?php 
 $title = "Opus Summer Camps - Opus Academy";
 require_once "assets/common/header.php"; 
-?>
+require_once "admin/model/model.summer_camps.php";
 
+$summerCamps = new SummerCamps();
+
+$summerCamps = $summerCamps->getContent();
+?>
 
     <main id="main">
 
@@ -17,39 +21,42 @@ require_once "assets/common/header.php";
             </div>
         </section>
 
-        <section class="pt-3">
-            <div class="container">
-                <h3>Summer Camps</h3>
-                <p>Opus Academy’s Summer camps offer students a chance to get ahead in their education journey! Explore from a wide range of course offerings which are both fun and stimulating. Our compact schedules help parents provide their children with great summer learning opportunities, while accommodating family travel and activities. Our camps enable students to gain momentum in their studies and make rapid skill development in a short period of time.</p>
+        <?php
+        foreach($summerCamps as $v) {
+            $section = $v["section"];
+            $title = $v["title"];
+            $content = $v["content"];
+            $status = $v["status"];
 
-                <div class="mt-5">
-                    <center>
-                        <img src="assets/img/about/img-6.jpg" alt="" width="100%" height="750">
-                    </center>
-                </div>
-               
-                <div class="mt-5">
-                    <h4>Summer Intensive Academic Programs</h4>
-                    <ul>
-                        <li>Public Speaking and Debate Camps</li>
-                        <li>Speech Arts and Drama</li>
-                        <li>Language Arts and Writing (Elementary)</li>
-                        <li>Critical Reading and Writing (Secondary)</li>
-                        <li>Accelerated Math (Elementary)</li>
-                        <li>Secondary Math </li>
-                        <li>Music Theory, Harmony, History, Analysis Courses</li>
-                        <li>RCM Speech Technical Theory, History & Literature Exams</li>
-                        <li>Standardized Test Preparation- SAT, ACT,  SSAT, ISEE, TOEFL, IELTS</li>
-                        <li>Pre-AP & AP Intensive Courses</li>
-                        <li>Academic Subject Enrichment</li>
-                        <li>Business Courses for High School Students (Wharton High School Curriculum)</li>
-                        <li>Youth Leadership Training</li>
-                        <li>Etiquette for Kids & Teens</li>
-                    </ul>
-                </div>
-                
-            </div>
-        </section>  
+            if($status == 0) {
+
+                if($section == "Section I"){
+                    ?>
+                    <section class="pt-3">
+                        <div class="container">
+                        <h3><?= $title ?></h3>
+                        <?= $content ?>
+                        </div>
+                    </section>  
+                    <?php
+                }
+
+                else if($section == "Section II") {                 
+                    ?>
+                    <section class="pt-3">
+                        <div class="container">
+                        <h3><?= $title ?></h3>
+                        <?= $content ?>
+                        </div>
+                    </section>  
+                    <?php
+                }
+
+            }
+        }
+        ?>
+
+
 
     </main>
 

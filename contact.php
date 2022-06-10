@@ -1,6 +1,10 @@
 <?php
 $title = "Contact Us - Opus Academy";
-require_once "assets/common/header.php"; 
+require_once "assets/common/header.php";
+require_once "admin/model/model.contact_info.php";
+
+$contactInfo = new ContactInfo();
+$contactInfo = $contactInfo->getInformation();
 ?>
 
 <main id="main">
@@ -26,20 +30,25 @@ require_once "assets/common/header.php";
                 
                 <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column justify-content-center px-lg-5 info-box">
 
-                    <h4><i class="bx bx-map"></i> Vancouver Location</h4>
-                    <p>5635 Dunbar Street, Vancouver, B.C. V6N 1W5<br>
-					United States</p>
-                    
-                    <br>
-                    
-                    <h5><i class="bx bx-phone-call"></i> Telephone & Fax:</h5>
-                    <p>(604) 267-3749 / (604) 267-3748</p>
-                    <h5><i class="bx bx-envelope"></i> Email:</h5>
-                    <p>service@opusacademy.com</p>
-                    <h5><i class="bx bx-message"></i> Wechat ID:</h5>
-                    <p>opusacademy5635</p>
-                    
-                    <a href="testimonials.php" class="bogs-link">bogs</a>
+                    <?php 
+                        foreach($contactInfo as $v) {
+                            $title = $v["title"];
+                            $description = $v["description"];
+                            $status = $v["contact_info_status"];
+                            ?>
+
+                            <?= ($status == 0 ? ($title == "Vancouver Location" ? '<h4><i class="bx bx-map"></i> '.$title.' </h4><p>'.$description.'</p> <br>' : '') : '') ?>
+
+
+                            <?= ($status == 0 ? ($title == "Telephone & Fax" ? '<h5><i class="bx bx-phone-call"></i> '.$title.'</h5> <p>'.$description.'</p>' : '') : '') ?>
+
+                            <?= ($status == 0 ? ($title == "Email" ? '<h5><i class="bx bx-envelope"></i> '.$title.'</h5> <p>'.$description.'</p>' : '') : '') ?>
+
+                            <?= ($status == 0 ? ($title == "Wechat ID" ? '<h5><i class="bx bx-message"></i> '.$title.'</h5> <p>'.$description.'</p>' : '') : '') ?>
+
+                            <?php
+                        }
+                    ?>
 
                 </div>
 

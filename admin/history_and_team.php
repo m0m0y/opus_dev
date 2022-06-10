@@ -1,19 +1,14 @@
 <?php 
 $title = "Opus - History and Team";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
+require_once "assets/common/session.php";
 require_once "controller/controller.db.php";
 require_once "model/model.history_and_team.php";
 
-$auth = new Auth();
 $historyAndTeams = new HistoryAndTeams();
 
 $historyContent = $historyAndTeams->getHistoryContent();
 $teamList = $historyAndTeams->getTeamList();
-
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">

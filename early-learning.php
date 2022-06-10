@@ -1,6 +1,19 @@
 <?php
 $title = "Early Learning Ages - Opus Academy";
 require_once "assets/common/header.php"; 
+require_once "admin/model/model.early_learning.php";
+require_once "admin/model/model.card.php";
+
+$earlyLearning = new EarlyLearning();
+$card = new Cards();
+
+$earlyLearning = $earlyLearning->getEarlyLearningContent();
+
+$page_url =  $_SERVER["REQUEST_URI"];
+$pages = explode("/", $page_url);
+$page = $pages[2];
+
+$cardContent = $card->getContentWhere($page);
 ?>
 
 <main id="main">
@@ -18,53 +31,56 @@ require_once "assets/common/header.php";
     <section class="early-learning pt-3">
 
         <div class="container">
-            <div class="section-title">
-                <h4>Early Learning | Ages three to six</h4>
-            </div>
 
-            <p>Enrich your child’s playtime with fun and educational activities at Opus Academy! Pre-school learning is integral to a child’s school success. Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.</p>
+            <?php 
+            foreach($earlyLearning as $v) {
+                $title = $v["title"];
+                $content = $v["content"];
+                $status = $v["status"];
 
-            <br>
+                if($status == 0) {
+                    ?>
 
-            <h5>The Early Learning Speech Syllabus of the London College of Music</h5>
-
-            <p>This program is designed to encourage young students with their speech abilities and assess their talents at early stages of development. The goal is to expand young children’s interactive oral communication skills and confidence. These courses are available in both individual private classes or group settings.</p>
-
-            <div class="col-xl-12 col-lg-12 d-flex">
-                <div class="icon-boxes d-flex">
-
-                    <div class="row">
-                        <div class="col-xl-6 d-flex align-items-stretch">
-                            <div class="icon-box mt-4 mt-xl-0">
-                                <h5>Early Learning (Individual): Stage 1, 2 and 3</h5>
-
-                                <p>In these classes, young children will learn to:</p>
-
-                                <ul>
-                                    <li>Exchange greetings and give simple introductions</li>
-                                    <li>Recite a poem, prose piece, action rhymes or nursery rhymes with expression and movements from memory</li>
-                                    <li>Perform a mime scene</li>
-                                    <li>Perform a mime scene</li>
-                                    <li>Show and tell </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-6 d-flex align-items-stretch">
-                            <div class="icon-box mt-4 mt-xl-0">
-                                <h5>Early Learning (Group): Stage 1, 2 and 3</h5>
-
-                                <p>In addition to the above skills for Individual learners, students enrolled in Group Learning classes will learn to:</p>
-
-                                <ul>
-                                    <li>Perform an action rhyme, nursery rhyme, singing/acting game as part of a group</li>
-                                    <li>Share a short story as a group with each member, promoting teamwork and group cohesion</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="section-title">
+                        <h4><?= $title ?></h4>
                     </div>
-                
-                </div>
+
+                    <?= $content ?>
+
+                    <?php
+                }
+            }
+            ?>
+
+            <div class="icon-boxes d-flex flex-column">
+
+                <div class="row">
+
+                    <?php 
+                    foreach($cardContent as $v) {
+                        $section = $v["section"];
+                        $card_title = $v["card_title"];
+                        $content = $v["content"];
+                        $page = $v["page"];
+                        $status = $v["card_status"];
+                        
+                        if($status == 0) {
+                            ?>
+                            <div class="col-xl-6 d-flex align-items-stretch">
+                                
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <h5><?= $title ?></h5>
+
+                                    <?= html_entity_decode($content) ?>
+                                </div>
+
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
+
+                </div> 
             </div>
 
         </div>

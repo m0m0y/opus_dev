@@ -5,13 +5,8 @@ require_once "controller/controller.auth.php";
 require_once "controller/controller.db.php";
 require_once "model/model.about_us.php";
 
-$auth = new Auth();
 $about = new AboutUs();
 $aboutContent = $about->getContent();
-
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">

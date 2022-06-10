@@ -1,12 +1,7 @@
 <?php
 $title = "Opus - Footer Links";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
-
-$auth = new Auth();
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
+require_once "assets/common/session.php";
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/datatable/datatables.min.css">
@@ -102,7 +97,7 @@ $user = $auth->getSession("name");
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> URL: </label>
                                         <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="url" name="url" placeholder="Type Here...">
+                                        <input type="url" class="form-control" id="url" name="url" required placeholder="Type Here...">
                                         </div>
                                     </div>
 

@@ -1,18 +1,12 @@
 <?php
 $title = "Opus - Standardized Test Preparation";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
+require_once "assets/common/session.php";
 require_once "controller/controller.db.php";
 require_once "model/model.standard_test_preparation.php";
 
-$auth = new Auth();
 $standardTestPreparation = new StandardTestPreparation();
-
 $standardTestPreparationContent = $standardTestPreparation->getContent();
-
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
@@ -178,7 +172,7 @@ $user = $auth->getSession("name");
     <script>
         $(function() {
             $('#page_content').summernote({
-                height: 400,
+                height: 500,
                 placeholder: 'Type Here...',
                 disableDragAndDrop: true,
                 blockqouteBreakingLevel: 2,

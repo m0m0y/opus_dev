@@ -1,12 +1,7 @@
 <?php
 $title = "Opus - Contact Details";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
-
-$auth = new Auth();
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
+require_once "assets/common/session.php";
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/datatable/datatables.min.css">

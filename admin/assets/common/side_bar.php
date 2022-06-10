@@ -40,17 +40,17 @@ $page = $url_implode[3];
 
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opus Programs:</h6>
-                <a class="collapse-item <?= ($page == "summer_camps.php" ? "active" : "") ?>" href="summer_camps.php">Communication Arts</a>
+                <a class="collapse-item <?= ($page == "communication_arts.php" ? "active" : "") ?>" href="communication_arts.php">Communication Arts</a>
                 <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Competitive Debate</a>
                 <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">McGraw Hill Education <br>Courses</a>
                 <a class="collapse-item <?= ($page == "academic_enrichment.php" ? "active" : "") ?>" href="academic_enrichment.php"> Academic Enrichment II</a>
                 <a class="collapse-item <?= ($page == "standard_test_preparation.php" ? "active" : "") ?>" href="standard_test_preparation.php"> Standardized Test <br> Preparation</a>
                 <a class="collapse-item <?= ($page == "early_learning.php" ? "active" : "") ?>" href="early_learning.php"> Early Learning</a>
-                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href=""> Classical Music</a>
+                <a class="collapse-item <?= ($page == "classical_music.php" ? "active" : "") ?>" href="classical_music.php"> Classical Music</a>
 
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Summer Camps:</h6>
-                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Summer Camps</a>
+                <a class="collapse-item <?= ($page == "summer_camps.php" ? "active" : "") ?>" href="summer_camps.php">Summer Camps</a>
 
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">About Us:</h6>

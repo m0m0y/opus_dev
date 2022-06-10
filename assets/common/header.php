@@ -1,3 +1,11 @@
+<?php
+require_once "controller/controller.db.php";
+require_once "admin/model/model.contact_info.php";
+
+$contactInfo = new ContactInfo();
+$contactInfo = $contactInfo->getInformation();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,16 +37,56 @@
 <body>
 	<section id="topbar" class="d-flex align-items-center">
 		<div class="container d-flex justify-content-center justify-content-md-between">
-		<div class="contact-info d-flex align-items-center">
-			<i class="bi bi-envelope d-flex align-items-center"><span>service@opusacademy.com<span></i>
-			<i class="bi bi-telephone d-flex align-items-center ms-4"><span>(604) 267-3749</span></i>
-		</div>
-
-		<div class="cta d-none d-md-flex align-items-center">
 			<div class="contact-info d-flex align-items-center">
-			<i class="bi bi-pin-map d-flex align-items-center ms-4"><span>5635 Dunbar Street, Vancouver, B.C. V6N 1W5</span></i>
+				
+				<?php 
+					foreach($contactInfo as $v) {
+						$title = $v["title"];
+						$description = $v["description"];
+						$status = $v["contact_info_status"];
+
+						if($title == "Email") {
+							if($status == 0) {
+								echo '
+									<i class="bi bi-envelope d-flex align-items-center ms-5"><span>'.$description.'</i>
+								';
+							}
+						}
+					
+						if($title == "Telephone & Fax") {
+							$telephone = explode("/", $description);
+							if($status == 0) {
+								echo '
+									<i class="bi bi-telephone d-flex align-items-center"><span>'.$telephone[0].'</span></i>
+								';
+							}
+						}
+					}
+				?>
+
 			</div>
-		</div>
+
+				<?php 
+					foreach($contactInfo as $v) {
+						$title = $v["title"];
+						$description = $v["description"];
+						$status = $v["contact_info_status"];
+
+						if($title == "Vancouver Location") {
+							if($status == 0) {
+								echo '
+								<div class="cta d-none d-md-flex align-items-center">
+									<div class="contact-info d-flex align-items-center">
+										<i class="bi bi-pin-map d-flex align-items-center ms-4"><span>'.$description.'</span></i>
+									</div>
+								</div>
+								';
+							}
+						}
+					}
+				?>
+				
+		
 		</div>
 	</section>
 

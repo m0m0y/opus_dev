@@ -1,6 +1,12 @@
 <?php 
 $title = "Careers - Opus Academy";
 require_once "assets/common/header.php"; 
+require_once "admin/model/model.careers.php";
+
+$careers = new Careers();
+
+$careersContent = $careers->getContent();
+$hiringPostion = $careers->hiringPostion();
 ?>
 
 <main id="main">
@@ -15,44 +21,57 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section class="pt-3 careers">
-        <div class="container">
-            <h3>Careers</h3>
-            <p>At Opus Academy, we succeed because of our greatest asset --our people. Our exceptional staff and qualified instructors are carefully selected and trained to draw out the best from their students. They not only bring in their wealth of expertise but most importantly their passion for teaching and student success.<br><br>
-        
-            We are constantly seeking exceptional talent to join our growing team. Together, we can make an impact in the lives of young people. If you are a dedicated lifelong learner who is passionate about student success and intellectual pursuits, please send your resume and cover letter to <a href="mailto:hr@opusacademy.com" style="text-decoration: underline;">hr@opusacademy.com</a>.</p>
 
-            <h3>We are hiring the following positions:</h3>
+    <section class="careers pt-3">
+        <div class="container">
+            
+            <?php
+            foreach($careersContent as $v) {
+                $title = $v["title"];
+                $content = $v["content"];
+                $status = $v["status"];
+
+                if($status == 0) {
+                    ?>
+
+                    <h3><?= $title ?></h3>
+                    <?= $content ?>
+
+                    <?php
+                }
+            }
+
+            ?>
 
             <div class="row">
-                <div class="col-xl-4 col-lg-4 mt-4">
-                    <div class="info-box">
-                    <i class="bx bx-caret-right"></i>
-                    <h5>Instructors</h5>
-                    </div>
-                </div>
+                <?php
+                foreach($hiringPostion as $v) {
+                    $position = $v["position"];
+                    $status = $v["status"];
 
-                <div class="col-xl-4 col-lg-4 mt-4">
-                    <div class="info-box">
-                    <i class="bx bx-caret-right"></i>
-                    <h5>Counsellors</h5>
-                    </div>
-                </div>
+                    if($status == 0) {
+                        ?>
+
+                        <div class="col-xl-4 col-lg-4 mt-4">
+                            <div class="info-box">
+                                <i class="bx bx-caret-right"></i>
+                                <h5><?= $position ?></h5>
+                            </div>
+                        </div>
                 
-                <div class="col-xl-4 col-lg-4 mt-4">
-                    <div class="info-box">
-                    <i class="bx bx-caret-right"></i>
-                    <h5>Administrative Support</h5>
-                    </div>
-                </div>
+                        <?php
+                    }
+                }
+                ?>
             </div>
 
             <div class="d-flex align-items-center mt-3">
                 <i class="bx bxs-spreadsheet get-started-icon"></i>
                 <a href="https://www.jotform.me/82799226078471/" class="btn-get-started scrollto">Online Application Form</a>
             </div>
+
         </div>
-    </section>  
+    </section>
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>

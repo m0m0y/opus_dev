@@ -1,23 +1,18 @@
 <?php
 $title = "Opus - Early Learning";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
+require_once "assets/common/session.php";
 require_once "controller/controller.db.php";
 require_once "model/model.early_learning.php";
 require_once "model/model.card.php";
 
-$auth = new Auth();
 $earlyLearning = new EarlyLearning();
 $card = new Cards();
 
 $earlyLearningContent = $earlyLearning->getEarlyLearningContent();
 
-$page = "opus_dev/early-learning.php";
+$page = "early-learning.php";
 $cardContent = $card->getContentWhere($page);
-
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
@@ -161,7 +156,7 @@ $user = $auth->getSession("name");
                             </div>
 
                             <div class="row">
-                                <div class="col-xl-12 col-lg-12 d-flex">
+                                <div class="col-xl-12 d-flex align-items-stretch">
 
                                     <?php
                                     if(!empty($cardContent)) {
@@ -172,43 +167,33 @@ $user = $auth->getSession("name");
                                             $content = $v["content"];
                                             $card_status = $v["card_status"];
                                             ?>
-                        
-                                            <div class="d-flex flex-column justify-content-center">
 
-                                                <div class="card-body col-xl-12 d-flex align-items-stretch">
-                                                    <div class="container card shadow py-4">
-                                                        
-                                                        <div class="d-sm-flex align-items-center justify-content-end">
-                                                            <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $content ?>',  '<?= $card_status ?>')">Update &rarr; </a>
+                                            <div class="card-body col-xl-6 d-flex align-items-stretch">
+                                                <div class="container card shadow py-4">
+                                                    
+                                                    <div class="d-sm-flex align-items-center justify-content-end">
+                                                        <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $content ?>',  '<?= $card_status ?>')">Update &rarr; </a>
+                                                    </div>
+
+                                                        <div class="d-flex flex-column justify-content-center">
+
+                                                            <div class="card-body align-items-stretch">
+
+                                                            <h5 class="text-gray-900"><?= $card_title ?> <?= ($card_status == 0 ? "" : '<small class="badge bg-warning" style="color: black;">Disabled</small>') ?></h5>
+                                                            
+
+                                                            <?= html_entity_decode($content) ?>                                                                    
+
+                                                            </div>
+
                                                         </div>
 
-                                                            <div class="d-flex flex-column justify-content-center">
-
-                                                                <div class="card-body align-items-stretch">
-
-                                                                <h5 class="text-gray-900"><?= $card_title ?> <?= ($card_status == 0 ? "" : '<small class="badge bg-warning" style="color: black;">Disabled</small>') ?></h5>
-                                                                
-
-                                                                <?= html_entity_decode($content) ?>                                                                    
-
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="d-flex justify-content-end">
-                                                                <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
-                                                            </div>
-                                                        
-                                                    </div>
-                                                </div>
+                                                        <div class="d-flex justify-content-end">
+                                                            <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
+                                                        </div>
                                                     
-
+                                                </div>
                                             </div>
-
-                                            <div class="d-flex flex-column justify-content-center">
-
-                                               
-                                            </div> 
 
                                             <?php
                                         }

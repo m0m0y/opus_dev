@@ -1,14 +1,14 @@
 <?php
-$title = "Opus - Careers Page";
+$title = "Opus - Communication Arts";
 require_once "assets/common/header.php";
 require_once "assets/common/session.php";
 require_once "controller/controller.db.php";
-require_once "model/model.careers.php";
+require_once "model/model.communication_arts.php";
 
-$careers = new Careers();
+$communicationArts = new CommunicationArts();
 
-$careersContent = $careers->getContent();
-$hiringPostion = $careers->hiringPostion();
+$communicationArtsContent = $communicationArts->getContent();
+$ourCourses = $communicationArts->getCourses();
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
@@ -23,53 +23,61 @@ $hiringPostion = $careers->hiringPostion();
         <div id="content-wrapper" class="d-flex flex-column">
 
             <div id="content">
+
                 <?php require_once "assets/common/top_bar.php"; ?>
 
                 <div class="container-fluid">
-                    <h1 class="h3 mb-4 text-gray-800">Careers Page</h1>
-                    
+                    <h1 class="h3 mb-4 text-gray-800">Early Learning</h1>
+
                     <?php
-                    if (isset($_GET["update"])) {
-                        $careers_id = $_GET["update"];
-                        $careersContentWhere = $careers->getContentWhere($careers_id);
+                    if(isset($_GET["update"])) {
+                        $id = $_GET["update"];
+                        $communicationArtsWhere = $communicationArts->getContentWhere($id);
                         ?>
-                    
+
                         <div class="card shadow mb-4">
+
                             <div class="card-header py-3">
+                                <div class="d-sm-flex align-items-center justify-content-between">
+                                    
+                                    <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-sm fa-edit"></i> <?= $communicationArtsWhere["title"] ?>
+                                        <span class="badge rounded-pill bg-secondary" style="color: white;"></span>
+                                    </h6>
 
-                                <div class="d-sm-flex align-items-center justify-content-end">
+                                    <div class="d-sm-flex align-items-center justify-content-between">
 
-                                    <a href="careers.php" class="btn btn-sm btn-secondary btn-icon-split">
-                                        <span class="icon"><i class="fas fa-arrow-left"></i> </span>
-                                        <span class="text">Back</span>
-                                    </a> 
+                                        <a href="communication_arts.php" class="btn btn-sm btn-secondary btn-icon-split">
+                                            <span class="icon"><i class="fas fa-arrow-left"></i> </span>
+                                            <span class="text">Back</span>
+                                        </a>
 
-                                    <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
-                                        <span class="icon"><i class="fas fa-save"></i></span>
-                                        <span class="text">Save</span>
-                                    </button>
-                            
+                                        <button id="btn-save" class="btn btn-sm btn-primary btn-icon-split m-1">
+                                            <span class="icon"><i class="fas fa-save"></i></span>
+                                            <span class="text">Save</span>
+                                        </button>
+
+                                    </div>
+                                    
                                 </div>
-                                
                             </div>
 
                             <div class="card-body">
 
                                 <div class="d-none">
-                                    <input type="hidden" name="careers_id" id="careers_id" value="<?= $careersContentWhere["id"] ?>" class="form-control" readonly>
+                                    <input type="hidden" name="id" id="id" value="<?= $communicationArtsWhere["id"] ?>" class="form-control" readonly>
                                 </div>
 
                                 <div class="row mb-4">
                                     <label for="info_title" class="col-sm-2 col-form-label text-right"><span class="required">*</span> Title:</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="title" id="title" value="<?= $careersContentWhere["title"] ?>" placeholder="Type Here...">
+                                        <input type="text" class="form-control" name="title" id="title" value="<?= $communicationArtsWhere["title"] ?>" placeholder="Type Here...">
                                     </div>
                                 </div>
 
                                 <div class="row mb-4">
                                     <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Content:</label>
                                     <div class="col-sm-9">
-                                        <textarea name="careers_content" id="careers_content" class="form-control" required><?= $careersContentWhere["content"] ?></textarea>
+                                        <textarea name="page_content" id="page_content" class="form-control" required><?= $communicationArtsWhere['content'] ?></textarea>
                                     </div>
                                 </div>
 
@@ -77,62 +85,25 @@ $hiringPostion = $careers->hiringPostion();
                                     <label class="col-sm-2 col-form-label text-right">Status:</label>
                                     <div class="col-sm-9">
                                         <select class="form-control" id="status" name="status">
-                                            <option <?= ($careersContentWhere["status"] == 0 ? "selected" : "") ?> value="0">Enabled</option>
-                                            <option <?= ($careersContentWhere["status"] == 1 ? "selected" : "") ?> value="1">Disabled</option>
+                                            <option <?= ($communicationArtsWhere['status'] == 0 ? "selected" : "") ?> value="0">Enabled</option>
+                                            <option  <?= ($communicationArtsWhere['status'] == 1 ? "selected" : "") ?> value="1">Disabled</option>
                                         </select>
                                     </div>
                                 </div>
 
                             </div>
+
                         </div>
 
                         <?php
                     } else {
-                        if (!empty($careersContent)) {
-                            foreach ($careersContent as $k=>$v) {
-                                $id = $v["id"];
-                                $title = $v["title"];
-                                $content = $v["content"];
-                                $status = $v["status"];
-                                $date_update = $v["date_update"];
-                                ?>
-                            
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-            
-                                        <div class="d-sm-flex align-items-center justify-content-between">
-                                            <h6 class="m-0 font-weight-bold text-primary">
-                                                <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
-                                                <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
-                                            </h6>
-            
-                                            <a href="careers.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
-                                                <span class="icon"><i class="fas fa-pen"></i> </span>
-                                                <span class="text">Update</span>
-                                            </a>
-                                        </div>
-            
-                                    </div>
-            
-                                    <div class="card-body">
-            
-                                        <div class="container-fluid">
-                                            <?= $content ?>
-                                        </div>
-                                
-                                    </div>
-                                </div>
-    
-                                <?php
-                            }
-                        }
                         ?>
 
                         <div class="card shadow mb-4">
 
                             <div class="card-header py-3">
                                 <div class="d-sm-flex align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Vacant Positions</span></h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Our Courses</span></h6>
 
                                     <button type="button" id="addPosition" class="btn btn-sm btn-primary btn-icon-split">
                                         <span class="icon"><i class="fas fa-plus-square"></i> </span>
@@ -142,11 +113,12 @@ $hiringPostion = $careers->hiringPostion();
                             </div>
 
                             <div class="row">
+
                                 <?php
-                                if (!empty($hiringPostion)) {
-                                    foreach ($hiringPostion as $k=>$v) {
+                                if(!empty($ourCourses)) {
+                                    foreach($ourCourses as $v) {
                                         $id = $v["id"];
-                                        $position = $v["position"];
+                                        $course = $v["course"];
                                         $sort_by = $v["sort_by"];
                                         $status = $v["status"];
                                         $date_update = $v["date_update"];
@@ -158,7 +130,7 @@ $hiringPostion = $careers->hiringPostion();
                                                 <div class="container card shadow py-3">
                                                     
                                                     <div class="d-sm-flex align-items-center justify-content-between">
-                                                        <h5><?= $position ?></h5>
+                                                        <h5><?= $course ?></h5>
                                                         <p><span class="badge">Last update: <?= $date_update ?></span></p>
                                                     </div>
 
@@ -166,29 +138,72 @@ $hiringPostion = $careers->hiringPostion();
 
                                                     <div class="d-flex justify-content-end">
                                                         <a href="#!" class="text-danger text-decoration-none" onclick="deleteLink('<?= $id ?>')">Delete &nbsp;</a> <br>
-                                                        <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $id ?>', '<?= $position ?>', '<?= $sort_by ?>', '<?= $status ?>')">Update &rarr; </a>
+                                                        <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $id ?>', '<?= $course ?>', '<?= $sort_by ?>', '<?= $status ?>')">Update &rarr; </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
 
+
                                         <?php
                                     }
                                 }
                                 ?>
+
                             </div>
                         </div>
 
                         <?php
+                        if(!empty($communicationArtsContent)) {
+                            foreach ($communicationArtsContent as $v) {
+                                $id = $v["id"];
+                                $title = $v["title"];
+                                $content = $v["content"];
+                                $status = $v["status"];
+                                $date_update = $v["date_update"];
+                                ?>
+        
+                                <div class="card shadow mb-4">
+        
+                                    <div class="card-header py-3">
+                                        <div class="d-sm-flex align-items-center justify-content-between">
+        
+                                            <h6 class="m-0 font-weight-bold text-primary">
+                                                <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
+                                                <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
+                                            </h6>
+        
+                                            <a href="communication_arts.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
+                                                <span class="icon"><i class="fas fa-pen"></i></span>
+                                                <span class="text">Update</span>
+                                            </a>
+        
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="card-body">
+        
+                                        <div class="container-fluid">
+                                            <div class="skeleton content_load"><?= $content ?></div>
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+                            
+                                <?php
+
+                            }
+                        }
                     }
                     ?>
 
                 </div>
+                
             </div>
 
-            
-            <div class="modal fade staticModal" id="staticBackdrop" data-backdrop="static" aria-labelledby="staticBackdropLabel">
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" aria-labelledby="staticBackdropLabel">
                 <div class="modal-dialog">
                     <div class="modal-content">
 
@@ -198,12 +213,12 @@ $hiringPostion = $careers->hiringPostion();
 
                         <div class="modal-body">
                             <div class="d-none">
-                                <input type="hidden" id="careers_id" name="careers_id" class="form-control" readonly>
+                                <input type="hidden" id="course_id" name="course_id" class="form-control" readonly>
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Position: <span class="required">*</span></label>
-                                <input type="text" class="form-control" name="position" id="position" placeholder="Type Here...">
+                                <input type="text" class="form-control" name="course" id="course" placeholder="Type Here...">
                             </div>
 
                             <div class="mb-3">
@@ -226,14 +241,9 @@ $hiringPostion = $careers->hiringPostion();
                                 <span class="text">Close</span>
                             </button>
 
-                            <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit">
+                            <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit-btn">
                                 <span class="icon"><i class="fas fa-save"></i></span>
                                 <span class="text">Save</span>
-                            </button>
-
-                            <button type="submit" class="btn btn-sm btn-primary btn-icon-split update">
-                                <span class="icon"><i class="fas fa-save"></i></span>
-                                <span class="text">Update</span>
                             </button>
                         </div>
 
@@ -249,8 +259,8 @@ $hiringPostion = $careers->hiringPostion();
                 </div>
             </footer>
 
-        </div>
-
+        <div>
+        
     </div>
 
     <div id="preloader" style="display: none;"></div>
@@ -264,11 +274,12 @@ $hiringPostion = $careers->hiringPostion();
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-
+    
     <script>
-        $(function(){
-            $('#careers_content').summernote({
-                height: 500,
+        $(function() {
+
+            $('#page_content').summernote({
+                height: 400,
                 placeholder: 'Type Here...',
                 disableDragAndDrop: true,
                 blockqouteBreakingLevel: 2,
@@ -285,81 +296,121 @@ $hiringPostion = $careers->hiringPostion();
                 ],
             });
 
-            $('#btn-save').on('click', function(){
-                var careers_id = $('#careers_id').val();
-                var title = $('#title').val();
-                var careers_content = $('#careers_content').val();
-                var status = $('#status').val();
+            $('#btn-save').on('click', function() {
+               var id = $('#id').val();
+               var title = $('#title').val();
+               var content = $('#page_content').val();
+               var status = $('#status').val();
 
-                if (careers_id == "" || title == "" || careers_content == "") {
+               if(title == "" || content == "") {
                     errorAlert();
-                } else {
-                    submitUpdate(careers_id, title, careers_content, status);
-                }
-            });
+               } else {
+                submit(id, title, content, status);
+               }
+            })
 
             $('#addPosition').on('click', function() {
-                $('.staticModal').modal('show');
+                $('#staticBackdrop').addClass('addPositionModal').modal('show');
                 $('#modalTitle').html('<i class="fas fa-plus"></i> Add New Position');
-                $('.update').hide();
-                $('.submit').show();
 
-                $('.submit').on('click', function() {
-                    var position = $('#position').val();
-                    var sort_by = $('#sort_by').val();
-                    var status = $('#status').val();
+                $('#course_id').val('');
+                $('#course').val('');
+                $('#sort_by').val(0);
+                $("select option:checked").val();
 
-                    if (position == "") {
+                $('.submit-btn').on('click', function() {
+                   var course = $('#course').val();
+                   var sort_by = $('#sort_by').val();
+                   var status = $('#status').val();
+
+                   if(course == "" || course == null) {
                         errorAlert();
-                    } else {
-                        submitAddNew(position, sort_by, status);
-                    }
-                });
+                   } else {
+                        addCourse(course, sort_by, status);
+                   }
+                })
+            })
 
-                $('.closeBtn').on('click', function() {
-                    window.location.href="careers.php";
-                });
-            });
-
-            var module_status = window.localStorage.getItem("stat");
-            if (module_status == "success") {
+            var status_module = window.localStorage.getItem("stat");
+            if (status_module == "success") {
                 sucessAlert();
                 localStorage.clear();
             }
 
-        });
+        })
 
-        function submitUpdate(careers_id, title, careers_content, status) {
+        function submit(id, title, content, status) {
             $.ajax({
-                url: 'controller/controller.careers.php?mode=updateContent',
+                url: 'controller/controller.communication_arts.php?mode=updateContent',
                 method: 'POST',
                 data: {
-                    careers_id:careers_id,
-                    title:title,
-                    careers_content:careers_content,
+                    id:id, 
+                    title:title, 
+                    content:content, 
                     status:status
                 },
                 success:function() {
+                    $('#preloader').show();
                     window.localStorage.setItem("stat", "success");
-                    window.location.href="careers.php";
+                    window.location.href="communication_arts.php";
                 }
             });
         }
 
-        function submitAddNew(position, sort_by, status) {
+        function updateLink(id, course, sort_by, status) {
+            $('#staticBackdrop').addClass('updateModal').modal('show');
+            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + course);
+
+            $('#course_id').val(id);
+            $('#course').val(course);
+            $('#sort_by').val(sort_by);
+            $('#status').val(status);
+
+            $('.submit-btn').on('click', function() {
+               var course_id = $('#course_id').val();
+               var course = $('#course').val();
+               var sort_by = $('#sort_by').val();
+               var status = $('#status').val();
+
+               if(course == "" || course == null) {
+                    errorAlert();
+               } else {
+                    updateCourse(course_id, course, sort_by, status);
+               }
+            })
+        }
+
+        function addCourse(course, sort_by, status) {
             $.ajax({
-                url: 'controller/controller.careers.php?mode=addPosition',
+                url: 'controller/controller.communication_arts.php?mode=addCourse',
                 method: 'POST',
                 data: {
-                    position:position,
+                    course:course,
                     sort_by:sort_by,
                     status:status
                 },
                 success:function() {
                     window.localStorage.setItem("stat", "success");
-                    window.location.href="careers.php";
+                    window.location.href="communication_arts.php";
                 }
             });
+        }
+
+        function updateCourse(course_id, course, sort_by, status) {
+            $.ajax({
+                url: 'controller/controller.communication_arts.php?mode=updateCourse',
+                method: 'POST',
+                data: {
+                    course_id:course_id,
+                    course:course,
+                    sort_by:sort_by,
+                    status:status
+                },
+                success:function() {
+                    window.localStorage.setItem("stat", "success");
+                    window.location.href="communication_arts.php";
+                }
+            })
         }
 
         function deleteLink(id) {
@@ -374,7 +425,7 @@ $hiringPostion = $careers->hiringPostion();
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: 'controller/controller.careers.php?mode=deletePosition',
+                        url: 'controller/controller.communication_arts.php?mode=deleteCourse',
                         method: 'POST',
                         data: {
                             id:id
@@ -388,7 +439,8 @@ $hiringPostion = $careers->hiringPostion();
                                     '',
                                     'success'
                                 ).then(function(){
-                                    window.location.href = "careers.php";
+                                    $('#preloader').show();
+                                    window.location.href = "communication_arts.php";
                                 });
                             } else  {
                                 Swal.fire(
@@ -396,7 +448,8 @@ $hiringPostion = $careers->hiringPostion();
                                     'Opps! Something went wrong.',
                                     'error'
                                 ).then(function(){
-                                    window.location.href = "careers.php";
+                                    $('#preloader').show();
+                                    window.location.href = "communication_arts.php";
                                 });
                             }
 
@@ -406,48 +459,8 @@ $hiringPostion = $careers->hiringPostion();
             })
         }
 
-        function updateLink(id, position, sortby, status) {
-            $('.staticModal').modal('show');
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + position);
-            $('.submit').hide();
-            $('.update').show();
-
-            $('#careers_id').val(id);
-            $('#position').val(position);
-            $('#sort_by').val(sortby);
-            $('#status').val(status);
-
-            $('.update').on('click', function() { 
-                var id = $('#careers_id').val();
-                var position = $('#position').val();
-                var sort_by = $('#sort_by').val();
-                var status = $('#status').val();
-
-                if (position == "" || position == null) {
-                    errorAlert();
-                } else {
-                    updateHiringPosition(id, position, sort_by, status);
-                }
-            });
-        }
-
-        function updateHiringPosition(id, position, sort_by, status) {
-            $.ajax({
-                url: 'controller/controller.careers.php?mode=updatePosition',
-                method: 'POST',
-                data: {
-                    id:id,
-                    position:position,
-                    sort_by:sort_by,
-                    status:status
-                },
-                success:function() {
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="careers.php";
-                }  
-            });
-        }
-
     </script>
 
 </body>
+
+</html>

@@ -1,18 +1,13 @@
 <?php
 $title = "Opus - Standardized Test Preparation";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
+require_once "assets/common/session.php";
 require_once "controller/controller.db.php";
 require_once "model/model.academic_enrichment.php";
 
-$auth = new Auth();
 $academicEnrichment = new AcademicEnrichment();
 
 $academicEnrichmentContent = $academicEnrichment->getContent();
-
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
@@ -118,7 +113,7 @@ $user = $auth->getSession("name");
                                         <div class="d-sm-flex align-items-center justify-content-between">
     
                                             <h6 class="m-0 font-weight-bold text-primary">
-                                                <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $v['date_update'] ?></span>
+                                                <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
                                             </h6>
     
@@ -180,7 +175,7 @@ $user = $auth->getSession("name");
     <script>
         $(function() {
             $('#page_content').summernote({
-                height: 400,
+                height: 500,
                 placeholder: 'Type Here...',
                 disableDragAndDrop: true,
                 blockqouteBreakingLevel: 2,

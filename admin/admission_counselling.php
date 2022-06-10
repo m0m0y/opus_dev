@@ -1,23 +1,21 @@
 <?php
 $title = "Opus - Admission Counselling";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
+require_once "assets/common/session.php";
 require_once "controller/controller.db.php";
 require_once "model/model.admission_counselling.php";
 require_once "model/model.card.php";
 
-$auth = new Auth();
+
 $admission_counselling = new AdmissionCounselling();
 $card = new Cards();
 
 $admissionCounsellingContent = $admission_counselling->getContent();
 
-$page = "opus_dev/admission-counselling.php";
+$page = "admission-counselling.php";
 $cardContent = $card->getContentWhere($page);
 
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
+
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
@@ -106,7 +104,7 @@ $user = $auth->getSession("name");
                         <?php
 
                     } else {
-                    ?>
+                        ?>
 
                         <div class="card shadow mb-4">
 
@@ -194,11 +192,11 @@ $user = $auth->getSession("name");
 
                                         <div class="d-sm-flex align-items-center justify-content-between">
                                             <h6 class="m-0 font-weight-bold text-primary">
-                                                <?= $v["title"] ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $v['date_update'] ?></span>
-                                                <?= ($v['status'] == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
+                                                <?= $v["title"] ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $date_update ?></span>
+                                                <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
                                             </h6>
 
-                                            <a href="admission_counselling.php?update=<?= $v['admission_id'] ?>" class="btn btn-sm btn-info btn-icon-split">
+                                            <a href="admission_counselling.php?update=<?= $admission_id ?>" class="btn btn-sm btn-info btn-icon-split">
                                                 <span class="icon"><i class="fas fa-pen"></i> </span>
                                                 <span class="text">Update</span>
                                             </a>
@@ -209,7 +207,7 @@ $user = $auth->getSession("name");
                                     <div class="card-body">
 
                                         <div class="container-fluid">
-                                            <div class="skeleton content_load"><?= $v["content"] ?></div>
+                                            <div class="skeleton content_load"><?= $content ?></div>
                                         </div>
 
                                     </div>

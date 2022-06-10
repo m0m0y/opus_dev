@@ -1,7 +1,6 @@
 <?php
 
 class ContactInfo extends db_conn_mysql {
-    private $conn;
 
     public function __construct() {
         $this->conn = $this->db_conn();  
@@ -17,7 +16,7 @@ class ContactInfo extends db_conn_mysql {
 
     public function updateInformation($id, $description, $status) {
         $query = $this->conn->prepare("UPDATE contact_info SET description = ?, contact_info_status = ? WHERE id = ?");
-        $query->execute($description, $status, $id);
+        $query->execute([$description, $status, $id]);
     }
 
 }

@@ -1,6 +1,11 @@
 <?php
 $title = "Academic Enrichment II - Opus Academy";
-require_once "assets/common/header.php"; 
+require_once "assets/common/header.php";
+require_once "admin/model/model.academic_enrichment.php";
+
+$academicEnrichment = new AcademicEnrichment();
+
+$academicEnrichmentContent = $academicEnrichment->getContent();
 ?>
 
     <main id="main">
@@ -15,100 +20,65 @@ require_once "assets/common/header.php";
             </div>
         </section>
 
-        <section class="why-learn-to-debate pt-3">
+        <?php
+        foreach($academicEnrichmentContent as $v) {
+            $section = $v["section"];
+            $title = $v["title"];
+            $content = $v["content"];
+            $status = $v["status"];
 
-            <div class="container">
-                <div class="section-title">
-                    <h4>Why learn to debate ?</h4>
-                </div>
+            if($status == 0) {
 
-                <p>At Opus, we have developed a unique English course that complements and enriches the high school curriculum, giving your child a step-up in grasping the English language at an intellectual level. Our Critical Reading and Writing courses progress over four years as students explore and master English language and literature.</p>
-                
-                <div class="row mt-5">
+                if($section == "Section I") {
+                    ?>
 
-                    <div class="col-lg-6 col-sm-12 pe-5">
-                        <h5>CRW Level 1 Introduction to Academic Writing and Literary Analysis:</h5>
-                        <p>Students learn about the basic analysis and critique of literary works, and learn how to write a successful academic essay.</p>
+                    <section class="why-learn-to-debate pt-3">
+                        <div class="container">
 
-                        <br>
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-                        <h5>CRW Level 2 Genres of Communication:</h5>
-                        <p>In this course, students learn elements of creative writing, and delve deeply into the study of rhetoric and argumentation. </p>
+                            <?= $content ?>
 
-                        <br>
+                        </div>
 
-                        <h5>CRW Level 3 Literary Analysis and Exposition:</h5>
-                        <p>In this course, students will gain a broad, detailed overview of the history of English literature and literary criticism.</p>
+                    </section>
 
-                        <br>
-        
-                        <h5>CRW Level 4 Advanced Analysis & Exposition:</h5>
-                        <p>This course probes further into advanced literary analysis, with challenging classic texts, preparing students for what to expect from the AP course that follows the CRW units. </p>
+                    <?php
+                }
+
+                else if ($section == "Section II") {
+                    ?>
+
+                    <div class="container">
+                        <hr></hr>
                     </div>
 
-                    <div class="col-lg-6 col-sm-12 crw_img"></div>
-                </div>
+                    <section class="academic-subject-tutoring">
 
-            </div>
+                        <div class="container">
+                            
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-        </section>
+                            <center>
+                                <img src="assets/img/academic-enrichment/tutor.jpg" alt="tutor-img" class="tutor-img">
+                            </center>
+                            
+                            <?= $content ?>
 
-        <div class="container">
-            <hr></hr>
-        </div>
+                        </div>
 
-        <section class="academic-subject-tutoring">
+                    </section>
 
-            <div class="container">
-                
-                <div class="section-title">
-                    <h4>Academic Subject Tutoring</h4>
-                </div>
+                    <?php
+                }
 
-                <center>
-                    <img src="assets/img/academic-enrichment/tutor.jpg" alt="tutor-img" class="tutor-img">
-                </center>
-                
-                <h5 class="content">We provide academic enrichment in all core subjects.  Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </h5>
-
-                <div class="row mt-5">
-
-                    <div class="col-xl-3 col-lg-6 col-sm-12">
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-primary" aria-current="true">English</b></li>
-                            <li class="list-group-item">Advanced Placement (AP) Level: English Literature and Composition, English Language and Composition</li>
-                            <li class="list-group-item">High School:  English Language, Literature Studies, and Communications</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-sm-12">
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-primary" aria-current="true">Science</b></li>
-                            <li class="list-group-item">Advanced Placement (AP): Biology, Physics, Chemistry, Environmental Science</li>
-                            <li class="list-group-item">High School: Biology, Physics, Chemistry, Earth Sciences</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-sm-12">
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-primary" aria-current="true">Social Studies, History & Social Sciences</b></li>
-                            <li class="list-group-item">Advanced Placement (AP): World History, European History, US History, Art History, Comparative Government and Politics, Human Geography</li>
-                            <li class="list-group-item">High School: Social Studies, Law</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-sm-12">
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-primary" aria-current="true">Languages</b></li>
-                            <li class="list-group-item">Advanced Placement (AP): French, Chinese, Japanese and others</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+            }
+        }
+        ?>
 
     </main>
 

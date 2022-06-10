@@ -5,7 +5,7 @@ require_once "controller.auth.php";
 require_once "../model/model.user.php";
 
 $auth = new Auth();
-$user = new User();
+$user = new User();                                                                                                                                                                                                                     
 $user_name = $auth->getSession("name");
 
 $mode = isset($_GET["mode"]) ?  $_GET["mode"] : NULL;

@@ -1,7 +1,6 @@
 <?php
 
 class User extends db_conn_mysql {
-    private $conn;
 
     public function __construct() {
         $this->conn = $this->db_conn();  

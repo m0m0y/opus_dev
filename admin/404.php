@@ -2,12 +2,7 @@
 date_default_timezone_set("Asia/Manila");
 $title = "Dashboard";
 require_once "assets/common/header.php";
-require_once "controller/controller.auth.php";
-
-$auth = new Auth();
-$isLoggedIn = $auth->getSession("auth");
-$auth->redirect("auth", true, "index.php");
-$user = $auth->getSession("name");
+require_once "assets/common/session.php";
 ?>
 
 <body id="page-top">

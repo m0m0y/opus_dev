@@ -32,6 +32,22 @@ h1, h2, h3, h4, h5, h6 {
   color: red;
 }
 
+.more-btn {
+  background: #7d757540;
+  padding: 6px 30px 8px 30px;
+  color: #29176e;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.more-btn i {
+  font-size: 14px;
+}
+
+.more-btn:hover {
+  color: #e6e6e6;
+  background: #29176e;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -487,20 +503,6 @@ section {
 .home-page-content .content p {
   margin-bottom: 30px;
 }
-.home-page-content .more-btn {
-  background: #7d757540;
-  padding: 6px 30px 8px 30px;
-  color: #29176e;
-  border-radius: 50px;
-  transition: all ease-in-out 0.4s;
-}
-.home-page-content .more-btn i {
-  font-size: 14px;
-}
-.home-page-content .more-btn:hover {
-  color: #e6e6e6;
-  background: #29176e;
-}
 .home-page-content .icon-boxes .icon-box {
   text-align: center;
   border-radius: 10px;
@@ -954,6 +956,10 @@ section {
   border-radius: 3px;
 }
 
+.communicationArts h4 {
+  border-left: 5px solid #29176e;
+  padding-left: 10px;
+}
 .certificate-and-diploma h4 {
   border-left: 5px solid #29176e;
   padding-left: 10px;
@@ -982,37 +988,37 @@ section {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-.interview-skills-program .bg-img {
+/* .interview-skills-program .bg-img {
   background: url('../img/portfolio/p-10.jpg') no-repeat;
   background-size: cover;
   min-height: 380px;
   filter: opacity(0.9);
   border-radius: 5px;
-}
+} */
 
 .youth-lead-program h4 {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-.youth-lead-program .bg-img {
+/* .youth-lead-program .bg-img {
   background: url('../img/portfolio/p-11.jpg') no-repeat;
   background-size: cover;
   min-height: 380px;
   filter: opacity(0.9);
   border-radius: 5px;
-}
+} */
 
 .international-relations h4 {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-.international-relations .bg-img {
+/* .international-relations .bg-img {
   background: url('../img/portfolio/p-12.jpg') no-repeat;
   background-size: cover;
   min-height: 250px;
   filter: opacity(0.9);
   border-radius: 5px;
-}
+} */
 
 .awards-and-honor h4 {
   border-left: 5px solid #29176e;

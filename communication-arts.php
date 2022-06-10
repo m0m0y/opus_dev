@@ -1,6 +1,12 @@
 <?php
 $title = "Communication Arts - Opus Academy";
-require_once "assets/common/header.php"; 
+require_once "assets/common/header.php";
+require_once "admin/model/model.communication_arts.php";
+
+$communicationArts = new CommunicationArts();
+
+$communicationArtsContent = $communicationArts->getContent();
+$ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
@@ -16,56 +22,290 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <?php 
+    foreach($communicationArtsContent as $v) {
+        $section = $v["section"];
+        $title = $v["title"];
+        $content = $v["content"];
+        $status = $v["status"];
+
+        if($status == 0) {
+
+            if($section == "Section I") {
+                ?>
+
+                <section id="portfolio" class="portfolio">
+                    <div class="container">
+
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                        
+                        <div class="row portfolio-container mt-5">
+
+                            <div class="col col-sm-8 d-flex">
+                                <img src="assets/img/portfolio/p-8.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-sm-4 d-flex">
+                                <img src="assets/img/portfolio/p-7.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
+                                <img src="assets/img/portfolio/p-1.jpg" class="mb-5" alt="" style="width: 100%;">
+                                <img src="assets/img/portfolio/p-4.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
+                                <img src="assets/img/portfolio/p-3.jpg" class="mb-5" alt="" style="width: 100%;">
+                                <img src="assets/img/portfolio/p-5.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
+                                <img src="assets/img/portfolio/p-2.jpg" class="mb-5" alt="" style="width: 100%;">
+                                <img src="assets/img/portfolio/p-6.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <?php
+            }
+
+        }
+
+    }
+    ?>
+
+    <section id="ourCourses" class="ourCourses section-bg">
         <div class="container">
 
             <div class="section-title">
-                <h4>Communication Arts</h4>
+                <h2 class="text-center">Our Courses</h2>
             </div>
 
-            <p>Effective spoken communication is critical for success in today's highly competitive world. At Opus, we are committed to teaching students the art of public speaking, debate, speech arts, and drama to develop their creativity and expression. Our goal is to train students of all ages to speak and perform with self-assurance, empowering them for a lifetime of success in their personal and professional lives.</p>
+            <div class="row">
+                <?php
+                foreach($ourCourse as $v) {
+                    $course = $v["course"];
+                    $status = $v["status"];
 
-            <p>Our expert instructors are experienced public speakers and educators, holding advanced degrees from highly established universities. They not only bring their expertise to the classroom, but also their passion for teaching. By engaging, inspiring, and motivating students to develop effective communication skills, our instructors are exemplary role models, instilling a love of learning and sharing their skills with students as they venture into the exciting world of public speaking.</p>
-            
-            <div class="row portfolio-container mt-5">
+                    if($status == 0) {
+                        ?>
 
-                <div class="col col-sm-8 d-flex">
-                    <img src="assets/img/portfolio/p-8.jpg" class="mb-5" alt="" style="width: 100%;">
-                </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="icon-box">
+                                <div class="icon"><i class="bi bi-activity"></i></div>
+                                <h5><a href=""><?= $course ?></a></h5>
+                            </div>
+                        </div>
 
-                <div class="col col-sm-4 d-flex">
-                    <img src="assets/img/portfolio/p-7.jpg" class="mb-5" alt="" style="width: 100%;">
-                </div>
-
-                <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                    <img src="assets/img/portfolio/p-1.jpg" class="mb-5" alt="" style="width: 100%;">
-                    <img src="assets/img/portfolio/p-4.jpg" class="mb-5" alt="" style="width: 100%;">
-                </div>
-
-                <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                    <img src="assets/img/portfolio/p-3.jpg" class="mb-5" alt="" style="width: 100%;">
-                    <img src="assets/img/portfolio/p-5.jpg" class="mb-5" alt="" style="width: 100%;">
-                </div>
-
-                <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                    <img src="assets/img/portfolio/p-2.jpg" class="mb-5" alt="" style="width: 100%;">
-                    <img src="assets/img/portfolio/p-6.jpg" class="mb-5" alt="" style="width: 100%;">
-                </div>
-
+                        <?php
+                    }
+                }
+                ?>
             </div>
-
-            <div class="section-title">
-                <h4>Opus Communication Arts Courses</h4>
-            </div>
-
-            <p>We strive to provide students with a solid foundation for effective communication, as well as develop their confidence and competence in using the English language with utmost effect. We aim to stimulate critical thinking so that students develop greater insight into the appreciation of literature, spoken word, and the formulation of rhetoric.</p>
-
-            <p>Our expert instructors are experienced public speakers and educators, holding advanced degrees from highly established universities. They not only bring their expertise to the classroom, but also their passion for teaching. By engaging, inspiring, and motivating students to develop effective communication skills, our instructors are exemplary role models, instilling a love of learning and sharing their skills with students as they venture into the exciting world of public speaking.</p>
-            
         </div>
     </section>
 
-    <section id="ourCourses" class="ourCourses section-bg">
+    <?php 
+    foreach($communicationArtsContent as $v) {
+        $section = $v["section"];
+        $title = $v["title"];
+        $content = $v["content"];
+        $status = $v["status"];
+
+        if($status == 0) {
+
+            if($section == "Section II") {
+                ?>
+
+                <section id="communicationArts" class="communicationArts">
+                    <div class="container">
+
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                        
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section III") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="certificate-and-diploma" class="certificate-and-diploma">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section IV") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="public-speaking" class="public-speaking">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section V") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="certificate-and-diploma-grant" class="certificate-and-diploma-grant">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section VI") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="interview-skills-program" class="interview-skills-program">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section VII") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="youth-lead-program" class="youth-lead-program">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section VIII") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="international-relations" class="international-relations">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section IX") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="awards-and-honor" class="awards-and-honor">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+            else if($section == "Section X") {
+                ?>
+
+                <div class="container">
+                    <hr></hr>
+                </div>
+
+                <section id="speech-competitions-festivals" class="speech-competitions-festivals">
+                    <div class="container">
+                        <div class="section-title">
+                            <h4><?= $title ?></h4>
+                        </div>
+
+                        <?= $content ?>
+                    </div>
+                </section>
+
+                <?php
+            }
+
+        }
+
+    }
+
+    ?>
+
+    <!-- <section id="ourCourses" class="ourCourses section-bg">
         <div class="container">
 
             <div class="section-title">
@@ -563,7 +803,7 @@ require_once "assets/common/header.php";
 
             <h5 class="mt-4">BC Law Foundation Cup </h5>
         </div>
-    </section>
+    </section> -->
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>
