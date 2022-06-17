@@ -34,18 +34,10 @@ $aboutContent = $about->getContent();
 
         <section class="pt-3">
           <div class="container">
-            <div class="row">
 
-              <div class="col-xl-6 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="background: url(assets/img/about/img-4.jpg) center center no-repeat; background-size: cover;"></div>
+            <h3><?= $title ?></h3>
+            <?= $content ?>
 
-              <div class="col-xl-6 col-lg-6 icon-boxes justify-content-center px-lg-5">
-
-                <h3><?= $title ?></h3>
-                <?= $content ?>
-
-              </div>
-              
-            </div>
           </div>
         </section>
 
@@ -57,18 +49,10 @@ $aboutContent = $about->getContent();
 
         <section class="pt-3">
           <div class="container">
-            <div class="row">
 
-              <div class="col-xl-6 col-lg-6 icon-boxes justify-content-center px-lg-5">
+            <h3><?= $title ?></h3>
+            <?= $content ?>
 
-                <h3><?= $title ?></h3>
-                <?= $content ?>
-
-              </div>
-
-              <div class="col-xl-6 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="background: url(assets/img/about/img-5.jpg) center center no-repeat; background-size: cover;"></div>
-              
-            </div>
           </div>
         </section>
 
@@ -80,18 +64,10 @@ $aboutContent = $about->getContent();
 
         <section class="pt-3">
           <div class="container">
-            <div class="row">
+   
+            <h3><?= $title ?></h3>
+            <?= $content ?>
 
-              <div class="col-xl-6 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="background: url(assets/img/about/img-6.jpg) center center no-repeat; background-size: cover;"></div>
-
-              <div class="col-xl-6 col-lg-6 icon-boxes justify-content-center px-lg-5">
-
-                <h3><?= $title ?></h3>
-                <?= $content ?>
-
-              </div>
-              
-            </div>
           </div>
         </section>
 

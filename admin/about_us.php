@@ -1,6 +1,7 @@
 <?php
 $title = "Opus - About Us";
 require_once "assets/common/header.php";
+require_once "assets/common/session.php";
 require_once "controller/controller.auth.php";
 require_once "controller/controller.db.php";
 require_once "model/model.about_us.php";
@@ -11,6 +12,7 @@ $aboutContent = $about->getContent();
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 
 <body id="page-top">
 
@@ -160,64 +162,6 @@ $aboutContent = $about->getContent();
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-
-    <script>
-        $(function(){
-            $('#about_content').summernote({
-                height: 500,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            var status_module =  window.localStorage.getItem("stat");
-            if(status_module == "success"){
-                sucessAlert();
-                localStorage.clear();
-            }
-
-            $('#btn-save').on('click', function(){
-                var about_id = $('#about_id').val();
-                var title = $('#title').val();
-                var about_content = $('#about_content').val();
-                var status = $('#status').val();
-
-                if (title == "" || about_content == "") {
-                    errorAlert();
-                } else {
-                    submit(about_id, title, about_content, status);
-                }
-            });
-        });
-
-        function submit(about_id, title, about_content, status) {
-            $.ajax({
-                url: 'controller/controller.about_us.php?mode=updateContent',
-                method: 'POST',
-                data: {
-                    about_id:about_id,
-                    title:title,
-                    about_content:about_content,
-                    status:status
-                },
-                success:function(){
-                    $('#preloader').show();
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="about_us.php";
-                }
-            });
-        }
-    </script>
+    <script src="services/about_us.js"></script>
 </body>
 </html>

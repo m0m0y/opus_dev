@@ -17,6 +17,7 @@ $cardContent = $card->getContentWhere($page);
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 
 <body id="page-top">
 
@@ -157,19 +158,20 @@ $cardContent = $card->getContentWhere($page);
 
                             <div class="row">
                                 <div class="col-xl-12 d-flex align-items-stretch">
+                                    <div class="card-body col-xl-12 d-flex align-items-stretch">
 
-                                    <?php
-                                    if(!empty($cardContent)) {
+                                        <?php
+                                        if(!empty($cardContent)) {
 
-                                        foreach ($cardContent as $v) {
-                                            $card_id = $v["card_id"];
-                                            $card_title = $v["card_title"];
-                                            $content = $v["content"];
-                                            $card_status = $v["card_status"];
-                                            ?>
+                                            foreach ($cardContent as $v) {
+                                                $card_id = $v["card_id"];
+                                                $card_title = $v["card_title"];
+                                                $content = $v["content"];
+                                                $card_status = $v["card_status"];
+                                                $date_update = $v["date_update"];
+                                                ?>
 
-                                            <div class="card-body col-xl-6 d-flex align-items-stretch">
-                                                <div class="container card shadow py-4">
+                                                <div class="container card shadow py-4 m-3">
                                                     
                                                     <div class="d-sm-flex align-items-center justify-content-end">
                                                         <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $content ?>',  '<?= $card_status ?>')">Update &rarr; </a>
@@ -193,13 +195,14 @@ $cardContent = $card->getContentWhere($page);
                                                         </div>
                                                     
                                                 </div>
-                                            </div>
 
-                                            <?php
+                                                <?php
+                                            }
+
                                         }
+                                        ?>
 
-                                    }
-                                    ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -302,129 +305,6 @@ $cardContent = $card->getContentWhere($page);
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-        
-    <script>
-        $(function() {
-
-            $('#page_content').summernote({
-                height: 400,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            $('#card_content').summernote({
-                height: 300,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            $('#btn-save').on('click', function() {
-                var id = $('#id').val();
-                var title = $('#title').val();
-                var content = $('#page_content').val();
-                var status = $('#status').val();
-
-                if (title == "" || content == "") {
-                    errorAlert();
-                } else {
-                    submit(id, title, content, status);
-                }
-            })
-
-            var status_module = window.localStorage.getItem("stat");
-
-            if (status_module == "success") {
-                sucessAlert();
-                localStorage.clear();
-            }
-
-        })
-
-        function submit(id, title, content, status) {
-            $.ajax({
-                url: 'controller/controller.early_learning.php?mode=updateEarlyLeaningContent',
-                method: 'POST',
-                data: {
-                    id:id, 
-                    title:title, 
-                    content:content, 
-                    status:status
-                },
-                success:function() {
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="early_learning.php";
-                }
-            });
-        }
-
-        function updateLink(card_id, card_title, content, card_status) {
-            $('#staticBackdrop').modal('show');
-
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + card_title);
-            $('#card_id').val(card_id);
-            $('#card_title').val(card_title);
-            $('#card_content').summernote('code', content);
-            $('#status').val(card_status);
-
-            $('.resetBtn').on('click', function() {
-                $('input[type=text]').val('');
-                $('#status').val(0);
-                $('#card_content').summernote('code', '');
-            });
-
-            $('.submit').on('click', function() {
-                var card_id = $('#card_id').val();
-                var card_title = $('#card_title').val();
-                var card_content = $('#card_content').val();
-                var card_status = $('#status').val();
-               
-                if(card_title == "" || card_content == "") {
-                    errorAlert();
-                } else {
-                    submitModal(card_id, card_title, card_content, card_status);
-                }
-            });
-        }
-
-        function submitModal(card_id, card_title, card_content, card_status) {
-            $.ajax({
-                url: 'controller/controller.early_learning.php?mode=updateEalyLearnCard',
-                method: 'POST',
-                data: {
-                    card_id:card_id,
-                    card_title:card_title,
-                    card_content:card_content,
-                    card_status:card_status
-                },
-                success:function() {
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="early_learning.php";
-                }
-            });
-        }
-
-    </script>
+    <script src="services/early_learning.js"></script>
 
 </body>

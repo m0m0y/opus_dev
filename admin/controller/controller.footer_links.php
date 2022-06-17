@@ -16,11 +16,7 @@ switch($mode) {
             $footer_links[$k]["title"] = $v["title"];
             $footer_links[$k]["url"] = $v["url"];
 
-            if($v["status"]==0) {
-                $footer_links[$k]["status"] = "Enabled";
-            } else {
-                $footer_links[$k]["status"] = "Disabled";
-            }
+            ($v["status"] == 0 ? $footer_links[$k]["status"] = "Enabled" :  $footer_links[$k]["status"] = "Disabled");
             
             $footer_links[$k]["action"] = '
             <center>

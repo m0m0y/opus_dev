@@ -41,8 +41,8 @@ $page = $url_implode[3];
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opus Programs:</h6>
                 <a class="collapse-item <?= ($page == "communication_arts.php" ? "active" : "") ?>" href="communication_arts.php">Communication Arts</a>
-                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Competitive Debate</a>
-                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">McGraw Hill Education <br>Courses</a>
+                <a class="collapse-item <?= ($page == "competitive_debate.php" ? "active" : "") ?>" href="competitive_debate.php">Competitive Debate</a>
+                <a class="collapse-item <?= ($page == "mcgraw_hill_education.php" ? "active" : "") ?>" href="mcgraw_hill_education.php">McGraw Hill Education <br>Courses</a>
                 <a class="collapse-item <?= ($page == "academic_enrichment.php" ? "active" : "") ?>" href="academic_enrichment.php"> Academic Enrichment II</a>
                 <a class="collapse-item <?= ($page == "standard_test_preparation.php" ? "active" : "") ?>" href="standard_test_preparation.php"> Standardized Test <br> Preparation</a>
                 <a class="collapse-item <?= ($page == "early_learning.php" ? "active" : "") ?>" href="early_learning.php"> Early Learning</a>

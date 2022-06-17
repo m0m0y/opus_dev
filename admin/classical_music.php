@@ -12,6 +12,7 @@ $classicalMusicContent = $classicalMusic->getContent();
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 
 <body id="page-top">
 
@@ -170,68 +171,7 @@ $classicalMusicContent = $classicalMusic->getContent();
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-        
-    <script>
-        $(function() {
-
-            $('#page_content').summernote({
-                height: 400,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            $('#btn-save').on('click', function() {
-               var id = $('#id').val();
-               var title = $('#title').val();
-               var content = $('#page_content').val();
-               var status = $('#status').val();
-
-               if(title == "" || content == "") {
-                    errorAlert();
-               } else {
-                submit(id, title, content, status);
-               }
-            })
-
-            var status_module = window.localStorage.getItem("stat");
-
-            if (status_module == "success") {
-                sucessAlert();
-                localStorage.clear();
-            }
-
-        })
-
-        function submit(id, title, content, status) {
-            $.ajax({
-                url: 'controller/controller.classical_music.php?mode=updateClassicalMusic',
-                method: 'POST',
-                data: {
-                    id:id, 
-                    title:title, 
-                    content:content, 
-                    status:status
-                },
-                success:function() {
-                    $('#preloader').show();
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="classical_music.php";
-                }
-            });
-        }
-    </script>
+    <script src="services/classical_music.js"></script>
 
 </body>
 

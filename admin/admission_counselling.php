@@ -20,6 +20,7 @@ $cardContent = $card->getContentWhere($page);
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 
 <body id="page-top">
 
@@ -117,58 +118,50 @@ $cardContent = $card->getContentWhere($page);
                             </div>
 
                             <div class="row">
-                                <div class="col-xl-12 col-lg-12 d-flex">
+                                <div class="col-xl-12 d-flex align-items-stretch">
+                                    <div class="card-body col-xl-12 d-flex align-items-stretch">
 
-                                <?php
+                                        <?php
+                                        if (!empty($cardContent)) {
+                                            foreach ($cardContent as $v) {
+                                                $card_id = $v["card_id"];
+                                                $card_title = $v["card_title"];
+                                                $img = $v["img"];
+                                                $content = $v["content"];
+                                                $link = $v["link"];
+                                                $card_status = $v["card_status"];
+                                                $date_update = $v["date_update"];
+                                                ?>
 
-                                    if (!empty($cardContent)) {
-                                        foreach ($cardContent as $v) {
-                                            $card_id = $v["card_id"];
-                                            $section = $v["section"];
-                                            $card_title = $v["card_title"];
-                                            $img = $v["img"];
-                                            $content = $v["content"];
-                                            $link = $v["link"];
-                                            $page = $v["page"];
-                                            $card_status = $v["card_status"];
-                                            $date_update = $v["date_update"];
-                                            ?>
+                                                <div class="container card shadow py-4 m-3">
+                                                            
+                                                    <div class="d-sm-flex align-items-center justify-content-end">
+                                                        <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $img ?>', '<?= $content ?>', '<?= $link ?>', '<?= $card_status ?>')">Update &rarr; </a>
+                                                    </div>
 
-                                            <div class="d-flex flex-column justify-content-center">
+                                                    <div class="d-flex flex-column justify-content-center">
 
-                                                <div class="card-body col-xl-12 d-flex align-items-stretch">
-                                                    <div class="container card shadow py-4">
-                                                        
-                                                        <div class="d-sm-flex align-items-center justify-content-end">
-                                                            <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $img ?>', '<?= $content ?>', '<?= $link ?>', '<?= $card_status ?>')">Update &rarr; </a>
+                                                        <div class="card-body align-items-stretch">
+
+                                                            <h5 class="text-gray-900"><?= $card_title ?> <?= ($card_status == 0 ? "" : '<small class="badge bg-warning" style="color: black;">Disabled</small>') ?></h5>
+                                                            <?= html_entity_decode($content) ?>
+
                                                         </div>
 
-                                                            <div class="d-flex flex-column justify-content-center">
-
-                                                                <div class="card-body align-items-stretch">
-
-                                                                    <h5 class="text-gray-900"><?= $card_title ?> <?= ($card_status == 0 ? "" : '<small class="badge bg-warning" style="color: black;">Disabled</small>') ?></h5>
-                                                                    <?= html_entity_decode($content) ?>
-
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="d-flex justify-content-end">
-                                                                <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
-                                                            </div>
-                                                        
                                                     </div>
-                                                </div>
-                                            </div> 
-                                
-                                            <?php
+
+                                                    <div class="d-flex justify-content-end">
+                                                        <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
+                                                    </div>
+
+                                                </div> 
+                                    
+                                                <?php
+                                            }
                                         }
-                                    }
+                                        ?>
 
-                                ?>
-
-                          
+                                    </div>
                                 </div>
                             </div>
 
@@ -244,7 +237,7 @@ $cardContent = $card->getContentWhere($page);
                                         <div class="col-xl-4 col-sm-12">
 
                                             <center>
-                                                <div id="tumbnail-container" class="img-tumbnail-container">
+                                                <div id="thumbnail-container" class="img-thumbnail-container">
                                                     <img src="" alt="" id="team-image">
                                                 </div>
                                             </center>
@@ -345,118 +338,7 @@ $cardContent = $card->getContentWhere($page);
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-
-    <script type="text/javascript"> 
-        $(function(){
-            $('#page_content').summernote({
-                height: 500,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            
-            $('#card_content').summernote({
-                height: 300,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            var status_module =  window.localStorage.getItem("stat");
-            if(status_module == "success"){
-                sucessAlert();
-                localStorage.clear();
-            } else if(status_module == "error") {
-                errorAlert();
-                localStorage.clear();
-            } else if(status_module == "errorUpload") {
-                errorUpload();
-                localStorage.clear();
-            } else if (status_module == "invalidFormat") {
-                invalidFormat();
-                localStorage.clear();
-            }
-
-            $('#btn-save').on('click', function(){
-                var id = $('#admission_id').val();
-                var title = $('#title').val();
-                var content = $('#page_content').val();
-                var status = $('#status').val();
-
-                if(title == "" || content == "") {
-                    errorAlert();
-                } else {
-                    submit(id, title, content, status);
-                }
-            });
-        });
-
-        function submit(id, title, content, status) {
-            $.ajax({
-                url: 'controller/controller.admission_counselling.php?mode=updateContent',
-                method: 'POST',
-                data: {
-                    id:id,
-                    title:title, 
-                    content:content, 
-                    status:status,
-                },
-                success:function(){
-                    $('#preloader').show();
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="admission_counselling.php";
-                }
-            });
-        }
-
-        function updateLink(card_id, card_title, img, content, link, card_status) {
-            $('#staticBackdrop').modal('show');
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + card_title);
-
-            $('#card_id').val(card_id);
-            $('#card_title').val(card_title);
-            $('#card_content').summernote('code', content);
-            $('#link').val(link);
-            $('#status').val(card_status);
-
-            if (img != "") {
-                $('#tumbnail-container').removeClass('img-tumbnail-container');
-                $('#team-image').addClass('team-img');
-                $('#team-image').attr('src', img);
-            } else {
-                $('#tumbnail-container').addClass('img-tumbnail-container');
-                $('#team-image').removeClass('team-img');
-                $('#team-image').attr('src', img);
-            }
-
-            $('.resetBtn').on('click', function() {
-                $('input[type=text], input[type=url]').val('');
-                $('#status').val(0);
-                $('#card_content').summernote('code', '');
-            });
-        }
-    </script>
+    <script src="services/admission_counselling.js"></script>
 
 </body>
 

@@ -13,6 +13,7 @@ $teamList = $historyAndTeams->getTeamList();
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 <link rel="stylesheet" type="text/css" href="lib/datatable/datatables.min.css">
 <script type="text/javascript" charset="utf8" src="lib/datatable/datatables.min.js"></script>
 
@@ -200,7 +201,7 @@ $teamList = $historyAndTeams->getTeamList();
                                         <div class="col-xl-4 col-sm-12">
 
                                             <center>
-                                                <div id="tumbnail-container" class="img-tumbnail-container">
+                                                <div id="thumbnail-container" class="img-thumbnail-container">
                                                     <img src="" alt="" id="team-image">
                                                 </div>
                                             </center>
@@ -278,7 +279,6 @@ $teamList = $historyAndTeams->getTeamList();
                 </div>
             </div>
 
-
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -302,141 +302,6 @@ $teamList = $historyAndTeams->getTeamList();
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-
-    <script>
-        $(function() {
-            $('#page_content').summernote({
-                height: 300,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            $('#introduction').summernote({
-                height: 300,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            $('#btn-save').on('click', function() {
-                var id = $('#history_id').val();
-                var title = $('#title').val();
-                var page_content = $('#page_content').val();
-                var status = $('#status').val();
-
-                if (title == "" || page_content == "" || status == "") {
-                    errorAlert();
-                } else {
-                    submitHistoryData(id, title, page_content, status);
-                }
-            });
-
-            var status_module =  window.localStorage.getItem("stat");
-
-            if(status_module == "success"){
-                sucessAlert();
-                localStorage.clear();
-            } else if (status_module == "error") {
-                errorAlert();
-                localStorage.clear();
-            } else if (status_module == "errorUpload") {
-                errorUpload();
-                localStorage.clear();
-            } else if (status_module == "invalidFormat") {
-                invalidFormat();
-                localStorage.clear();
-            }
-
-            listTeams();
-        });
-
-        function submitHistoryData(id, title, page_content, status) {
-            $.ajax({
-                url: 'controller/controller.history_and_team.php?mode=updateHistoryContent',
-                method: 'POST',
-                data: {
-                    id:id,
-                    title:title,
-                    page_content:page_content,
-                    status:status
-                },
-                success:function(){
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="history_and_team.php";
-                }
-            });
-        }
-
-        function listTeams() {
-            $('#dataTable').DataTable({
-                "bLengthChange": false,
-                "pageLength": 5,
-                "ajax" : "controller/controller.history_and_team.php?mode=listTeams",
-                "columns" : [
-                    { "data" : "name" },
-                    { "data" : "position" },
-                    { "data" : "status" },
-                    { "data" : "date_added" },
-                    { "data" : "action" }
-                ],
-            });
-        }
-
-        function updateTeamsTable(id, img, name, position, introduction, status) {
-            $('#staticBackdrop').addClass('staticModal'+id);
-
-            $('.staticModal'+id).modal('show');
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + position);
-
-            $('#id').val(id);
-            $('#name').val(name);
-            $('#position').val(position);
-            $('#introduction').summernote('code', introduction);
-            $('#status').val(status);
-
-            if (img != "") {
-                $('#tumbnail-container').removeClass('img-tumbnail-container');
-                $('#team-image').addClass('team-img');
-                $('#team-image').attr('src', img);
-            } else {
-                $('#tumbnail-container').addClass('img-tumbnail-container');
-                $('#team-image').removeClass('team-img');
-                $('#team-image').attr('src', img);
-            }
-            
-            $('.closeBtn').on('click', function() {
-                $('#staticBackdrop').removeClass('staticModal'+id);
-            });
-
-            $('.resetBtn').on('click', function() {
-                $(':input', '#modalForm').not("#id").val('');
-                $('#status').val(0);
-                $('#introduction').summernote('code', '');
-            });
-        }
-    </script>
+    <script src="services/history_and_team.js"></script>
 
 </body>

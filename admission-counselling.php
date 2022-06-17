@@ -53,7 +53,7 @@ $cardContent = $card->getContentWhere($page);
                                     <div class="content">
 
                                         <h3><?= $title ?></h3>
-                                        <p><?= $content ?></p>
+                                        <?= $content ?>
 
                                     </div>
 
@@ -85,8 +85,8 @@ $cardContent = $card->getContentWhere($page);
                                         $status = $v["card_status"];
 
                                         if($img != "") {
-                                            $image = explode("..", $img);
-                                            $image_url = "admin".$image[1];
+                                            $image = explode("../", $img);
+                                            $image_url = $image[1];
                                         } else {
                                             $image_url = "";
                                         }

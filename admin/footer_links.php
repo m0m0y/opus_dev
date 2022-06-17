@@ -6,6 +6,7 @@ require_once "assets/common/session.php";
 
 <link rel="stylesheet" type="text/css" href="lib/datatable/datatables.min.css">
 <script type="text/javascript" charset="utf8" src="lib/datatable/datatables.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 
 <body id="page-top">
 
@@ -145,6 +146,14 @@ require_once "assets/common/session.php";
                             </div>
                         </div>
                     </div>
+
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Copyright &copy; Your Website 2021</span>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
 
             </div>
@@ -163,92 +172,7 @@ require_once "assets/common/session.php";
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-
-    <script>
-         $(function(){
-            footerLinks();
-
-            var status_module =  window.localStorage.getItem("stat");
-            if(status_module == "success"){
-                sucessAlert();
-                localStorage.clear();
-            }
-        });
-
-        function footerLinks() {
-            $('#usefulLinksTable').DataTable({
-                "searching": false,
-                "bLengthChange": false,
-                "pageLength": 5,
-                "ajax" : "controller/controller.footer_links.php?mode=usefulLinksTable",
-                "columns" : [
-                    { "data" : "title" },
-                    { "data" : "url" },
-                    { "data" : "status" },
-                    { "data" : "action" }
-                ],
-            });
-
-            $('#ourServicesTable').DataTable({
-                "searching": false,
-                "bLengthChange": false,
-                "pageLength": 5,
-                "ajax" : "controller/controller.footer_links.php?mode=ourServicesTable",
-                "columns" : [
-                   { "data" : "title" },
-                    { "data" : "url" },
-                    { "data" : "status" },
-                    { "data" : "action" }
-                ],
-            });
-        }
-
-        function update(id, url, title, sort, label, status) {
-            $('.updateModal').modal('show');
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' +title);
-            $('#link_id').val(id);
-            $('#url').val(url);
-            $('#title').val(title);
-            $('#sort').val(sort);
-            $('#label').val(label);
-            $('#status').val(status);
-
-            $('.submit').on('click', function(){
-                var id = $('#link_id').val();
-                var url = $('#url').val();
-                var title = $('#title').val();
-                var sort = $('#sort').val();
-                var label = $('#label').val();
-                var status = $('#status').val();
-
-                if(url == "" || title == "") {
-                    errorAlert();
-                } else {
-                    submit(id, url, title, sort, label, status);
-                }
-            });
-        }
-
-        function submit(id, url, title, sort, label, status) {
-            $.ajax({
-                url: 'controller/controller.footer_links.php?mode=updateLinks',
-                method: 'POST',
-                data: {
-                    id:id,
-                    url:url,
-                    title:title,
-                    sort:sort,
-                    label:label,
-                    status:status
-                },
-                success:function() {
-                    $('#preloader').show();
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="footer_links.php";
-                }
-            });
-        }
-    </script>
+    <script src="services/footer_links.js"></script>
 
 </body>
 

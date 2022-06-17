@@ -13,6 +13,7 @@ $ourCourses = $communicationArts->getCourses();
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
+<script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
 
 <body id="page-top">
 
@@ -27,7 +28,7 @@ $ourCourses = $communicationArts->getCourses();
                 <?php require_once "assets/common/top_bar.php"; ?>
 
                 <div class="container-fluid">
-                    <h1 class="h3 mb-4 text-gray-800">Early Learning</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Communication Arts</h1>
 
                     <?php
                     if(isset($_GET["update"])) {
@@ -107,7 +108,7 @@ $ourCourses = $communicationArts->getCourses();
 
                                     <button type="button" id="addPosition" class="btn btn-sm btn-primary btn-icon-split">
                                         <span class="icon"><i class="fas fa-plus-square"></i> </span>
-                                        <span class="text">Add Position</span>
+                                        <span class="text">Add New</span>
                                     </button>
                                 </div>
                             </div>
@@ -274,192 +275,7 @@ $ourCourses = $communicationArts->getCourses();
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alert.js"></script>
-    
-    <script>
-        $(function() {
-
-            $('#page_content').summernote({
-                height: 400,
-                placeholder: 'Type Here...',
-                disableDragAndDrop: true,
-                blockqouteBreakingLevel: 2,
-                fontSizeUnit: 'pt',
-                lineHeight: 20,
-                dialogsInBody: true,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
-                    ['para', ['paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen']],
-                ],
-            });
-
-            $('#btn-save').on('click', function() {
-               var id = $('#id').val();
-               var title = $('#title').val();
-               var content = $('#page_content').val();
-               var status = $('#status').val();
-
-               if(title == "" || content == "") {
-                    errorAlert();
-               } else {
-                submit(id, title, content, status);
-               }
-            })
-
-            $('#addPosition').on('click', function() {
-                $('#staticBackdrop').addClass('addPositionModal').modal('show');
-                $('#modalTitle').html('<i class="fas fa-plus"></i> Add New Position');
-
-                $('#course_id').val('');
-                $('#course').val('');
-                $('#sort_by').val(0);
-                $("select option:checked").val();
-
-                $('.submit-btn').on('click', function() {
-                   var course = $('#course').val();
-                   var sort_by = $('#sort_by').val();
-                   var status = $('#status').val();
-
-                   if(course == "" || course == null) {
-                        errorAlert();
-                   } else {
-                        addCourse(course, sort_by, status);
-                   }
-                })
-            })
-
-            var status_module = window.localStorage.getItem("stat");
-            if (status_module == "success") {
-                sucessAlert();
-                localStorage.clear();
-            }
-
-        })
-
-        function submit(id, title, content, status) {
-            $.ajax({
-                url: 'controller/controller.communication_arts.php?mode=updateContent',
-                method: 'POST',
-                data: {
-                    id:id, 
-                    title:title, 
-                    content:content, 
-                    status:status
-                },
-                success:function() {
-                    $('#preloader').show();
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="communication_arts.php";
-                }
-            });
-        }
-
-        function updateLink(id, course, sort_by, status) {
-            $('#staticBackdrop').addClass('updateModal').modal('show');
-            $('#modalTitle').html('<i class="fas fa-sm fa-edit"></i> ' + course);
-
-            $('#course_id').val(id);
-            $('#course').val(course);
-            $('#sort_by').val(sort_by);
-            $('#status').val(status);
-
-            $('.submit-btn').on('click', function() {
-               var course_id = $('#course_id').val();
-               var course = $('#course').val();
-               var sort_by = $('#sort_by').val();
-               var status = $('#status').val();
-
-               if(course == "" || course == null) {
-                    errorAlert();
-               } else {
-                    updateCourse(course_id, course, sort_by, status);
-               }
-            })
-        }
-
-        function addCourse(course, sort_by, status) {
-            $.ajax({
-                url: 'controller/controller.communication_arts.php?mode=addCourse',
-                method: 'POST',
-                data: {
-                    course:course,
-                    sort_by:sort_by,
-                    status:status
-                },
-                success:function() {
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="communication_arts.php";
-                }
-            });
-        }
-
-        function updateCourse(course_id, course, sort_by, status) {
-            $.ajax({
-                url: 'controller/controller.communication_arts.php?mode=updateCourse',
-                method: 'POST',
-                data: {
-                    course_id:course_id,
-                    course:course,
-                    sort_by:sort_by,
-                    status:status
-                },
-                success:function() {
-                    window.localStorage.setItem("stat", "success");
-                    window.location.href="communication_arts.php";
-                }
-            })
-        }
-
-        function deleteLink(id) {
-            Swal.fire({
-            title: 'Please confirm to Delete',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Confirm'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.ajax({
-                        url: 'controller/controller.communication_arts.php?mode=deleteCourse',
-                        method: 'POST',
-                        data: {
-                            id:id
-                        },
-                        success: function(response) {
-                            var resValue = jQuery.parseJSON( response );
-
-                            if(resValue['message'] == "Delete Success") {
-                                Swal.fire(
-                                    'Deleted Successfully!',
-                                    '',
-                                    'success'
-                                ).then(function(){
-                                    $('#preloader').show();
-                                    window.location.href = "communication_arts.php";
-                                });
-                            } else  {
-                                Swal.fire(
-                                    'Error!',
-                                    'Opps! Something went wrong.',
-                                    'error'
-                                ).then(function(){
-                                    $('#preloader').show();
-                                    window.location.href = "communication_arts.php";
-                                });
-                            }
-
-                        }
-                    })
-                }
-            })
-        }
-
-    </script>
+    <script src="services/communication_arts.js"></script>
 
 </body>
 

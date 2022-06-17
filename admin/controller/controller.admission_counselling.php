@@ -75,7 +75,10 @@ switch($mode) {
                     
                     move_uploaded_file($temp_name,$path_filename_ext);
 
-                    $admission_counselling = $admission_counselling->updateCardsWithUpload($card_id, $card_title, $path_filename_ext, $card_content, $link, $status);
+                    $path_filename_ext = explode("../", $path_filename_ext);
+                    $img = "../admin/". $path_filename_ext[1];
+
+                    $admission_counselling = $admission_counselling->updateCardsWithUpload($card_id, $card_title, $img, $card_content, $link, $status);
     
                     $response = array("message" => "Success Uploading Image");
     
