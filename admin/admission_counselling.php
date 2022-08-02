@@ -224,7 +224,7 @@ $cardContent = $card->getContentWhere($page);
                             <h5 class="modal-title" id="modalTitle"></h5>
                         </div>
 
-                        <form name="form" method="post" action="controller/controller.admission_counselling.php?mode=updateCardContent" enctype="multipart/form-data" id="modalForm">
+                        <form name="form" method="POST" action="controller/controller.admission_counselling.php?mode=updateCardContent" enctype="multipart/form-data" id="modalForm">
                             <div class="modal-body">
 
                                 <div class="d-none">

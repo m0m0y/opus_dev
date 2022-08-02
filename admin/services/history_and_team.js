@@ -70,7 +70,7 @@ $(function() {
         var page_content = $('#page_content').val();
         var status = $('#status').val();
 
-        if (title == "" || page_content == "" || status == "") {
+        if (title == "" || $('#page_content').summernote('isEmpty') || status == "") {
             errorAlert();
         } else {
             submitHistoryData(id, title, page_content, status);
@@ -78,18 +78,8 @@ $(function() {
     });
 
     var status_module =  window.localStorage.getItem("stat");
-
     if(status_module == "success"){
         sucessAlert();
-        localStorage.clear();
-    } else if (status_module == "error") {
-        errorAlert();
-        localStorage.clear();
-    } else if (status_module == "errorUpload") {
-        errorUpload();
-        localStorage.clear();
-    } else if (status_module == "invalidFormat") {
-        invalidFormat();
         localStorage.clear();
     }
 
@@ -151,6 +141,39 @@ function updateTeamsTable(id, img, name, position, introduction, status) {
         $('#team-image').removeClass('team-img');
         $('#team-image').attr('src', img);
     }
+
+    $('#modalForm').on('submit', function(e){
+
+        e.preventDefault();
+
+        if($('#introduction').summernote('isEmpty')) {
+            errorAlert();
+        } else {
+            $.ajax({
+                url: 'controller/controller.history_and_team.php?mode=updateTeamInfo',
+                type: 'POST',
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(data) {
+                    var obj = JSON.parse(data);
+    
+                    if (obj.message == "Invalid file format") {
+                        invalidFormat();
+                    } else if (obj.message == "Existing file" ) {
+                        errorUpload();
+                    } else if (obj.message == "Error Update") {
+                        errorAlert();
+                    } else if (obj.message == "Success Insert") {
+                        window.localStorage.setItem("stat", "success");
+                        window.location.href = "history_and_team.php";
+                    }
+                }
+            });
+        }
+
+    });
     
     $('.closeBtn').on('click', function() {
         $('#staticBackdrop').removeClass('staticModal'+id);

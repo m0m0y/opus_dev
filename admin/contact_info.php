@@ -51,7 +51,7 @@ require_once "assets/common/session.php";
                 <div class="modal-dialog">
                     <div class="modal-content">
 
-                        <!-- <form action="controller/controller.contact_info.php?mode=updateDesc" method="post" enctype=""> -->
+                        <!-- <form action="controller/controller.contact_info.php?mode=updateDesc" method="POST" enctype=""> -->
                             <div class="modal-header">
                                 <h5 class="modal-title" id="modalTitle"></h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -70,7 +70,7 @@ require_once "assets/common/session.php";
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Status: <span class="required">*</span></label>
+                                    <label class="form-label">Status: </label>
                                     <select class="form-control" id="contact_detail_status" name="status">
                                         <option value="0">Enabled</option>
                                         <option value="1">Disabled</option>

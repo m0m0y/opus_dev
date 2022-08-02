@@ -19,8 +19,8 @@ switch($mode) {
         break;
 
     case "updateCardContent";
-
         if (($_FILES["image"]["name"] != "")) {
+
             $card_id = $_POST["card_id"];
             $card_title = $_POST["card_title"];
             $card_content = $_POST["card_content"];
@@ -29,12 +29,6 @@ switch($mode) {
 
             if($_FILES["image"]["type"] != "image/jpeg") {
                 echo json_encode(array("message" => "Invalid file format"));
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "invalidFormat");
-                        window.location.href = "../admission_counselling.php";
-                    </script>
-                ';
                 die();
             }
 
@@ -48,46 +42,18 @@ switch($mode) {
             $path_filename_ext = $target_dir.$filename.".".$ext;
 
             if (file_exists($path_filename_ext)) { 
-
-                $response = array("message" => "The file you trying to upload is already exists");
-
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "errorUpload");
-                        window.location.href = "../admission_counselling.php";
-                    </script>
-                ';
-
+                $response = array("message" => "Existing file");
             } else {
 
                 if ($card_title == "" || $card_content == "") {
-
                     $response = array("message" => "Error Update");
-
-                    echo '
-                        <script>
-                            window.localStorage.setItem("stat", "error");
-                            window.location.href = "../admission_counselling.php";
-                        </script>
-                    ';
-
                 } else {
                     
                     move_uploaded_file($temp_name,$path_filename_ext);
-
                     $path_filename_ext = explode("../", $path_filename_ext);
                     $img = "../admin/". $path_filename_ext[1];
-
                     $admission_counselling = $admission_counselling->updateCardsWithUpload($card_id, $card_title, $img, $card_content, $link, $status);
-    
-                    $response = array("message" => "Success Uploading Image");
-    
-                    echo '
-                        <script>
-                            window.localStorage.setItem("stat", "success");
-                            window.location.href = "../admission_counselling.php";
-                        </script>
-                    ';
+                    $response = array("message" => "Success Insert");
 
                 }
 
@@ -102,29 +68,10 @@ switch($mode) {
             $status = $_POST["status"];
 
             if($card_title == "" || $card_content == "<br>") {
-
                 $response = array("message" => "Error Update");
-
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "error");
-                        window.location.href = "../admission_counselling.php";
-                    </script>
-                ';
-
             } else {
-
                 $admission_counselling = $admission_counselling->updateCards($card_id, $card_title, $card_content, $link, $status);
-
-                $response = array("message" => "Success Update Content");
-
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "success");
-                        window.location.href = "../admission_counselling.php";
-                    </script>
-                ';
-                
+                $response = array("message" => "Success Insert");
             }
 
         }
@@ -132,7 +79,7 @@ switch($mode) {
         break;
 
     default:
-        header("Location: ../admin/404.php");
+        header("Location: ../404.php");
 
 }
 

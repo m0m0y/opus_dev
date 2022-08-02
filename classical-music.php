@@ -1,6 +1,10 @@
 <?php 
 $title = "Opus Summer Camps - Opus Academy";
 require_once "assets/common/header.php"; 
+require_once "admin/model/model.classical_music.php";
+
+$classicalMusic = new ClassicalMusic();
+$classicalMusicContent = $classicalMusic->getContent();
 ?>
 
 
@@ -17,145 +21,125 @@ require_once "assets/common/header.php";
             </div>
         </section>
 
-        <section class="music-program pt-3">
+        <?php 
+        foreach ($classicalMusicContent as $v) {
 
-            <div class="container">
-                <div class="section-title">
-                    <h4>Opus Classical Music Program</h4>
-                </div>
+            $section = $v["section"];
+            $title = $v["title"];
+            $content = $v["content"];
+            $status = $v["status"];
 
-                <p>Experience the joy of music through Opus Academy’s outstanding Classical Music program! We assist students in realizing their creative and musical potential, while fostering a deep breadthof musical knowledge and appreciation that they will carry throughout life. Our program is a great way to further develop your child’s musical skills, provide them with encouragement and confidence throughout.<br><br>
-                Through our modern, spacious facilities and highly qualified teachers, our range of course offerings will allow your child to thrive under masterful guidance as they complete musical education in piano and music theory.</p>
+            if($status == 0) {
 
-                <br>
-                
-                <center>
-                    <img src="assets/img/classic-music/classical.jpg" alt="classical-img" style="background-size: cover; position: relative;width: 90%;height: 60vh;">
-                </center>
-            </div>
+                if($section == "Section I") {
+                    ?>
 
-        </section>
+                    <section class="music-program pt-3">
+                        <div class="container">
 
-        <div class="container">
-            <hr></hr>
-        </div>
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-        <section class="music-studies">
+                            <?= $content ?>
 
-            <div class="container">
-                <div class="section-title">
-                    <h4>Classical Music Studies</h4>
-                </div>
+                        </div>
+                    </section>
 
-                <p>We offer a wide range of classical music through curriculum-based programs, as students can select from the following certifying bodies: </p>
+                    <?php
+                }
 
-                <ol>
-                    <li>Royal Conservatory of Music</li>
-                    <li>Trinity College of London </li>
-                    <li>London College of Music</li>
-                    <li>Associated Board of the Royal Schools of Music</li>
-                </ol>
+                else if ($section == "Section II") {
+                    ?>
 
-                <br>
-            
-                <h4>Classical Music Program</h4>
+                    <div class="container">
+                        <hr></hr>
+                    </div>
 
-                <br>
+                    <section class="music-studies">
+                        <div class="container">
 
-                <p><b>Private Instruction</b></p>
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-                <p>We currently offer instrumental instruction in piano for students of all ages.</p>
+                            <?= $content ?>
 
-                <p><b>Theory Classes</b></p>
+                        </div>
+                    </section>
 
-                <p>We offer a complete range of theory classes at the Basic and Advanced levels to meet the exam requirements of Royal Conservatory of Music, Trinity College of London, London College of Music and ABRSM Diploma programs.  </p>
-            </div>
+                    <?php
+                }
 
-        </section>
+                else if ($section == "Section III") {
+                    ?>
 
-        <div class="container">
-            <hr></hr>
-        </div>
+                    <div class="container">
+                        <hr></hr>
+                    </div>
 
-        <section class="course-include">
+                    <section class="course-include">
+                        <div class="container">
 
-            <div class="container">
-                <div class="section-title">
-                    <h4>Courses include: </h4>
-                </div>
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> - Rudiments: Preliminary, Intermediate and Advanced Harmony and Counterpoint  </li>
-                    <li class="list-group-item">- Analysis and Counterpoint </li>
-                    <li class="list-group-item">- Viva Voce (ABRSM, TCL, LCM)</li>
-                </ul>
+                            <?= $content ?>
 
-                <h5 class="mt-3">History Classes:</h5>
+                        </div>
+                    </section>
 
-                <p>History courses are taught using a stimulating combination of lecture and audio-visual presentation of diverse works and composers.</p>
+                    <?php
+                }
 
-                <h5 class="mt-3">Ear Training and Sight Reading Classes:</h5>
+                else if ($section == "Section IV") {
+                    ?>
 
-                <p>Students focus on technique, ear training, note reading, rhythm, keyboard theory and singing. </p>
+                    <div class="container">
+                        <hr></hr>
+                    </div>
 
-                <h5 class="mt-3">Advanced Placement (AP) Music Theory:</h5>
+                    <section class="additional-learning-opportunities">
+                        <div class="container">
 
-                <p>AP is recognized in the US, Canada and more than 40 countries.  Students can earn credit or advanced standing in North American and international colleges and universities. </p>
-            </div>
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-        </section>
+                            <?= $content ?>
 
-        <div class="container">
-            <hr></hr>
-        </div>
+                        </div>
+                    </section>
 
-        <section class="additional-learning-opportunities">
+                    <?php
+                }
 
-            <div class="container">
-                <div class="section-title">
-                    <h4>Additional Learning Opportunities</h4>
-                </div>
+                else if ($section == "Section V") {
+                    ?>
 
-                <h5>Master Classes</h5>
+                    <div class="container">
+                        <hr></hr>
+                    </div>
 
-                <p>Students can join Master Classes which will provide helpful evaluation leading to increased confidence and heightened musical learning experiences. Master Class students can join our annual grand recitals and other performance venues. </p>
+                    <section class="application-procedure">
+                        <div class="container">
 
-                <h5>Music Festivals & Competitions</h5>
+                            <div class="section-title">
+                                <h4><?= $title ?></h4>
+                            </div>
 
-                <p>For a full musical learning experience, students may also participate in various local, national, or international festivals and competitions, such as Kiwanis Music Festival, Vancouver Music Festival, Student Performers Guild, Canadian Music Competition, and many more. </p>
+                            <?= $content ?>
 
-                <h5>Workshops</h5>
+                        </div>
+                    </section>
 
-                <p>Special workshops focus on communication skills, pedagogy skills and learning theory. </p>
+                    <?php
+                }
 
-                <h5>Teachers</h5>
-
-                <p>Our highly qualified and experienced teachers are committed to students' musical and artistic growth—motivating, encouraging, and inspiring young musicians to realize their dreams and reach their full potential. Each one of our teachers are highly trained experts with extensive musical background and specialization. </p>
-            </div>
-
-        </section>
-
-        <div class="container">
-            <hr></hr>
-        </div>
-
-        <section class="application-procedure">
-
-            <div class="container">
-                <div class="section-title">
-                    <h4>Application Procedure</h4>
-                </div>
-
-                <p>We welcome students of all ages and all levels to our Classical Music Program.</p>
-
-                <ol>
-                    <li>To apply, students will set up an appointment for an interview and audition. The appointment is an opportunity for the teacher to meet the student and assess the applicant's skill level prior to planning their program of study.</li>
-                    <li>Applicants are requested to play pieces of different styles, and to demonstrate sight reading skills and technique.</li>
-                    <li>Applicants should bring recently played music, as well as a list of pieces studied in the recent past.</li>
-                </ol>
-            </div>
-
-        </section>
+            }
+        }
+        ?>
 
     </main>
 

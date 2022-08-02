@@ -103,7 +103,7 @@ require_once "assets/common/session.php";
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label text-right">Sort:</label>
+                                        <label class="col-sm-2 col-form-label text-right">Sort by:</label>
                                         <div class="col-sm-10">
                                         <input type="number" class="form-control" id="sort" name="sort" placeholder="">
                                         </div>

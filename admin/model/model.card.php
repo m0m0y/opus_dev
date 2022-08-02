@@ -15,7 +15,7 @@ class Cards extends db_conn_mysql {
     }
 
     public function getContentWhere($page) {
-        $query = $this->conn->prepare("SELECT * FROM card_content WHERE page = ?");
+        $query = $this->conn->prepare("SELECT * FROM card_content WHERE page = ? ORDER BY sort DESC");
         $query->execute([$page]);
         $response = $query->fetchAll();
 

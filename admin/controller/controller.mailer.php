@@ -18,6 +18,6 @@
       $mail->Port = 465;
       $mail->IsHTML(true);
       $mail->Username = "pmcmailchimp@gmail.com";
-      $mail->Password = "1_pmcmailchimp@gmail.com";
+      $mail->Password = "qyegdvkzvbjihbou";
       
  ?>

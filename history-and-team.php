@@ -33,7 +33,10 @@ $teamList = $historyAndTeams->getTeamList();
             <section class="pt-3">
                 <div class="container">
 
-                    <h3><?= $title ?></h3>
+                    <div class="section-title">
+                        <h3><?= $title ?></h3>
+                    </div>
+                    
                     <?= $content ?>
 
                 </div>

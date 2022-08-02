@@ -39,11 +39,7 @@ switch($mode) {
             $footer_links[$k]["title"] = $v["title"];
             $footer_links[$k]["url"] = $v["url"];
 
-            if($v["status"]==0) {
-                $footer_links[$k]["status"] = "Enabled";
-            } else {
-                $footer_links[$k]["status"] = "Disabled";
-            }
+            ($v["status"] == 0 ? $footer_links[$k]["status"] = "Enabled" :  $footer_links[$k]["status"] = "Disabled");
             
             $footer_links[$k]["action"] = '
             <center>
@@ -73,7 +69,7 @@ switch($mode) {
         break;
     
     default:
-        header("Location: ../admin/404.php");
+        header("Location: ../404.php");
 
 }
 

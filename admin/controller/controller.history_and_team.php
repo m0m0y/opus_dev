@@ -53,12 +53,6 @@ switch($mode) {
 
             if($_FILES["image"]["type"] != "image/jpeg") {
                 echo json_encode(array("message" => "Invalid file format"));
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "invalidFormat");
-                        window.location.href = "../history_and_team.php";
-                    </script>
-                ';
                 die();
             }
 
@@ -72,43 +66,16 @@ switch($mode) {
             $path_filename_ext = $target_dir.$filename.".".$ext;
 
             if (file_exists($path_filename_ext)) {
-
-                $response = array("message" => "The file you trying to upload is already exists");
-
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "errorUpload");
-                        window.location.href = "../history_and_team.php";
-                    </script>
-                ';
-
+                $response = array("message" => "Existing file");
             } else {
 
-                if ($name == "" || $position == "" || $introduction == "") {
-
-                    $response = array("message" => $introduction);
-
-                    echo '
-                        <script>
-                            window.localStorage.setItem("stat", "error");
-                            window.location.href = "../history_and_team.php";
-                        </script>
-                    ';
-
+                if ($name == "" || $position == "") {
+                    $response = array("message" => "Error Update");
                 } else {
-                    
-                    move_uploaded_file($temp_name,$path_filename_ext);
 
+                    move_uploaded_file($temp_name,$path_filename_ext);
                     $historyAndTeams = $historyAndTeams->updateInfoWithUpload($id, $path_filename_ext, $name, $position, $introduction, $status);
-    
-                    $response = array("message" => "Success Uploading Image");
-    
-                    echo '
-                        <script>
-                            window.localStorage.setItem("stat", "success");
-                            window.location.href = "../history_and_team.php";
-                        </script>
-                    ';
+                    $response = array("message" => "Success Insert");
 
                 }
                 
@@ -122,30 +89,11 @@ switch($mode) {
             $introduction = $_POST["introduction"];
             $status = $_POST["status"];
 
-            if ($name == "" || $position == "" || $introduction == "<br>") {
-
+            if ($name == "" || $position == "") {
                 $response = array("message" => "Error Update");
-
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "error");
-                        window.location.href = "../history_and_team.php";
-                    </script>
-                ';
-
             } else {
-                
                 $historyAndTeams = $historyAndTeams->updateTeamInfo($id, $name, $position, $introduction, $status);
-        
-                $response = array("message" => "Success Update Info");
-
-                echo '
-                    <script>
-                        window.localStorage.setItem("stat", "success");
-                        window.location.href = "../history_and_team.php";
-                    </script>
-                ';
-                
+                $response = array("message" => "Success Insert");
             }
 
         }
@@ -153,7 +101,7 @@ switch($mode) {
 
 
     default:
-        header("Location: ../admin/404.php");
+        header("Location: ../404.php");
 
 }
 

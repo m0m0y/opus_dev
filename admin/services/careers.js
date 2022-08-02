@@ -37,7 +37,7 @@ $(function(){
         var careers_content = $('#careers_content').val();
         var status = $('#status').val();
 
-        if (careers_id == "" || title == "" || careers_content == "") {
+        if (careers_id == "" || title == "" || $('#careers_content').summernote('isEmpty')) {
             errorAlert();
         } else {
             submitUpdate(careers_id, title, careers_content, status);
@@ -49,6 +49,11 @@ $(function(){
         $('#modalTitle').html('<i class="fas fa-plus"></i> Add New Position');
         $('.update').hide();
         $('.submit').show();
+
+        $('#careers_id').val('');
+        $('#position').val('');
+        $('#sort_by').val('0');
+        $("select option:checked").val();
 
         $('.submit').on('click', function() {
             var position = $('#position').val();
@@ -127,7 +132,6 @@ function deleteLink(id) {
                     id:id
                 },
                 success: function(response) {
-                    $('#preloader').show();
                     var resValue = jQuery.parseJSON( response );
 
                     if(resValue['message'] == "Delete Success") {
@@ -136,6 +140,7 @@ function deleteLink(id) {
                             '',
                             'success'
                         ).then(function(){
+                            $('#preloader').show();
                             window.location.href = "careers.php";
                         });
                     } else  {
@@ -144,6 +149,7 @@ function deleteLink(id) {
                             'Opps! Something went wrong.',
                             'error'
                         ).then(function(){
+                            $('#preloader').show();
                             window.location.href = "careers.php";
                         });
                     }
@@ -165,7 +171,7 @@ function updateLink(id, position, sortby, status) {
     $('#sort_by').val(sortby);
     $('#status').val(status);
 
-    $('.update').on('click', function() { 
+    $('.update').on('click', function() {
         var id = $('#careers_id').val();
         var position = $('#position').val();
         var sort_by = $('#sort_by').val();
@@ -176,6 +182,10 @@ function updateLink(id, position, sortby, status) {
         } else {
             updateHiringPosition(id, position, sort_by, status);
         }
+    });
+
+    $('.closeBtn').on('click', function() {
+        window.location.href="careers.php";
     });
 }
 

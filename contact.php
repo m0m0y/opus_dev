@@ -20,12 +20,6 @@ $contactInfo = $contactInfo->getInformation();
 
     <section class="pt-3">
         <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10420.637812566945!2d-123.18566899999999!3d49.235466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x743b14f85e85be0!2sOpus%20Academy!5e0!3m2!1sen!2sus!4v1649052776923!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="true" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-    <section class="pt-3">
-        <div class="container">
             <div class="row">
                 
                 <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column justify-content-center px-lg-5 info-box">
@@ -85,6 +79,12 @@ $contactInfo = $contactInfo->getInformation();
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <section class="pt-3">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10420.637812566945!2d-123.18566899999999!3d49.235466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x743b14f85e85be0!2sOpus%20Academy!5e0!3m2!1sen!2sus!4v1649052776923!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="true" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 

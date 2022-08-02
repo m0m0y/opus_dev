@@ -37,7 +37,7 @@ $(function() {
         var content = $('#page_content').val();
         var status = $('#status').val();
 
-        if (title == "" || content == "") {
+        if (title == "" || $('#page_content').summernote('isEmpty')) {
             errorAlert();
         } else {
             submit(id, title, content, status);

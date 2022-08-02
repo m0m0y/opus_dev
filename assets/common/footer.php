@@ -33,6 +33,8 @@ $contactInfo = $contactInfo->getInformation();
 						}
 					
 					?>
+					
+					<img src="assets/img/wechat_id/qr_scan.png" alt="wechat_qr_code" width="110%">
 				</p>
 			</div>
 

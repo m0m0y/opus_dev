@@ -4,7 +4,6 @@ require_once "assets/common/header.php";
 require_once "admin/model/model.academic_enrichment.php";
 
 $academicEnrichment = new AcademicEnrichment();
-
 $academicEnrichmentContent = $academicEnrichment->getContent();
 ?>
 

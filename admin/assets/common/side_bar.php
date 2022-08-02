@@ -36,7 +36,7 @@ $page = $url_implode[3];
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item <?= ($page == "home_page.php" ? "active" : "") ?>" href="home_page.php">Home</a>
                 <a class="collapse-item <?= ($page == "admission_counselling.php" ? "active" : "") ?>" href="admission_counselling.php">Admission Counselling</a>
-                <a class="collapse-item <?= ($page == "" ? "active" : "") ?>" href="">Testimonials</a>
+                <a class="collapse-item <?= ($page == "testimonials.php" ? "active" : "") ?>" href="testimonials.php">Testimonials</a>
 
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opus Programs:</h6>

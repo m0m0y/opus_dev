@@ -68,7 +68,7 @@ $(function() {
         var content = $('#page_content').val();
         var status = $('#status').val();
 
-        if (title == "" || content == "") {
+        if (title == "" || $('#page_content').summernote('isEmpty')) {
             errorAlert();
         } else {
             submit(id, title, content, status);
@@ -123,7 +123,7 @@ function updateLink(card_id, card_title, content, card_status) {
         var card_content = $('#card_content').val();
         var card_status = $('#status').val();
     
-        if(card_title == "" || card_content == "") {
+        if(card_title == "" || $('#card_content').summernote('isEmpty')) {
             errorAlert();
         } else {
             submitModal(card_id, card_title, card_content, card_status);

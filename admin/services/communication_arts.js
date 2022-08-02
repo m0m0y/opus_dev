@@ -38,7 +38,7 @@ $(function() {
        var content = $('#page_content').val();
        var status = $('#status').val();
 
-       if(title == "" || content == "") {
+       if(title == "" || $('#page_content').summernote('isEmpty')) {
             errorAlert();
        } else {
         submit(id, title, content, status);
@@ -65,6 +65,10 @@ $(function() {
                 addCourse(course, sort_by, status);
            }
         })
+
+        $('.closeBtn').on('click', function() {
+            window.location.href="communication_arts.php";
+        });
     })
 
     var status_module = window.localStorage.getItem("stat");
@@ -114,6 +118,10 @@ function updateLink(id, course, sort_by, status) {
             updateCourse(course_id, course, sort_by, status);
        }
     })
+
+    $('.closeBtn').on('click', function() {
+        window.location.href="communication_arts.php";
+    });
 }
 
 function addCourse(course, sort_by, status) {
@@ -169,7 +177,6 @@ function deleteLink(id) {
                     id:id
                 },
                 success: function(response) {
-                    $('#preloader').show();
                     var resValue = jQuery.parseJSON( response );
 
                     if(resValue['message'] == "Delete Success") {

@@ -4,7 +4,6 @@ require_once "assets/common/header.php";
 require_once "admin/model/model.careers.php";
 
 $careers = new Careers();
-
 $careersContent = $careers->getContent();
 $hiringPostion = $careers->hiringPostion();
 ?>
@@ -33,8 +32,11 @@ $hiringPostion = $careers->hiringPostion();
 
                 if($status == 0) {
                     ?>
-
-                    <h3><?= $title ?></h3>
+                    
+                    <div class="section-title">
+                        <h3><?= $title ?></h3>
+                    </div>
+                    
                     <?= $content ?>
 
                     <?php

@@ -6,7 +6,6 @@ require_once "admin/model/model.card.php";
 
 $admissionCounselling = new AdmissionCounselling();
 $card = new Cards();
-
 $admissionCounselling = $admissionCounselling->getContent();
 
 $page_url =  $_SERVER["REQUEST_URI"];
@@ -42,9 +41,9 @@ $cardContent = $card->getContentWhere($page);
                         $title = $v["title"];
                         $content = $v["content"];
                         $status = $v["status"];
-
-                        if($section == "Section I") {
-                            if($status == 0) {
+                  
+                        if($status == 0) {
+                            if($section == "Section I") {
                             ?>
 
                             <div class="row">
@@ -93,9 +92,9 @@ $cardContent = $card->getContentWhere($page);
 
                                         if($status == 0) {
                                         ?>
-                                        <div class="col-xl-4 d-flex align-items-stretch">
+                                        <div class="col-lg-4 d-flex align-items-stretch">
                                             <div class="icon-box mt-4 mt-xl-0">
-                                                <?= ($image_url != "" ? '<img src="'. $image_url .'" alt="banner-img">' : '') ?>
+                                                <?= ($image_url == "" ? '<img src="admin/assets/img/card-thumbnail.jpg" alt="hero-banner">' : '<img src="'. $image_url .'" alt="banner-img">') ?>
                                                 <h4><?= $card_title ?></h4>
                                                 <p><?= htmlspecialchars_decode($content) ?></p>
 
@@ -114,8 +113,6 @@ $cardContent = $card->getContentWhere($page);
             </div>
 
         </section>
-
-
 
         <?php 
         foreach ($admissionCounselling as $v) {

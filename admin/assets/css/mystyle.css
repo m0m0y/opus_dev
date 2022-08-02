@@ -11405,7 +11405,7 @@ body.sidebar-toggled footer.sticky-footer {
   border: 1px solid black;
   min-height: 160px;
   min-width: 100%;
-  background: url("../img/default-image.jpg") center center;
+  background: url("../img/img-thumbnail.jpg") center center;
   background-size: cover;
 }
 

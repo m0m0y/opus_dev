@@ -1,339 +1,176 @@
 <?php 
 $title = "Opus Academy";
 require_once "assets/common/header.php"; 
+require_once "admin/model/model.home_page.php";
+
+$homePage = new HomePage();
+
+$homePageHero = $homePage->getHero();
+$page = "home.php";
+$homeCard = $homePage->getCardsContent($page);
 ?>
   <main id="main">
 
-    <div class="swiper heroSwiper mb-5">
+    <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="banner-wrap">
             <img src="assets/img/hero/hero-1.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Magnum Opus
-                    International Speech & Drama Competition
-                    Carnegie Hall 
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href="https://www.youtube.com/watch?v=ywCVierNTr4&feature=youtu.be" class="glightbox play-btn mb-4"></a>
           </div>
         </div>
 
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-9.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Empower your child to succeed!
-                    McGraw Hill Education courses developed by Stanford University
-                    Academic Enrichment Learning potential
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
+        <?php
+          foreach($homePageHero as $v) {
+            $img = $v["img"];
+            $title = $v["title"];
+            $link_title = $v["link_title"];
+            $link = $v["link"];
+            $status = $v["status"];
+
+            if(!empty($img)) {
+              $image = explode("../", $img);
+              $image_url = $image[1];
+            }
+
+            if($status == 0) {
+              ?>
+
+              <div class="swiper-slide">
+                <div class="banner-wrap">
+                <?= ($image_url != "" ? '<img src="'. $image_url .'" alt="hero-banner">' : '<img src="admin/assets/img/hero-tumbnail.jpg" alt="hero-banner">') ?>
+                  <div class="content">
+                    <div class="inner">
+                      <div class="text-content">
+                        <h3><?= $title ?></h3>
+                        <div class="d-flex align-items-center">
+                            <?= ($link_title == "") ? '' : '<a href="'.$link.'" class="btn-get-started scrollto">'.$link_title.'</a>' ?>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+              
+              <?php
+            }
 
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-8.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Learn to speak with confidence, clarity and conviction!
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-7.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Speech, Arts and Drama
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-6.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Unleash Your Child's Potential
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-5.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Private School Admissions
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-4.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                     Navigating your path to admissions
-                     <br>
-                    - Private School Admissions
-                    <br>
-                    - University Admissions Counselling
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-3.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div class="text-content">
-                  <h3>
-                    Success
-                    <br>
-                    Starts at Opus Academy
-                  </h3>
-                  <div class="d-flex align-items-center">
-                    <i class="bx bxs-book-add get-started-icon"></i>
-                    <a href="https://form.jotform.me/82831526478465" class="btn-get-started scrollto">Book Appointment Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="banner-wrap">
-            <img src="assets/img/hero/hero-2.jpg" alt="hero-banner">
-            <div class="content">
-              <div class="inner">
-                <div style="position: absolute; left: 50%; max-width: 700px; transform: translate(-50%, -180%); text-align:center;">
-                  <h3 style="color:white; text-shadow: 1px 1px 1px black;">
-                    Opus Academy
-                    <br>
-                    in partnership with Harvard Debate Council
-                  </h3>
-                  <center>
-                    <img src="assets/img/hero/opus-tran.png" class="mt-3" id="harvard-img">
-                  </center>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          }
+        ?>
       </div>
-      
+
       <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
+      <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
+
     </div>
 
-    <section id="home-page-content" class="home-page-content">
+    <div class="container-fluid section-bg p-5">
+
       <div class="container">
 
-        <div class="row">
-          <div class="col-xl-4 col-lg-4">
-            <div class="content">
-              <h3>Welcome to Opus Academy!</h3>
-              <p>
-                At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals. 
-              </p>
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row">
 
-              <p>
-                As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.
-              </p>
-            </div>
-          </div>
+            <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/home/opusrecital.png') center center no-repeat; background-size: cover;"></div>
 
-          <div class="col-xl-8 col-lg-8 d-flex">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <img src="assets/img/home/cover-2.jpg" alt="cover-img">
-                    <h4>Communication Arts Speech and Drama</h4>
-                    <p>Our multifaceted programs train students in speech arts and drama, while helping to discover and hone young voices through a creative mix literary art forms. As they progress, students challenge themselves by participating in competition and receiving certifications...</p>
+            <div class="col-xl-6 d-flex align-items-stretch">
+              
+              <div class="p-4">
+                <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
+                <p class="lh-lg">
+                  At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.
+                </p>
 
-                    <div class="text-center">
-                      <a href="communication-arts.php" target="blank" class="more-btn">Learn More</a>
-                    </div>  
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <img src="assets/img/home/cover-1.jpg" alt="cover-img">
-                    <h4>Academic Enrichment</h4>
-                    <p>We are proud to offer English andMathematic enrichment courses developed by Stanford University through our relationship with McGraw Hill Education.Coursework is composed of supplemental materials which will assist students to excel in whichever field they choose...</p>
-
-                    <div class="text-center">
-                      <a href="mcgraw-hill-education-courses.php" target="blank" class="more-btn">Learn More</a>
-                    </div>  
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <img src="assets/img/home/cover-4.jpg" alt="cover-img">
-                    <h4>Admissions Counselling</h4>
-                    <p>We provide counselling services, essay coaching, and interview training for admissions into private day/boarding schools, universities, and graduate schools across the United States, Canada, the United Kingdom, and abroad...</p>
-
-                    <div class="text-center">
-                      <a href="admission-counselling.php" target="blank" class="more-btn">Learn More</a>
-                    </div>  
-                  </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="custom-btn mt-4">Our Story</button>
                 </div>
               </div>
+              
             </div>
+
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
 
-    <section id="home-page-content" class="home-page-content">
+    <section id="what-we-offer" class="what-we-offer">
+      
+      <div class="container text-center px-5">
+        <p class="mb-4 fs-1 fw-bold">What We Offer</p>
+
+        <p class="lh-lg">As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
+      </div>
+
+
       <div class="container">
+
         <div class="col-xl-12 col-lg-12 d-flex">
-          <div class="icon-boxes d-flex flex-column justify-content-center">
+          <div class="d-flex flex-column justify-content-center">
             <div class="row">
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box mt-4 mt-xl-0">
-                  <img src="assets/img/home/cover-3.jpg" alt="cover-img">
-                  <h4>Communication Arts Public Speaking & Debate </h4>
-                  <p>Effective speaking skills are crucial for success. Our multilevel public speaking & debate programs train students the fine art of speaking, argumentation and persuasion. Students also gain exposure to interview technique and negotiation...</p>
 
-                  <div class="text-center">
-                    <a href="communication-arts.php" target="blank" class="more-btn">Learn More</a>
+              <?php 
+              foreach($homeCard as $v) {
+                $card_title = $v["card_title"];
+                $img = $v["img"];
+                $content = $v["content"];
+                $link = $v["link"];
+                $card_status = $v["card_status"];
+
+                if($img != "") {
+                  $image = explode("../", $img);
+                  $image_url = $image[1];
+                } else {
+                  $image_url = "";
+                }
+
+                if($card_status==0) {
+                  ?>
+                  <div class="col-xl-3 d-flex align-items-stretch mb-5">
+                    <div class="icon-box mt-2 text-center">
+                      <?= ($image_url == "" ? '<img src="admin/assets/img/card-thumbnail.jpg" alt="hero-banner">' : '<img src="'. $image_url .'" alt="hero-banner">') ?>
+                      <h4><?= $card_title ?></h4>
+                      <p><?= html_entity_decode($content) ?></p>
+                      
+                      <?= ($link == "" ? '' : '<a href="'.$link.'" target="blank" class="more-btn">Learn More</a>') ?>
+                  
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box mt-4 mt-xl-0">
-                  <img src="assets/img/home/cover-5.jpg" alt="cover-img">
-                  <h4>Standardized Test Preparation</h4>
-                  <p>We provide academic enrichment in core academic subjects and Advanced Placement courses. We also offer Standardized Test preparation for SAT, ACT, Subject Tests, SSAT, and ISEE necessary for university and private school admissions...</p>
+                <?php
+                }
+              }
 
-                  <div class="text-center">
-                    <a href="test-preparation.php" target="blank" class="more-btn">Learn More</a>
-                  </div>  
-                </div>
-              </div>
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box mt-4 mt-xl-0">
-                  <img src="assets/img/home/cover-6.jpg" alt="cover-img">
-                  <h4>Early Learning</h4>
-                  <p>Our programs emphasize speech and language arts specifically geared towards early childhood, and assist with the development of interactive oral communication, confidence, as well as etiquette and emotional intelligence...</p>
+              ?>
 
-                  <div class="text-center">
-                    <a href="early-learning.php" target="blank" class="more-btn">Learn More</a>
-                  </div>  
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
+
 
     <section id="about" class="about section-bg">
       <div class="container">
 
         <div class="row">
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <p class="mb-4 fs-1 fw-bold">Why Choose Opus?</p>
+            <p class="lh-lg">As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
+          </div>
+
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
             <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
           </div>
-
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>About us</h3>
-            <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals. </p>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-message-square-check"></i></div>
-              <h4 class="title">Mission</h4>
-              <p class="description">Through specialized education programs geared towards accelerating individual success, our mission is to bring out the best in every student. Our committed instructors help young learners build the confidence they need, while empowering them to become our world’s future leaders. 
-              <br><br>
-              Helping your family navigate the rigorous and complex path of private school applications and university admissions is of utmost importance to us. With personalized counselling services, we will help you find the best institution based on your child’s unique strengths and guide them into the exciting next phase of life. 
-              </p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-target-lock"></i></div>
-              <h4 class="title">Vision and Philosophy</h4>
-              <p class="description">Our vision at Opus Academy is to be prepare students as they venture into the world of personal and academic success. Witnessing a global network of Opus alumni graduating from the world’s most elite post-secondary institutions, while armed with the early training we offer in communication, leadership, and critical thinking skills, drives our dedicated staff each and every day. 
-              <br><br>
-              We believe strength and character lies in the quality and commitment of our team, whose professionalism and genuine love of learning continues to champion shared values of trust, accountability, support, and determination. We believe in the motto that a lifelong love of learning will always lead to a bright and prosperous future. 
-              </p>
-            </div>
-
-          </div>
+        
         </div>
 
       </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container position-relative">
 
         <div class="testimonials-slider swiper">
@@ -416,7 +253,7 @@ require_once "assets/common/header.php";
         </div>
 
       </div>
-    </section>
+    </section> -->
 
   </main>
 

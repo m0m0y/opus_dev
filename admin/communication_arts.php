@@ -120,7 +120,7 @@ $ourCourses = $communicationArts->getCourses();
                                     foreach($ourCourses as $v) {
                                         $id = $v["id"];
                                         $course = $v["course"];
-                                        $sort_by = $v["sort_by"];
+                                        $sort_by = $v["sort"];
                                         $status = $v["status"];
                                         $date_update = $v["date_update"];
                                         ?>
@@ -228,7 +228,7 @@ $ourCourses = $communicationArts->getCourses();
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Status: <span class="required">*</span></label>
+                                <label class="form-label">Status: </label>
                                 <select class="form-control" id="status" name="status">
                                     <option value="0">Enabled</option>
                                     <option value="1">Disabled</option>

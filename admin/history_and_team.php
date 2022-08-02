@@ -6,7 +6,6 @@ require_once "controller/controller.db.php";
 require_once "model/model.history_and_team.php";
 
 $historyAndTeams = new HistoryAndTeams();
-
 $historyContent = $historyAndTeams->getHistoryContent();
 $teamList = $historyAndTeams->getTeamList();
 ?>
@@ -188,7 +187,7 @@ $teamList = $historyAndTeams->getTeamList();
                             <h5 class="modal-title" id="modalTitle"></h5>
                         </div>
 
-                        <form name="form" method="post" action="controller/controller.history_and_team.php?mode=updateTeamInfo" enctype="multipart/form-data" id="modalForm">
+                        <form name="form" method="POST" action="controller/controller.history_and_team.php?mode=updateTeamInfo" enctype="multipart/form-data" id="modalForm">
                             <div class="modal-body mt-3">
 
                                 <div class="d-none">

@@ -15,7 +15,6 @@ $(function(){
             ['insert', ['link', 'picture', 'video']],
             ['view', ['fullscreen']],
         ],
-
         popover: {
             image: [
                 ['custom', ['imageAttributes']],
@@ -66,16 +65,7 @@ $(function(){
     if(status_module == "success"){
         sucessAlert();
         localStorage.clear();
-    } else if(status_module == "error") {
-        errorAlert();
-        localStorage.clear();
-    } else if(status_module == "errorUpload") {
-        errorUpload();
-        localStorage.clear();
-    } else if (status_module == "invalidFormat") {
-        invalidFormat();
-        localStorage.clear();
-    }
+    } 
 
     $('#btn-save').on('click', function(){
         var id = $('#admission_id').val();
@@ -83,7 +73,7 @@ $(function(){
         var content = $('#page_content').val();
         var status = $('#status').val();
 
-        if(title == "" || content == "") {
+        if(title == "" || $('#page_content').summernote('isEmpty')) {
             errorAlert();
         } else {
             submit(id, title, content, status);
@@ -128,6 +118,39 @@ function updateLink(card_id, card_title, img, content, link, card_status) {
         $('#team-image').removeClass('team-img');
         $('#team-image').attr('src', img);
     }
+
+    $('#modalForm').on('submit', function(e) {
+
+        e.preventDefault();
+
+        if($('#card_content').summernote('isEmpty')) {
+            errorAlert();
+        } else {
+            $.ajax({
+                url: 'controller/controller.admission_counselling.php?mode=updateCardContent',
+                type: 'POST',
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(data) {
+                    var obj = JSON.parse(data);
+    
+                    if (obj.message == "Invalid file format") {
+                        invalidFormat();
+                    } else if (obj.message == "Existing file" ) {
+                        errorUpload();
+                    } else if (obj.message == "Error Update") {
+                        errorAlert();
+                    } else if (obj.message == "Success Insert") {
+                        window.localStorage.setItem("stat", "success");
+                        window.location.href = "admission_counselling.php";
+                    }
+                }
+            });
+        }
+
+    })
 
     $('.resetBtn').on('click', function() {
         $('input[type=text], input[type=url]').val('');

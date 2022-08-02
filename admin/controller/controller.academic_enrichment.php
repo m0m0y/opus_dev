@@ -19,7 +19,7 @@ switch($mode) {
         break;
 
     default:
-        header("Location: ../admin/404.php");
+        header("Location: ../404.php");
 
 }
 echo json_encode($response);

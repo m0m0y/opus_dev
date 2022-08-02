@@ -27,7 +27,6 @@ switch($mode) {
         $response = array("data" => $contact_info);
         break;
 
-        
     case "updateDesc";
         $id = $_POST["id"];
         $description = $_POST["desc"];
@@ -37,9 +36,8 @@ switch($mode) {
         $response = array("message" => "Success Update");
         break;
 
-
     default:
-        header("Location: ../admin/404.php");
+        header("Location: ../404.php");
 
 }
 

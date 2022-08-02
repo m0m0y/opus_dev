@@ -4,7 +4,6 @@ require_once "assets/common/header.php";
 require_once "admin/model/model.about_us.php";
 
 $about = new AboutUs();
-
 $aboutContent = $about->getContent();
 ?>
 
@@ -16,7 +15,7 @@ $aboutContent = $about->getContent();
         <li><a href="index.php">Home</a></li>
         <li>About Us</li>
       </ol>
-      <h2>Opus Academy</h2>
+      <h2>Opus About Us</h2>
     </div>
   </section>
 

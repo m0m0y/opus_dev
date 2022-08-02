@@ -6,7 +6,6 @@ require_once "controller/controller.db.php";
 require_once "model/model.competitive_debate.php";
 
 $competitiveDebate = new CompetitiveDebate();
-
 $competitiveDebateContent = $competitiveDebate->getContent();
 ?>
 
