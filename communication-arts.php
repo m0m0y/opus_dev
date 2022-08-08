@@ -10,79 +10,27 @@ $ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
-
     <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-        <ol>
-            <li><a href="index.php">Home</a></li>
-            <li>Programs</li>
-            <li>Communication Arts</li>
-        </ol>
-        <h2>Opus Communication Arts</h2>
+        <div class="container section-bg ">
+            <ol>
+                 <li><a href="index.php">Home</a></li>
+                 <li>Programs</li>
+                 <li>Communication Arts</li>
+            </ol>
+                 <h2>Opus Communication Arts</h2>
         </div>
     </section>
 
-    <?php 
-    foreach($communicationArtsContent as $v) {
-        $section = $v["section"];
-        $title = $v["title"];
-        $content = $v["content"];
-        $status = $v["status"];
-
-        if($status == 0) {
-
-            if($section == "Section I") {
-                ?>
-
-                <section id="portfolio" class="portfolio">
-                    <div class="container">
-
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                        
-                        <div class="row portfolio-container mt-5">
-
-                            <div class="col col-sm-8 d-flex">
-                                <img src="assets/img/portfolio/p-8.jpg" class="mb-5" alt="" style="width: 100%;">
-                            </div>
-
-                            <div class="col col-sm-4 d-flex">
-                                <img src="assets/img/portfolio/p-7.jpg" class="mb-5" alt="" style="width: 100%;">
-                            </div>
-
-                            <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                                <img src="assets/img/portfolio/p-1.jpg" class="mb-5" alt="" style="width: 100%;">
-                                <img src="assets/img/portfolio/p-4.jpg" class="mb-5" alt="" style="width: 100%;">
-                            </div>
-
-                            <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                                <img src="assets/img/portfolio/p-3.jpg" class="mb-5" alt="" style="width: 100%;">
-                                <img src="assets/img/portfolio/p-5.jpg" class="mb-5" alt="" style="width: 100%;">
-                            </div>
-
-                            <div class="col col-12 col-lg-4 col-md-6 portfolio-item">
-                                <img src="assets/img/portfolio/p-2.jpg" class="mb-5" alt="" style="width: 100%;">
-                                <img src="assets/img/portfolio/p-6.jpg" class="mb-5" alt="" style="width: 100%;">
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                </section>
-
-                <?php
-            }
-
-        }
-
-    }
-    ?>
-
-    <section id="ourCourses" class="ourCourses section-bg">
-        <div class="container">
+<div class ="container p-0" >
+         <div class="clearfix intro-bg section-title ">
+             <img src="assets/img/portfolio/p-13.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
+             <h1 class="text-left p-5 pb-5"><b>Effective spoken communication is<br> critical for success in today's highly competitive world.</b></h1>
+             <p class="text-left p-5 mb-0">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
+             <h1 class = text-center><a href ="#press"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></h1>
+        </div>
+</div>
+    <section id="ourCourses" class="ourCourses">
+        <div class="container section-bg mr-5">
 
             <div class="section-title">
                 <h2 class="text-center">Our Courses</h2>
@@ -99,7 +47,7 @@ $ourCourse = $communicationArts->getCourses();
 
                         <div class="col-lg-4 col-md-6">
                             <div class="icon-box">
-                                <div class="icon"><i class="bi bi-activity"></i></div>
+                                <div class="icon"></div>
                                 <h5><a href=""><?= $course ?></a></h5>
                             </div>
                         </div>
@@ -111,199 +59,140 @@ $ourCourse = $communicationArts->getCourses();
             </div>
         </div>
     </section>
+<div class = "container p-0" id="press">
+    <div class="row">
+        <div class="clearfix section-title size font">
+              <h2 class="text-left md-5">Speech Arts & Drama</h2>
+                <p class="col-md-6 float-md-end ms-md-3 p-end-3" >We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from internationalcertification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.<br> <br>Class Size:Private,Group or Pair<br>Format:Online or In-Centre<br>Grades: K-12 <br>Courses Offered:Exam Based or Non-exam Based</p>
+                  <img src="assets/img/portfolio/p-14.jpg" class="col-6 p-5 pb-5" alt="Trophy">
+                  <button type="button" class="col-sm-6 btn btn-primary btn-sm ">Learn More</button>
 
-    <?php 
-    foreach($communicationArtsContent as $v) {
-        $section = $v["section"];
-        $title = $v["title"];
-        $content = $v["content"];
-        $status = $v["status"];
+                    <h2 class="col-md-6 float-md-end me-md-5 ">Our well-designed curricula include:</h2>
+                   
 
-        if($status == 0) {
+                        <div class=" font col-md-6 float-md-end ms-md-3 p-end-3" >
 
-            if($section == "Section II") {
-                ?>
+                            <div class="row  ">
+                                <div class="col-sm-4 p-1">
+                                    <p>Vocal Technique</p>
+                                </div>
+                                <div class="col-sm-8 p-1">
+                                     <p>Improvisation and Impromptu Speaking</p>
+                                </div>
+                            </div>
 
-                <section id="communicationArts" class="communicationArts">
-                    <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3 p-1">
+                                    <p>Story Telling</p>
+                                </div>
+                                <div class="col-sm-4 p-1">
+                                     <p>Public Speaking</p>
+                                </div>
+                                <div class="col-sm-5">
+                                     <p>Mime & Creative Movement</p>
+                                </div>
+                            </div>
 
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>Play Reading and Dramatization </p>
+                                </div>
+                                <div class="col-sm-6">
+                                     <p>Acting Styles</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <p>Oral Interpetation (poetry and prose)</p>
+                                </div>
+                                <div class="col-sm-4">
+                                     <p>Scene Study</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Shakespeare</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <?= $content ?>
                         
+                        <h2 class="col-md-6 mb-5 float-md-end me-md-5 ">Certificate and Diploma Granting:</h2>
+                        
+                        <div class="col-sm-6 float-md-end ">
+                            <div class="row">
+                                <div class="col-l-4 first w-25">
+                                   <img src="assets/img/portfolio/l-1.png">
+                                </div>
+
+                                <div class="col-l-4 logo-size w-25">
+                                <img src="assets/img/portfolio/l-2.png">
+                                </div>
+
+                                <div class="col-l-4 logo-size w-25">
+                                <img src="assets/img/portfolio/l-3.png">
+                                </div>
+                            
+                        </div>
+                        
+        </div>
+    </div> 
+</div>
+<div class ="container" >
+        <div class="clearfix trophy section-bg section-title li ">
+             <img src="assets/img/portfolio/p-15.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
+             <h1 class="text-center p-5"><b>Why Take Exams?</b></h1>
+            <ul class="text-left font ps-5 p-5 ms-5">
+                <li>Structured and sequential Learning.</li>
+                <li>Certificate and diploma granting.</li>
+                <li>Stand out in Private school & US UK University <br>admissions.</li>
+                <li>Competition and award opportunities.</li>
+                <li>Earn credentials and BC arts course credits</li>
+            </ul>
+            <button type="button" class="text-btn btn-primary btn-lg achievement"><b>Our Achievement</b></button>
+        </div>
+</div> 
+
+        <div class="clearfix section-title size font">
+            <h2 class="text-left mt-5 ">Interview Skills</h2>
+            <div class="row">
+
+                <div class="col-md-6 inter">
+                    <img src="assets/img/portfolio/p-10.jpg">
+
+                    <div class = " col-md-6 p-0 butt">
+                      <button type="button" class="btn btn-primary btn-md mt-4 w-50 ms-0 ">Learn More</button>
                     </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section III") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
                 </div>
 
-                <section id="certificate-and-diploma" class="certificate-and-diploma">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section IV") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
+                <div class="col-md-6">
+                    <p>Interviews can be a daunting task at any ages, let alone children and teens.With the help of our experts at opus academy, we will help your child rise to the occasion and master! Opus has a long-standing history preparing srudents for the interviewing world,whether it be for private school admissions, universities, or internships.The liability to express oneself in interview settings is one of the most important skills a student can acquire.In this course, students learn how to communicate effectively,making the most of their qualification and extra-curricular experiences. Students are placed in a mock interview setting, where they are evaluated by an instructor with experience both interviewing candidates and teaching interview skills<br><br> Class Size:Private<br>Formats:Online or In-Centre<br>Grades:K-10</p>
                 </div>
+            </div>
+        </div>
 
-                <section id="public-speaking" class="public-speaking">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
+        <div class="clearfix section-title size font">
+              <h2 class="text-left">Leadership & Etiquette</h2>
+            <div class="row">
 
-                        <?= $content ?>
+
+                <div class="col-md-6 lead">
+                  <img src="assets/img/portfolio/p-16.jpg"><br>
+
+                    <div class = " col-md-6 p-0 butt">
+                      <button type="button" class="btn btn-primary btn-md mt-4 w-50 ms-0 ">Learn More</button>
                     </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section V") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
                 </div>
+              
+                <div class ="col-md-6 mb-5">
+                  <p>Time and again, science has proven that strong emotional intelligence in children leads to better decision making, motivation, and a heightened sense of self-awareness going forward in life. These factors are a pivotal foundation benefiting.all young people, providing them with the fortitude required to succeed personally and professionally.This program is especially designed to present a multitude of skills necessary for positive personality development and strengthened emotional intelligence. Students will develop stronger communication skills, organizational goals, and gain essential leadership skills. They will study the essential qualities of a leader and learn conflict resolution skills through understanding social concepts and dynamics. In addition, this program prepares young people to present themselves well in a variety of social situations and at job interviews. The practical side of our courses are designed to increase knowledge and appreciation of good manners and etiquette, improving self-esteem, and respecting others. <br><br><br> Class Size:Private, Group or Pair<br>Formats:Online or In-Centre<br>Grades 1-10<br>Courses Offered:&nbsp;Youth Leadership Training<br><p style="padding-left:155px;position:relative;bottom: 20px;">Etiquette and Personality Empowerment for Youth<br>Etiquette for Kids</p>
+                </div><br>
+                
+                
 
-                <section id="certificate-and-diploma-grant" class="certificate-and-diploma-grant">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section VI") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
-                </div>
-
-                <section id="interview-skills-program" class="interview-skills-program">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section VII") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
-                </div>
-
-                <section id="youth-lead-program" class="youth-lead-program">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section VIII") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
-                </div>
-
-                <section id="international-relations" class="international-relations">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section IX") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
-                </div>
-
-                <section id="awards-and-honor" class="awards-and-honor">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-            else if($section == "Section X") {
-                ?>
-
-                <div class="container">
-                    <hr></hr>
-                </div>
-
-                <section id="speech-competitions-festivals" class="speech-competitions-festivals">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4><?= $title ?></h4>
-                        </div>
-
-                        <?= $content ?>
-                    </div>
-                </section>
-
-                <?php
-            }
-
-        }
-
-    }
-
-    ?>
+           
+    </div>
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>
