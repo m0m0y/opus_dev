@@ -22,18 +22,23 @@ $ourCourse = $communicationArts->getCourses();
     </section>
 
 <div class ="container p-0" >
-         <div class="clearfix intro-bg section-title ">
+        <div class="clearfix intro-bg section-title ">
              <img src="assets/img/portfolio/p-13.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
-             <h1 class="text-left p-5 pb-5"><b>Effective spoken communication is<br> critical for success in today's highly competitive world.</b></h1>
-             <p class="text-left p-5 mb-0">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
-             <h1 class = text-center><a href ="#press"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></h1>
+            <div class="text-left p-5 pb-5">
+                <h1><b>Effective spoken communication is<br> critical for success in today's highly competitive world.<b></h1>
+            </div>
+            <div class="text-left p-5 mb-0">
+                <p>At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
+                <h1 class = text-center><a href ="#press"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></h1>
+            </div>
         </div>
 </div>
+
     <section id="ourCourses" class="ourCourses">
         <div class="container section-bg mr-5">
 
-            <div class="section-title">
-                <h2 class="text-center">Our Courses</h2>
+            <div class="section-title text-center pt-5">
+                <h2>Our Courses</h2>
             </div>
 
             <div class="row">
@@ -59,103 +64,108 @@ $ourCourse = $communicationArts->getCourses();
             </div>
         </div>
     </section>
-<div class = "container p-0" id="press">
-    <div class="row">
-        <div class="clearfix section-title size font">
-              <h2 class="text-left md-5">Speech Arts & Drama</h2>
-                <p class="col-md-6 float-md-end ms-md-3 p-end-3" >We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from internationalcertification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.<br> <br>Class Size:Private,Group or Pair<br>Format:Online or In-Centre<br>Grades: K-12 <br>Courses Offered:Exam Based or Non-exam Based</p>
-                  <img src="assets/img/portfolio/p-14.jpg" class="col-6 p-5 pb-5" alt="Trophy">
-                  <button type="button" class="col-sm-6 btn btn-primary btn-sm ">Learn More</button>
 
-                    <h2 class="col-md-6 float-md-end me-md-5 ">Our well-designed curricula include:</h2>
-                   
-
-                        <div class=" font col-md-6 float-md-end ms-md-3 p-end-3" >
-
-                            <div class="row  ">
-                                <div class="col-sm-4 p-1">
-                                    <p>Vocal Technique</p>
-                                </div>
-                                <div class="col-sm-8 p-1">
-                                     <p>Improvisation and Impromptu Speaking</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-3 p-1">
-                                    <p>Story Telling</p>
-                                </div>
-                                <div class="col-sm-4 p-1">
-                                     <p>Public Speaking</p>
-                                </div>
-                                <div class="col-sm-5">
-                                     <p>Mime & Creative Movement</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p>Play Reading and Dramatization </p>
-                                </div>
-                                <div class="col-sm-6">
-                                     <p>Acting Styles</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <p>Oral Interpetation (poetry and prose)</p>
-                                </div>
-                                <div class="col-sm-4">
-                                     <p>Scene Study</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p>Shakespeare</p>
-                                </div>
-                            </div>
+        <div class = "container p-0" id="press">
+            <div class="row">
+                <div class="clearfix section-title size font">
+                    <div class="text-left md-5"><h2>Speech Arts & Drama</h2></div>
+                        <div class="col-md-6 float-md-end p-end-3">
+                            <p>We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from internationalcertification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.<br> <br>Class Size:Private,Group or Pair<br>Format:Online or In-Centre<br>Grades: K-12 <br>Courses Offered:Exam Based or Non-exam Based</p>
                         </div>
-                        
-                        <h2 class="col-md-6 mb-5 float-md-end me-md-5 ">Certificate and Diploma Granting:</h2>
-                        
-                        <div class="col-sm-6 float-md-end ">
-                            <div class="row">
-                                <div class="col-l-4 first w-25">
-                                   <img src="assets/img/portfolio/l-1.png">
-                                </div>
-
-                                <div class="col-l-4 logo-size w-25">
-                                <img src="assets/img/portfolio/l-2.png">
-                                </div>
-
-                                <div class="col-l-4 logo-size w-25">
-                                <img src="assets/img/portfolio/l-3.png">
-                                </div>
-                            
+                            <div class="col-6 pb-5"><img src="assets/img/portfolio/p-14.jpg"  alt="Trophy">
                         </div>
-                        
-        </div>
-    </div> 
-</div>
-<div class ="container" >
-        <div class="clearfix trophy section-bg section-title li ">
-             <img src="assets/img/portfolio/p-15.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
-             <h1 class="text-center p-5"><b>Why Take Exams?</b></h1>
-            <ul class="text-left font ps-5 p-5 ms-5">
-                <li>Structured and sequential Learning.</li>
-                <li>Certificate and diploma granting.</li>
-                <li>Stand out in Private school & US UK University <br>admissions.</li>
-                <li>Competition and award opportunities.</li>
-                <li>Earn credentials and BC arts course credits</li>
-            </ul>
-            <button type="button" class="text-btn btn-primary btn-lg achievement"><b>Our Achievement</b></button>
-        </div>
-</div> 
+                        <button type="button" class="col-sm-6 btn btn-primary btn-sm ">Learn More</button>
 
-        <div class="clearfix section-title size font">
-            <h2 class="text-left mt-5 ">Interview Skills</h2>
+                            <div class="col-md-6 float-md-end me-md-5 "><h2>Our well-designed curricula include:</h2></div>
+                    
+                                <div class=" font col-md-6 float-md-end ms-md-3 p-end-3" >
+
+                                    <div class="row  ">
+                                        <div class="col-sm-4 p-1">
+                                            <p>Vocal Technique</p>
+                                        </div>
+                                        <div class="col-sm-8 p-1">
+                                            <p>Improvisation and Impromptu Speaking</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-3 p-1">
+                                            <p>Story Telling</p>
+                                        </div>
+                                        <div class="col-sm-4 p-1">
+                                            <p>Public Speaking</p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <p>Mime & Creative Movement</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>Play Reading and Dramatization </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>Acting Styles</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <p>Oral Interpetation (poetry and prose)</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p>Scene Study</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>Shakespeare</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-5 float-md-end me-md-5 "><h2>Certificate and Diploma Granting:</h2></div>
+                                
+                                <div class="col-sm-6 float-md-end ">
+                                    <div class="row">
+                                        <div class="col-l-4 first w-25">
+                                        <img src="assets/img/portfolio/l-1.png">
+                                        </div>
+
+                                        <div class="col-l-4 logo-size w-25">
+                                        <img src="assets/img/portfolio/l-2.png">
+                                        </div>
+
+                                        <div class="col-l-4 logo-size w-25">
+                                        <img src="assets/img/portfolio/l-3.png">
+                                        </div>
+                                    </div>   
+                               </div>
+                </div> 
+            </div>
+        </div>
+
+    <div class ="container">
+            <div class="clearfix trophy section-bg section-title li ">
+                    <img src="assets/img/portfolio/p-15.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
+                    <div class="text-center p-5">
+                        <h1><b>Why Take Exams?</b></h1>
+                    </div>
+                <ul class="text-left font ps-5 p-5 ms-5">
+                    <li>Structured and sequential Learning.</li>
+                    <li>Certificate and diploma granting.</li>
+                    <li>Stand out in Private school & US UK University <br>admissions.</li>
+                    <li>Competition and award opportunities.</li>
+                    <li>Earn credentials and BC arts course credits</li>
+                </ul>
+
+                <button type="button" class="text-btn btn-primary btn-lg achievement"><b>Our Achievement</b></button>
+            </div>
+
+        <div class="clearfix section-title size font text-left mt-5">
+            <h2>Interview Skills</h2>
             <div class="row">
 
                 <div class="col-md-6 inter">
@@ -173,28 +183,117 @@ $ourCourse = $communicationArts->getCourses();
         </div>
 
         <div class="clearfix section-title size font">
-              <h2 class="text-left">Leadership & Etiquette</h2>
+            <div  class="text-left">
+              <h2>Leadership & Etiquette</h2>
+            </div>
             <div class="row">
 
+                    <div class="col-md-6 lead">
+                    <img src="assets/img/portfolio/p-16.jpg"><br>
 
-                <div class="col-md-6 lead">
-                  <img src="assets/img/portfolio/p-16.jpg"><br>
-
-                    <div class = " col-md-6 p-0 butt">
-                      <button type="button" class="btn btn-primary btn-md mt-4 w-50 ms-0 ">Learn More</button>
+                        <div class = " col-md-6 p-0 butt">
+                        <button type="button" class="btn btn-primary btn-md mt-4 w-50 ms-0 ">Learn More</button>
+                        </div>
                     </div>
-                </div>
               
-                <div class ="col-md-6 mb-5">
-                  <p>Time and again, science has proven that strong emotional intelligence in children leads to better decision making, motivation, and a heightened sense of self-awareness going forward in life. These factors are a pivotal foundation benefiting.all young people, providing them with the fortitude required to succeed personally and professionally.This program is especially designed to present a multitude of skills necessary for positive personality development and strengthened emotional intelligence. Students will develop stronger communication skills, organizational goals, and gain essential leadership skills. They will study the essential qualities of a leader and learn conflict resolution skills through understanding social concepts and dynamics. In addition, this program prepares young people to present themselves well in a variety of social situations and at job interviews. The practical side of our courses are designed to increase knowledge and appreciation of good manners and etiquette, improving self-esteem, and respecting others. <br><br><br> Class Size:Private, Group or Pair<br>Formats:Online or In-Centre<br>Grades 1-10<br>Courses Offered:&nbsp;Youth Leadership Training<br><p style="padding-left:155px;position:relative;bottom: 20px;">Etiquette and Personality Empowerment for Youth<br>Etiquette for Kids</p>
-                </div><br>
-                
-                
+                    <div class ="col-md-6 mb-5">
+                            <p>Time and again, science has proven that strong emotional intelligence in children leads to better decision making, motivation, and a heightened sense of self-awareness going forward in life. These factors are a pivotal foundation benefiting.all young people, providing them with the fortitude required to succeed personally and professionally.This program is especially designed to present a multitude of skills necessary for positive personality development and strengthened emotional intelligence. Students will develop stronger communication skills, organizational goals, and gain essential leadership skills. They will study the essential qualities of a leader and learn conflict resolution skills through understanding social concepts and dynamics. In addition, this program prepares young people to present themselves well in a variety of social situations and at job interviews. The practical side of our courses are designed to increase knowledge and appreciation of good manners and etiquette, improving self-esteem, and respecting others. <br><br><br> Class Size:Private, Group or Pair<br>Formats:Online or In-Centre<br>Grades 1-10<br>Courses Offered:&nbsp;Youth Leadership Training<br><p style="padding-left:155px;position:relative;bottom: 20px;">Etiquette and Personality Empowerment for Youth<br>Etiquette for Kids</p> <br>
+                    
+                            <div class=" section-title pb-0 me-md-5">
+                                <h4>Our well designed curricula include:<h4>
+                            </div>
 
-           
+                        <div class="row font pb-0 ms-md-5">
+                            <div class="col-sm-4 p-1">
+                                <p>Vocal Technique</p>
+                            </div>
+
+                            <div class="col-sm-8 p-1">
+                                <p>Improvisation and Impromptu Speaking</p>
+                            </div>
+                        </div>
+
+                        <div class="row ms-md-5">
+                            <div class="col-sm-3 p-1">
+                                <p>Story Telling</p>
+                            </div>
+                            <div class="col-sm-4 p-1">
+                                <p>Public Speaking</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p>Mime & Creative Movement</p>
+                            </div>
+                        </div>
+
+                        <div class="row ms-md-5">
+                            <div class="col-sm-6 p-0">
+                                <p>Play Reading and Dramatization </p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <p>Acting Styles</p>
+                            </div>
+                        </div>
+
+                        <div class="row ms-md-5 ">
+                            <div class="col-sm-8 p-0">
+                                <p>Oral Interpetation (poetry and prose)</p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <p>Scene Study</p>
+                            </div>
+                        </div>
+
+                        <div class="row ms-md-5">
+                            <div class="col-sm-12 p-0">
+                                <p>Shakespeare</p>
+                            </div>
+                        </div> 
+                    </div>
+
+                <div class="clearfix section-title size font">
+                        <div class="text-left">
+                            <h2>International Relations</h2>
+                        </div>
+                        <div class ="row">
+                            <div class="col-md-6 flag">
+                                <img src="assets/img/portfolio/p-12.jpg">
+                                
+                                <div class = " col-md-6 p-0 butt">
+                                    <button type="button" class="btn btn-primary btn-md mt-4 w-50 ms-0 ">Learn More</button>
+                                </div>
+                            </div>
+       
+                 <div class="col-md-6 mb-5" >
+                    <p>In the fast-paced and ever-changing world of the 21st century, it is critical for young minds to be prepared for the world at large by increasing their global awareness. At Opus, we introduce and engage students in the global effects of economic, social, and political processes, as well as issues of justice and responsibility through three courses: Current Events, Model UN, and Mock Trial.<br><br><br> Class Size:Private, Group or Pair<br>Formats:Online or In-Centre<br>Grades 5-12<br>Courses Offered:&nbsp;Current Events<br><p style="padding-left:155px;position:relative;bottom: 20px;">Model United Nations<br>Mock Trail</p>
+                
+                <div class=" section-title pb-0 me-md-5 mb-5">
+
+                    <h4>Current Event</h4>
+                    <p>This course increases young people's awareness of and responsiveness to issues and events that are important locally, nationally, and internationally.  Students learn to differentiate between fact and opinion, as well as to critically analyze news and various media sources, developing their own perspectives in the process. Students will be equipped to not only engage with the news around them, but contribute to a wide range of topics and discussions on a global scale.</p>
+                </div>
+
+                <div class=" section-title pb-0 me-md-5 mb-5">
+
+                    <h4>Model United Nations</h4>
+                    <p>This course teaches the basics of constructing and analyzing diplomatic speeches, as well as constructing and presenting successful negotiation strategies. Students are assigned roles and given specific diplomatic goals to meet by the end of the conference. Students will develop the skills necessary to interpret, analyze, and debate global issues concerning diplomacy, politics, and international relations.</p>
+                </div>
+                <div class=" section-title pb-0 me-md-5">
+                    <h4>Mock Trail</h4>
+                    <p>The Opus Mock Trial Program trains students to plan, draft, and present their claims for cross-examining and delivering opening and closing arguments. It additionally instructs students how to argue intelligently and logically while conducting courtroom procedures such as introducing material evidence and responding to objections. Students will increase their confidence, poise, oral skills, critical thinking skills, and teamwork.</p>
+                </div>
+                </div>
+                    <div class="container ">
+                    <div class=" section-title pb-0 me-md-5 text-center booking">
+                    <h4>Give your child the opportunity to learn and speak with confidence, clarity, and conviction!</h4>
+                    </div>
+                    </div>
+                    </div>
+                 </div>   
+            </div>   
+        </div>
     </div>
-</main>
-
 <?php require_once "assets/common/footer.php"; ?>
 
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
