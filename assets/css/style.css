@@ -78,6 +78,30 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.15rem 3rem;
 }
 
+.learnmore-btn {
+  color: white;
+  border: 1px solid #0d6efd; 
+  background-color: #0d6efd;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 1rem 3rem;
+}
+
+.custom-badge span{
+  display: inline-block;
+  padding: 7px 15px;
+  background: #f5f5f5;
+  margin-right: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -448,7 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 0px 0; /*60 default for vertical sepatation.*/
+  padding: 60px 0px; /*60 default for vertical sepatation.*/
   overflow: hidden;
 }
 
@@ -456,127 +480,23 @@ section {
   background-color: #29176e26;
     background-color: #29176e26;
 }
-.intro-bg {
-  background-color: #ffc107;
-}
 .section-title {
   padding-bottom: 0px;
   padding-top: 30px;
-}
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 0px;
-  padding-bottom: 50px;
-  font-family: "Poppins", sans-serif;
-  color: #635551;
-  padding-top:20px
-}
-
-.section-title h1 {
-  font-size: 50px;
-  font-weight: 500;
-  margin-bottom: -10px;
-  padding-bottom: 0;
-  font-family: "Poppins", sans-serif;
-  color: #635551;
-}
-.section-title p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  font-family: "Poppins", sans-serif;
-  color: #635551;
-}
-.clearfix img {
-  width: 600px;
-  height: 670px;
-  margin-top:-30px
-}
-.bi-chevron-compact-down {
-  content: "\f279";
-  font-size: 55px;
-  color:white; 
-  text-align: center;
-}
-.size img{ /*trophy img resize*/
-width:auto;
-height:21.5%;
-}
-.btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  margin-left: 30px;
-  padding: 10px;
-  font-size: 20px;
-  width:26.5%;
-}
-.font p{
-  font-size: 18px;
-    font-weight: 400;
-}
-ul{
-    display:inline-block;
-    text-align: left;
-    list-style: inside;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    font-family: "Poppins", sans-serif;
-    color: #635551;
-  }
-  .li li {
-    margin-left:30px
-  }
-
-.logo-size img {
-  width:90%;
-  height:90%;
-}
-.first img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 30px;
-}
-.achievement { /*button for achievement */
-  color: #0d6efd;
-  background-color: #fff;
-  margin-left: 100px;
-  padding: 20px;
-  font-size: 24px;
-  width: 20%;
-  font-weight: 400;
-  height: auto;
-  border-color: #fff;
-}
-.inter img {
-  width: 50%;
-  height: 50%;
-}
-.lead  img { /*Leadership & interview */
-  height: 35%;
-  width: 50%;
-}
-.butt {
-  width:100%;
 }
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 0px 0;
-  /* background: #f4f2f2; */
-  margin-bottom: 0px; /*40 25*/
-  margin-top: 0px;
+  padding-top: 15px;
+}
+.breadcrumbs .container {
+  padding: 1rem;
+  background: #f4f2f2;
 }
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 500;
-  padding: 15px;
 }
 .breadcrumbs ol {
   display: flex;
@@ -906,57 +826,6 @@ ul{
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-/* .about .icon-boxes h4 {
-  font-size: 18px;
-  color: #7f6d68;
-  margin-bottom: 15px;
-}
-.about .icon-boxes h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #554945;
-  margin-bottom: 15px;
-}
-.about .icon-box {
-  margin-top: 40px;
-}
-.about .icon-box .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid #28176e6c;
-  border-radius: 50px;
-  transition: 0.5s;
-  background: #fff;
-}
-.about .icon-box .icon i {
-  color: #29176e;
-  font-size: 32px;
-}
-.about .icon-box:hover .icon {
-  background: #29176e;
-  border-color: #29176e;
-}
-.about .icon-box:hover .icon i {
-  color: #fff;
-}
-.about .icon-box .title {
-  margin-left: 85px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-.about .icon-box .title {
-  color: #554945;
-}
-.about .icon-box .description {
-  margin-left: 85px;
-  line-height: 24px;
-  font-size: 14px;
-} */
 .why-choose-opus .video-box {
   background: url("../img/hero/hero-1.jpg") center center no-repeat;
   background-size: cover;
@@ -1261,6 +1130,9 @@ ul{
 /*--------------------------------------------------------------
 # Communication Arts
 --------------------------------------------------------------*/
+.intro-bg {
+  background-color: #ffc107;
+}
 .portfolio {
   padding-top: 20px;
 }
@@ -1272,108 +1144,31 @@ ul{
   padding-left: 10px;
 }
 
-.ourCourses .icon-box {
-  padding: 50px 20px;
+.ourCourses .box {
+  padding: 40px 20px;
   margin-top: 35px;
   margin-bottom: 25px;
   text-align: center;
   position: relative;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin:35px;
+  margin: 25px 0px;
 }
-/* .ourCourses .icon {
-  position: absolute;
-  top: -36px;
-  left: calc(50% - 36px);
-  transition: 0.2s;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 72px;
-  height: 72px;
-  background: #29176e;
-}
-.ourCourses .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
-} */
 .ourCourses .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
 }
-/* .ourCourses .icon-box:hover .icon {
-  background: #fff;
-  border: 2px solid #29176e;
-} */
-.ourCourses .icon-box:hover .icon i {
-  color: #29176e;
+.speech-arts-drama .text-content {
+  padding-top: 5rem;
 }
-.communicationArts .bg-img {
-  background: url('../img/portfolio/p-9.jpg') no-repeat;
-  background-size: cover;
-  min-height: 250px;
-  filter: opacity(0.9);
-  border-radius: 5px;
+.speech-arts-drama .certificate-container .cert-img {
+  width: 100%;
 }
-.communicationArts .justify-content-center .list {
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 1px;
-  border-radius: 3px;
-}
-.communicationArts h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.certificate-and-diploma h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.certificate-and-diploma .description {
-  padding-left: 20px;
-}
-.public-speaking h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.public-speaking .content {
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
-}
-.certificate-and-diploma-grant h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.interview-skills-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.youth-lead-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.international-relations h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.awards-and-honor h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.speech-competitions-festivals h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+.why-take-exam .position-absolute {
+  left: 10%;
+  top: 22%;
 }
 /*--------------------------------------------------------------
 # Footer

@@ -10,27 +10,35 @@ $ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container section-bg ">
+    <section id="breadcrumbs" class="breadcrumbs pb-0">
+        <div class="container">
             <ol>
                  <li><a href="index.php">Home</a></li>
                  <li>Programs</li>
                  <li>Communication Arts</li>
             </ol>
-                 <h2>Opus Communication Arts</h2>
+            <h2>Opus Communication Arts</h2>
         </div>
     </section>
 
-<div class ="container p-0" >
-         <div class="clearfix intro-bg section-title ">
-             <img src="assets/img/portfolio/p-13.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
-             <h1 class="text-left p-5 pb-5"><b>Effective spoken communication is<br> critical for success in today's highly competitive world.</b></h1>
-             <p class="text-left p-5 mb-0">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
-             <h1 class = text-center><a href ="#press"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></h1>
+    <div class ="container p-0">
+        <div class="intro-bg">
+           <div class="row">
+                <div class="col-md-6">
+                    <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
+                    <p class="text-left px-5 pb-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
+                    <center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="assets/img/portfolio/p-13.jpg" class="w-100" alt="speak-img">
+                </div>
+           </div>
         </div>
-</div>
-    <section id="ourCourses" class="ourCourses">
-        <div class="container section-bg mr-5">
+    </div>
+
+    <section id="ourCourses" class="ourCourses section-bg">
+        <div class="container">
 
             <div class="section-title">
                 <h2 class="text-center">Our Courses</h2>
@@ -46,7 +54,7 @@ $ourCourse = $communicationArts->getCourses();
                         ?>
 
                         <div class="col-lg-4 col-md-6">
-                            <div class="icon-box">
+                            <div class="box">
                                 <div class="icon"></div>
                                 <h5><a href=""><?= $course ?></a></h5>
                             </div>
@@ -59,101 +67,112 @@ $ourCourse = $communicationArts->getCourses();
             </div>
         </div>
     </section>
-<div class = "container p-0" id="press">
-    <div class="row">
-        <div class="clearfix section-title size font">
-              <h2 class="text-left md-5">Speech Arts & Drama</h2>
-                <p class="col-md-6 float-md-end ms-md-3 p-end-3" >We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from internationalcertification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.<br> <br>Class Size:Private,Group or Pair<br>Format:Online or In-Centre<br>Grades: K-12 <br>Courses Offered:Exam Based or Non-exam Based</p>
-                  <img src="assets/img/portfolio/p-14.jpg" class="col-6 p-5 pb-5" alt="Trophy">
-                  <button type="button" class="col-sm-6 btn btn-primary btn-sm ">Learn More</button>
 
-                    <h2 class="col-md-6 float-md-end me-md-5 ">Our well-designed curricula include:</h2>
-                   
+    <section id="speech-arts-drama" class="speech-arts-drama">
+        <div class="container" id="">
+            
+            <div class="row">
 
-                        <div class=" font col-md-6 float-md-end ms-md-3 p-end-3" >
+                <div class="col-md-6 px-5">
+                    <h2 class="text-left mb-5 fw-bold">Speech Arts & Drama</h2>
 
-                            <div class="row  ">
-                                <div class="col-sm-4 p-1">
-                                    <p>Vocal Technique</p>
-                                </div>
-                                <div class="col-sm-8 p-1">
-                                     <p>Improvisation and Impromptu Speaking</p>
-                                </div>
+                    <div class="d-flex justify-content-start">
+                        <img src="assets/img/portfolio/awards.jpg" class="w-100" alt="awards-img" />
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <a href="#!" type="button" class="learnmore-btn mt-4">Learn More</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 text-content">
+                    <p>We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from international certification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.<br> <br>Class Size:Private,Group or Pair<br>Format:Online or In-Centre<br>Grades: K-12 <br>Courses Offered:Exam Based or Non-exam Based</p>
+
+                    
+                    <h2 class="fw-bold mt-3">Our well-designed curricula include:</h2>
+                    
+                    <p class="custom-badge">
+                        <span>Vocal Technique</span>
+                        <span>Improvisation and Impromptu Speaking</span>
+                        <span>Story Telling</span>
+                        <span>Public Speaking</span>
+                        <span>Mime & Creative Movement</span>
+                        <span>Play Reading and Dramatization </span>
+                        <span>Acting Styles</span>
+                        <span>Oral Interpetation (poetry and prose)</span>
+                        <span>Scene Study</span>
+                        <span>Shakespeare</span>
+                    </p>
+
+                    <h2 class="fw-bold mt-3">Certificate and Diploma Granting:</h2>
+                                
+                    <div class="d-flex justify-content-center certificate-container">
+                        <div class="row">
+
+                            <div class="col-xl-4 col-sm-12">
+                                <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
                             </div>
 
-                            <div class="row">
-                                <div class="col-sm-3 p-1">
-                                    <p>Story Telling</p>
-                                </div>
-                                <div class="col-sm-4 p-1">
-                                     <p>Public Speaking</p>
-                                </div>
-                                <div class="col-sm-5">
-                                     <p>Mime & Creative Movement</p>
-                                </div>
+                            <div class="col-xl-4 col-sm-12">
+                                <img src="assets/img/portfolio/l-2.png" class="cert-img w-100">
                             </div>
 
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p>Play Reading and Dramatization </p>
-                                </div>
-                                <div class="col-sm-6">
-                                     <p>Acting Styles</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <p>Oral Interpetation (poetry and prose)</p>
-                                </div>
-                                <div class="col-sm-4">
-                                     <p>Scene Study</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p>Shakespeare</p>
-                                </div>
+                            <div class="col-xl-4 col-sm-12">
+                                <img src="assets/img/portfolio/l-3.png" class="cert-img w-100">
                             </div>
                         </div>
-                        
-                        <h2 class="col-md-6 mb-5 float-md-end me-md-5 ">Certificate and Diploma Granting:</h2>
-                        
-                        <div class="col-sm-6 float-md-end ">
-                            <div class="row">
-                                <div class="col-l-4 first w-25">
-                                   <img src="assets/img/portfolio/l-1.png">
-                                </div>
+                    </div>
 
-                                <div class="col-l-4 logo-size w-25">
-                                <img src="assets/img/portfolio/l-2.png">
-                                </div>
+                </div>
 
-                                <div class="col-l-4 logo-size w-25">
-                                <img src="assets/img/portfolio/l-3.png">
-                                </div>
-                            
-                        </div>
-                        
+            </div>
         </div>
-    </div> 
-</div>
-<div class ="container" >
-        <div class="clearfix trophy section-bg section-title li ">
-             <img src="assets/img/portfolio/p-15.jpg" class="col-md-6 float-md-end ms-md-3" alt="BreadCrumbs">
-             <h1 class="text-center p-5"><b>Why Take Exams?</b></h1>
-            <ul class="text-left font ps-5 p-5 ms-5">
-                <li>Structured and sequential Learning.</li>
-                <li>Certificate and diploma granting.</li>
-                <li>Stand out in Private school & US UK University <br>admissions.</li>
-                <li>Competition and award opportunities.</li>
-                <li>Earn credentials and BC arts course credits</li>
-            </ul>
-            <button type="button" class="text-btn btn-primary btn-lg achievement"><b>Our Achievement</b></button>
-        </div>
-</div> 
+    </section>
 
+
+    <section id="why-take-exam" class="why-take-exam section-bg p-0">
+        <div class ="container">
+            <div class="row">
+
+                <div class="col-md-6 p-5 position-relative">
+                    <div class="position-absolute">
+                        <h1 class="fw-bold mb-4">Why Take Exams?</h1>
+                        <ul class="">
+                            <li>Structured and sequential Learning.</li>
+                            <li>Certificate and diploma granting.</li>
+                            <li>Stand out in Private school & US UK University <br>admissions.</li>
+                            <li>Competition and award opportunities.</li>
+                            <li>Earn credentials and BC arts course credits</li>
+                        </ul>
+
+                        <a href="#!" type="button" class="light-btn">Our Achievement</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="assets/img/portfolio/p-15.jpg" class="w-100" alt="trophy-img">
+                </div>
+
+            </div>
+        </div>
+            <!-- <div class="clearfix trophy section-title li ">
+                
+            
+                <ul class="text-left font ps-5 p-5 ms-5">
+                    <li>Structured and sequential Learning.</li>
+                    <li>Certificate and diploma granting.</li>
+                    <li>Stand out in Private school & US UK University <br>admissions.</li>
+                    <li>Competition and award opportunities.</li>
+                    <li>Earn credentials and BC arts course credits</li>
+                </ul>
+                <button type="button" class="text-btn btn-primary btn-lg achievement"><b>Our Achievement</b></button>
+                <a href="#!" type="button" class="light-btn">Our Achievement</a>
+            </div>
+        </div> 
+    </section> -->
+
+<!-- 
         <div class="clearfix section-title size font">
             <h2 class="text-left mt-5 ">Interview Skills</h2>
             <div class="row">
@@ -192,7 +211,7 @@ $ourCourse = $communicationArts->getCourses();
                 
 
            
-    </div>
+    </div> -->
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>
