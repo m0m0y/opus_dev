@@ -17,11 +17,11 @@ $ourCourse = $communicationArts->getCourses();
                  <li>Programs</li>
                  <li>Communication Arts</li>
             </ol>
-            <h2>Opus Communication Arts</h2>
+            <h2>Communication Arts Programs</h2>
         </div>
     </section>
 
-    <div class ="container p-0 intro-bg">
+    <div class ="container p-0 warning-bg">
         <div class="row">
             <div class="col-md-6" style="padding-right: 0px;">
                 <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
@@ -35,7 +35,7 @@ $ourCourse = $communicationArts->getCourses();
         </div>
     </div>
 
-    <section id="ourCourses" class="ourCourses section-bg">
+    <section id="ourCourses" class="ourCourses secondary-bg">
         <div class="container">
 
             <div class="section-title">
@@ -67,9 +67,7 @@ $ourCourse = $communicationArts->getCourses();
 
     <section id="section-container" class="section-container">
         <div class="container">
-            
             <div class="row">
-
                 <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Speech Arts & Drama</h2>
 
@@ -111,7 +109,6 @@ $ourCourse = $communicationArts->getCourses();
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-
                             <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
                             </div>
@@ -125,18 +122,14 @@ $ourCourse = $communicationArts->getCourses();
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
 
         <div class="spacing"></div>
 
         <div class="container mt-5">
-            
             <div class="row">
-
                 <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Public Speaking and Debate</h2>
 
@@ -178,7 +171,6 @@ $ourCourse = $communicationArts->getCourses();
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-
                             <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
                             </div>
@@ -192,18 +184,15 @@ $ourCourse = $communicationArts->getCourses();
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
 
     <section class="why-take-exam">
-        <div class="text-left competitive-title section-bg">
-
+        <div class="text-left competitive-title secondary-bg">
             <div class="row">
-                <div class="col-md-6" style="padding: 9%;">
+                <div class="col-md-6" style="padding: 8%;">
                     <div class="mb-5 m-5 text-left">
                         <h1 class="fw-bold">Why Take Exams?</h1>
 
@@ -227,9 +216,7 @@ $ourCourse = $communicationArts->getCourses();
 
     <section id="section-container" class="section-container">
         <div class="container">
-            
             <div class="row">
-
                 <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Interview Skills Program</h2>
 
@@ -242,7 +229,6 @@ $ourCourse = $communicationArts->getCourses();
                     </div>
                 </div>
 
-
                 <div class="col-md-6 text-content">
                     <p>Interviews can be a daunting task at any ages, let alone children and teens. With the help of our experts at Opus Academy, we will help your child rise to the occasion and master! Opus has a long-standing history preparing students for the interviewing world, whether it be for private school admissions, universities, or internships. The ability to express oneself in interview settings is one of the most important skills a student can acquire. In this course, students learn how to communicate effectively, making the most of their qualifications and extra-curricular experiences. Students are placed in a mock interview setting, where they are evaluated by an instructor with experience both interviewing candidates and teaching interview skills.</p><br>
 
@@ -251,19 +237,14 @@ $ourCourse = $communicationArts->getCourses();
                         Formats: Online or In-Centre <br>
                         Grades: K-10
                     </p>
-              
-
                 </div>
-
             </div>
         </div>
 
         <div class="spacing"></div>
 
         <div class="container">
-            
             <div class="row">
-
                 <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Leadership & Etiquette</h2>
 
@@ -286,7 +267,6 @@ $ourCourse = $communicationArts->getCourses();
                         Courses Offered:  Youth Leadership Training
                                 Etiquette and Personality Empowerment for Youth
                                 Etiquette for Kids
-
                     </p>
 
                     <h4 class="fw-bold mt-4">Our well-designed curricula include:</h4>
@@ -300,19 +280,15 @@ $ourCourse = $communicationArts->getCourses();
                         <span>Conflict resolution </span>
                         <span>Ethics and values</span>
                         <span>Cultural proficiency</span>
-                    </p>                           
-
+                    </p>
                 </div>
-
             </div>
         </div>
 
         <div class="spacing"></div>
 
         <div class="container">
-            
             <div class="row">
-
                 <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">International Relations</h2>
 
@@ -336,27 +312,21 @@ $ourCourse = $communicationArts->getCourses();
 
                     <p class="fs-5 fw-bold">Mock Trial</p>
                     <p>The Opus Mock Trial Program trains students to plan, draft, and present their claims for cross-examining and delivering opening and closing arguments. It additionally instructs students how to argue intelligently and logically while conducting courtroom procedures such as introducing material evidence and responding to objections. Students will increase their confidence, poise, oral skills, critical thinking skills, and teamwork.</p>
-
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="counter" class="counter">
+    <section id="" class="primary-bg">
       <div class="container">
-
         <div class="p-5">
           <div class="row">
-
             <div class="col-xl-12">
                 <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
                 <center><a href="#!" type="button" class="light-btn">Book an Appointment</a></center>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
 

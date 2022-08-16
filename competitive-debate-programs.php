@@ -7,20 +7,19 @@ $competitiveDebate = new CompetitiveDebate();
 $competitiveDebateContent = $competitiveDebate->getContent();
 ?>
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs pb-0">
-        <div class="container">
-        <ol>
-            <li><a href="index.php">Home</a></li>
-            <li>Program</li>
-            <li>Competitive Debate Programs</li>
-        </ol>
-        <h2>Opus Competitive Debate Programs</h2>
-        </div>
-    </section>
-
     <?php if(isset($_GET["ph"])) { ?>
+        <section id="breadcrumbs" class="breadcrumbs pb-0">
+            <div class="container">
+                <ol>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Program</li>
+                    <li>Competitive Debate Programs</li>
+                </ol>
+                <h2>Opus Competitive Debate Philippines Summer Program</h2>
+            </div>
+        </section>
 
-        <div class="container p-0 competitive-bg">
+        <div class="container p-0 danger-bg">
             <div class="row">
                 <div class = "col-md-6" style="padding-right: 0px;">
                     <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience in the Philippines.</h1>
@@ -140,10 +139,57 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 </div>
             </div>
         </section>
+
+        <section class="why-us p-0">
+            <div class="text-left competitive-title secondary-bg">
+                <div class="row">
+                    <div class="col-md-6" style="padding: 9%;">
+                        <div class="mb-5 m-5 text-left">
+                                    <h1><strong>Why Learn with Us?</strong></h1>
+                                <div class="pt-5 text-left">
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: contain;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="danger-bg">
+            <div class="container">
+                <div class="p-5">
+                    <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Apply for Summer 2023</a></center>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
     <?php } else { ?> 
+        <section id="breadcrumbs" class="breadcrumbs pb-0">
+            <div class="container">
+                <ol>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Program</li>
+                    <li>Competitive Debate Programs</li>
+                </ol>
+                <h2>Opus Competitive Debate Programs</h2>
+            </div>
+        </section>
 
-        <div class="container p-0 competitive-bg">
+        <div class="container p-0 danger-bg">
             <div class="row">
                 <div class = "col-md-6" style="padding-right: 0px;">
                     <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience.</h1>
@@ -229,10 +275,8 @@ $competitiveDebateContent = $competitiveDebate->getContent();
     
         <section id="team-and-expert" class="team-and-expert">
             <div class="container">
-
                 <div class="d-flex flex-column justify-content-center">
                     <div class="row">
-
                         <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
                         <div class="col-md-6 d-flex align-items-stretch">
@@ -250,49 +294,44 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-    <?php } ?>
+        <section class="why-us p-0">
+            <div class="text-left competitive-title secondary-bg">
+                <div class="row">
+                    <div class="col-md-6" style="padding: 9%;">
+                        <div class="mb-5 m-5 text-left">
+                                    <h1><strong>Why Learn with Us?</strong></h1>
+                                <div class="pt-5 text-left">
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
+                                </div>
+                        </div>
+                    </div>
 
-    <section class="why-us p-0">
-        <div class="text-left competitive-title section-bg">
-
-            <div class="row">
-                <div class="col-md-6" style="padding: 9%;">
-                    <div class="mb-5 m-5 text-left">
-                                <h1><strong>Why Learn with Us?</strong></h1>
-                            <div class="pt-5 text-left">
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
-                                <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
-                            </div>
+                    <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: contain;">
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: cover;">
+        <section id="" class="primary-bg">
+            <div class="container">
+                <div class="p-5">
+                    <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="counter" class="counter">
-        <div class="container">
-
-        <div class="p-5">
-            <div class="row">
-
-            <div class="col-xl-12">
-                <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>
-                <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
-            </div>
-
-            </div>
-        </div>
-
-        </div>
-    </section>
+    <?php } ?>
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>

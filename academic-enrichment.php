@@ -16,11 +16,11 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                 <li>Programs</li>
                 <li>Academic Enrichment II</li>
                 </ol>
-                <h2>Opus Academic Enrichment II</h2>
+                <h2>Academic Subject Enrichment</h2>
             </div>
         </section>
 
-        <div class ="container p-0 academic-bg">
+        <div class ="container p-0 primary-bg">
             <div class="row">
                 <div class="col-md-6" style="padding-right: 0px;">
                     <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
@@ -34,9 +34,8 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
             </div>
         </div>
 
-        <section id="ourCourses" class="ourCourses section-bg">
+        <section id="ourCourses" class="ourCourses secondary-bg">
             <div class="container">
-
                 <div class="section-title">
                     <h2 class="text-center">Our Courses</h2>
                 </div>
@@ -302,6 +301,19 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="" class="primary-bg">
+            <div class="container">
+            <div class="p-5">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn and speak with confidence, clarity and conviction!</p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+                    </div>
+                    </div>
+            </div>
             </div>
         </section>
 
