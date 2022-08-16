@@ -15,30 +15,27 @@ $ourCourse = $communicationArts->getCourses();
             <ol>
                  <li><a href="index.php">Home</a></li>
                  <li>Programs</li>
-                 <li>Communication Arts</li>2
+                 <li>Communication Arts</li>
             </ol>
-            <h2>Opus Communication Arts</h2>
+            <h2>Communication Arts Programs</h2>
         </div>
     </section>
 
-    <div class ="container p-0">
-        <div class="intro-bg">
-           <div class="row">
-                <div class="col-md-6">
-                    <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
-                    <p class="text-left px-5 pb-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p><br><br><br><br><br>
-                        <div class="mt-5 text-center w-100">
-                            <h1><a class="bi bi-chevron-compact-down mb-3" style="font-size: 4rem;"></a></h1>
-                        </div>  
-                </div>
+    <div class ="container p-0 warning-bg">
+        <div class="row">
+            <div class="col-md-6" style="padding-right: 0px;">
+                <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
+                <p class="text-left px-5 pb-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
+                <center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+            </div>
 
-                <div class="col-md-6">
-                    <img src="assets/img/portfolio/p-13.jpg" class="w-100" alt="speak-img">
-                </div>
-           </div>
+            <div class="col-md-6">
+                <img src="assets/img/portfolio/p-13.jpg" class="w-100" alt="speak-img">
+            </div>
         </div>
+    </div>
 
-    <section id="ourCourses" class="ourCourses section-bg">
+    <section id="ourCourses" class="ourCourses secondary-bg">
         <div class="container">
 
             <div class="section-title">
@@ -52,12 +49,11 @@ $ourCourse = $communicationArts->getCourses();
                     $status = $v["status"];
 
                     if($status == 0) {
-                        ?> 
+                        ?>
 
                         <div class="col-lg-4 col-md-6">
                             <div class="box">
-                                <div class="icon"></div>
-                                <h5><a href=""><?= $course ?></a></h5>
+                                <h5><a href="#!"><?= $course ?></a></h5>
                             </div>
                         </div>
 
@@ -71,10 +67,8 @@ $ourCourse = $communicationArts->getCourses();
 
     <section id="section-container" class="section-container">
         <div class="container">
-            
             <div class="row">
-
-                <div class="col-md-6 px-5">
+                <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Speech Arts & Drama</h2>
 
                     <div class="d-flex justify-content-start">
@@ -86,7 +80,6 @@ $ourCourse = $communicationArts->getCourses();
                     </div>
                 </div>
 
-
                 <div class="col-md-6 text-content">
                     <p>We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from international certification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.</p><br>
 
@@ -97,7 +90,7 @@ $ourCourse = $communicationArts->getCourses();
                         Courses Offered:Exam Based or Non-exam Based
                     </p>
                     
-                    <h2 class="fw-bold mt-3">Our well-designed curricula include:</h2>
+                    <h4 class="fw-bold mt-5">Our well-designed curricula include:</h4>
                     
                     <p class="custom-badge">
                         <span>Vocal Technique</span>
@@ -116,37 +109,32 @@ $ourCourse = $communicationArts->getCourses();
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-
                             <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12 mt-5">
+                            <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-2.png" class="cert-img w-100">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12 mt-5">
+                            <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-3.png" class="cert-img w-100">
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
 
         <div class="spacing"></div>
 
         <div class="container mt-5">
-            
             <div class="row">
-
-                <div class="col-md-6 px-5">
+                <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Public Speaking and Debate</h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/portfolio/p-26.JPG" class="w-100" alt="speak-img" />
+                        <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
                     </div>
 
                     <div class="d-grid gap-2">
@@ -164,7 +152,7 @@ $ourCourse = $communicationArts->getCourses();
                         Courses Offered: Exam Based or Non-exam Based
                     </p>
 
-                    <h2 class="fw-bold mt-3">Our well-designed curricula include:</h2>
+                    <h4 class="fw-bold mt-4">Our well-designed curricula include:</h4>
                     
                     <p class="custom-badge">
                         <span>Vocal Technique</span>
@@ -179,39 +167,36 @@ $ourCourse = $communicationArts->getCourses();
                         <span>Shakespeare</span>
                     </p>
 
-                    <h2 class="fw-bold mt-3">Certificate and Diploma Granting:</h2>
+                    <h4 class="fw-bold mt-3">Certificate and Diploma Granting:</h4>
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-
                             <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12 mt-5">
+                            <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-2.png" class="cert-img w-100">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12 mt-5">
+                            <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/portfolio/l-3.png" class="cert-img w-100">
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="why-take-exam" class="why-take-exam section-bg">
-        <div class ="container">
+    <section class="why-take-exam">
+        <div class="text-left competitive-title secondary-bg">
             <div class="row">
+                <div class="col-md-6" style="padding: 8%;">
+                    <div class="mb-5 m-5 text-left">
+                        <h1 class="fw-bold">Why Take Exams?</h1>
 
-                <div class="col-md-6 p-5 position-relative">
-                    <div class="position-absolute">
-                        <h1 class="fw-bold mb-4">Why Take Exams?</h1>
-                        <ul class="">
+                        <ul class="text-left font py-5">
                             <li>Structured and sequential Learning.</li>
                             <li>Certificate and diploma granting.</li>
                             <li>Stand out in Private school & US UK University <br>admissions.</li>
@@ -223,20 +208,16 @@ $ourCourse = $communicationArts->getCourses();
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <img src="assets/img/portfolio/p-15.jpg" class="w-100" alt="trophy-img">
+                <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: cover;">
                 </div>
-
             </div>
         </div>
-    </section> 
+    </section>
 
     <section id="section-container" class="section-container">
         <div class="container">
-            
             <div class="row">
-
-                <div class="col-md-6 px-5">
+                <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Interview Skills Program</h2>
 
                     <div class="d-flex justify-content-start">
@@ -248,7 +229,6 @@ $ourCourse = $communicationArts->getCourses();
                     </div>
                 </div>
 
-
                 <div class="col-md-6 text-content">
                     <p>Interviews can be a daunting task at any ages, let alone children and teens. With the help of our experts at Opus Academy, we will help your child rise to the occasion and master! Opus has a long-standing history preparing students for the interviewing world, whether it be for private school admissions, universities, or internships. The ability to express oneself in interview settings is one of the most important skills a student can acquire. In this course, students learn how to communicate effectively, making the most of their qualifications and extra-curricular experiences. Students are placed in a mock interview setting, where they are evaluated by an instructor with experience both interviewing candidates and teaching interview skills.</p><br>
 
@@ -257,20 +237,15 @@ $ourCourse = $communicationArts->getCourses();
                         Formats: Online or In-Centre <br>
                         Grades: K-10
                     </p>
-              
-
                 </div>
-
             </div>
         </div>
 
         <div class="spacing"></div>
 
         <div class="container">
-            
             <div class="row">
-
-                <div class="col-md-6 px-5">
+                <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">Leadership & Etiquette</h2>
 
                     <div class="d-flex justify-content-start">
@@ -292,10 +267,9 @@ $ourCourse = $communicationArts->getCourses();
                         Courses Offered:  Youth Leadership Training
                                 Etiquette and Personality Empowerment for Youth
                                 Etiquette for Kids
-
                     </p>
 
-                    <h2 class="fw-bold mt-3">Our well-designed curriculum includes:</h2>
+                    <h4 class="fw-bold mt-4">Our well-designed curricula include:</h4>
                     
                     <p class="custom-badge">
                         <span>Personal image</span>
@@ -306,20 +280,16 @@ $ourCourse = $communicationArts->getCourses();
                         <span>Conflict resolution </span>
                         <span>Ethics and values</span>
                         <span>Cultural proficiency</span>
-                    </p>                           
-
+                    </p>
                 </div>
-
             </div>
         </div>
 
         <div class="spacing"></div>
 
         <div class="container">
-            
             <div class="row">
-
-                <div class="col-md-6 px-5">
+                <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">International Relations</h2>
 
                     <div class="d-flex justify-content-start">
@@ -334,35 +304,29 @@ $ourCourse = $communicationArts->getCourses();
                 <div class="col-md-6 text-content">
                     <p>In the fast-paced and ever-changing world of the 21st century, it is critical for young minds to be prepared for the world at large by increasing their global awareness. At Opus, we introduce and engage students in the global effects of economic, social, and political processes, as well as issues of justice and responsibility through three courses: Current Events, Model UN, and Mock Trial. </p><br>
 
-                    <p class="fs-4 fw-bold">Current Events </p>
+                    <p class="fs-5 fw-bold">Current Events </p>
                     <p>This course increases young people's awareness of and responsiveness to issues and events that are important locally, nationally, and internationally.  Students learn to differentiate between fact and opinion, as well as to critically analyze news and various media sources, developing their own perspectives in the process. Students will be equipped to not only engage with the news around them, but contribute to a wide range of topics and discussions on a global scale.</p> <br>
 
-                    <p class="fs-4 fw-bold">Model United Nations</p>
+                    <p class="fs-5 fw-bold">Model United Nations</p>
                     <p>This course teaches the basics of constructing and analyzing diplomatic speeches, as well as constructing and presenting successful negotiation strategies. Students are assigned roles and given specific diplomatic goals to meet by the end of the conference. Students will develop the skills necessary to interpret, analyze, and debate global issues concerning diplomacy, politics, and international relations.</p> <br>
 
-                    <p class="fs-4 fw-bold">Mock Trial</p>
+                    <p class="fs-5 fw-bold">Mock Trial</p>
                     <p>The Opus Mock Trial Program trains students to plan, draft, and present their claims for cross-examining and delivering opening and closing arguments. It additionally instructs students how to argue intelligently and logically while conducting courtroom procedures such as introducing material evidence and responding to objections. Students will increase their confidence, poise, oral skills, critical thinking skills, and teamwork.</p>
-
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="counter" class="counter">
+    <section id="" class="primary-bg">
       <div class="container">
-
         <div class="p-5">
           <div class="row">
-
             <div class="col-xl-12">
                 <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
                 <center><a href="#!" type="button" class="light-btn">Book an Appointment</a></center>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
 

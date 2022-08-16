@@ -48,7 +48,7 @@ $teamList = $historyAndTeams->getTeamList();
     }
     ?>
 
-    <section class="team section-bg">
+    <section class="team secondary-bg">
         <div class="container">
             <div class="row">
 
