@@ -24,7 +24,7 @@ $homeCard = $homePage->getCardsContent($page);
                   <p class="fs-1 fw-bolder">Opus Academy will prepare your child for academic success.</p>
                   <p class="fs-3 fw-light">Now open for Fall registraions</p>
                   <div class="d-flex align-items-center">
-                    <a href="#!" class="banner-btn">Register Today</a>
+                    <a href="#!" class="banner-btn text-decoration-none">Register Today</a>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
 
                 <div class="d-flex justify-content-center">
-                  <button type="button" class="primary-btn mt-4">Our Story</button>
+                  <a href="#!" type="button" class="primary-btn mt-4">Our Story</a>
                 </div>
               </div>
               
@@ -146,7 +146,7 @@ $homeCard = $homePage->getCardsContent($page);
                       <h4><?= $card_title ?></h4>
                       <p><?= html_entity_decode($content) ?></p>
                       
-                      <?= ($link == "" ? '' : '<a href="'.$link.'" target="blank" class="more-btn">Learn More</a>') ?>
+                      <?= ($link == "" ? '' : '<a href="'.$link.'" target="blank" class="more-btn text-decoration-none">Learn More</a>') ?>
                   
                     </div>
                   </div>
@@ -175,11 +175,11 @@ $homeCard = $homePage->getCardsContent($page);
 
             <div class="d-flex justify-content-start mt-3">
               <div class="d-flex justify-content-start me-2">
-                <button type="button" class="light-btn">Our Testimonial</button>
+                <a href="#!" type="button" class="light-btn">Our Testimonial</a>
               </div>
               
               <div class="d-flex justify-content-end ms-2">
-                <button type="button" class="light-btn">Our Acheivements</button>
+                <a href="#!" type="button" class="light-btn">Our Acheivements</a>
               </div>
             </div>
           </div>
@@ -199,9 +199,9 @@ $homeCard = $homePage->getCardsContent($page);
         <div class="d-flex flex-column justify-content-center">
           <div class="row">
 
-            <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
+            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
-            <div class="col-xl-6 d-flex align-items-stretch ">
+            <div class="col-md-6 d-flex align-items-stretch ">
               
               <div class="p-4">
                 <p class="mb-4 fs-1 fw-bold">Team of Expert Educators</p>
@@ -210,7 +210,7 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
 
                 <div class="d-flex justify-content-start">
-                  <button type="button" class="primary-btn mt-4">Meet our Team</button>
+                  <a href="#!" type="button" class="primary-btn mt-4">Our Recent Competition Results</a>
                 </div>
               </div>
               
@@ -228,17 +228,17 @@ $homeCard = $homePage->getCardsContent($page);
           <div class="row">
 
             <div class="col-xl-4">
-              <p class="number text-center m-0">20</p>
+              <p id="0101" class="number text-center m-0"></p>
               <p class="title text-center">Years Experience</p>
             </div>
 
             <div class="col-xl-4">
-              <p class="number text-center m-0">2500+</p>
+              <p class="number text-center m-0"><span id="0102"></span>+</p>
               <p class="title text-center">Students</p>
             </div>
 
             <div class="col-xl-4">
-              <p class="number text-center m-0">2000+</p>
+              <p class="number text-center m-0"><span id="0103"></span>+</p>
               <p class="title text-center">Awards, Certificates & Diplomas</p>
             </div>
 
@@ -246,6 +246,7 @@ $homeCard = $homePage->getCardsContent($page);
         </div>
 
       </div>
+      
     </section>
 
     <section id="testimonials" class="testimonials">
@@ -332,6 +333,38 @@ $homeCard = $homePage->getCardsContent($page);
 
       </div>
     </section>
+
+    <script>
+      function animate(obj, initVal, lastVal, duration) {
+        let startTime = null;
+        let currentTime = Date.now();
+        const step = (currentTime ) => {
+          if (!startTime) {
+            startTime = currentTime ;
+          }
+
+          const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+          obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+      
+      let text1 = document.getElementById('0101');
+      let text2 = document.getElementById('0102');
+      let text3 = document.getElementById('0103');
+      const load = () => {
+        animate(text1, 0, 20, 6000);
+        animate(text2, 0, 2500, 5000);
+        animate(text3, 0, 2000, 5000);
+      }
+   </script>
 
   </main>
 

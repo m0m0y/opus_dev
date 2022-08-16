@@ -134,7 +134,7 @@ require_once "assets/common/header.php";
                                 <div class="icon-box">
                                     <p>My teacher has been very helpful in teaching me about many aspects of speech, especially differences in tone. I really enjoyed how she often shows me how to exaggerate and perform on stage, instead of just reading aloud.</p>
 
-                                    <p><b>— Albert</b></p>
+                                                                            <p><b>— Albert</b></p>
                                     <small>Communication Skills student</small>
                                 </div>
                             </div>

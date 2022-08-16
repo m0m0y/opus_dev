@@ -42,7 +42,7 @@ if ($page == "") {
 	<script src="assets/vendor/jquery/jquery.js"></script>
 </head>
 
-<body>
+<body onload="load()">
 	<section id="topbar" class="d-flex align-items-center">
 		<div class="container d-flex justify-content-center justify-content-md-between">
 			<div class="contact-info d-flex align-items-center">
@@ -150,10 +150,17 @@ if ($page == "") {
 						<li><a class="nav-link <?= ($page == "careers.php" ? "active" : "") ?>" href="careers.php">Careers</a></li>
 					</ul>
 				</li>
-				<li><a class="nav-link <?= ($page == "testimonials.php" ? "active" : "") ?>" href="testimonials.php">Testimonials</a></li>
+				<li class="dropdown">
+					<a class="nav-link" href="#!"><span> Opus News</span> <i class="bi bi-chevron-down"></i></a>
+					<ul>
+						<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 1</a></li>
+						<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 2</a></li>
+						<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 3</a></li>
+					</ul>
+				</li>
+
 				<li><a class="nav-link <?= ($page == "contact.php" ? "active" : "") ?>" href="contact.php">Contact</a></li>
-				<li><a href="https://opusacademy.com/login/">Teach Works</a></li>
-				<li><a href="https://opusacademy.com/opus_dev/blog-site/">Blog</a></li>
+				<a href="https://opusacademy.com/login/" type="button" class="navbar-btn">Register Now</a>
 			</ul>
 			<i class="bi bi-list mobile-nav-toggle"></i>
 		</nav>

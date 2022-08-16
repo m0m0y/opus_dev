@@ -64,6 +64,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.15rem 5rem;
 }
 
+.primary-btn:hover {
+  background: #dbaf10;
+  border: 1px solid #dbaf10; 
+  color: #fff;
+}
+
 .light-btn {
   color: #0d6efd;
   border: 1px solid #f8f9fa; 
@@ -76,6 +82,61 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   vertical-align: middle;
   padding: 1.15rem 3rem;
+}
+
+.light-btn:hover {
+  background: #0d6efd;
+  border: 1px solid #0d6efd; 
+  color: #fff;
+}
+
+.learnmore-btn {
+  color: white;
+  border: 1px solid #0d6efd; 
+  background-color: #0d6efd;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 1rem 3rem;
+}
+
+.danger-btn {
+  color: white;
+  border: 1px solid #dc3545; 
+  background-color: #dc3545;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 1rem 3rem;
+}
+
+.custom-badge span{
+  display: inline-block;
+  padding: 14px 25px;
+  background: #f5f5f5;
+  margin-right: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.section-container .text-content {
+  padding-top: 5rem;
+}
+.section-container .certificate-container .cert-img {
+  width: 100%;
+}
+
+.section-container .spacing {
+  padding: 2rem 0;
 }
 
 /*--------------------------------------------------------------
@@ -107,7 +168,15 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
   opacity: 1;
 }
-
+ /*--------------------------------------------------------------
+# Card for communication arts
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .h-md-100 { height: 100vh; }
+}
+.btn-round { border-radius: 30px; }
+.bg-indigo { background: indigo; }
+.text-cyan { color: #35bdff; }
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -212,6 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #635551;
   white-space: nowrap;
   transition: 0.3s;
+  text-decoration: none;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -275,6 +345,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 100%;
   visibility: visible;
 }
+
+.navbar-btn {
+  color: white !important;
+  border: 1px solid #0d6efd; 
+  background-color: #0d6efd;
+  font-weight: 600;
+  padding: 0.5rem !important;
+  margin-left: 7%;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -440,37 +520,27 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 0px; /*60 default for vertical sepatation.*/
   overflow: hidden;
 }
 
 .section-bg {
   background-color: #29176e26;
+    background-color: #29176e26;
 }
-
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+  padding-top: 0;
 }
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  font-family: "Poppins", sans-serif;
-  color: #635551;
-}
-.section-title p {
-  margin-bottom: 0;
-}
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
+  padding-top: 15px;
+}
+.breadcrumbs .container {
+  padding: 1.5rem;
   background: #f4f2f2;
-  margin-bottom: 40px;
-  margin-top: 25px;
 }
 .breadcrumbs h2 {
   font-size: 28px;
@@ -492,6 +562,11 @@ section {
   padding-right: 10px;
   color: #635551;
   content: "/";
+}
+.trophy img {
+  width: 600px;
+  height: 600px;
+
 }
 
 /*--------------------------------------------------------------
@@ -799,57 +874,6 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-/* .about .icon-boxes h4 {
-  font-size: 18px;
-  color: #7f6d68;
-  margin-bottom: 15px;
-}
-.about .icon-boxes h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #554945;
-  margin-bottom: 15px;
-}
-.about .icon-box {
-  margin-top: 40px;
-}
-.about .icon-box .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid #28176e6c;
-  border-radius: 50px;
-  transition: 0.5s;
-  background: #fff;
-}
-.about .icon-box .icon i {
-  color: #29176e;
-  font-size: 32px;
-}
-.about .icon-box:hover .icon {
-  background: #29176e;
-  border-color: #29176e;
-}
-.about .icon-box:hover .icon i {
-  color: #fff;
-}
-.about .icon-box .title {
-  margin-left: 85px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-.about .icon-box .title {
-  color: #554945;
-}
-.about .icon-box .description {
-  margin-left: 85px;
-  line-height: 24px;
-  font-size: 14px;
-} */
 .why-choose-opus .video-box {
   background: url("../img/hero/hero-1.jpg") center center no-repeat;
   background-size: cover;
@@ -1154,6 +1178,9 @@ section {
 /*--------------------------------------------------------------
 # Communication Arts
 --------------------------------------------------------------*/
+.intro-bg {
+  background-color: #ffc107;
+}
 .portfolio {
   padding-top: 20px;
 }
@@ -1165,35 +1192,15 @@ section {
   padding-left: 10px;
 }
 
-.ourCourses .icon-box {
-  padding: 50px 20px;
+.ourCourses .box {
+  padding: 40px 20px;
   margin-top: 35px;
   margin-bottom: 25px;
   text-align: center;
   position: relative;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.ourCourses .icon {
-  position: absolute;
-  top: -36px;
-  left: calc(50% - 36px);
-  transition: 0.2s;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 72px;
-  height: 72px;
-  background: #29176e;
-}
-.ourCourses .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
+  margin: 25px 0px;
 }
 .ourCourses .title {
   font-weight: 700;
@@ -1201,71 +1208,13 @@ section {
   font-size: 18px;
   text-transform: uppercase;
 }
-.ourCourses .icon-box:hover .icon {
-  background: #fff;
-  border: 2px solid #29176e;
+.why-take-exam .position-absolute {
+  left: 10%;
+  top: 15%;
 }
-.ourCourses .icon-box:hover .icon i {
-  color: #29176e;
-}
-.communicationArts .bg-img {
-  background: url('../img/portfolio/p-9.jpg') no-repeat;
-  background-size: cover;
-  min-height: 250px;
-  filter: opacity(0.9);
-  border-radius: 5px;
-}
-.communicationArts .justify-content-center .list {
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 1px;
-  border-radius: 3px;
-}
-.communicationArts h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.certificate-and-diploma h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.certificate-and-diploma .description {
-  padding-left: 20px;
-}
-.public-speaking h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.public-speaking .content {
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
-}
-.certificate-and-diploma-grant h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.interview-skills-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.youth-lead-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.international-relations h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.awards-and-honor h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.speech-competitions-festivals h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+.why-take-exam {
+  margin: 1rem 0;
+  padding: 0;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -1313,6 +1262,7 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  text-decoration: none;
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
@@ -1322,118 +1272,44 @@ section {
 /*--------------------------------------------------------------
 # Competitive Debate Programs
 --------------------------------------------------------------*/
-#debate-programs-page-hero {
-  width: 100%;
-  height: 60vh;
-  background: url("../img/hero/hero-2.jpg") center center;
+.competitive-bg{
+  background-color:#b1233d;
+  color: white;
+}
+.teach-us-debate {
+  background: url("../img/portfolio/p-23.jpg") center center no-repeat;
   background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin-bottom: -200px;
-}
-#debate-programs-page-hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.debate-programs-sub-title {
-  position: absolute; 
-  z-index: 1; 
-  top: 48%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-}
-.competitive-debate-programs {
-  padding: 0 0 30px 0;
-  position: relative;
-  z-index: 3;  
 }
 
-.competitive-debate-programs .content {
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
+.teach-us-debate {
+  background: url("../img/portfolio/p-25.jpg") center center no-repeat;
+  background-size: cover;
 }
-.why-learn-to-debate h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+
+.application-process .circle-container {
+  background-color: #b1233d;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  width: 25%;
+  padding: 5%;
 }
-.why-learn-with-us h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.our-program-structure h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.academy-and-harvard-debate-council h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.academy-and-harvard-debate-council .content {
-  border: 1px solid #dfdfdf;
-  border-radius: 5px;
-  padding: 16px 15px;
-}
-.harvard-debate-council-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.competitive-debate-opus h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.speech-and-debate-transform h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+
+.why-us p i {
+  color: #009400;
 }
 
 /*--------------------------------------------------------------
 # Academic Enrichment
 --------------------------------------------------------------*/
-.why-learn-to-debate h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.academic-subject-tutoring h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.early-learning h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.early-learning .icon-boxes .icon-box {
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgb(0 0 0/ 10%);
-  padding: 40px 30px;
-  width: 100%;
+.academic-bg {
+  background-color:#3666f2;
+  color: white;
 }
 
-.crw_img{
-  background: url("../img/academic-enrichment/crw.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.academic-subject-tutoring .tutor-img {
-  z-index: 1;
-  padding: 0;
-  margin-bottom: -120px;
-}
-.academic-subject-tutoring .content {
-  position: relative;
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
+.early-bg{
+  background-color:#3666f2;
+  color: white;
 }
 
 /*--------------------------------------------------------------
