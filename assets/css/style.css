@@ -1,9 +1,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
- /* body * {
+/* body * {
   outline: 1px solid red;
-}   */
+} */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -64,6 +64,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.15rem 5rem;
 }
 
+.primary-btn:hover {
+  background: #dbaf10;
+  border: 1px solid #dbaf10; 
+  color: #fff;
+}
+
 .light-btn {
   color: #0d6efd;
   border: 1px solid #f8f9fa; 
@@ -78,10 +84,30 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.15rem 3rem;
 }
 
+.light-btn:hover {
+  background: #0d6efd;
+  border: 1px solid #0d6efd; 
+  color: #fff;
+}
+
 .learnmore-btn {
   color: white;
   border: 1px solid #0d6efd; 
   background-color: #0d6efd;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 1rem 3rem;
+}
+
+.danger-btn {
+  color: white;
+  border: 1px solid #dc3545; 
+  background-color: #dc3545;
   display: inline-block;
   font-weight: 600;
   font-size: 1.25rem;
@@ -100,6 +126,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   margin-bottom: 10px;
   border-radius: 4px;
+}
+
+.section-container .text-content {
+  padding-top: 5rem;
+}
+.section-container .certificate-container .cert-img {
+  width: 100%;
+}
+
+.section-container .spacing {
+  padding: 3rem 0;
 }
 
 /*--------------------------------------------------------------
@@ -244,6 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #635551;
   white-space: nowrap;
   transition: 0.3s;
+  text-decoration: none;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -298,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .dropdown .dropdown ul {
   top: 0;
-  left: calc(100% - 30px);
+  left: calc(100% - 30px);     
   visibility: hidden;
 }
 .navbar .dropdown .dropdown:hover > ul {
@@ -307,6 +345,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 100%;
   visibility: visible;
 }
+
+.navbar-btn {
+  color: white !important;
+  border: 1px solid #0d6efd; 
+  background-color: #0d6efd;
+  font-weight: 600;
+  padding: 0.5rem !important;
+  margin-left: 7%;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -491,7 +539,7 @@ section {
   padding-top: 15px;
 }
 .breadcrumbs .container {
-  padding: 1rem;
+  padding: 1.5rem;
   background: #f4f2f2;
 }
 .breadcrumbs h2 {
@@ -519,6 +567,15 @@ section {
   width: 600px;
   height: 600px;
 
+}
+.bi-chevron-compact-down{
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.bi-chevron-compact-down:hover{
+
+  color: #313030;
 }
 
 /*--------------------------------------------------------------
@@ -1160,15 +1217,13 @@ section {
   font-size: 18px;
   text-transform: uppercase;
 }
-.speech-arts-drama .text-content {
-  padding-top: 5rem;
-}
-.speech-arts-drama .certificate-container .cert-img {
-  width: 100%;
-}
 .why-take-exam .position-absolute {
   left: 10%;
-  top: 22%;
+  top: 15%;
+}
+.why-take-exam {
+  margin: 1rem 0;
+  padding: 0;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -1216,6 +1271,7 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  text-decoration: none;
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
@@ -1225,76 +1281,13 @@ section {
 /*--------------------------------------------------------------
 # Competitive Debate Programs
 --------------------------------------------------------------*/
-#debate-programs-page-hero {
-  width: 100%;
-  height: 60vh;
-  background: url("../img/hero/hero-2.jpg") center center;
+.competitive-bg{
+  background-color:#b1233d;
+  color: white;
+}
+.teach-us-debate {
+  background: url("../img/portfolio/p-23.jpg") center center no-repeat;
   background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin-bottom: -200px;
-}
-#debate-programs-page-hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.debate-programs-sub-title {
-  position: absolute; 
-  z-index: 1; 
-  top: 48%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-}
-.competitive-debate-programs {
-  padding: 0 0 30px 0;
-  position: relative;
-  z-index: 3;  
-}
-
-.competitive-debate-programs .content {
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
-}
-.why-learn-to-debate h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.why-learn-with-us h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.our-program-structure h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.academy-and-harvard-debate-council h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.academy-and-harvard-debate-council .content {
-  border: 1px solid #dfdfdf;
-  border-radius: 5px;
-  padding: 16px 15px;
-}
-.harvard-debate-council-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.competitive-debate-opus h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.speech-and-debate-transform h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1308,18 +1301,6 @@ section {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-.early-learning h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.early-learning .icon-boxes .icon-box {
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgb(0 0 0/ 10%);
-  padding: 40px 30px;
-  width: 100%;
-}
-
 .crw_img{
   background: url("../img/academic-enrichment/crw.jpg") no-repeat;
   background-position: center center;
@@ -1339,6 +1320,57 @@ section {
   color: #fff;
 }
 
+.early-bg{
+  background-color:#3666f2;
+  color: white;
+}
+.custom-badge span{
+  display: inline-block;
+  padding: 7px 15px;
+  background: #f5f5f5;
+  margin-right: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+/* .royal img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  bottom: 20px;
+}
+.west img {
+    width: 77%;
+    height: auto;
+    margin-left: -120px;
+}
+.early-achievement{
+  color: #0d6efd;
+  background-color: #fff;
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 24px;
+  width: 50%;
+  font-weight: 400;
+  height: auto;
+  border-color: #fff;
+}
+.early-appointment {
+  color: #0d6efd;
+  background-color: #fff;
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 24px;
+  width: 30%;
+  font-weight: 400;
+  height: auto;
+  border-color: #fff;
+}
+.early-trophy img {
+  width: 100%;
+  height: 700px;
+  margin-left: 8px;
+} */
 /*--------------------------------------------------------------
 # Classical Music Program
 --------------------------------------------------------------*/
