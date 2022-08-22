@@ -171,16 +171,16 @@ $ourCourse = $communicationArts->getCourses();
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-                            <div class="col-xl-4 col-sm-12">
+                            <div class="col-xl-4">
                                 <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/portfolio/l-2.png" class="cert-img w-100">
+                            <div class="col-xl-4">
+                                <img src="assets/img/portfolio/l-2.png" class="cert-img w-100 mt-5">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/portfolio/l-3.png" class="cert-img w-100">
+                            <div class="col-xl-4">
+                                <img src="assets/img/portfolio/l-3.png" class="cert-img w-100 mt-5">
                             </div>
                         </div>
                     </div>
@@ -323,7 +323,7 @@ $ourCourse = $communicationArts->getCourses();
           <div class="row">
             <div class="col-xl-12">
                 <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
-                <center><a href="#!" type="button" class="light-btn">Book an Appointment</a></center>
+                <center><a href="#!" type="button" class="light-btn mt-5">Book an Appointment</a></center>
             </div>
           </div>
         </div>
