@@ -15,7 +15,7 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="banner-wrap">
-            <img src="assets/img/hero/demowebbanner.jpg" alt="hero-banner">
+            <img src="assets/img/index/demowebbanner.jpg" alt="hero-banner">
 
             <div class="content">
               <div class="inner">
@@ -82,7 +82,7 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row">
-            <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/home/opusrecital.png') center center no-repeat; background-size: contain;"></div>
+            <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: contain;"></div>
 
             <div class="col-xl-6 d-flex align-items-stretch">
               <div class="p-4">

@@ -25,11 +25,11 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                 <div class="col-md-6" style="padding-right: 0px;">
                     <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
                     <p class="text-left px-5 pb-5">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </p>
-                    <center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+                    <center><a href ="#ourCourses"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
                 <div class="col-md-6">
-                    <img src="assets/img/portfolio/p-13.jpg" class="w-100" alt="speak-img">
+                    <img src="assets/img/academic-enrichment/p-13.jpg" class="w-100" alt="speak-img">
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">OPUS Critical Reading and Writing</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/awards.jpg" class="w-100" alt="awards-img" />
+                            <img src="assets/img/academic-enrichment/awards.jpg" class="w-100" alt="awards-img" />
                         </div>
                         <div class="d-grid gap-2">
                             <a href="#!" type="button" class="learnmore-btn mt-4">Learn More</a>
@@ -115,7 +115,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/portfolio/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">English Enrichment</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
+                            <img src="assets/img/academic-enrichment/speak.JPG" class="w-100" alt="speak-img" />
                         </div>
 
                         <div class="d-grid gap-2">
@@ -151,7 +151,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/portfolio/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -166,7 +166,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Mathematics & Computer Science</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
+                            <img src="assets/img/academic-enrichment/speak.JPG" class="w-100" alt="speak-img" />
                         </div>
 
                         <div class="d-grid gap-2">
@@ -187,7 +187,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/portfolio/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Science</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
+                            <img src="assets/img/academic-enrichment/speak.JPG" class="w-100" alt="speak-img" />
                         </div>
 
                         <div class="d-grid gap-2">
@@ -223,7 +223,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/portfolio/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -238,7 +238,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Social Studies, History & Social Sciences</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
+                            <img src="assets/img/academic-enrichment/speak.JPG" class="w-100" alt="speak-img" />
                         </div>
 
                         <div class="d-grid gap-2">
@@ -259,7 +259,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/portfolio/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -274,7 +274,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Languages</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
+                            <img src="assets/img/academic-enrichment/speak.JPG" class="w-100" alt="speak-img" />
                         </div>
 
                         <div class="d-grid gap-2">
@@ -295,7 +295,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/portfolio/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
                                 </div>
                             </div>
                         </div>

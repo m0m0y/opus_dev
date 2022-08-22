@@ -31,12 +31,12 @@ $cardContent = $card->getContentWhere($page);
         <div class ="container p-0 warning-bg">
             <div class="row">
                 <div class="col-md-6" style="padding-right: 0px;">
-                    <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
-                    <center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+                    <h1 class="text-left mt-5 px-5 pb-2 pt-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
+                    <center><a href ="#redbird-program"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
                 <div class="col-md-6">
-                    <img src="assets/img/portfolio/p-27.jpg" class="w-100" alt="speak-img">
+                    <img src="assets/img/mcgraw-hill/p-27.jpg" class="w-100" alt="speak-img">
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@ $cardContent = $card->getContentWhere($page);
                 <div class="d-flex justify-content-center">
                     <div class="row">
                         <div class="col-md-6 d-flex justify-content-center">
-                            <img src="assets/img/portfolio/MHE_logo.png" alt="mc-graw-hill" class="p-4 mcgrawhill-img">
+                            <img src="assets/img/mcgraw-hill/MHE_logo.png" alt="mc-graw-hill" class="p-4 mcgrawhill-img">
                         </div>
 
                         <div class="col-md-6 d-flex align-items-stretch ">
@@ -77,7 +77,7 @@ $cardContent = $card->getContentWhere($page);
                             </div>
                         </div>
 
-                        <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/portfolio/p-26.jpg') center center no-repeat; background-size: contain;"></div>
+                        <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/mcgraw-hill/p-26.jpg') center center no-repeat; background-size: contain;"></div>
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@ $cardContent = $card->getContentWhere($page);
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Language Arts & Writing</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/redbird-law-mh-logo.png" class="w-100" alt="redbird-law-mh-logo" />
+                            <img src="assets/img/mcgraw-hill/redbird-law-mh-logo.png" class="w-100" alt="redbird-law-mh-logo" />
                         </div>
                     </div>
 
@@ -176,7 +176,7 @@ $cardContent = $card->getContentWhere($page);
                         <div class="d-flex justify-content-start certificate-container mb-3">
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
-                                    <img src="assets/img/portfolio/stanford-symbol.png" class="cert-img">
+                                    <img src="assets/img/mcgraw-hill/stanford-symbol.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@ $cardContent = $card->getContentWhere($page);
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Mathematics S.T.E.M.</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/logo_redbird_math.jpg" class="w-100" alt="logo_redbird_math" />
+                            <img src="assets/img/mcgraw-hill/logo_redbird_math.jpg" class="w-100" alt="logo_redbird_math" />
                         </div>
                     </div>
 
@@ -218,7 +218,7 @@ $cardContent = $card->getContentWhere($page);
                         <div class="d-flex justify-content-start certificate-container mb-3">
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
-                                    <img src="assets/img/portfolio/stanford-symbol.png" class="cert-img">
+                                    <img src="assets/img/mcgraw-hill/stanford-symbol.png" class="cert-img">
                                 </div>
                             </div>
                         </div>
@@ -241,7 +241,7 @@ $cardContent = $card->getContentWhere($page);
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Secondary Mathematics A.L.E.K.S.</h2>
                         <div class="d-flex justify-content-start">
-                            <img src="assets/img/portfolio/logo_redbird_math.jpg" class="w-100" alt="logo_redbird_math" />
+                            <img src="assets/img/mcgraw-hill/logo_redbird_math.jpg" class="w-100" alt="logo_redbird_math" />
                         </div>
                     </div>
 
@@ -260,7 +260,7 @@ $cardContent = $card->getContentWhere($page);
                         <div class="d-flex justify-content-start certificate-container mb-3">
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
-                                    <img src="assets/img/portfolio/stanford-symbol.png" class="cert-img">
+                                    <img src="assets/img/mcgraw-hill/stanford-symbol.png" class="cert-img">
                                 </div>
                             </div>
                         </div>

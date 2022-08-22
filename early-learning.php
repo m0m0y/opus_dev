@@ -33,11 +33,11 @@ $cardContent = $card->getContentWhere($page);
             <div class = "col-md-6" style="padding-right: 0px;">
                 <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
                 <p class="text-left px-5 pb-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<p>
-                <div class = text-center><a href ="#press"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></div>
+                <div class = text-center><a href ="#section-container"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></div>
             </div>
 
             <div class="col-md-6">
-                <img src="assets/img/portfolio/p-17.jpg" class="w-100">
+                <img src="assets/img/early-learning/p-17.jpg" class="w-100">
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@ $cardContent = $card->getContentWhere($page);
                     <h2 class="text-left mb-5 fw-bold">Early Learning Program</h2>
 
                     <div class="d-flex justify-content-center">
-                        <img src="assets/img/portfolio/p-18.jpg" class="w-100" alt="harvard">
+                        <img src="assets/img/early-learning/p-18.jpg" class="w-100" alt="harvard">
                     </div>
 
                     <div class="d-grid gap-2">
@@ -86,11 +86,11 @@ $cardContent = $card->getContentWhere($page);
 
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="assets/img/portfolio/l-1.png" class="w-100">
+                            <img src="assets/img/early-learning/l-1.png" class="w-75 mb-1">
                         </div>
 
                         <div class="col-md-6">
-                            <img src="assets/img/portfolio/l-2.png" class="w-100">
+                            <img src="assets/img/early-learning/l-2.png" class="w-100 mt-5">
                         </div>
                     </div>
 
@@ -117,7 +117,7 @@ $cardContent = $card->getContentWhere($page);
                     </div>
                 </div>
 
-                <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: cover;">
+                <div class="col-md-6" style="background: url('assets/img/early-learning/p-25.PNG') center center no-repeat; background-size: cover;">
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@ $cardContent = $card->getContentWhere($page);
             </div>
 
             </div>
-        </div>
+        </di v>
 
         </div>
     </section>

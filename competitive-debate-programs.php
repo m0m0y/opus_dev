@@ -24,23 +24,23 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 <div class = "col-md-6" style="padding-right: 0px;">
                     <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience in the Philippines.</h1>
                     <p class="text-left px-5 pb-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.<p>
-                    <div class = text-center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
+                    <div class = text-center><a href ="#section-container-ph"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
                 </div>
 
                 <div class = "col-md-6">
-                    <img src = "assets/img/portfolio/bridge.jpg" class="w-100" alt="bridge-img">
+                    <img src = "assets/img/competitive-debate/bridge.jpg" class="w-100" alt="bridge-img">
                 </div>
             </div>
         </div>
 
-        <section id="section-container" class="section-container">
+        <section id="section-container-ph" class="section-container">
             <div class="container">
                 <div class ="row">
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Harvard Debate Philippines Summer Program</h2>
 
                         <div class="d-flex justify-content-center">
-                            <img src="assets/img/portfolio/p-21.png" alt="harvard" style="width: 60%;">
+                            <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                         </div>
 
                         <div class="row d-flex justify-content-center mt-3">
@@ -69,11 +69,11 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
                         <div class="row mt-4">
                             <div class="col-sm-6 d-flex justify-content-center">
-                                <img src="assets/img/portfolio/p-21.png" class="w-50">
+                                <img src="assets/img/competitive-debate/p-21.png" class="w-50">
                             </div>
 
                             <div class="col-sm-6 d-flex justify-content-center">
-                                <img src="assets/img/portfolio/p-22.png" class="w-25">
+                                <img src="assets/img/competitive-debate/p-22.png" class="w-25">
                             </div>
 
                             <p class="fs-5 fw-bold">Program Structure</p>
@@ -158,7 +158,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         </div>
                     </div>
 
-                    <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: contain;">
+                    <div class="col-md-6" style="background: url('assets/img/competitive-debate/p-25.PNG') center center no-repeat; background-size: contain;">
                     </div>
                 </div>
             </div>
@@ -194,23 +194,23 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 <div class = "col-md-6" style="padding-right: 0px;">
                     <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience.</h1>
                     <p class="text-left px-5 pb-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.<p>
-                    <div class = text-center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
+                    <div class = text-center><a href ="#section-container-ca"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
                 </div>
 
                 <div class = "col-md-6">
-                    <img src = "assets/img/portfolio/bridge.jpg" class="w-100" alt="bridge-img">
+                    <img src = "assets/img/competitive-debate/bridge.jpg" class="w-100" alt="bridge-img">
                 </div>
             </div>
         </div>
 
-        <section id="section-container" class="section-container">
+        <section id="section-container-ca" class="section-container">
             <div class="container">
                 <div class ="row">
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Harvard Competitive Debate</h2>
 
                         <div class="d-flex justify-content-center">
-                            <img src="assets/img/portfolio/p-21.png" alt="harvard" style="width: 60%;">
+                            <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                         </div>
 
                         <div class="row">
@@ -231,11 +231,11 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
                         <div class="row mt-4">
                             <div class="col-sm-6 d-flex justify-content-center">
-                                <img src="assets/img/portfolio/p-21.png" class="w-50">
+                                <img src="assets/img/competitive-debate/p-21.png" class="w-50">
                             </div>
 
                             <div class="col-sm-6 d-flex justify-content-center">
-                                <img src="assets/img/portfolio/p-22.png" class="w-25">
+                                <img src="assets/img/competitive-debate/p-22.png" class="w-25">
                             </div>
 
                             <p class="fs-5 fw-bold">Program Structure</p>
@@ -312,7 +312,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         </div>
                     </div>
 
-                    <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: contain;">
+                    <div class="col-md-6" style="background: url('assets/img/competitive-debate/p-25.PNG') center center no-repeat; background-size: contain;">
                     </div>
                 </div>
             </div>
