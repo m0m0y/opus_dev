@@ -34,10 +34,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .more-btn {
-  background: #7d757540;
+  background: #0d6efd;
   padding: 6px 30px 8px 30px;
-  color: #29176e;
+  color: white;
   border-radius: 50px;
+  font-weight: 500;
   transition: all ease-in-out 0.4s;
 }
 
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .more-btn:hover {
   color: #e6e6e6;
-  background: #29176e;
+  background: #0d6efd;
 }
 
 .primary-btn {
@@ -83,7 +84,13 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   padding: 1.15rem 3rem;
 }
-
+.title-size h1{
+  font-size: 60px;
+}
+.content-size p {
+    font-size: 25px;
+    margin-top: 70px;
+}
 .light-btn:hover {
   background: #1d57ae;
   border: 1px solid #0e3f89ae; 
@@ -106,8 +113,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .danger-btn {
   color: white;
-  border: 1px solid #dc3545; 
-  background-color: #dc3545;
+  border: 1px solid #b1233d; 
+  background-color: #b1233d;
   display: inline-block;
   font-weight: 600;
   font-size: 1.25rem;
@@ -156,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .warning-bg {
   background-color: #ffc107;
+  
 }
 .danger-bg{
   background-color:#b1233d;
@@ -181,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #29176e;
+  background: #0d6efd;;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -573,11 +581,10 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/* .breadcrumbs {
   padding-top: 15px;
-}
-.breadcrumbs .container {
-  padding: 1.5rem;
+} */
+.breadcrumbs {
   background: #f4f2f2;
 }
 .breadcrumbs h2 {
@@ -894,7 +901,7 @@ section {
 .why-choose-opus .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#29176e 50%, rgba(255, 88, 33, 0.185) 52%);
+  background: radial-gradient(#0d6efd 50%, rgba(255, 88, 33, 0.185) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -1281,12 +1288,12 @@ section {
 # Competitive Debate Programs
 --------------------------------------------------------------*/
 .teach-us-debate {
-  background: url("../img/portfolio/p-23.jpg") center center no-repeat;
+  background: url("../img/competitive-debate/p-23.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .teach-us-debate {
-  background: url("../img/portfolio/p-25.jpg") center center no-repeat;
+  background: url("../img/competitive-debate/p-25.jpg") center center no-repeat;
   background-size: cover;
 }
 

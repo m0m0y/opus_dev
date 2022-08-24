@@ -9,26 +9,26 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
 
     <main id="main">
 
-        <section id="breadcrumbs" class="breadcrumbs pb-0">
-            <div class="container">
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+            <!-- <div class="container"> -->
                 <ol>
                 <li><a href="index.php">Home</a></li>
                 <li>Programs</li>
                 <li>Academic Enrichment II</li>
                 </ol>
                 <h2>Academic Subject Enrichment</h2>
-            </div>
+            <!-- </div> -->
         </section>
 
-        <div class ="container p-0 primary-bg">
+        <div class ="container-fluid title-size primary-bg">
             <div class="row">
-                <div class="col-md-6" style="padding-right: 0px;">
-                    <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
-                    <p class="text-left px-5 pb-5">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </p>
-                    <center><a href ="#ourCourses"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+                <div class="col-md-6 p-5">
+                    <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
+                    <h4 class="text-left px-5 my-5">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </h4>
+                    <center><a href ="#ourCourses" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 px-0">
                     <img src="assets/img/academic-enrichment/p-13.jpg" class="w-100" alt="speak-img">
                 </div>
             </div>

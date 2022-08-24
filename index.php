@@ -23,7 +23,7 @@ $homeCard = $homePage->getCardsContent($page);
                   <p class="fs-1 fw-bolder">Opus Academy will prepare your child for academic success.</p>
                   <p class="fs-3 fw-light">Now open for Fall registraions</p>
                   <div class="d-flex align-items-center">
-                    <a href="#!" class="banner-btn text-decoration-none">Register Today</a>
+                    <a href="#!" class="banner-btn btn-sm text-decoration-none">Register Today</a>
                   </div>
                 </div>
               </div>
@@ -81,15 +81,15 @@ $homeCard = $homePage->getCardsContent($page);
     <div class="container-fluid secondary-bg p-5">
       <div class="container">
         <div class="d-flex flex-column justify-content-center">
-          <div class="row">
+          <div class="row m-5">
             <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: contain;"></div>
 
-            <div class="col-xl-6 d-flex align-items-stretch">
-              <div class="p-4">
+            <div class="col-xl-6 d-flex align-items-stretch p-5">
+              <div class="">
                 <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
                 <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
-                <div class="d-flex justify-content-center">
-                  <a href="#!" type="button" class="primary-btn mt-4">Our Story</a>
+                <div class="d-flex justify-content-left mt-5">
+                  <a href="#!" type="button" class="primary-btn  w-100 mt-4 btn-sm">Our Story</a>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ $homeCard = $homePage->getCardsContent($page);
     <section id="what-we-offer" class="what-we-offer">
       
       <div class="container text-center px-5">
-        <p class="mb-4 fs-1 fw-bold">What We Offer</p>
+        <h4 class="mb-4 fs-1 fw-bold">What We Offer</h4>
 
         <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
       </div>
@@ -180,16 +180,16 @@ $homeCard = $homePage->getCardsContent($page);
     <section id="team-and-expert" class="team-and-expert">
       <div class="container">
 
-        <div class="d-flex flex-column justify-content-center">
+        <div class="d-flex flex-column m-5 justify-content-center">
           <div class="row">
             <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: contain;"></div>
             <div class="col-md-6 d-flex align-items-stretch ">
               <div class="p-4">
                 <p class="mb-4 fs-1 fw-bold">Team of Expert Educators</p>
-                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p><br><br>
 
                 <div class="d-flex justify-content-start">
-                  <a href="#!" type="button" class="primary-btn mt-4">Our Recent Competition Results</a>
+                  <a href="#!" type="button" class="primary-btn btn-sm mt-5">Our Recent Competition Results</a>
                 </div>
               </div>
             </div>

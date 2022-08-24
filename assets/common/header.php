@@ -103,66 +103,67 @@ if ($page == "") {
 		<div class="logo">
 			<h1>
 				<a href="index.php"><img src="assets/img/opus_logo.jpg" alt="Opus logo" id="logo"></a>
-		</h1>
+			</h1>
 		</div>
 
-		<nav id="navbar" class="navbar">
-			<ul>
-				<li><a class="nav-link <?= ($page == "index.php" ? "active" : "") ?>" href="index.php">Home</a></li>
-				<li class="dropdown"><a href="#!"><span>Programs</span> <i class="bi bi-chevron-down"></i></a>
-					<ul>
-						<li><a class="nav-link <?= ($page == "communication-arts.php" ? "active" : "") ?>" href="communication-arts.php">Opus Communication Arts</a></li>
-						<li class="dropdown"><a href="#!"><span>Competitive Debate Programs</span> <i class="bi bi-chevron-right"></i></a>
-							<ul>
-								<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?canada" ? "active" : "") ?>" href="competitive-debate-programs.php?canada">Canada</a></li>
-								<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?ph" ? "active" : "") ?>" href="competitive-debate-programs.php?ph">Phillippines</a></li>
-							</ul>
-						</li>
-						<li><a  class="nav-link <?= ($page == "mcgraw-hill-education-courses.php" ? "active" : "") ?>" href="mcgraw-hill-education-courses.php">McGraw Hill Education Courses</a></li>
-						<li><a  class="nav-link <?= ($page == "academic-enrichment.php" ? "active" : "") ?>" href="academic-enrichment.php">Opus Academic Subject Enrichment</a></li>
-						<li><a  class="nav-link <?= ($page == "test-preparation.php" ? "active" : "") ?>" href="test-preparation.php">Opus Standardized Test Preparation</a></li>
-						<li><a  class="nav-link <?= ($page == "early-learning.php" ? "active" : "") ?>" href="early-learning.php">Opus Early Learning</a></li>
-						<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Opus Classical Music</a></li>
-					</ul>
-				</li>
-				<li><a class="nav-link <?= ($page == "admission-counselling.php" ? "active" : "") ?>" href="admission-counselling.php">Admission Counselling</a></li>
-				<li class="dropdown"><a href="#!"><span>Summer Programs</span> <i class="bi bi-chevron-down"></i></a>
-					<ul>
-						<li><a class="nav-link <?= ($page == "summer-camps.php" ? "active" : "") ?>" href="summer-camps.php">Opus Summer</a></li>
-						<li class="dropdown"><a href="#!"><span>Pre-Collegiate Pathways</span> <i class="bi bi-chevron-right"></i></a>
-							<ul>
-								<li><a href="#!">Canadian</a></li>
-								<li><a href="assets/pdf/2021_Pre_Collegiate_Pathways_International_Explorations_C_proof.pdf">- Pre Collegiate Pathways</a></li>
-								<li><a href="assets/pdf/Application_Precedure_b.pdf">- Application Procedure</a></li>
-								<li><a href="https://form.jotform.com/211169418873058">- Online Form</a></li>
-								<li><a href="#!">Phillippines</a></li>
-								<li><a href="assets/pdf/pcp-opus-ph.pdf">- Pre Collegiate Pathways</a></li>
-								<li><a href="assets/pdf/Application_Precedure_PH.pdf">- Application Procedure</a></li>
-								<li><a href="https://form.jotform.com/211169418873058">- Online Form</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown"><a href="#!"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
-					<ul>
-						<li><a class="nav-link <?= ($page == "about.php" ? "active" : "") ?>" href="about.php">About Us</a></li>
-						<li><a class="nav-link <?= ($page == "history-and-team.php" ? "active" : "") ?>" href="history-and-team.php">History and Our Team</a></li>
-						<li><a class="nav-link <?= ($page == "careers.php" ? "active" : "") ?>" href="careers.php">Careers</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="nav-link" href="#!"><span> Opus News</span> <i class="bi bi-chevron-down"></i></a>
-					<ul>
-						<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 1</a></li>
-						<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 2</a></li>
-						<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 3</a></li>
-					</ul>
-				</li>
+			<nav id="navbar" class="navbar">
+				<ul>
+					<li><a class="nav-link <?= ($page == "index.php" ? "active" : "") ?>" href="index.php">Home</a></li>
+					<li class="dropdown"><a href="#!"><span>Programs</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a class="nav-link <?= ($page == "communication-arts.php" ? "active" : "") ?>" href="communication-arts.php">Opus Communication Arts</a></li>
+							<li class="dropdown"><a href="#!"><span>Competitive Debate Programs</span> <i class="bi bi-chevron-right"></i></a>
+								<ul>
+									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?canada" ? "active" : "") ?>" href="competitive-debate-programs.php?canada">Canada</a></li>
+									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?ph" ? "active" : "") ?>" href="competitive-debate-programs.php?ph">Phillippines</a></li>
+								</ul>
+							</li>
+							<li><a  class="nav-link <?= ($page == "mcgraw-hill-education-courses.php" ? "active" : "") ?>" href="mcgraw-hill-education-courses.php">McGraw Hill Education Courses</a></li>
+							<li><a  class="nav-link <?= ($page == "academic-enrichment.php" ? "active" : "") ?>" href="academic-enrichment.php">Opus Academic Subject Enrichment</a></li>
+							<li><a  class="nav-link <?= ($page == "test-preparation.php" ? "active" : "") ?>" href="test-preparation.php">Opus Standardized Test Preparation</a></li>
+							<li><a  class="nav-link <?= ($page == "early-learning.php" ? "active" : "") ?>" href="early-learning.php">Opus Early Learning</a></li>
+							<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Opus Classical Music</a></li>
+						</ul>
+					</li>
+					<li><a class="nav-link <?= ($page == "admission-counselling.php" ? "active" : "") ?>" href="admission-counselling.php">Admission Counselling</a></li>
+					<li class="dropdown"><a href="#!"><span>Summer Programs</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a class="nav-link <?= ($page == "summer-camps.php" ? "active" : "") ?>" href="summer-camps.php">Opus Summer</a></li>
+							<li class="dropdown"><a href="#!"><span>Pre-Collegiate Pathways</span> <i class="bi bi-chevron-right"></i></a>
+								<ul>
+									<li><a href="#!">Canadian</a></li>
+									<li><a href="assets/pdf/2021_Pre_Collegiate_Pathways_International_Explorations_C_proof.pdf">- Pre Collegiate Pathways</a></li>
+									<li><a href="assets/pdf/Application_Precedure_b.pdf">- Application Procedure</a></li>
+									<li><a href="https://form.jotform.com/211169418873058">- Online Form</a></li>
+									<li><a href="#!">Phillippines</a></li>
+									<li><a href="assets/pdf/pcp-opus-ph.pdf">- Pre Collegiate Pathways</a></li>
+									<li><a href="assets/pdf/Application_Precedure_PH.pdf">- Application Procedure</a></li>
+									<li><a href="https://form.jotform.com/211169418873058">- Online Form</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#!"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a class="nav-link <?= ($page == "about.php" ? "active" : "") ?>" href="about.php">About Us</a></li>
+							<li><a class="nav-link <?= ($page == "history-and-team.php" ? "active" : "") ?>" href="history-and-team.php">History and Our Team</a></li>
+							<li><a class="nav-link <?= ($page == "careers.php" ? "active" : "") ?>" href="careers.php">Careers</a></li>
+							<li><a class="nav-link <?= ($page == "testimonials.php" ? "active" : "") ?>" href="careers.php">Testimonials</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="nav-link" href="#!"><span> Opus News</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 1</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 2</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 3</a></li>
+						</ul>
+					</li>
 
-				<li><a class="nav-link <?= ($page == "contact.php" ? "active" : "") ?>" href="contact.php">Contact</a></li>
-				<a href="https://opusacademy.com/login/" type="button" class="navbar-btn">Register Now</a>
-			</ul>
-			<i class="bi bi-list mobile-nav-toggle"></i>
-		</nav>
+					<li><a class="nav-link <?= ($page == "contact.php" ? "active" : "") ?>" href="contact.php">Contact</a></li>
+					<a href="https://opusacademy.com/login/" type="button" class="navbar-btn">Register Now</a>
+				</ul>
+				<i class="bi bi-list mobile-nav-toggle"></i>
+			</nav>
 		</div>
 	</header>

@@ -10,26 +10,26 @@ $ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs pb-0">
-        <div class="container">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+        <!-- <div class="container"> -->
             <ol>
                  <li><a href="index.php">Home</a></li>
                  <li>Programs</li>
                  <li>Communication Arts</li>
             </ol>
             <h2>Communication Arts Programs</h2>
-        </div>
+        <!-- </div> -->
     </section>
 
-    <div class ="container p-0 warning-bg">
+    <div class ="container-fluid warning-bg">
         <div class="row">
-            <div class="col-md-6" style="padding-right: 0px;">
-                <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
-                <p class="text-left px-5 pb-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
-                <center><a href ="#ourCourses"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+            <div class="col-md-6 p-5 title-size">
+                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
+                <h4 class="text-left px-5 my-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</h4>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 px-0">
                 <img src="assets/img/communication-arts/p-13.jpg" class="w-100" alt="speak-img">
             </div>
         </div>
@@ -105,21 +105,21 @@ $ourCourse = $communicationArts->getCourses();
                         <span>Shakespeare</span>
                     </p>
 
-                    <h2 class="fw-bold mt-3">Certificate and Diploma Granting:</h2>
+                    <h4 class="fw-bold mt-3 mb-3">Certificate and Diploma Granting:</h4>
                                 
                     <div class="d-flex justify-content-center certificate-container">
 
                         <div class="row">
                             <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-1.png " class="cert-img w-100">
+                                <img src="assets/img/communication-arts/l-1.png " class="cert-img w-100 ">
                             </div>
 
                             <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 mt-5">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 ">
                             </div>
 
                             <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-3.png" class="cert-img w-100 mt-5">
+                                <img src="assets/img/communication-arts/l-3.png" class="cert-img w-100 ">
                             </div>
                         </div>
                     </div>
@@ -177,11 +177,11 @@ $ourCourse = $communicationArts->getCourses();
                             </div>
 
                             <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 mt-5">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100">
                             </div>
 
                             <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-3.png" class="cert-img w-100 mt-5">
+                                <img src="assets/img/communication-arts/l-3.png" class="cert-img w-100">
                             </div>
                         </div>
                     </div>
@@ -209,8 +209,7 @@ $ourCourse = $communicationArts->getCourses();
                     </div>
                 </div>
 
-                <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;">
-                </div>
+                <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;"></div>
             </div>
         </div>
     </section>

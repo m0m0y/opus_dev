@@ -17,23 +17,23 @@ $cardContent = $card->getContentWhere($page);
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs pb-0">
-        <div class="container">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+        <!-- <div class="container"> -->
         <ol>
             <li><a href="index.php">Home</a></li>
             <li>Program</li>
             <li>Early Learning</li>
         </ol>
         <h2>Early Learning Programs</h2>
-        </div>
+        <!-- </div> -->
     </section>
 
-    <div class="container p-0 primary-bg">
+    <div class="container-fluid p-0 primary-bg">
         <div class="row">
-            <div class = "col-md-6" style="padding-right: 0px;">
+            <div class = "col-md-6 title-size content-size p-5">
                 <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
-                <p class="text-left px-5 pb-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<p>
-                <div class = text-center><a href ="#section-container"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></div>
+                <p class="text-left px-5 pb-5 mb-5 mt-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<p><br>
+                <div class = text-center><a href ="#section-container"> <i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
             </div>
 
             <div class="col-md-6">
