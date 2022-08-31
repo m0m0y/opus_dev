@@ -17,11 +17,11 @@ $cardContent = $card->getContentWhere($page);
 
     <main id="main">
 
-        <section id="breadcrumbs" class="breadcrumbs mb-0">
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
             <div class="container">
                 <ol>
-                <li><a href="index.php">Home</a></li>
-                <li>Addmission Counselling</li>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Addmission Counselling</li>
                 </ol>
                 <h2>Opus Admissions Counselling</h2>
             </div>

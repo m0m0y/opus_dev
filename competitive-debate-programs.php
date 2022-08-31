@@ -8,15 +8,15 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 ?>
 <main id="main">
     <?php if(isset($_GET["ph"])) { ?>
-        <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-            <!-- <div class="container"> -->
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
+            <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>
                     <li>Program</li>
                     <li>Competitive Debate Programs</li>
                 </ol>
                 <h2>Opus Competitive Debate Philippines Summer Program</h2>
-            <!-- </div> -->
+            </div>
         </section>
 
         <div class="container-fluid danger-bg">
@@ -24,7 +24,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 <div class = "col-md-6 p-5 title-size">
                     <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience in the Philippines.</h1>
                     <h4 class="text-left px-5 my-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
-                    <div class="text-center"><a href="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
+                    <center><a href="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
                 <div class="col-md-6 px-0">
@@ -35,7 +35,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="section-container-ph" class="section-container">
             <div class="container">
-                <div class ="row">
+                <div class="row">
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Harvard Debate Philippines Summer Program</h2>
 
@@ -43,19 +43,19 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                             <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                         </div>
 
-                        <div class="row d-flex justify-content-center mt-3">
+                        <div class="row d-flex justify-content-center m-3">
                             <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
+                                <a href="#!" type="button" class="danger-btn w-100">Register Fall 2022</a>
                             </div>
 
                             <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn">Courses Schedule</a>
+                                <a href="#!" type="button" class="danger-btn w-100">Courses Schedule</a>
                             </div>
                         </div>
 
                         <div class="row d-flex justify-content-center mt-3">
                             <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn" style="width: 100%; padding: 1rem 1rem !important;">Apply Summer 2023</a>
+                                <a href="#!" type="button" class="danger-btn w-100">Apply Summer 2023</a>
                             </div>
                         </div>
                     </div>
@@ -68,11 +68,11 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         <h4 class="fw-bold mt-4">Certificate Granting For Completion</h4>
 
                         <div class="row mt-4">
-                            <div class="col-sm-6 d-flex justify-content-center">
+                            <div class="col-md-6 d-flex justify-content-center">
                                 <img src="assets/img/competitive-debate/p-21.png" class="w-50">
                             </div>
 
-                            <div class="col-sm-6 d-flex justify-content-center">
+                            <div class="col-md-6 d-flex justify-content-center">
                                 <img src="assets/img/competitive-debate/p-22.png" class="w-25">
                             </div>
 
@@ -91,9 +91,9 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="teach-us-debate" class="teach-us-debate">
             <div class="container">
-                <h1 class=" m-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
+                <h1 class="mb-5 fw-bold text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
 
-                <div class="row m-5">
+                <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div class="p-5 bg-light">
                             <h1 class="text-center"><strong>Intensive Public Speaking and Argumentation</strong></h1><br>
@@ -140,21 +140,20 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section class="why-us p-0">
-            <div class="text-left competitive-title secondary-bg">
+        <section class="why-us pb-0">
+            <div class=" secondary-bg">
                 <div class="row">
-                    <div class="col-md-6" style="padding: 9%;">
+                    <div class="col-md-6 why-us-content">
                         <div class="mb-5 m-5 text-left">
-                                <h1><strong>Why Learn with Us?</strong></h1>
-                                <div class="pt-5 text-left">
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
-                                </div>
+                                <h4 class="mb-4 fs-1 fw-bold">Why Learn with Us?</h4>
+                         
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                                <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
                         </div>
                     </div>
 
@@ -177,15 +176,15 @@ $competitiveDebateContent = $competitiveDebate->getContent();
         </section>
     
     <?php } else { ?> 
-        <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-            <!-- <div class="container"> -->
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
+            <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>
                     <li>Program</li>
                     <li>Competitive Debate Programs</li>
                 </ol>
                 <h2>Opus Competitive Debate Programs</h2>
-            <!-- </div> -->
+            </div>
         </section>
 
         <div class="container-fluid danger-bg">
@@ -193,18 +192,18 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             <div class = "col-md-6 p-5 title-size">
                     <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience.</h1>
                     <h4 class="text-left px-5 my-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
-                    <div class = text-center><a href ="#section-container-ca" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
+                    <center><a href ="#section-container-ca" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
-                <div class = "col-md-6 px-0">
-                    <img src = "assets/img/competitive-debate/bridge.jpg" class="w-100" alt="bridge-img">
+                <div class="col-md-6 px-0">
+                    <img src="assets/img/competitive-debate/bridge.jpg" class="w-100" alt="bridge-img">
                 </div>
             </div>
         </div>
 
         <section id="section-container-ca" class="section-container">
             <div class="container">
-                <div class ="row">
+                <div class="row">
                     <div class="col-md-6 pe-5">
                         <h2 class="text-left mb-5 fw-bold">Harvard Competitive Debate</h2>
 
@@ -212,13 +211,13 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                             <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                         </div>
 
-                        <div class="row">
+                        <div class="row d-flex justify-content-center m-3">
                             <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
+                                <a href="#!" type="button" class="danger-btn w-100">Register Fall 2022</a>
                             </div>
 
                             <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn">Courses Schedule</a>
+                                <a href="#!" type="button" class="danger-btn w-100">Courses Schedule</a>
                             </div>
                         </div>
                     </div>
@@ -252,9 +251,9 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="teach-us-debate" class="teach-us-debate">
             <div class="container">
-                <h1 class="m-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
+                <h1 class="mb-5 fw-bold text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
 
-                <div class="row m-5">
+                <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div class="p-5 bg-light">
                             <h1 class="text-center"><strong>Public Forum</strong></h1><br>
@@ -272,42 +271,43 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
     
-        <section id="team-and-expert" class="team-and-expert">
+        <section id="competitve-debate" class="competitve-debate">
+
             <div class="container">
                 <div class="d-flex flex-column justify-content-center">
-                    <div class="row m-5">
-                        <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
+                <div class="row m-5">
+                    <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
-                        <div class="col-md-6 d-flex align-items-stretch">
-                            <div class="p-4">
-                                <p class="mb-4 fs-1 fw-bold">Competitive Debate at Opus Academy</p>
-                                <p>We train serious debaters to compete in regional, national, and international tournaments. Students learn advanced skills and sharpen their debate abilities in various styles and formats while learning in-depth issues.</p><br><br>
+                    <div class="col-md-6 d-flex align-items-stretch px-5">
+                    <div class="">
+                        <h4 class="mb-4 fs-1 fw-bold">Competitive Debate at Opus Academy</h4>
+                        <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
 
-                                <div class="d-flex justify-content-start mt-5">
-                                    <a href="#!" type="button" class="primary-btn">Our Recent Competition Results</a>
-                                </div>
-                            </div>
+                        <div class="d-flex justify-content-start mt-5">
+                            <a href="#!" type="button" class="primary-btn  w-100">Our Recent Competition Results</a>
                         </div>
                     </div>
+                    </div>
+                </div>
                 </div>
             </div>
+
         </section>
 
-        <section class="why-us p-0">
-            <div class="text-left competitive-title secondary-bg">
+        <section class="why-us pb-0">
+            <div class="secondary-bg">
                 <div class="row">
-                    <div class="col-md-6" style="padding: 9%;">
+                    <div class="col-md-6 why-us-content">
                         <div class="mb-5 m-5 text-left">
-                                    <h1><strong>Why Learn with Us?</strong></h1>
-                                <div class="pt-5 text-left">
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
-                                    <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
-                                </div>
+                            <h4 class="mb-4 fs-1 fw-bold">Why Learn with Us?</h4>
+
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
                         </div>
                     </div>
 

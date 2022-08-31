@@ -11,14 +11,14 @@ $teamList = $historyAndTeams->getTeamList();
 
 <main id="main">
 
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
         <div class="container">
-        <ol>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li>History of Success</li>
-        </ol>
-        <h2>The Opus Team - History of Success</h2>
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li>History of Success</li>
+            </ol>
+            <h2>The Opus Team - History of Success</h2>
         </div>
     </section>
 
@@ -71,7 +71,7 @@ $teamList = $historyAndTeams->getTeamList();
 
                             if($position == "Founder") {
                                 ?>
-                                <div class="col-lg-4 col-md-12 d-flex align-items-stretch">
+                                <div class="col-lg-4 col-md-12 d-flex align-items-stretch founder">
                                     <div class="member">
                                         <div class="member-img">
                                             <?= $image_url ?>
@@ -93,7 +93,7 @@ $teamList = $historyAndTeams->getTeamList();
                                 <?php
                             } else if($position == "Co-Founder and Music Director") {
                                 ?>
-                                <div class="col-lg-4 col-md-12 d-flex align-items-stretch">
+                                <div class="col-lg-4 col-md-12 d-flex align-items-stretch co-founder">
                                     <div class="member">
                                         <div class="member-img">
                                             <?= $image_url ?>
