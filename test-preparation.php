@@ -10,21 +10,21 @@ $testPreparation = $testPreparation->getContent();
 
 <main id="main">
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-        <!-- <div class="container"> -->
-        <ol>
-            <li><a href="index.php">Home</a></li>
-            <li>Programs</li>
-            <li>Standardized Test Preparation</li>
-        </ol>
-        <h2>Test Preparation</h2>
-        <!-- </div> -->
+        <div class="container">
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li>Programs</li>
+                <li>Standardized Test Preparation</li>
+            </ol>
+            <h2>Test Preparation</h2>
+        </div>
     </section>
     
     <div class ="container-fluid primary-bg">
         <div class="row">
             <div class="col-md-6 title-size">
-                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Standardized test preparation helps students reach their goals.</h1>
-                <h4 class="text-left px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
+                <h1 class="m-5 px-5 fw-bold">Standardized test preparation helps students reach their goals.</h1>
+                <h4 class="px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
                 <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
             </div>
 

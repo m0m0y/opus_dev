@@ -56,7 +56,7 @@ $hiringPostion = $careers->hiringPostion();
 
                         <div class="col-xl-4 col-lg-4 mt-4">
                             <div class="info-box">
-                                <i class="bx bx-caret-right"></i>
+                            <i class='bx bxs-user'></i>
                                 <h5><?= $position ?></h5>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ $hiringPostion = $careers->hiringPostion();
             </div>
 
             <div class="d-flex align-items-center mt-3">
-                <i class="bx bxs-spreadsheet get-started-icon"></i>
-                <a href="https://www.jotform.me/82799226078471/" class="btn-get-started scrollto">Online Application Form</a>
+                <i class="bx bxs-spreadsheet get-started-icon mt-3"></i>
+                <a href="https://www.jotform.me/82799226078471/" class="btn-get-started scrollto mt-3">Online Application Form</a>
             </div>
 
         </div>

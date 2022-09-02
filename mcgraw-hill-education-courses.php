@@ -18,25 +18,25 @@ $cardContent = $card->getContentWhere($page);
 <main id="main">
 
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-        <!-- <div class="container"> -->
+        <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
                 <li>Program</li>
                 <li>McGraw Hill Education Courses</li>
             </ol>
             <h2>McGraw Hill Education Redbird Math & English Programs</h2>
-        <!-- </div> -->
+        </div>
     </section>
 
     <div class ="container-fluid warning-bg">
         <div class="row">
             <div class="col-md-6 title-size">
-                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
+                <h1 class="m-5 px-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
                 <center><a href ="#redbird-program" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
             </div>
 
             <div class="col-md-6 px-0 pb-0">
-                <img src="assets/img/mcgraw-hill/p-27.jpg" class="w-100" alt="writing-child">
+                <img src="assets/img/mcgraw-hill/student.png" class="w-100" alt="writing-child">
             </div>
         </div>
     </div>
@@ -290,7 +290,7 @@ $cardContent = $card->getContentWhere($page);
                     <p class="fs-1 fw-bold text-center" style="color: white;">Ready to start preparing for your child's enrichment education? </p>
                     <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
                 </div>
-                </div>
+            </div>
         </div>
         </div>
     </section>

@@ -79,17 +79,17 @@ $homeCard = $homePage->getCardsContent($page);
     </div>
 
     <div class="container-fluid secondary-bg p-5">
-      <div class="container">
+      <div class="container mb-5 mt-5">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
             <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: contain;"></div>
 
             <div class="col-xl-6 d-flex align-items-stretch p-5">
               <div class="">
-                <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
+                <h4 class="fs-1 fw-bold">Welcome to Opus Academy!</h4>
                 <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
                 <div class="d-flex justify-content-left mt-5">
-                  <a href="#!" type="button" class="primary-btn  w-100 mt-4 btn-sm">Our Story</a>
+                  <a href="#!" type="button" class="primary-btn  w-100 mt-3 btn-sm">Our Story</a>
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@ $homeCard = $homePage->getCardsContent($page);
               </div>
               
               <div class="d-flex justify-content-end ms-2">
-                <a href="#!" type="button" class="light-btn">Our Acheivements</a>
+                <a href="#!" type="button" class="light-btn">Our Achievements</a>
               </div>
             </div>
           </div>
@@ -198,26 +198,24 @@ $homeCard = $homePage->getCardsContent($page);
       </div>
     </section>
 
-    <section id="" class="primary-bg">
-      <div class="container">
-        <div class="p-5">
+    <section id="counter" class="counter primary-bg">
+      <div class="container p-5">
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-md-4">
               <p id="0101" class="number text-center m-0"></p>
               <p class="title text-center">Years Experience</p>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-md-4">
               <p class="number text-center m-0"><span id="0102"></span>+</p>
               <p class="title text-center">Students</p>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-md-4">
               <p class="number text-center m-0"><span id="0103"></span>+</p>
               <p class="title text-center">Awards, Certificates & Diplomas</p>
             </div>
           </div>
-        </div>
       </div>
     </section>
 

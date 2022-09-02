@@ -9,26 +9,26 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 <main id="main">
     <?php if(isset($_GET["ph"])) { ?>
         <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-            <!-- <div class="container"> -->
+            <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>
                     <li>Program</li>
                     <li>Competitive Debate Programs</li>
                 </ol>
                 <h2>Opus Competitive Debate Philippines Summer Program</h2>
-            <!-- </div> -->
+            </div>
         </section>
 
         <div class="container-fluid danger-bg">
             <div class="row">
                 <div class = "col-md-6 p-5 title-size">
-                    <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience in the Philippines.</h1>
-                    <h4 class="text-left px-5 my-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
+                    <h1 class="m-5 px-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience in the Philippines.</h1>
+                    <h4 class="px-5 my-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
                     <div class="text-center"><a href="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
                 </div>
 
                 <div class="col-md-6 px-0">
-                    <img src="assets/img/competitive-debate/bridge.jpg" class="w-100" alt="bridge-img">
+                    <img src="assets/img/competitive-debate/white-house.jpg" class="w-100" alt="bridge-img">
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="teach-us-debate" class="teach-us-debate">
             <div class="container">
-                <h1 class=" m-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
+                <h1 class=" m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
 
                 <div class="row m-5">
                     <div class="col-md-6 d-flex align-items-stretch">
@@ -178,21 +178,21 @@ $competitiveDebateContent = $competitiveDebate->getContent();
     
     <?php } else { ?> 
         <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-            <!-- <div class="container"> -->
+            <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>
                     <li>Program</li>
                     <li>Competitive Debate Programs</li>
                 </ol>
                 <h2>Opus Competitive Debate Programs</h2>
-            <!-- </div> -->
+            </div>
         </section>
 
         <div class="container-fluid danger-bg">
             <div class="row">
             <div class = "col-md-6 p-5 title-size">
-                    <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience.</h1>
-                    <h4 class="text-left px-5 my-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
+                    <h1 class="m-5 px-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience.</h1>
+                    <h4 class="px-5 my-5">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
                     <div class = text-center><a href ="#section-container-ca" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></div>
                 </div>
 
@@ -252,7 +252,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="teach-us-debate" class="teach-us-debate">
             <div class="container">
-                <h1 class="m-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
+                <h1 class="m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
 
                 <div class="row m-5">
                     <div class="col-md-6 d-flex align-items-stretch">

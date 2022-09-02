@@ -21,7 +21,7 @@ $cardContent = $card->getContentWhere($page);
             <div class="container">
                 <ol>
                 <li><a href="index.php">Home</a></li>
-                <li>Addmission Counselling</li>
+                <li>Admission Counselling</li>
                 </ol>
                 <h2>Opus Admissions Counselling</h2>
             </div>
@@ -30,7 +30,7 @@ $cardContent = $card->getContentWhere($page);
         <section id="admission-page-hero" class="d-flex flex-column justify-content-center align-items-center">
         </section>
 
-        <section id="addmission-counselling" class="addmission-counselling">
+        <section id="admission-counselling" class="addmission-counselling">
             
             <div class="container">
                         
@@ -41,7 +41,9 @@ $cardContent = $card->getContentWhere($page);
                         $title = $v["title"];
                         $content = $v["content"];
                         $status = $v["status"];
-                  
+                   
+
+                        
                         if($status == 0) {
                             if($section == "Section I") {
                             ?>

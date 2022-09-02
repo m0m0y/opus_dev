@@ -11,21 +11,21 @@ $ourCourse = $communicationArts->getCourses();
 
 <main id="main">
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-        <!-- <div class="container"> -->
+        <div class="container">
             <ol>
                  <li><a href="index.php">Home</a></li>
                  <li>Programs</li>
                  <li>Communication Arts</li>
             </ol>
             <h2>Communication Arts Programs</h2>
-        <!-- </div> -->
+        </div>
     </section>
 
     <div class ="container-fluid warning-bg">
         <div class="row">
             <div class="col-md-6 p-5 title-size">
-                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
-                <h4 class="text-left px-5 my-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</h4>
+                <h1 class="m-5 px-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
+                <h4 class="px-5 my-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</h4>
                 <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
@@ -115,7 +115,7 @@ $ourCourse = $communicationArts->getCourses();
                             </div>
 
                             <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 ">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 l-100">
                             </div>
 
                             <div class="col-xl-4 col-sm-12">
@@ -205,7 +205,7 @@ $ourCourse = $communicationArts->getCourses();
                             <li>Earn credentials and BC arts course credits</li>
                         </ul>
 
-                        <a href="#!" type="button" class="light-btn">Our Achievement</a>
+                        <a href="#!" type="button" class="light-btn w-100">Our Achievement</a>
                     </div>
                 </div>
 

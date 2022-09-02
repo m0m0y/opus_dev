@@ -125,7 +125,16 @@ if ($page == "") {
 							<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Opus Classical Music</a></li>
 						</ul>
 					</li>
-					<li><a class="nav-link <?= ($page == "admission-counselling.php" ? "active" : "") ?>" href="admission-counselling.php">Admission Counselling</a></li>
+					<!-- <li><a class="nav-link <?= ($page == "admission-counselling.php" ? "active" : "") ?>" href="admission-counselling.php">Admission Counselling</a></li> -->
+
+					<li class="dropdown"><a href="#!"><span>Admin Counselling</span> <i class="bi bi-chevron-down"></i></a>
+					<ul>
+						
+					<li><a  class="nav-link <?= ($page == "private-school.php" ? "active" : "") ?>" href="private-school.php">Private School</a></li>
+					<li><a  class="nav-link <?= ($page == "university-and-graduate.php" ? "active" : "") ?>" href="university-and-graduate.php">University and Graduate</a></li>
+
+					</ul>
+
 					<li class="dropdown"><a href="#!"><span>Summer Programs</span> <i class="bi bi-chevron-down"></i></a>
 						<ul>
 							<li><a class="nav-link <?= ($page == "summer-camps.php" ? "active" : "") ?>" href="summer-camps.php">Opus Summer</a></li>
@@ -154,9 +163,9 @@ if ($page == "") {
 					<li class="dropdown">
 						<a class="nav-link" href="#!"><span> Opus News</span> <i class="bi bi-chevron-down"></i></a>
 						<ul>
-							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 1</a></li>
-							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 2</a></li>
-							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Test 3</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Blogs</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Tags</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Events</a></li>
 						</ul>
 					</li>
 
