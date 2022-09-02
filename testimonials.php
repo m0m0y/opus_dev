@@ -3,11 +3,11 @@ $title = "Testimonials - Opus Academy";
 require_once "assets/common/header.php"; 
 ?>
     <main id="main">
-        <section id="breadcrumbs" class="breadcrumbs">
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
             <div class="container">
                 <ol>
-                <li><a href="index.php">Home</a></li>
-                <li>Testimonials</li>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Testimonials</li>
                 </ol>
                 <h2>Testimonials</h2>
             </div>

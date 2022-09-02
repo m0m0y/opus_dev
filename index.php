@@ -82,14 +82,18 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="container mb-5 mt-5">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
-            <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: contain;"></div>
+            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: cover;"></div>
 
-            <div class="col-xl-6 d-flex align-items-stretch p-5">
+            <div class="col-md-6 d-flex align-items-stretch px-5">
               <div class="">
                 <h4 class="fs-1 fw-bold">Welcome to Opus Academy!</h4>
                 <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
                 <div class="d-flex justify-content-left mt-5">
+<<<<<<< HEAD
                   <a href="#!" type="button" class="primary-btn  w-100 mt-3 btn-sm">Our Story</a>
+=======
+                  <a href="#!" type="button" class="primary-btn  w-100">Our Story</a>
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                 </div>
               </div>
             </div>
@@ -153,12 +157,8 @@ $homeCard = $homePage->getCardsContent($page);
     </section>
 
     <section id="why-choose-opus" class="why-choose-opus secondary-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <p class="mb-4 fs-1 fw-bold">Why Choose Opus?</p>
-            <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
+<<<<<<< HEAD
             <div class="d-flex justify-content-start mt-3">
               <div class="d-flex justify-content-start me-2">
                 <a href="#!" type="button" class="light-btn">Our Testimonial</a>
@@ -166,36 +166,59 @@ $homeCard = $homePage->getCardsContent($page);
               
               <div class="d-flex justify-content-end ms-2">
                 <a href="#!" type="button" class="light-btn">Our Achievements</a>
+=======
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row m-5">
+            <div class="col-md-6 d-flex align-items-stretch px-5">
+              <div class="">
+                <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
+                <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
+
+                <div class="d-flex justify-content-left mt-5">
+                  <div class="d-flex justify-content-start me-2">
+                    <a href="#!" type="button" class="light-btn">Our Testimonial</a>
+                  </div>
+                
+                  <div class="d-flex justify-content-end ms-2">
+                    <a href="#!" type="button" class="light-btn">Our Acheivements</a>
+                  </div>
+                </div>
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
               </div>
             </div>
-          </div>
 
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-            <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
+            <div class="col-xl-5 col-lg-6 video-box">
+              <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
+            </div>
+
           </div>
         </div>
       </div>
+
     </section>
 
     <section id="team-and-expert" class="team-and-expert">
+
       <div class="container">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row m-5">
+            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
-        <div class="d-flex flex-column m-5 justify-content-center">
-          <div class="row">
-            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: contain;"></div>
-            <div class="col-md-6 d-flex align-items-stretch ">
-              <div class="p-4">
-                <p class="mb-4 fs-1 fw-bold">Team of Expert Educators</p>
-                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p><br><br>
+            <div class="col-md-6 d-flex align-items-stretch px-5">
+              <div class="">
+                <h4 class="mb-4 fs-1 fw-bold">Team of Expert Educators</h4>
+                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
 
-                <div class="d-flex justify-content-start">
-                  <a href="#!" type="button" class="primary-btn btn-sm mt-5">Our Recent Competition Results</a>
+                <div class="d-flex justify-content-left mt-5">
+                  <a href="#!" type="button" class="primary-btn w-100">Our Recent Competition Results</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
 
     <section id="counter" class="counter primary-bg">

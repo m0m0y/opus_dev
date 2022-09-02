@@ -170,7 +170,7 @@ if ($page == "") {
 					</li>
 
 					<li><a class="nav-link <?= ($page == "contact.php" ? "active" : "") ?>" href="contact.php">Contact</a></li>
-					<a href="https://opusacademy.com/login/" type="button" class="navbar-btn">Register Now</a>
+					<a href="https://opusacademy.com/login/" type="button" class="navbar-btn register-btn">Register Now</a>
 				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
 			</nav>

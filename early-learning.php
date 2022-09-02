@@ -17,7 +17,11 @@ $cardContent = $card->getContentWhere($page);
 ?>
 
 <main id="main">
+<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+=======
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
@@ -28,16 +32,26 @@ $cardContent = $card->getContentWhere($page);
         </div>
     </section>
 
-    <div class="container-fluid p-0 primary-bg">
+    <div class ="container-fluid primary-bg">
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-6 title-size">
                 <h1 class="-5 px-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
                 <h4 class="px-5 my-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<h4>
                 <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+=======
+            <div class="col-md-6 p-5 title-size">
+                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
+                <h4 class="text-left px-5 my-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.</h4>
+                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
             </div>
 
-            <div class="col-md-6">
-                <img src="assets/img/early-learning/p-17.jpg" class="w-100">
+            <!-- <div class="col-md-6 px-0">
+                <img src="assets/img/early-learning/p-17.jpg" class="w-100 children" alt="children">
+            </div> -->
+            <div class="col-md-6 px-0 pb-0">
+                <img src="assets/img/mcgraw-hill/p-27.jpg" class="w-100 children" alt="children">
             </div>
         </div>
     </div>
@@ -99,44 +113,38 @@ $cardContent = $card->getContentWhere($page);
         </div>
     </section>
 
-    <section class="p-0 secondary-bg">
-        <div class="text-left">
+    <section class="exam-early-learn pb-0">
+        <div class="secondary-bg">
             <div class="row">
-                <div class="col-md-6" style="padding: 9%;">
+                <div class="col-md-6 exam-early-learn-content">
                     <div class="mb-5 m-5 text-left">
-                        <h1><strong>Why exams for early learning?</strong></h1>
-        
-                        <ul class="text-left font py-5">
-                            <li>Provides an opportunity for young children to perform in an exam situation that will help them prepare for future exams, competitions, and interviews.</li>
-                            <li>Learn speaking and memorization of poetry, basic mime scenes, holding a conversation and discussion.</li>
-                            <li>Focus on enjoyment of speech arts and imaginative responses.</li>
-                        </ul>
-
-                        <a href="#!" type="button" class="light-btn">Our Achievement</a>
+                            <h4 class="mb-4 fs-1 fw-bold">Why exams for early learning?</h4>
                         
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
                     </div>
                 </div>
 
-                <div class="col-md-6" style="background: url('assets/img/early-learning/p-25.PNG') center center no-repeat; background-size: cover;">
-                </div>
+                <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;"></div>
             </div>
         </div>
     </section>
 
     <section id="" class="primary-bg">
         <div class="container">
-
-        <div class="p-5">
-            <div class="row">
-
-            <div class="col-xl-12">
-                <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn and speak with confidence, clarity, and conviction!</p>
-                <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn and speak with confidence, clarity, and conviction!</p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+                    </div>
+                </div>
             </div>
-
-            </div>
-        </di v>
-
         </div>
     </section>
 </main>

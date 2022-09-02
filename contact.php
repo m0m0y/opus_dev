@@ -8,13 +8,13 @@ $contactInfo = $contactInfo->getInformation();
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
       <div class="container">
-        <ol>
-          <li><a href="index.php">Home</a></li>
-          <li>Contact Us</li>
-        </ol>
-        <h2>Contact Us</h2>
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li>Contact Us</li>
+            </ol>
+            <h2>Contact Us</h2>
       </div>
     </section>
 

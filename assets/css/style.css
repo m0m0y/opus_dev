@@ -1160,10 +1160,13 @@ section {
   background: url("../img/competitive-debate/p-25.jpg") center center no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
 .universty-counselling{
   background: url("../img/admin-counselling/university/church.jpg") center center no-repeat;
   background-size: cover;
 }
+=======
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
 .application-process .circle-container {
   background-color: #b1233d;
   border-radius: 50%;
@@ -1178,6 +1181,9 @@ section {
 /*--------------------------------------------------------------
 # Academic Enrichment
 --------------------------------------------------------------*/
+.section-container .certificate-container .ap-img {
+  width: 160%;
+}
 
 
 /*--------------------------------------------------------------
@@ -1343,6 +1349,7 @@ section {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1600px) {
   .title-size {
     padding: 2% !important;
@@ -1368,6 +1375,8 @@ section {
   }
 }
 
+=======
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
 @media screen and (max-width: 1440px) {
   /*--------------------------------------------------------------
   # General

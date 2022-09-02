@@ -9,22 +9,31 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
 
     <main id="main">
 
+<<<<<<< HEAD
         <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+=======
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
             <div class="container">
                 <ol>
-                <li><a href="index.php">Home</a></li>
-                <li>Programs</li>
-                <li>Academic Enrichment II</li>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Programs</li>
+                    <li>Academic Enrichment II</li>
                 </ol>
                 <h2>Academic Subject Enrichment</h2>
             </div>
         </section>
 
-        <div class ="container-fluid title-size primary-bg">
+        <div class ="container-fluid primary-bg">
             <div class="row">
                 <div class="col-md-6 p-5 title-size">
+<<<<<<< HEAD
                     <h1 class="m-5 px-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
                     <h4 class="px-5 my-5">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </h4>
+=======
+                    <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
+                    <h4 class="text-left px-5 my-5">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </h4>
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                     <center><a href ="#ourCourses" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
@@ -40,7 +49,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                     <h2 class="text-center">Our Courses</h2>
                 </div>
 
-                <div class="row">
+                <div class="row d-flex align-items-stretch">
                     <div class="col-lg-4 col-md-6">
                         <div class="box">
                             <h5><a href="#!">Critical Reading & Writing</a></h5>
@@ -115,7 +124,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="ap-img">
                                 </div>
                             </div>
                         </div>
@@ -151,7 +160,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="ap-img">
                                 </div>
                             </div>
                         </div>
@@ -187,7 +196,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="ap-img">
                                 </div>
                             </div>
                         </div>
@@ -223,7 +232,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="ap-img">
                                 </div>
                             </div>
                         </div>
@@ -259,7 +268,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="ap-img">
                                 </div>
                             </div>
                         </div>
@@ -295,18 +304,20 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                         <div class="d-flex justify-content-start certificate-container">
                             <div class="row">
                                 <div class="col-xl-4 col-sm-12">
-                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="cert-img">
+                                    <img src="assets/img/academic-enrichment/AP_logo.png" class="ap-img">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="spacing"></div>
         </section>
 
         <section id="" class="primary-bg">
             <div class="container">
-            <div class="p-5">
+            <div class="p-3">
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn and speak with confidence, clarity and conviction!</p>

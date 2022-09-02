@@ -10,7 +10,11 @@ $ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
+<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+=======
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1 mt-2">
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                  <li><a href="index.php">Home</a></li>
@@ -110,16 +114,21 @@ $ourCourse = $communicationArts->getCourses();
                     <div class="d-flex justify-content-center certificate-container">
 
                         <div class="row">
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-1.png " class="cert-img w-100 ">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-1.png " class="cert-img">
                             </div>
 
+<<<<<<< HEAD
                             <div class="col-xl-4 col-sm-12">
                                 <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 l-100">
+=======
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img">
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-3.png" class="cert-img w-100 ">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-3.png" class="cert-img">
                             </div>
                         </div>
                     </div>
@@ -172,16 +181,16 @@ $ourCourse = $communicationArts->getCourses();
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-1.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-1.png" class="cert-img">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-3.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-3.png" class="cert-img">
                             </div>
                         </div>
                     </div>
@@ -191,13 +200,13 @@ $ourCourse = $communicationArts->getCourses();
     </section>
 
     <section class="why-take-exam">
-        <div class="text-left competitive-title secondary-bg">
+        <div class="secondary-bg">
             <div class="row">
-                <div class="col-md-6" style="padding: 8%;">
+                <div class="col-md-6 why-take-exam-content">
                     <div class="mb-5 m-5 text-left">
-                        <h1 class="fw-bold">Why Take Exams?</h1>
+                        <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
 
-                        <ul class="text-left font py-5">
+                        <ul>
                             <li>Structured and sequential Learning.</li>
                             <li>Certificate and diploma granting.</li>
                             <li>Stand out in Private school & US UK University <br>admissions.</li>
@@ -205,7 +214,11 @@ $ourCourse = $communicationArts->getCourses();
                             <li>Earn credentials and BC arts course credits</li>
                         </ul>
 
+<<<<<<< HEAD
                         <a href="#!" type="button" class="light-btn w-100">Our Achievement</a>
+=======
+                        <a href="#!" type="button" class="light-btn mt-4">Our Achievement</a>
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                     </div>
                 </div>
 
@@ -319,7 +332,7 @@ $ourCourse = $communicationArts->getCourses();
 
     <section id="" class="primary-bg">
       <div class="container">
-        <div class="p-5">
+        <div class="p-3">
           <div class="row">
             <div class="col-xl-12">
                 <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>

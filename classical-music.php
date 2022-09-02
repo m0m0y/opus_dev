@@ -10,7 +10,7 @@ $classicalMusicContent = $classicalMusic->getContent();
 
     <main id="main">
 
-        <section id="breadcrumbs" class="breadcrumbs">
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
             <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>

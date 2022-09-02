@@ -17,7 +17,11 @@ $cardContent = $card->getContentWhere($page);
 
 <main id="main">
 
+<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+=======
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
@@ -30,8 +34,13 @@ $cardContent = $card->getContentWhere($page);
 
     <div class ="container-fluid warning-bg">
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-6 title-size">
                 <h1 class="m-5 px-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
+=======
+            <div class="col-md-6 p-5 title-size">
+                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                 <center><a href ="#redbird-program" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
             </div>
 
@@ -50,14 +59,14 @@ $cardContent = $card->getContentWhere($page);
                     </div>
 
                     <div class="col-md-6 d-flex align-items-stretch ">
-                        <div class="p-4">
-                            <p class="mb-4 fs-1 fw-bold">What is the McGraw-Hill Education Redbird Program?</p>
+                        <div class="">
+                            <h4 class="mb-4 fs-1 fw-bold">What is the McGraw-Hill Education Redbird Program?</h4>
 
                             <p>Formerly known as the Stanford University Education Program for Gifted Youth Program, the Redbird Programs are now under the McGraw Hill Education suite of courses. <br><br>Redbird combines advanced education technology based on cutting-edge educational research by Stanford University.<br><br>Using AI technology, course material is individualized and accommodates differences in student learning levels, allowing students to progress at their own pace and accelerate their education.
                             </p>
 
                             <div class="d-flex justify-content-start">
-                            <a href="https://www.mheducation.com/prek-12/explore/redbird.html" type="button" class="primary-btn mt-4">Learn More on the Redbird Website</a>
+                            <a href="https://www.mheducation.com/prek-12/explore/redbird.html" type="button" class="primary-btn mt-4 w-100">Learn More on the Redbird Website</a>
                             </div>
                         </div>
                     </div>
@@ -67,25 +76,30 @@ $cardContent = $card->getContentWhere($page);
     </section>
 
     <section id="use-redbird" class="use-redbird">
+
         <div class="container">
             <div class="d-flex flex-column justify-content-center">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-stretch ">
-                        <div class="p-4">
-                            <p class="mb-4 fs-1 fw-bold">How We Use Redbird</p>
+                    <div class="col-md-6 d-flex align-items-stretch px-5">
+                        <div class="">
+                            <h4 class="mb-4 fs-1 fw-bold">How We Use Redbird</h4>
                             <p>At Opus Academy, we combine the McGraw Hill Education multimedia computer-based learning with face-to face instruction delivered by our qualified teachers. The classrooms provide students with a live forum in which they can interact with instructors and other students, and our small group environment allows for more individualized attention. Our instructors supplement the Redbird & ALEKS curriculum with Opus enhancement activities to fulfill the academic needs of each student who enters our academy.</p>
                         </div>
                     </div>
 
+                    <!-- <div class="col-xl-5 col-lg-6 video-box">
+                    <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
+                    </div> -->
                     <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/mcgraw-hill/p-26.jpg') center center no-repeat; background-size: contain;"></div>
                 </div>
             </div>
         </div>
+
     </section>
     
     <section id="why-it-works" class="why-it-works primary-bg">
         <div class="container">
-            <h1 class="fw-bold mb-5 text-center">Why it Works</h1>
+            <h1 class="mb-5 fw-bold text-center">Why it Works</h1>
 
             <div class="row text-center d-flex align-items-stretch">
                 <div class="col-md-3">
@@ -123,25 +137,25 @@ $cardContent = $card->getContentWhere($page);
     <section id="ourCourses" class="ourCourses secondary-bg">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-center fw-bold">Redbird Programs We Offer</h2>
+                <h2 class="text-center">Redbird Programs We Offer</h2>
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="box">
                         <h3 class="mb-4"><a href="#!">Language Arts & Writing</a></h3>
                         <p>Courses developed by Stanford University, in collaboration with McGraw Hill Education</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="box">
                         <h3 class="mb-4"><a href="#!">Mathematics</a></h3>
                         <p>Courses developed by Stanford University, in collaboration with McGraw Hill Education</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="box">
                         <h3 class="mb-4"><a href="#!">Secondary Mathematics</a></h3>
                         <p>McGraw Hill Education and Assessment and Learning in Knowledge Spaces (ALEKS)s</p>
@@ -284,14 +298,18 @@ $cardContent = $card->getContentWhere($page);
 
     <section id="" class="primary-bg">
         <div class="container">
-        <div class="p-5">  
-            <div class="row">
-                <div class="col-xl-12">
-                    <p class="fs-1 fw-bold text-center" style="color: white;">Ready to start preparing for your child's enrichment education? </p>
-                    <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+            <div class="p-3">  
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Ready to start preparing for your child's enrichment education? </p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+                    </div>
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         </div>
     </section>
 
