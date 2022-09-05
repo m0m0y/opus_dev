@@ -84,10 +84,10 @@ $homeCard = $homePage->getCardsContent($page);
 
             <div class="col-md-6 d-flex align-items-stretch px-5">
               <div class="">
-                <h4 class="fs-1 fw-bold">Welcome to Opus Academy!</h4>
+                <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
                 <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
                 <div class="d-flex justify-content-left mt-5">
-                  <a href="#!" type="button" class="primary-btn  w-100 mt-3">Our Story</a>
+                  <a href="#!" type="button" class="primary-btn w-100 mt-3">Our Story</a>
                 </div>
               </div>
             </div>

@@ -951,110 +951,14 @@ section {
 /*--------------------------------------------------------------
 # Admission Counselling
 --------------------------------------------------------------*/
-/* #admission-page-hero {
-  width: 100%;
-  height: 60vh;
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin-bottom: -200px;
-}
-#admission-page-hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#admission-page-hero .container {
-  z-index: 2;
-}
-.addmission-counselling {
-  padding: 0 0 30px 0;
-  position: relative;
-  z-index: 3;
-}
-.addmission-counselling .content {
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
-}
-.addmission-counselling .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.addmission-counselling .content p {
-  margin-bottom: 30px;
-}
-.addmission-counselling .icon-boxes .icon-box {
-  text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  width: 100%;
-}
-.addmission-counselling .icon-boxes .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 30px 0;
-}
-.private-school-counselling h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.university-school-counselling h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.graduate-admission h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.addmission-counselling .icon-boxes .icon-box p {
-  font-size: 15px;
-  color: #716f6f;
-}
-.addmission-counselling .icon-boxes .icon-box img {
-  width: 100%;
-  margin-bottom: 15px;
-  min-height: auto;
-}
-.university-list .video-box {
-  background: url("../img/admission/building.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  filter: contrast(0.7)
-}
-.university-list .bg-color{
-  background-color: #29176e;
-  border-radius: 5px 5px;
-}
-.university-list {
-  color: #fff;
-}
-.university-list ul li {
-  font-size: 12px;
-}
-.graduate-admission .icon-box {
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
-  width: 100%;
-} */
-
 .our-counselling-services .circle-container {
   background-color: white;
   border-radius: 50%;
   width: 75%;
   padding: 5%;
+}
+.reaching-goal-content {
+  padding: 6%;
 }
 
 /*--------------------------------------------------------------

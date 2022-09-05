@@ -7,9 +7,9 @@ require_once "assets/common/header.php";
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
         <div class="container">
             <ol>
-                 <li><a href="index.php">Home</a></li>
-                 <li>Admin Counselling</li>
-                 <li>Private School</li>
+                <li><a href="index.php">Home</a></li>
+                <li>Admin Counselling</li>
+                <li>Private School</li>
             </ol>
             <h2>K-12 Private & Boarding School Admission Counselling</h2>
         </div>
@@ -27,20 +27,22 @@ require_once "assets/common/header.php";
                 <img src="assets/img/admin-counselling/private/happy-girl.jpg" class="w-100" alt="student">
             </div>
         </div>
-    </div>   
+    </div>
 
-    <section id="section-container" class="section-container">
-        <div class="container mt-5">
+
+
+    <section id="section-container" class="section-container">        
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center">
             <div class="row">
-                <div class="col-md-6 pe-5">
-                    <img src="assets/img/admin-counselling/private/boy.jpg" class="w-100" alt="happy-man">
-                </div>
-
-                <div class="col-md-6">
-                    <h1 class="mb-4 fs-1 fw-bold">We Guide You through the Entire Admissions Process.</h1>
+                <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                    <h4 class="mb-4 fs-1 fw-bold">We Guide You through the Entire Admissions Process.</h4>
                     <p>Many successful graduates and alumni attribute their success to the head start they received in private school. All parents want what is best for their child, but with the rising popularity of private schools and their admissions requirements, the application process can be overwhelming.</p>
                     <p>Opus Academy will help guide your family through the private school application process for students in K-12. Our team of counsellors, teachers, and administrators will help identify the list of schools to apply to based on a student’s needs and interests. We help plan, brainstorm, and edit application essays, as well as prepare students and parents for admissions interviews.</p>
                 </div>
+
+                <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/admin-counselling/private/boy.jpg') center center no-repeat; background-size: cover;"></div>
+            </div>
             </div>
         </div>
     </section>
@@ -61,14 +63,14 @@ require_once "assets/common/header.php";
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/private/puzzle.png" class="w-100 p-4" alt="puzzle">
                     </div>
-                    <p class="mb-4 fs-5 fw-bold text-center">Regular meetings with our counsellors.</p>
+                    <p class="mb-5 fs-5 fw-bold text-center">Finding the right schools & Goals.</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/private/test.png" class="w-100 p-4" alt="test">
                     </div>
-                    <p class="mb-4 fs-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
+                    <p class="mb-5 fs-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
@@ -114,44 +116,80 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
+    <section id="reaching-goals" class="reaching-goals py-0">
+        <div class ="container-fluid">
+            <div class="row">
+                <!-- <div class="col-md-6 p-5 title-size d-flex flex-column justify-content-center">
+                    <h1 class="text-left fw-bold px-5 mx-5">Reaching Your Goals</h1>
+                    <br>
+                    <h4 class="text-left mx-5">Since its founding, Opus Academy has provided students with educational counseling services for admissions to private day/boarding schools, in the United States, Canada, Australia, and the United Kingdom. We are proud to have helped numerous students admitted to the following top private and boarding schools over the years:</h4>
 
-<!-- id="reaching-goals" class="reaching-goals" -->
-    <div class ="container-fluid">
-        <div class="row">
-            <div class="col-md-6 p-5 title-size d-flex flex-column justify-content-center">
-                <h1 class="text-left fw-bold px-5 mx-5">Reaching Your Goals</h1>
-                <br>
-                <h4 class="text-left mx-5">Since its founding, Opus Academy has provided students with educational counseling services for admissions to private day/boarding schools, in the United States, Canada, Australia, and the United Kingdom. We are proud to have helped numerous students admitted to the following top private and boarding schools over the years:</h4>
+                    <div class="row m-5">
+                        <div class="col-md-6 lh-lg">
+                            <ul>
+                            <li>Crofton House School</li>
+                            <li>St. George’s School</li>
+                            <li>West Point Grey Academy</li>
+                            <li>York House School</li>
+                            <li>Collingwood School</li>
+                            <li>Mulgrave School</li>
+                            </ul>
+                        </div>
 
-                <div class="row m-5">
-                    <div class="col-md-6">
-                        <p>•Crofton House School</p>
-                        <p>•St. George’s School</p>
-                        <p>•West Point Grey Academy</p>
-                        <p>•York House School</p>
-                        <p>•Collingwood School</p>
-                        <p>•Mulgrave School</p>
+                        <div class="col-md-6 lh-lg">
+                            <ul>
+                            <li>Southridge School</li>
+                            <li>St. John’s School</li>
+                            <li>Vancouver College</li>
+                            <li>Southpointe Academy</li>
+                            <p>And more</p>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <p>•Southridge School</p>
-                        <p>•St. John’s School</p>
-                        <p>•Vancouver College</p>
-                        <p>•Southpointe Academy</p>
-                        <p>And more</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#!" type="button" class="primary-btn w-50">Read our Testimonials</a>
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center">
-                  <a href="#!" type="button" class="primary-btn w-50">Read our Testimonials</a>
-                </div>
-            </div>
+                <div class="col-md-6 px-0 pb-0">
+                    <img src="assets/img/mcgraw-hill/student.png" class="w-100" alt="writing-child">
+                </div> -->
 
-            <div class="col-md-6 px-0 pb-0">
-                <img src="assets/img/mcgraw-hill/student.png" class="w-100" alt="writing-child">
+                <div class="col-md-6 reaching-goal-content">
+                    <div class="m-5 text-left">
+                        <h4 class="mb-4 fs-1 fw-bold">Reaching Your Goals</h4>
+                        <p class="text-left">Since its founding, Opus Academy has provided students with educational counseling services for admissions to private day/boarding schools, in the United States, Canada, Australia, and the United Kingdom. We are proud to have helped numerous students admitted to the following top private and boarding schools over the years:</p>
+                    
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Crofton House School</li>
+                                    <li>St. George’s School</li>
+                                    <li>West Point Grey Academy</li>
+                                    <li>York House School</li>
+                                    <li>Collingwood School</li>
+                                    <li>Mulgrave School</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Southridge School</li>
+                                    <li>St. John’s School</li>
+                                    <li>Vancouver College</li>
+                                    <li>Southpointe Academy</li>
+                                    <p>And more</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" style="background: url('assets/img/mcgraw-hill/student.png') center center no-repeat; background-size: cover;"></div>
             </div>
         </div>
-    </div>
+    </section>
     
     <section id="" class="primary-bg">
         <div class="container">
@@ -159,7 +197,7 @@ require_once "assets/common/header.php";
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="fs-1 fw-bold text-center" style="color: white;">The Opus Way: Finding the Best Fit. Present the Best You. Interview With Confidence. Exam Power. Lifelong Impact.</p>
-                        <center><a href="#!" type="button" class="light-btn mt-5">Book an Inquiry</a></center>
+                        <center><a href="#!" type="button" class="light-btn mt-5">Book An Inquiry</a></center>
                     </div>
                 </div>
             </div>
