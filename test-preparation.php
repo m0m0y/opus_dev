@@ -19,22 +19,22 @@ $testPreparation = $testPreparation->getContent();
             <h2>Test Preparation</h2>
         </div>
     </section>
-    
-    <div class ="container-fluid primary-bg">
+
+    <div class="container-fluid primary-bg">
         <div class="row">
-            <div class="col-md-6 title-size">
+            <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Standardized test preparation helps students reach their goals.</h1>
                 <h4 class="px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
-                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
+                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6 px-0 pb-0">
+            <div class="col-md-6 px-0">
                 <img src="assets/img/mcgraw-hill/p-27.jpg" class="w-100 writing-child" alt="writing-child">
             </div>
         </div>
     </div>
 
-    <section class="we-help-students secondary-bg" id="we-help-students">
+    <section id="we-help-students" class="we-help-students secondary-bg">
         <div class="container">
             <div class="section-title">
                 <h2 class="text-center fw-bold">We help students prepare for a variety of exams</h2>
@@ -117,15 +117,13 @@ $testPreparation = $testPreparation->getContent();
                 <div class="row m-5">
                     <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/test-prep/p-24.JPG') center center no-repeat; background-size: cover;"></div>
 
-                    <div class="col-md-6 d-flex align-items-stretch px-5">
-                    <div class="">
+                    <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                         <h4 class="mb-4 fs-1 fw-bold">Our Teaching Methods</h4>
                         <p>Our test preparation courses begin with a diagnostic exam and continues with the development of a plan which is customized according to the student’s individual needs. We track student progress throughout the length of the program and administer practice exams under simulated test conditions. Test reports are used to review and identify areas for further skill strengthening as well as suggestions on how to study efficiently. Our goal is twofold: to raise students’ test scores, but also to equip them with real, lasting critical reasoning skills that will benefit students throughout their academic journey. </p>
 
                         <div class="d-flex justify-content-left mt-5">
                             <a href="#!" type="button" class="primary-btn w-100">Our Recent Competition Results</a>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>

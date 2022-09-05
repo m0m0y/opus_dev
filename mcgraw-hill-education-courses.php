@@ -28,14 +28,14 @@ $cardContent = $card->getContentWhere($page);
         </div>
     </section>
 
-    <div class ="container-fluid warning-bg">
+    <div class="container-fluid warning-bg">
         <div class="row">
-            <div class="col-md-6 title-size">
+            <div class = "col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
-                <center><a href ="#redbird-program" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
+                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6 px-0 pb-0">
+            <div class="col-md-6 px-0">
                 <img src="assets/img/mcgraw-hill/student.png" class="w-100" alt="writing-child">
             </div>
         </div>
@@ -49,16 +49,13 @@ $cardContent = $card->getContentWhere($page);
                         <img src="assets/img/mcgraw-hill/MHE_logo.png" alt="mc-graw-hill" class="p-4 mcgrawhill-img">
                     </div>
 
-                    <div class="col-md-6 d-flex align-items-stretch ">
-                        <div class="">
-                            <h4 class="mb-4 fs-1 fw-bold">What is the McGraw-Hill Education Redbird Program?</h4>
+                    <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                        <h4 class="mb-4 fs-1 fw-bold">What is the McGraw-Hill Education Redbird Program?</h4>
+                        <p>Formerly known as the Stanford University Education Program for Gifted Youth Program, the Redbird Programs are now under the McGraw Hill Education suite of courses. <br><br>Redbird combines advanced education technology based on cutting-edge educational research by Stanford University.<br><br>Using AI technology, course material is individualized and accommodates differences in student learning levels, allowing students to progress at their own pace and accelerate their education.
+                        </p>
 
-                            <p>Formerly known as the Stanford University Education Program for Gifted Youth Program, the Redbird Programs are now under the McGraw Hill Education suite of courses. <br><br>Redbird combines advanced education technology based on cutting-edge educational research by Stanford University.<br><br>Using AI technology, course material is individualized and accommodates differences in student learning levels, allowing students to progress at their own pace and accelerate their education.
-                            </p>
-
-                            <div class="d-flex justify-content-start">
+                        <div class="d-flex justify-content-start">
                             <a href="https://www.mheducation.com/prek-12/explore/redbird.html" type="button" class="primary-btn mt-4 w-100">Learn More on the Redbird Website</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -70,11 +67,9 @@ $cardContent = $card->getContentWhere($page);
         <div class="container">
             <div class="d-flex flex-column justify-content-center">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-stretch px-5">
-                        <div class="">
-                            <h4 class="mb-4 fs-1 fw-bold">How We Use Redbird</h4>
-                            <p>At Opus Academy, we combine the McGraw Hill Education multimedia computer-based learning with face-to face instruction delivered by our qualified teachers. The classrooms provide students with a live forum in which they can interact with instructors and other students, and our small group environment allows for more individualized attention. Our instructors supplement the Redbird & ALEKS curriculum with Opus enhancement activities to fulfill the academic needs of each student who enters our academy.</p>
-                        </div>
+                    <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                        <h4 class="mb-4 fs-1 fw-bold">How We Use Redbird</h4>
+                        <p>At Opus Academy, we combine the McGraw Hill Education multimedia computer-based learning with face-to face instruction delivered by our qualified teachers. The classrooms provide students with a live forum in which they can interact with instructors and other students, and our small group environment allows for more individualized attention. Our instructors supplement the Redbird & ALEKS curriculum with Opus enhancement activities to fulfill the academic needs of each student who enters our academy.</p>
                     </div>
 
                     <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/mcgraw-hill/p-26.jpg') center center no-repeat; background-size: contain;"></div>

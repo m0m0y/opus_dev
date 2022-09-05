@@ -14,22 +14,20 @@ require_once "assets/common/header.php";
             <h2>K-12 Private & Boarding School Admission Counselling</h2>
         </div>
     </section>
-
+    
     <div class ="container-fluid primary-bg">
         <div class="row">
-            <div class="col-md-6 title-size">
+            <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Our counsellors work with your family to assist you with your chosen school’s admission process.</h1>
                 <h4 class="px-5 my-5">We are there every step of the way to ensure your child has the best chances. Whether interested in private schools on a national or international level, we will help your family make the best choice, and make your child’s individual needs our priority. Our counsellors help identify the private day schools or boarding schools that will best fit your child’s needs, and programs that your child will flourish in.</h4>
-                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6 px-0 pb-0">
+            <div class="col-md-6 px-0">
                 <img src="assets/img/admin-counselling/private/happy-girl.jpg" class="w-100" alt="student">
             </div>
         </div>
     </div>
-
-
 
     <section id="section-container" class="section-container">        
         <div class="container">
@@ -54,35 +52,35 @@ require_once "assets/common/header.php";
             <div class="row d-flex align-items-stretch justify-content-between">
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
                     <div class="mb-4 circle-container">
-                        <img src="assets/img/admin-counselling/private/mission.png" class="w-100 p-4" alt="mountain">
+                        <img src="assets/img/admin-counselling/icons/mission.png" class="w-100 p-4" alt="mountain">
                     </div>
                     <p class="mb-4 fs-5 fw-bold text-center">Regular meetings with our counsellors.</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
                     <div class="mb-4 circle-container">
-                        <img src="assets/img/admin-counselling/private/puzzle.png" class="w-100 p-4" alt="puzzle">
+                        <img src="assets/img/admin-counselling/icons/puzzle.png" class="w-100 p-4" alt="puzzle">
                     </div>
                     <p class="mb-5 fs-5 fw-bold text-center">Finding the right schools & Goals.</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
                     <div class="mb-4 circle-container">
-                        <img src="assets/img/admin-counselling/private/test.png" class="w-100 p-4" alt="test">
+                        <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
                     <p class="mb-5 fs-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
                     <div class="mb-4 circle-container">
-                        <img src="assets/img/admin-counselling/private/family.png" class="w-100 p-4" alt="family">
+                        <img src="assets/img/admin-counselling/icons/family.png" class="w-100 p-4" alt="family">
                     </div>
                     <p class="mb-4 fs-5 fw-bold text-center">Interview Skills for Students and Parents</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center">
                     <div class="mb-4 circle-container">
-                        <img src="assets/img/admin-counselling/private/talk.png" class="w-100 p-4" alt="talk">
+                        <img src="assets/img/admin-counselling/icons/talk.png" class="w-100 p-4" alt="talk">
                     </div>
                     <p class="mb-4 fs-5 fw-bold text-center">Application Guidance & Follow Up</p>
                 </div>
@@ -119,43 +117,6 @@ require_once "assets/common/header.php";
     <section id="reaching-goals" class="reaching-goals py-0">
         <div class ="container-fluid">
             <div class="row">
-                <!-- <div class="col-md-6 p-5 title-size d-flex flex-column justify-content-center">
-                    <h1 class="text-left fw-bold px-5 mx-5">Reaching Your Goals</h1>
-                    <br>
-                    <h4 class="text-left mx-5">Since its founding, Opus Academy has provided students with educational counseling services for admissions to private day/boarding schools, in the United States, Canada, Australia, and the United Kingdom. We are proud to have helped numerous students admitted to the following top private and boarding schools over the years:</h4>
-
-                    <div class="row m-5">
-                        <div class="col-md-6 lh-lg">
-                            <ul>
-                            <li>Crofton House School</li>
-                            <li>St. George’s School</li>
-                            <li>West Point Grey Academy</li>
-                            <li>York House School</li>
-                            <li>Collingwood School</li>
-                            <li>Mulgrave School</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-6 lh-lg">
-                            <ul>
-                            <li>Southridge School</li>
-                            <li>St. John’s School</li>
-                            <li>Vancouver College</li>
-                            <li>Southpointe Academy</li>
-                            <p>And more</p>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                        <a href="#!" type="button" class="primary-btn w-50">Read our Testimonials</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 px-0 pb-0">
-                    <img src="assets/img/mcgraw-hill/student.png" class="w-100" alt="writing-child">
-                </div> -->
-
                 <div class="col-md-6 reaching-goal-content">
                     <div class="m-5 text-left">
                         <h4 class="mb-4 fs-1 fw-bold">Reaching Your Goals</h4>

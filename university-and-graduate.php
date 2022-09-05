@@ -17,27 +17,22 @@ require_once "assets/common/header.php";
 
     <div class ="container-fluid primary-bg">
         <div class="row">
-            <div class="col-md-6 title-size">
+            <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Our counsellors work with your family to assist you with your chosen school’s admission process.</h1>
                 <h4 class="px-5 my-5 lh-base">Your child’s higher education is one of the most important investments you will ever make. The admissions process has grown more complex than ever - a plethora of university choices and intense competition for highly selective universities. To be admitted into a highly selective college requires students to stand out from the rest. At Opus Academy, our counsellors will help guide your child in making the best decision for his or her university education.</h4>
-                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6 px-0 pb-0">
+            <div class="col-md-6 px-0">
                 <img src="assets/img/admin-counselling/university/graduates.jpg" class="w-100" alt="student">
             </div>
         </div>
-    </div>   
+    </div>
 
     <section id="section-container" class="section-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/admin-counselling/university/raised.jpg') center center no-repeat; background-size: contain;"></div>
-
-                <!-- <div class="col-md-6 d-flex align-items-stretch flex-column">
-                    <h4 class="mb-4 fs-1 fw-bold">Let Opus guide you through a personalized strategic plan.</h4>
-                    <p>We understand how demanding the university application process can be. With close guidance and attention from our select counsellors, your child will be able to navigate through the complex admissions process with ease. With so many selective programs to choose from, our team of counsellors will help students and identify their core values and goals and match them with the best-fit schools for them. Our counsellors are committed to providing personalized services and ensure that your child finds the right university for them. Through our assistance, we can help showcase every individual strength and talent, helping create a top-quality admission package that reaches their chosen universities.</p>
-                </div> -->
             
                 <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">Let Opus guide you through a personalized strategic plan</h4>
@@ -47,68 +42,68 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section id="why-it-works" class="why-it-works primary-bg">
+    <section id="our-counselling-services" class="our-counselling-services primary-bg">
         <div class="container">
             <h1 class="fw-bold mb-5 mt-5 text-center">Our Counselling Services Include</h1>
-
             <p class="text-center">We offer various comprehensive planning packages for students, providing your child with individualized attention and the guidance to help them make the best decision. We assist with the following critical components to presenting a successful candidate to your chosen university:</p>
+
             <div class="row d-flex align-items-stretch justify-content-between">
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/mission.png" class="w-100 p-4" alt="mountain">
+                        <img src="assets/img/admin-counselling/icons/mission.png" class="w-100 p-4" alt="mountain">
                     </div>
                     <p class="mb-4 fw-bold text-center">Regular meetings with our counsellors.</p>
 
                     <div class="mt-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/mission.png" class="w-100 p-4" alt="mountain">
+                        <img src="assets/img/admin-counselling/icons/presentation.png" class="w-100 p-4" alt="presentation">
                     </div>
                     <p class="mt-4 fw-bold text-center">Competitions, Projects & Internships</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/puzzle.png" class="w-100 p-4" alt="puzzle">
+                        <img src="assets/img/admin-counselling/icons/presentation.png" class="w-100 p-4" alt="presentation">
                     </div>
                     <p class="mb-4 fw-bold text-center">Finding the right schools & Goals.</p><br>
 
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/puzzle.png" class="w-100 p-4" alt="puzzle">
+                        <img src="assets/img/admin-counselling/icons/creativity.png" class="w-100 p-4" alt="creativity">
                     </div>
-                    <p class="mb-4 fw-bold text-center">Portfolio Prep(Art, Music & Drama)</p>
+                    <p class="mb-4 fw-bold text-center">Portfolio Prep for Art, Music & Drama</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/test.png" class="w-100 p-4" alt="test">
+                        <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
-                    <p class="mb-4 fw-bold text-center">Test Preparation (SAT, ACT, TOEFL, IELTS)</p>
+                    <p class="mb-4 fw-bold text-center">Test Preparation SAT, ACT, TOEFL, IELTS</p><br>
 
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/test.png" class="w-100 p-4" alt="test">
+                        <img src="assets/img/admin-counselling/icons/talk.png" class="w-100 p-4" alt="talk">
                     </div>
                     <p class="mb-4 fw-bold text-center">Interview Skills</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/family.png" class="w-100 p-4" alt="family">
+                        <img src="assets/img/admin-counselling/icons/graduated.png" class="w-100 p-4" alt="graduated">
                     </div>
                     <p class="mb-4 fw-bold text-center">Academic Subject Tutoring</p>
                 
                     <div class="mt-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/family.png" class="w-100 p-4" alt="family">
+                        <img src="assets/img/admin-counselling/icons/family.png" class="w-100 p-4" alt="family">
                     </div>
                     <p class="mt-4 fw-bold text-center">Deferral & Wait list Consultation</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="mb-4 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/talk.png" class="w-100 p-4" alt="talk">
+                        <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
                     <p class="mb-2 fw-bold text-center">Advanced Placement and International Baccalaureate Test</p>
 
                     <div class="mt-3 circle-container w-75">
-                        <img src="assets/img/admin-counselling/private/talk.png" class="w-100 p-4" alt="talk">
+                        <img src="assets/img/admin-counselling/icons/talk.png" class="w-100 p-4" alt="talk">
                     </div>
                     <p class="mt-3 fw-bold text-center">Transfer Students Admissions</p>
                 </div>
@@ -120,15 +115,9 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section class ="knowledge-admission" class="knowledge-admission">
-        <div class = "container">
+    <section class="knowledge-admission" class="knowledge-admission">
+        <div class="container">
             <div class="row">
-                <!-- <div class="col-sm-6 px-5">
-                    <h1 class="fw-bold title-size my-5">Knowledgeable<br>Admissions Counsellors.</h1>
-                    <p class="mt-5 mb-5">Our admissions counsellors offer a wealth of knowledge, experience, and expertise to the university admissions process. Not only do we have a deep and objective understanding of many universities their offerings, the application form, and personal essays, but we also expertly understand the application process in general. Our counsellors stay in touch with current trends and spend much time touring campuses and talking with university counselling professionals and admission officers. Our team-based approach ensures that students gain valuable insights from a multiplicity of perspectives.</p>
-                    <a href="#!" type="button" class="primary-btn w-100">Read Our Testimonials</a>
-                </div> -->
-
                 <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">Knowledgeable Admissions Counsellors</h4>
                     <p>Our admissions counsellors offer a wealth of knowledge, experience, and expertise to the university admissions process. Not only do we have a deep and objective understanding of many universities their offerings, the application form, and personal essays, but we also expertly understand the application process in general. Our counsellors stay in touch with current trends and spend much time touring campuses and talking with university counselling professionals and admission officers. Our team-based approach ensures that students gain valuable insights from a multiplicity of perspectives.</p>
@@ -140,7 +129,6 @@ require_once "assets/common/header.php";
 
                 <div class="col-md-6 d-flex justify-content-center">
                     <img src="assets/img/admin-counselling/university/talk.jpg" class="w-100" alt="interview">
-                    
                 </div>
             </div>
         </div>
@@ -151,14 +139,14 @@ require_once "assets/common/header.php";
             <div class="row m-5">
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="p-5 bg-light">
-                        <h1 class="text-center"><strong>Interview with Confidence</strong></h1><br>
+                        <h1 class="text-center"><strong>Interview with Confidence</strong></h1>
                         <p class="text-left">Some universities require face-to-face interviews with the applicants. These are high-stakes, nerve-wracking situations, but with preparation, this is where students can make themselves shine. Our interview coaches give insight into interview processes and prepare students so there are no surprises. Each school has something unique they are looking for in prospective students, so we ensure every applicant walks into interview prepared.</p>
                     </div>
                 </div>
                 
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="p-5 bg-light">
-                        <h1 class="text-center"><strong>Present the Best You.</strong></h1><br>
+                        <h1 class="text-center"><strong>Present the Best You.</strong></h1>
                         <p class="text-left mt-5">Often the best way to stand out to admissions is through the creativity of an individual. Our counsellors help create a plan for applicants to showcase their individual talents, as well as brainstorm and review essays and personal statements produced by the applicant. Our goal is to help the student craft a unique and compelling story told through each section of their application.</p>
                     </div>
                 </div>
@@ -166,19 +154,10 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section>
+    <section id="life-long-impact" class="life-long-impact">
         <div class = "container">
             <div class="row">
-                <div class="col-md-6" style="background: url('assets/img/admin-counselling/university/catch-toga.jpg') center center no-repeat; background-size: contain;">
-                    <!-- <img src="assets/img/admin-counselling/university/catch-toga.jpg" class="w-100" alt="happy-man"> -->
-                </div>
-
-                <!-- <div class="col-md-6 px-5">
-                    <h4 class="mb-4 fs-1 fw-bold">Lifelong Impact</h4>
-                    <p>University applications are arduous but ultimately reward the student with the career path of their choice. At Opus, we provide guidance throughout the entire application process. Our mission is to make sure that each applicant gets a chance to tell his or her story to the admission committee. We focus on not just the short-term, but the long-term success of the applicant. We believe in guiding the applicant to foster a passion and intellectual curiosity that will help them succeed in all their future endeavours.</p>
-
-                    <a href="#!" type="button" class="primary-btn w-100">Book An Inquiry</a>
-                </div> -->
+                <div class="col-md-6" style="background: url('assets/img/admin-counselling/university/catch-toga.jpg') center center no-repeat; background-size: contain;"></div>
 
                 <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">Lifelong Impact</h4>
@@ -191,7 +170,7 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section id="why-it-works" class="secondary-bg">
+    <section id="your-exams-content" class="your-exams-content secondary-bg">
         <div class="container">
             <h1 class="text-center fw-bold mt-5 mb-5">We can Help You Prepare  for Your Exams.</h1>
             <p class = "lh-base" >We offer standardized test preparation for exams including the<b> Scholastic Aptitude Test (SAT), American College Testing (ACT), International English Language Testing System (IELTS), and Test of English as a Foreign Language (TOEFL). </b> We tailor the curriculum to the strengths and weaknesses of the individual student, making sure to cover all possible content and ensuring an improvement in the score.</p1>
@@ -223,21 +202,6 @@ require_once "assets/common/header.php";
                 <div class="col-sm-6">
                     <img src = "assets/img/admin-counselling/university/friends.jpg" class ="w-100">
                 </div>
-
-                <!-- <div class="col-sm-6 px-5">
-                    <h1 class="text-left fw-bold mb-5">Graduate School Admissions Counselling</h1>
-                    <p class ="">Opus Academy can help guide graduate school applicants through the arduous task of compiling their candidacy portfolios. We provide excellent resources and access to instructors and counsellors who have years of expertise in numerous fields of study. We will guide you down the path of how best to increase test scores, publish articles, enhance work experience, and improve personal statements and application essays</p>
-                    <p>We provide Admissions Counselling for the following:</p>
-                    <ul class ="lh-lg">
-                        <li>Graduate School</li>
-                        <li>Law School Admissions </li>
-                        <li>Business School Admissions </li>
-                        <li>Medical School Admissions</li>
-                        <li>Dental School Admissions </li>
-                    </ul>
-
-                    <a href="#!" type="button" class="primary-btn w-100 my-5">Learn More</a>
-                </div> -->
 
                 <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">Graduate School Admissions Counselling</h4>

@@ -82,13 +82,11 @@ $homeCard = $homePage->getCardsContent($page);
           <div class="row m-5">
             <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: cover;"></div>
 
-            <div class="col-md-6 d-flex align-items-stretch px-5">
-              <div class="">
-                <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
-                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
-                <div class="d-flex justify-content-left mt-5">
-                  <a href="#!" type="button" class="primary-btn w-100 mt-3">Our Story</a>
-                </div>
+            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+              <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
+              <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+              <div class="d-flex justify-content-left mt-5">
+                <a href="#!" type="button" class="primary-btn w-100 mt-3">Our Story</a>
               </div>
             </div>
           </div>
@@ -147,19 +145,17 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
-            <div class="col-md-6 d-flex align-items-stretch px-5">
-              <div class="">
-                <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
-                <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
+            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+              <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
+              <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
-                <div class="d-flex justify-content-left mt-5">
-                  <div class="d-flex justify-content-start me-2">
-                    <a href="#!" type="button" class="light-btn">Testimonial</a>
-                  </div>
-                
-                  <div class="d-flex justify-content-end ms-2">
-                    <a href="#!" type="button" class="light-btn">Acheivements</a>
-                  </div>
+              <div class="d-flex justify-content-left mt-5">
+                <div class="d-flex justify-content-start me-2">
+                  <a href="#!" type="button" class="light-btn">Testimonial</a>
+                </div>
+              
+                <div class="d-flex justify-content-end ms-2">
+                  <a href="#!" type="button" class="light-btn">Achievements</a>
                 </div>
               </div>
             </div>
@@ -178,14 +174,12 @@ $homeCard = $homePage->getCardsContent($page);
           <div class="row m-5">
             <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
-            <div class="col-md-6 d-flex align-items-stretch px-5">
-              <div class="">
-                <h4 class="mb-4 fs-1 fw-bold">Team of Expert Educators</h4>
-                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+              <h4 class="mb-4 fs-1 fw-bold">Team of Expert Educators</h4>
+              <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
 
-                <div class="d-flex justify-content-left mt-5">
-                  <a href="#!" type="button" class="primary-btn w-100">Our Recent Competition Results</a>
-                </div>
+              <div class="d-flex justify-content-left mt-5">
+                <a href="#!" type="button" class="primary-btn w-100">Our Recent Competition Results</a>
               </div>
             </div>
           </div>

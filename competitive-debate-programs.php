@@ -275,20 +275,17 @@ $competitiveDebateContent = $competitiveDebate->getContent();
         <section id="competitve-debate" class="competitve-debate">
             <div class="container">
                 <div class="d-flex flex-column justify-content-center">
-                <div class="row m-5">
-                    <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
+                    <div class="row m-5">
+                        <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
-                    <div class="col-md-6 d-flex align-items-stretch px-5">
-                    <div class="">
-                        <h4 class="mb-4 fs-1 fw-bold">Competitive Debate at Opus Academy</h4>
-                        <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
-
-                        <div class="d-flex justify-content-start mt-5">
-                            <a href="#!" type="button" class="primary-btn  w-100">Our Recent Competition Results</a>
+                        <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                            <h4 class="mb-4 fs-1 fw-bold">Competitive Debate at Opus Academy</h4>
+                            <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+                            <div class="d-flex justify-content-start mt-5">
+                                <a href="#!" type="button" class="primary-btn  w-100">Our Recent Competition Results</a>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>

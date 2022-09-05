@@ -13,9 +13,9 @@ $ourCourse = $communicationArts->getCourses();
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
         <div class="container">
             <ol>
-                 <li><a href="index.php">Home</a></li>
-                 <li>Programs</li>
-                 <li>Communication Arts</li>
+                <li><a href="index.php">Home</a></li>
+                <li>Programs</li>
+                <li>Communication Arts</li>
             </ol>
             <h2>Communication Arts Programs</h2>
         </div>
@@ -108,7 +108,6 @@ $ourCourse = $communicationArts->getCourses();
                     <h4 class="fw-bold mt-3 mb-3">Certificate and Diploma Granting:</h4>
                                 
                     <div class="d-flex justify-content-center certificate-container">
-
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
                                 <img src="assets/img/communication-arts/l-1.png " class="cert-img">
@@ -318,16 +317,16 @@ $ourCourse = $communicationArts->getCourses();
     </section>
 
     <section id="" class="primary-bg">
-      <div class="container">
-        <div class="p-3">
-          <div class="row">
-            <div class="col-xl-12">
-                <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
-                <center><a href="#!" type="button" class="light-btn">Book an Appointment</a></center>
+        <div class="container">
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
+                        <center><a href="#!" type="button" class="light-btn">Book an Appointment</a></center>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
 </main>
