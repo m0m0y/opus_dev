@@ -10,11 +10,7 @@ $ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
-<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-=======
-    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1 mt-2">
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                  <li><a href="index.php">Home</a></li>
@@ -118,13 +114,8 @@ $ourCourse = $communicationArts->getCourses();
                                 <img src="assets/img/communication-arts/l-1.png " class="cert-img">
                             </div>
 
-<<<<<<< HEAD
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/communication-arts/l-2.png" class="cert-img w-100 l-100">
-=======
                             <div class="col-md-4 col-sm-12">
                                 <img src="assets/img/communication-arts/l-2.png" class="cert-img">
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                             </div>
 
                             <div class="col-md-4 col-sm-12">
@@ -214,11 +205,7 @@ $ourCourse = $communicationArts->getCourses();
                             <li>Earn credentials and BC arts course credits</li>
                         </ul>
 
-<<<<<<< HEAD
                         <a href="#!" type="button" class="light-btn w-100">Our Achievement</a>
-=======
-                        <a href="#!" type="button" class="light-btn mt-4">Our Achievement</a>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                     </div>
                 </div>
 
@@ -347,7 +334,7 @@ $ourCourse = $communicationArts->getCourses();
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 

@@ -9,11 +9,7 @@ $testPreparation = $testPreparation->getContent();
 ?>
 
 <main id="main">
-<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-=======
-    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
@@ -21,24 +17,14 @@ $testPreparation = $testPreparation->getContent();
                 <li>Standardized Test Preparation</li>
             </ol>
             <h2>Test Preparation</h2>
-<<<<<<< HEAD
         </div>
-=======
-            </div>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
     </section>
     
     <div class ="container-fluid primary-bg">
         <div class="row">
-<<<<<<< HEAD
             <div class="col-md-6 title-size">
                 <h1 class="m-5 px-5 fw-bold">Standardized test preparation helps students reach their goals.</h1>
                 <h4 class="px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
-=======
-            <div class="col-md-6 p-5 title-size">
-                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Standardized test preparation helps students reach their goals.</h1>
-                <h4 class="text-left px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                 <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
             </div>
 
@@ -126,7 +112,6 @@ $testPreparation = $testPreparation->getContent();
     </section>
 
     <section>
-
         <div class="container">
             <div class="d-flex flex-column justify-content-center">
                 <div class="row m-5">
@@ -145,7 +130,6 @@ $testPreparation = $testPreparation->getContent();
                 </div>
             </div>
         </div>
-        
     </section>
 
     <section id="" class="primary-bg">
@@ -160,12 +144,11 @@ $testPreparation = $testPreparation->getContent();
             </div>
         </div>
     </section>
-
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

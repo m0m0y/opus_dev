@@ -1,0 +1,604 @@
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Warranty | Inmed Corporation</title>
+        <meta name="description" content="
+            Inmed Corporation is the country's leading and trusted master distributor of quality local and imported medical products and supplies. 
+            With the primary focus of providing solid marketing support, Inmed Corporation has established a dependable structure offering significant value 
+            to its resellers and dealers in the Philippines and neighboring Asia Pacific Countries. Committed to helping both local and multinational 
+            medical partner companies in the Philippines achieve their target goals, Inmed Corporation continues to work hand-in-hand with them to extend and further expand market reach.">
+        <meta name="author" content="John Paul Burato">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/png" href="../assets/icon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <!-- calling jquery -->    
+        <link rel="stylesheet" type="text/css" href="../styles/common.css?v2.1">
+        <link rel="stylesheet" type="text/css" href="../styles/index.css">
+        <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="../styles/mobile.css">
+        
+        
+        <script src="../scripts/jquery.js"></script>
+        <script src="../scripts/jquery-ui.min.js"></script>
+        <script src="../scripts/main.js?v=1.1"></script>
+        <script src="../scripts/footer.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <script>
+            $( function() {
+                $( "#datepicker" ).datepicker();
+            } );
+        </script>
+    </head>
+    <body>
+        
+        <div class="navbar-container">
+            <div class="menus">
+                <div>    
+                    <img class="logo" src="../assets/inmed logo.png" />
+                </div>
+                <ul class="web-menu float-r">
+                    <li><a class="web-a" href="../index.html">Home</i></a></li>
+                    <li><a class="web-a" href="products/index.php" target="_blank">Products</a></li>
+                    <li><div class="d">
+                        <a class="web-a" href="advantage.html">About Us <i class="fas fa-caret-down"></i></a> 
+                            <div class="d-con">
+                                <a class="web-a" href="advantage.html">Our Advantage</a>
+                                <a class="web-a" href="values.html">Values</a>
+                                <a class="web-a" href="contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="e">
+                        <a class="web-a" href="reseller.html">Be a Reseller <i class="fas fa-caret-down"></i></a>
+                            <div class="e-con">
+                                <a class="web-a" href="apply.html">Be a reseller</a>
+                                <a class="web-a" href="faqs.html">Faqs</a>
+                                <a class="web-a" href="perks.html">Perks</a>
+                                <a class="web-a" href="forms.html">Downloads</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="web-a" href="careers.html">Careers</a></li>
+                    <li><a class="web-a" href="warranty.html">Warranty</a></li>
+                    <li><a class="web-a web-a-button" href="http://inmed.com.ph/shop" target="_blank">Shop now<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="mobile-menu" onclick="mobMenu(1)"> <i class="fas fa-bars pmc-cblack"></i> </div>
+            </div>    
+        </div>
+        <div class="header">
+            <div class="blank"></div>
+            <div class="global-container">
+                <h2 class="i-cblack"><span class="i-cwhite">Warranty</span> Registration </h2> 
+                <span class="crumb">
+                    <a class="web-c" href="../index.html">Home</a>
+                    <a class="web-c">|</a>
+                    <a class="web-c active" href="#!">Warranty</a>
+                </span>    
+            </div>
+        </div>
+        <div class="rows">
+            <div class="global-container">
+                <form action="../php/warranty.php" method="POST" class="form-wrapper" id="warranty-form" style="width: 100%; margin: auto;">
+                    <div class="global-two-col">
+                        
+                        <div  class="form-wrapper">
+                            
+                                <h3>Contact Information</h3>
+
+                                <input required type="text" name="firstname" placeholder="First name" class="form-btn" style="float: left; width: 50%">
+                                <input required type="text" name="lastname" placeholder="Last name" class="form-btn" style="float: right; width: 50%">
+                                <div class="clear"></div>
+            
+            
+                                <input required type="email" name="email" placeholder="Email" class="form-btn" id="email">
+                                <input required name="emailConfirm" type="text" id="confemail" placeholder="Confirm Email" class="form-btn" onblur="confirmEmail()"/>
+                                
+
+                                <input required type="text" name="streetaddress" placeholder="Street Address" class="form-btn">
+            
+                                    <input required type="text" name="city" placeholder="City" class="form-btn" style="float: left; width: 50%">
+                                    <input required type="text" name="state" placeholder="State / Province" class="form-btn" style="float: right; width: 50%">
+                                    <div class="clear"></div>
+            
+                                    <input required type="text" name="zipcode" maxlength="4" placeholder="Zipcode" class="form-btn" maxlength="4" onkeypress="return isNumberKey(event)">
+                                    <select required name="country" class="form-btn" placeholder="Country">
+                                        <option selected value="">Country</option>
+                                        
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Åland Islands">Åland Islands</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antarctica">Antarctica</option>
+                                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermuda">Bermuda</option>
+                                        <option value="Bhutan">Bhutan</option>
+                                        <option value="Bolivia">Bolivia</option>
+                                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="Botswana">Botswana</option>
+                                        <option value="Bouvet Island">Bouvet Island</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Burkina Faso">Burkina Faso</option>
+                                        <option value="Burundi">Burundi</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Cameroon">Cameroon</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cape Verde">Cape Verde</option>
+                                        <option value="Cayman Islands">Cayman Islands</option>
+                                        <option value="Central African Republic">Central African Republic</option>
+                                        <option value="Chad">Chad</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Christmas Island">Christmas Island</option>
+                                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Comoros">Comoros</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                                        <option value="Cook Islands">Cook Islands</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Cote D'ivoire">Cote D'ivoire</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cuba">Cuba</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Djibouti">Djibouti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="Dominican Republic">Dominican Republic</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                        <option value="Eritrea">Eritrea</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                        <option value="Faroe Islands">Faroe Islands</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="French Guiana">French Guiana</option>
+                                        <option value="French Polynesia">French Polynesia</option>
+                                        <option value="French Southern Territories">French Southern Territories</option>
+                                        <option value="Gabon">Gabon</option>
+                                        <option value="Gambia">Gambia</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Greenland">Greenland</option>
+                                        <option value="Grenada">Grenada</option>
+                                        <option value="Guadeloupe">Guadeloupe</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guernsey">Guernsey</option>
+                                        <option value="Guinea">Guinea</option>
+                                        <option value="Guinea-bissau">Guinea-bissau</option>
+                                        <option value="Guyana">Guyana</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="India">India</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                        <option value="Iraq">Iraq</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Isle of Man">Isle of Man</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Jersey">Jersey</option>
+                                        <option value="Jordan">Jordan</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Kiribati">Kiribati</option>
+                                        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                        <option value="Korea, Republic of">Korea, Republic of</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                        <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Lebanon">Lebanon</option>
+                                        <option value="Lesotho">Lesotho</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Macao">Macao</option>
+                                        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malawi">Malawi</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Maldives">Maldives</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marshall Islands">Marshall Islands</option>
+                                        <option value="Martinique">Martinique</option>
+                                        <option value="Mauritania">Mauritania</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Mayotte">Mayotte</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                        <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Mongolia">Mongolia</option>
+                                        <option value="Montenegro">Montenegro</option>
+                                        <option value="Montserrat">Montserrat</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="Namibia">Namibia</option>
+                                        <option value="Nauru">Nauru</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                        <option value="New Caledonia">New Caledonia</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nicaragua">Nicaragua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Niue">Niue</option>
+                                        <option value="Norfolk Island">Norfolk Island</option>
+                                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Papua New Guinea">Papua New Guinea</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Philippines">Philippines</option>
+                                        <option value="Pitcairn">Pitcairn</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Puerto Rico">Puerto Rico</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Reunion">Reunion</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Russian Federation">Russian Federation</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Saint Helena">Saint Helena</option>
+                                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                        <option value="Saint Lucia">Saint Lucia</option>
+                                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                        <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                        <option value="Samoa">Samoa</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serbia">Serbia</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Sierra Leone">Sierra Leone</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Slovakia">Slovakia</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Solomon Islands">Solomon Islands</option>
+                                        <option value="Somalia">Somalia</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                        <option value="Swaziland">Swaziland</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                        <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                        <option value="Tajikistan">Tajikistan</option>
+                                        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Timor-leste">Timor-leste</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Tokelau">Tokelau</option>
+                                        <option value="Tonga">Tonga</option>
+                                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Turkmenistan">Turkmenistan</option>
+                                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                        <option value="Tuvalu">Tuvalu</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States">United States</option>
+                                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Uzbekistan">Uzbekistan</option>
+                                        <option value="Vanuatu">Vanuatu</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Viet Nam">Viet Nam</option>
+                                        <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                        <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                        <option value="Western Sahara">Western Sahara</option>
+                                        <option value="Yemen">Yemen</option>
+                                        <option value="Zambia">Zambia</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                    <div class="clear"></div>
+                                
+                                
+                                <input required type="number" name="phonenumber" maxlength="7" placeholder="Phone Number"  class="form-btn" style="float: left; width: 50%" onkeypress="return isNumberKey(event)">
+                                <input required type="number" name="faxnumber" maxlength="7" placeholder="Fax Number"  class="form-btn" style="float: right; width: 50%" onkeypress="return isNumberKey(event)">
+                                <div class="clear"></div>
+
+                                <input type="text" name="mobilenumber" maxlength="11" placeholder="Mobile Number"  class="form-btn" onkeypress="return isNumberKey(event)">
+                                
+                        </div>
+
+                        <div class="form-wrapper">
+                                <h3>Product Information</h3>
+
+                                    <select required name="productitem" class="form-btn" placeholder="test">
+                                        <option value="" selected>Product / Item</option>
+                                        <option value="Brielle Automatic Arm-Type BP Monitor BM-130"> Brielle Automatic Arm-Type BP Monitor BM-130 </option>
+                                        <option value="Brielle Automatic Wrist-Type BP Monitor BM-120"> Brielle Automatic Wrist-Type BP Monitor BM-120 </option>
+                                        <option value="Brielle Automatic Arm Type BP w/ adaptor BM-270"> Brielle Automatic Arm Type BP w/ adaptor BM-270 </option>
+                                        <option value="Brielle Professional Digital TENS"> Brielle Professional Digital TENS </option>
+                                        <option value="Edan 12 Channel ECG SE- 12 Electrocardiograph"> Edan 12 Channel ECG SE- 12 Electrocardiograph </option>
+                                        <option value="Edan ECG Machine SE - S1 Electrocardiograph"> Edan ECG Machine SE - S1 Electrocardiograph </option>
+                                        <option value="Edan ECG Machine SE- S3 Electrocardiograph "> Edan ECG Machine SE- S3 Electrocardiograph </option>
+                                        <option value="Edan H10 Finger Pulse Oximeter"> Edan H10 Finger Pulse Oximeter </option>
+                                        <option value="Edan SE-301"> Edan SE-301 </option>
+                                        <option value="Getwell Kids Nebulizer (Bebe Penguin) GKN-1300"> Getwell Kids Nebulizer (Bebe Penguin) GKN-1300 </option>
+                                        <option value="Getwell Kids Nebulizer (Jerry Fish) GKN-1200"> Getwell Kids Nebulizer (Jerry Fish) GKN-1200 </option>
+                                        <option value="Getwell Kids Nebulizer (Moly Cow) GKN-1100"> Getwell Kids Nebulizer (Moly Cow) GKN-1100 </option>
+                                        <option value="Getwell Nebulizer GWN-1000"> Getwell Nebulizer GWN-1000 </option>
+                                        <option value="Getwell Pocket Mesh Nebulizer GM-350"> Getwell Pocket Mesh Nebulizer GM-350 </option>
+                                        <option value="Infant Weighing Scale"> Infant Weighing Scale </option>
+                                        <option value="Inmed CP-100 Suction Unit"> Inmed CP-100 Suction Unit </option>
+                                        <option value="Inmed Optics Microscope IOM-12"> Inmed Optics Microscope IOM-12 </option>
+                                        <option value="Inmed Optics Microscope IOM-13A"> Inmed Optics Microscope IOM-13A </option>
+                                        <option value="TMS Defibrillator HD-9000D"> TMS Defibrillator HD-9000D </option>
+                                        <option value="TMS Ear and Forehead Thermometer  EF-401B"> TMS Ear and Forehead Thermometer EF-401B </option>
+                                        <option value="TMS Infusion Pump TI-600"> TMS Infusion Pump TI-600 </option>
+                                        <option value="TMS Oxygen Concentrator 7F-5">TMS Oxygen Concentrator 7F-5</option>
+                                        <option value="TMS Ultrasonic Fetal Doppler A-100C"> TMS Ultrasonic Fetal Doppler A-100C </option>
+                                        <option value="TMS handheld Pulse Oximeter A-360">TMS handheld Pulse Oximeter A-360</option>
+                                        <option value="TMS Nebulizer Pump"> TMS Nebulizer Pump </option>
+                                        <option value="TMS Non-Contact Forehead Infrared Thermometer"> TMS Non-Contact Forehead Infrared Thermometer </option>
+                                        <option value="TMS Portable Concentrator TC-170"> TMS Portable Concentrator TC-170 </option>
+                                        <option value="TMS Portable Suction Unit"> TMS Portable Suction Unit </option>
+                                        <option value="TMS Portable Suction Unit"> TMS Anti bedsore Mattress System </option>
+                                        
+                                    </select>
+                                    
+                                    
+                                    
+                                    <input required type="text" name="purchasefrom" placeholder="Purchase from" class="form-btn">
+                                    <input required type="number" name="purchaseprice" placeholder="Purchase price" class="form-btn" onkeypress="return isNumberKey(event)">
+                                    
+                                    
+                                    <input type="text" name="purchasedate" placeholder="Purchase Date: mm/dd/yyyy" id="datepicker"  class="form-btn" readonly>
+                
+                                    
+                                    <input required type="number" name="serialnumber" placeholder="Serial Number" class="form-btn" onkeypress="return isNumberKey(event)">
+                
+                                    <select required name="userage" class="form-btn testssss">
+                                        <option value="" selected>End-User’s age bracket</option>
+                                        <option value="0-2 years old">0-2 years old</option>
+                                        <option value="3-12 years old">3-12 years old</option>
+                                        <option value="13-20 years old">13-20 years old</option>
+                                        <option value="21-39 years old">21-39 years old</option>
+                                        <option value="40-59 years old">40-59 years old</option>
+                                        <option value="60 above">60 above</option>
+                                    </select>
+                        </div>
+
+                
+                        <div class="form-wrapper">
+                            <p>1. How did you first become aware of Inmed Products ?</p>
+                            
+                            <div class="radio">
+                                <input type="radio" name="q1" value="Mall / Store" class="float-l" required><p>Mall / Store</p>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="q1" value="Friend / Relative" class="float-l"><p>Friend / Relative</p>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="q1" value="Magazine / Newspaper" class="float-l"><p>Magazine / Newspaper</p>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="q1" value="website" class="float-l" checked><p>Website</p>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="q1" value="other" class="float-l"><input type="text" name="q9" value="" class="float-l" placeholder="other">
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <p>2. what Factor(s) Influenced you to purchase Inmed Products?</p>
+                            <div>
+                                <input type="checkbox" name="q2[]" value="Flyers" class="float-l" /><p>Flyers</p>
+                                <input type="checkbox" name="q2[]" value="Brochure" class="float-l" /><p>Brochure</p>
+                                <input type="checkbox" name="q2[]" value="Internet" class="float-l" /><p>Internet</p>
+                                <input type="checkbox" name="q2[]" value="Low Price / On Sale" class="float-l" /><p>Low Price / on Sale</p>
+                                <input type="checkbox" name="q2[]" value="Bonus Item / offer with Product" class="float-l" /><p>Bonus Item / offer with Product</p>
+                                <input type="checkbox" name="q2[]" value="Stlye / Appearance" class="float-l" /><p>Style Appearance</p>
+                                <input type="checkbox" name="q2[]" value="Previous Consumer of Inmed Products" class="float-l" /><p>Previous Consumer of Inmed Products</p>
+                                <input type="checkbox" name="q2[]" value="Features of Inmed Products" class="float-l" /><p>Features of Inmed Prducts</p>
+                        
+                            </div>
+                        </div>
+                        
+                        <div class="form-wrapper">
+                            <p>3. How would you rate the packaging of Inmed Products ?</p>
+                            <div class="radio">
+                                <input type="radio" name="q3" value="Good" class="float-l" required><p>Good</p>
+                            </div>
+                            
+                            <div class="radio">
+                                <input type="radio" name="q3" value="Poor" class="float-l"><p>Poor</p>
+                            </div>
+                            
+                            <p>if poor why?</p>
+                            <textarea name="q3com" rows="6"></textarea>
+                        </div>
+                        <div class="form-wrapper">
+                            
+                            <p>4. Overall how satisfied are you with the products and services that we provide</p>
+                            <div class="radio">
+                                <input type="radio" name="q4" value="Very satisfied" class="float-l" required><p>Very satisfied</p>
+                            </div>
+                            
+                            <div class="radio">
+                                <input type="radio" name="q4" value="Satisfied" class="float-l"><p>Satisfied</p>
+                            </div>
+                            
+                            <div class="radio">
+                                <input type="radio" name="q4" value="Not Satisfied" class="float-l"><p>Not Satisfied</p>
+                            </div>
+                            
+                            <p>if not satisfied, Why?</p>
+                            <textarea name="q4com" rows="6"></textarea>
+
+                        </div>
+                        <div class="form-wrapper">
+                            <p>5. Do you have any comments and suggestions ?</p>
+                            <textarea name="q5" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-wrapper">
+
+                            <!-- <div class="g-recaptcha margin-top" data-sitekey="6LdUDK8UAAAAAAPBUqsxzEwYOwdEb0H5ktDhz9UG"></div> -->
+
+                            <input hidden type="hidden" name="inmed_code" id="iccode">
+                            <p>To avoid spam, please retype <b><span id="iccode_d"></span></b> in the field below</p>
+                            <input required type="text" name="user_input_code" id="iccode_c" placeholder="retype code here" class="form-btn">
+
+                            <input id="submit-toggler" type="submit" value="submit" class="form-btn i-borange i-cwhite margin-top no-border">
+                            
+                            <p  id="submit-toggler-b" class="form-btn i-borange i-cwhite margin-top no-border align-center" style="display: none;">sending</p>
+                            
+                            <p id="warranty-form-errors" class="i-cred"></p>
+                        </div>
+                        
+                        <p  id="submit-toggler-b" class="form-btn i-borange i-cwhite margin-top no-border" style="display: none;">sending</p>
+
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+        <div class="spacer"></div>  
+        
+        <div id="footer"></div>
+
+        <div class="mob-menu">
+            <div class="global-container">
+                <div class="global-one-col">
+                    <li class="un">
+                        <a class="web-a" href="../index.html">Home</i></a>
+                        <a class="web-a" href="values.html">Values</a>
+                        <a class="web-a" href="contact-us.html">Contact Us</a>
+                        <a class="web-a" href="advantage.html">Our Advantage</a>
+                        <a class="web-a" href="faqs.html">Faqs</a>
+                        <a class="web-a" href="perks.html">Perks</a>
+                        <a class="web-a" href="forms.html">Downloads</a>
+                        <a class="web-a" href="apply.html">Be a reseller</a>
+                        <a class="web-a" href="careers.html">Careers</a>
+                        <a class="web-a" href="warranty.html">Warranty</a>
+                        <a class="web-a" href="products/index.php">Products</a>
+                        <a class="web-a" href="http://inmed.com.ph/shop" target="_blank">Shop</a>
+                        <div onclick="mobMenu(2)"> <i class="fas fa-bars pmc-cblack"></i></div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <script>
+                function isNumberKey(evt){
+                    var charCode = (evt.which) ? evt.which : event.keyCode
+                    if (charCode > 31 && (charCode < 48 || charCode > 57))
+                        return false;
+                    return true;
+                }
+                function randomStr(len, arr) { 
+                    var ans = ''; 
+                    for (var i = len; i > 0; i--) { 
+                        ans +=  
+                        arr[Math.floor(Math.random() * arr.length)]; 
+                    } 
+                    return ans; 
+                } 
+
+                function generateCode() {
+                    var precode = randomStr(5, 'nmedcrpratn23456789'); 
+                    $('#iccode_d').text(precode);
+                    $('#iccode').val(precode);
+                }
+  
+                $(document).ready( function(){ 
+                    generateCode();
+                    $("#warranty-form").on('submit', function(event) {
+                        
+                        var email = $("#email").val();
+                        var confemail = $("#confemail").val();
+                        var c_code = $('#iccode_c').val();
+                        var code = $('#iccode').val();
+
+                        if (c_code != code) {
+                            event.preventDefault();
+                            $("#warranty-form-errors").text("Your verification code does not match. please try again.");
+                            return
+                        }
+
+                        if (email != confemail) {
+                            event.preventDefault();
+                            $("#warranty-form-errors").text("Email and Email confirmation does not match. Kindly recheck your form inputs before submitting again.");
+                            return
+                        }
+
+                        $("#submit-toggler").hide();
+                        $("#submit-toggler-b").show();
+
+                    });
+                })
+                function confirmEmail() {
+                    var email = document.getElementById("email").value
+                    var confemail = document.getElementById("confemail").value
+                    if(email != confemail) {
+                        $("#warranty-form-errors").text("Email and Email confirmation does not match. Kindly recheck your form inputs before submitting again.");
+                    }
+                }
+        
+            </script>
+    </body>
+</html>

@@ -16,17 +16,11 @@ $cardContent = $card->getContentWhere($page);
 ?>
 
     <main id="main">
-
         <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
             <div class="container">
                 <ol>
-<<<<<<< HEAD
                 <li><a href="index.php">Home</a></li>
                 <li>Admission Counselling</li>
-=======
-                    <li><a href="index.php">Home</a></li>
-                    <li>Addmission Counselling</li>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                 </ol>
                 <h2>Opus Admissions Counselling</h2>
             </div>
@@ -36,40 +30,28 @@ $cardContent = $card->getContentWhere($page);
         </section>
 
         <section id="admission-counselling" class="addmission-counselling">
-            
             <div class="container">
-                        
                 <?php 
                     foreach ($admissionCounselling as $v) {
-
                         $section = $v["section"];
                         $title = $v["title"];
                         $content = $v["content"];
                         $status = $v["status"];
-                   
-
                         
                         if($status == 0) {
                             if($section == "Section I") {
                             ?>
-
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12">
-
                                     <div class="content">
-
                                         <h3><?= $title ?></h3>
                                         <?= $content ?>
-
                                     </div>
-
                                 </div>
                             </div>
-
                             <?php
                             }
                         }
-
                     }
                 ?>
 
@@ -236,7 +218,7 @@ $cardContent = $card->getContentWhere($page);
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

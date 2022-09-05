@@ -32,58 +32,63 @@ require_once "assets/common/header.php";
     <section id="section-container" class="section-container">
         <div class="container mt-5">
             <div class="row">
-
                 <div class="col-md-6 pe-5">
                     <img src="assets/img/admin-counselling/private/boy.jpg" class="w-100" alt="happy-man">
                 </div>
 
                 <div class="col-md-6">
-                    <h1 class="text-left fw-bold">We Guide You through the Entire Admissions Process.</h1>
-                    <h4 class="text-left mt-5">Many successful graduates and alumni attribute their success to the head start they received in private school. All parents want what is best for their child, but with the rising popularity of private schools and their admissions requirements, the application process can be overwhelming.<br><br>Opus Academy will help guide your family through the private school application process for students in K-12. Our team of counsellors, teachers, and administrators will help identify the list of schools to apply to based on a student’s needs and interests. We help plan, brainstorm, and edit application essays, as well as prepare students and parents for admissions interviews.</h4>
+                    <h1 class="mb-4 fs-1 fw-bold">We Guide You through the Entire Admissions Process.</h1>
+                    <p>Many successful graduates and alumni attribute their success to the head start they received in private school. All parents want what is best for their child, but with the rising popularity of private schools and their admissions requirements, the application process can be overwhelming.</p>
+                    <p>Opus Academy will help guide your family through the private school application process for students in K-12. Our team of counsellors, teachers, and administrators will help identify the list of schools to apply to based on a student’s needs and interests. We help plan, brainstorm, and edit application essays, as well as prepare students and parents for admissions interviews.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="why-it-works" class="why-it-works primary-bg">
+    <section id="our-counselling-services" class="our-counselling-services primary-bg">
         <div class="container">
             <h1 class="fw-bold mb-5 mt-5 text-center">Our Counselling Services Include</h1>
 
             <div class="row d-flex align-items-stretch justify-content-between">
-                <div class="col-md-2">
-                    <div class="mb-4 fs-1 fw-bold circle-container w-75">
-                    <img src="assets/img/admin-counselling/private/mission.png" class="w-100 p-4" alt="mountain"></div>
+                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                    <div class="mb-4 circle-container">
+                        <img src="assets/img/admin-counselling/private/mission.png" class="w-100 p-4" alt="mountain">
+                    </div>
                     <p class="mb-4 fs-5 fw-bold text-center">Regular meetings with our counsellors.</p>
                 </div>
 
-                <div class="col-md-2">
-                    <div class="mb-4 fs-1 fw-bold circle-container w-75">
-                    <img src="assets/img/admin-counselling/private/puzzle.png" class="w-100 p-4" alt="puzzle"></div>
-                    <p class="mb-4 fs-5 fw-bold text-center">Finding the right schools & Goals.</p>
+                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                    <div class="mb-4 circle-container">
+                        <img src="assets/img/admin-counselling/private/puzzle.png" class="w-100 p-4" alt="puzzle">
+                    </div>
+                    <p class="mb-4 fs-5 fw-bold text-center">Regular meetings with our counsellors.</p>
                 </div>
 
-                <div class="col-md-2">
-                    <div class="mb-4 fs-1 fw-bold circle-container w-75">
-                    <img src="assets/img/admin-counselling/private/test.png" class="w-100 p-4" alt="test"></div>
+                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                    <div class="mb-4 circle-container">
+                        <img src="assets/img/admin-counselling/private/test.png" class="w-100 p-4" alt="test">
+                    </div>
                     <p class="mb-4 fs-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
                 </div>
 
-                <div class="col-md-2">
-                    <div class="mb-4 fs-1 fw-bold circle-container w-75">
-                    <img src="assets/img/admin-counselling/private/family.png" class="w-100 p-4" alt="family"></div>
+                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                    <div class="mb-4 circle-container">
+                        <img src="assets/img/admin-counselling/private/family.png" class="w-100 p-4" alt="family">
+                    </div>
                     <p class="mb-4 fs-5 fw-bold text-center">Interview Skills for Students and Parents</p>
                 </div>
 
-                <div class="col-md-2">
-                    <div class="mb-4 fs-1 fw-bold circle-container w-75">
-                    <img src="assets/img/admin-counselling/private/talk.png" class="w-100 p-4" alt="talk"></div>
+                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                    <div class="mb-4 circle-container">
+                        <img src="assets/img/admin-counselling/private/talk.png" class="w-100 p-4" alt="talk">
+                    </div>
                     <p class="mb-4 fs-5 fw-bold text-center">Application Guidance & Follow Up</p>
                 </div>
+            </div>
 
             <div class="d-flex justify-content-center mt-5">
-                <a href="testimonials.php" type="button" class="light-btn mb-2">Learn More</a>
+                <a href="testimonials.php" type="button" class="light-btn mb-5">Learn More</a>
             </div>
-            
         </div>
     </section>
 
@@ -109,6 +114,8 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
+
+<!-- id="reaching-goals" class="reaching-goals" -->
     <div class ="container-fluid">
         <div class="row">
             <div class="col-md-6 p-5 title-size d-flex flex-column justify-content-center">
@@ -136,7 +143,7 @@ require_once "assets/common/header.php";
                 </div>
 
                 <div class="d-flex justify-content-center">
-                  <a href="#!" type="button" class="primary-btn">Read our Testimonials</a>
+                  <a href="#!" type="button" class="primary-btn w-50">Read our Testimonials</a>
                 </div>
             </div>
 
@@ -158,12 +165,11 @@ require_once "assets/common/header.php";
             </div>
         </div>
     </section>
-
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

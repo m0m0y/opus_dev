@@ -70,12 +70,10 @@ $homeCard = $homePage->getCardsContent($page);
           }
         ?> -->
       </div>
-
       <div class="swiper-pagination"></div>
 
       <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
       <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
-
     </div>
 
     <div class="container-fluid secondary-bg p-5">
@@ -89,11 +87,7 @@ $homeCard = $homePage->getCardsContent($page);
                 <h4 class="fs-1 fw-bold">Welcome to Opus Academy!</h4>
                 <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
                 <div class="d-flex justify-content-left mt-5">
-<<<<<<< HEAD
-                  <a href="#!" type="button" class="primary-btn  w-100 mt-3 btn-sm">Our Story</a>
-=======
-                  <a href="#!" type="button" class="primary-btn  w-100">Our Story</a>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
+                  <a href="#!" type="button" class="primary-btn  w-100 mt-3">Our Story</a>
                 </div>
               </div>
             </div>
@@ -103,19 +97,15 @@ $homeCard = $homePage->getCardsContent($page);
     </div>
 
     <section id="what-we-offer" class="what-we-offer">
-      
       <div class="container text-center px-5">
         <h4 class="mb-4 fs-1 fw-bold">What We Offer</h4>
-
         <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
       </div>
-
 
       <div class="container">
         <div class="col-xl-12 col-lg-12 d-flex">
           <div class="d-flex flex-column justify-content-center">
             <div class="row">
-
               <?php 
               foreach($homeCard as $v) {
                 $card_title = $v["card_title"];
@@ -146,27 +136,14 @@ $homeCard = $homePage->getCardsContent($page);
                 <?php
                 }
               }
-
               ?>
-
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <section id="why-choose-opus" class="why-choose-opus secondary-bg">
-
-<<<<<<< HEAD
-            <div class="d-flex justify-content-start mt-3">
-              <div class="d-flex justify-content-start me-2">
-                <a href="#!" type="button" class="light-btn">Our Testimonial</a>
-              </div>
-              
-              <div class="d-flex justify-content-end ms-2">
-                <a href="#!" type="button" class="light-btn">Our Achievements</a>
-=======
       <div class="container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
@@ -177,29 +154,25 @@ $homeCard = $homePage->getCardsContent($page);
 
                 <div class="d-flex justify-content-left mt-5">
                   <div class="d-flex justify-content-start me-2">
-                    <a href="#!" type="button" class="light-btn">Our Testimonial</a>
+                    <a href="#!" type="button" class="light-btn">Testimonial</a>
                   </div>
                 
                   <div class="d-flex justify-content-end ms-2">
-                    <a href="#!" type="button" class="light-btn">Our Acheivements</a>
+                    <a href="#!" type="button" class="light-btn">Acheivements</a>
                   </div>
                 </div>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
               </div>
             </div>
 
             <div class="col-xl-5 col-lg-6 video-box">
               <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
             </div>
-
           </div>
         </div>
       </div>
-
     </section>
 
     <section id="team-and-expert" class="team-and-expert">
-
       <div class="container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
@@ -218,7 +191,6 @@ $homeCard = $homePage->getCardsContent($page);
           </div>
         </div>
       </div>
-
     </section>
 
     <section id="counter" class="counter primary-bg">
@@ -244,10 +216,8 @@ $homeCard = $homePage->getCardsContent($page);
 
     <section id="testimonials" class="testimonials">
       <div class="container position-relative">
-
         <div class="testimonials-slider swiper">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Vanessa</h3>
@@ -259,7 +229,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Andrew</h3>
@@ -271,7 +240,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Vicotria</h3>
@@ -283,7 +251,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Stacy</h3>
@@ -295,7 +262,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Brian</h3>
@@ -307,7 +273,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Albert</h3>
@@ -319,11 +284,9 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
     </section>
 
@@ -333,7 +296,7 @@ $homeCard = $homePage->getCardsContent($page);
 
   <?php require_once "assets/common/footer.php"; ?>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #0d6efd;
   padding: 6px 30px 8px 30px;
   color: white;
-  border-radius: 5px;
   font-weight: 500;
   transition: all ease-in-out 0.4s;
 }
@@ -48,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0d6efd;
   display: inline-block;
   font-weight: 800;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
@@ -66,7 +64,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f8f9fa;
   display: inline-block;
   font-weight: 800;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
@@ -87,7 +84,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0d6efd;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
@@ -100,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #b1233d;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
@@ -112,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 14px 25px;
   background: #f5f5f5;
   margin-right: 10px;
-  font-size: 15px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
@@ -957,7 +951,7 @@ section {
 /*--------------------------------------------------------------
 # Admission Counselling
 --------------------------------------------------------------*/
-#admission-page-hero {
+/* #admission-page-hero {
   width: 100%;
   height: 60vh;
   background: url("../img/hero-bg.jpg") center center;
@@ -1054,6 +1048,13 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
   width: 100%;
+} */
+
+.our-counselling-services .circle-container {
+  background-color: white;
+  border-radius: 50%;
+  width: 75%;
+  padding: 5%;
 }
 
 /*--------------------------------------------------------------
@@ -1160,13 +1161,6 @@ section {
   background: url("../img/competitive-debate/p-25.jpg") center center no-repeat;
   background-size: cover;
 }
-<<<<<<< HEAD
-.universty-counselling{
-  background: url("../img/admin-counselling/university/church.jpg") center center no-repeat;
-  background-size: cover;
-}
-=======
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
 .application-process .circle-container {
   background-color: #b1233d;
   border-radius: 50%;
@@ -1184,8 +1178,6 @@ section {
 .section-container .certificate-container .ap-img {
   width: 160%;
 }
-
-
 /*--------------------------------------------------------------
 # Classical Music Program
 --------------------------------------------------------------*/
@@ -1349,7 +1341,6 @@ section {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 1600px) {
   .title-size {
     padding: 2% !important;
@@ -1375,8 +1366,6 @@ section {
   }
 }
 
-=======
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
 @media screen and (max-width: 1440px) {
   /*--------------------------------------------------------------
   # General
@@ -1743,6 +1732,5 @@ section {
   }
   #main img {
     width: 100% !important;
-    /* margin: 0rem !important; */
   }
 }

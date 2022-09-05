@@ -17,11 +17,7 @@ $cardContent = $card->getContentWhere($page);
 ?>
 
 <main id="main">
-<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-=======
-    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
@@ -34,22 +30,12 @@ $cardContent = $card->getContentWhere($page);
 
     <div class ="container-fluid primary-bg">
         <div class="row">
-<<<<<<< HEAD
             <div class="col-md-6 title-size">
                 <h1 class="-5 px-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
                 <h4 class="px-5 my-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<h4>
                 <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
-=======
-            <div class="col-md-6 p-5 title-size">
-                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
-                <h4 class="text-left px-5 my-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.</h4>
-                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
             </div>
 
-            <!-- <div class="col-md-6 px-0">
-                <img src="assets/img/early-learning/p-17.jpg" class="w-100 children" alt="children">
-            </div> -->
             <div class="col-md-6 px-0 pb-0">
                 <img src="assets/img/mcgraw-hill/p-27.jpg" class="w-100 children" alt="children">
             </div>
@@ -107,7 +93,6 @@ $cardContent = $card->getContentWhere($page);
                             <img src="assets/img/early-learning/l-2.png" class="w-100 mt-5">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -153,7 +138,7 @@ $cardContent = $card->getContentWhere($page);
 require_once "assets/common/footer.php"; 
 ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

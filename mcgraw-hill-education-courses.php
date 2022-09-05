@@ -17,11 +17,7 @@ $cardContent = $card->getContentWhere($page);
 
 <main id="main">
 
-<<<<<<< HEAD
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-=======
-    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
@@ -34,13 +30,8 @@ $cardContent = $card->getContentWhere($page);
 
     <div class ="container-fluid warning-bg">
         <div class="row">
-<<<<<<< HEAD
             <div class="col-md-6 title-size">
                 <h1 class="m-5 px-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
-=======
-            <div class="col-md-6 p-5 title-size">
-                <h1 class="text-left mt-5 px-5 pb-5 pt-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
                 <center><a href ="#redbird-program" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto "></i></a></center>
             </div>
 
@@ -76,7 +67,6 @@ $cardContent = $card->getContentWhere($page);
     </section>
 
     <section id="use-redbird" class="use-redbird">
-
         <div class="container">
             <div class="d-flex flex-column justify-content-center">
                 <div class="row">
@@ -87,14 +77,10 @@ $cardContent = $card->getContentWhere($page);
                         </div>
                     </div>
 
-                    <!-- <div class="col-xl-5 col-lg-6 video-box">
-                    <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
-                    </div> -->
                     <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/mcgraw-hill/p-26.jpg') center center no-repeat; background-size: contain;"></div>
                 </div>
             </div>
         </div>
-
     </section>
     
     <section id="why-it-works" class="why-it-works primary-bg">
@@ -130,7 +116,6 @@ $cardContent = $card->getContentWhere($page);
             <div class="d-flex justify-content-center mt-5">
                 <a href="testimonials.php" type="button" class="light-btn mb-2">Hear From Past Students</a>
             </div>
-            
         </div>
     </section>
 
@@ -200,7 +185,7 @@ $cardContent = $card->getContentWhere($page);
                     </div>
 
                     <div class="d-flex justify-content-start">
-                        <a href="https://www.mheducation.com/prek-12/explore/redbird/language-arts-writing.html" type="button" class="primary-btn">Learn More Redbird Website</a>
+                        <a href="https://www.mheducation.com/prek-12/explore/redbird/language-arts-writing.html" type="button" class="primary-btn w-100">Learn More Redbird Website</a>
                     </div>
                 </div>
             </div>
@@ -242,7 +227,7 @@ $cardContent = $card->getContentWhere($page);
                     </div>
 
                     <div class="d-flex justify-content-start">
-                        <a href="https://www.mheducation.com/prek-12/explore/redbird/redbird-mathematics.html" type="button" class="primary-btn">Learn More Redbird Website</a>
+                        <a href="https://www.mheducation.com/prek-12/explore/redbird/redbird-mathematics.html" type="button" class="primary-btn w-100">Learn More Redbird Website</a>
                     </div>
                 </div>
             </div>
@@ -306,10 +291,6 @@ $cardContent = $card->getContentWhere($page);
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-=======
->>>>>>> 29851e00037010827daa0ff5f70957f55b740efd
         </div>
     </section>
 
@@ -317,7 +298,7 @@ $cardContent = $card->getContentWhere($page);
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
