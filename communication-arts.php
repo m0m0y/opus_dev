@@ -10,27 +10,27 @@ $ourCourse = $communicationArts->getCourses();
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs pb-0">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
         <div class="container">
             <ol>
-                 <li><a href="index.php">Home</a></li>
-                 <li>Programs</li>
-                 <li>Communication Arts</li>
+                <li><a href="index.php">Home</a></li>
+                <li>Programs</li>
+                <li>Communication Arts</li>
             </ol>
             <h2>Communication Arts Programs</h2>
         </div>
     </section>
 
-    <div class ="container p-0 warning-bg">
+    <div class ="container-fluid warning-bg">
         <div class="row">
-            <div class="col-md-6" style="padding-right: 0px;">
-                <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
-                <p class="text-left px-5 pb-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</p>
-                <center><a href ="#press"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+            <div class="col-md-6 p-5 title-size">
+                <h1 class="m-5 px-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
+                <h4 class="px-5 my-5">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</h4>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6">
-                <img src="assets/img/portfolio/p-13.jpg" class="w-100" alt="speak-img">
+            <div class="col-md-6 px-0">
+                <img src="assets/img/communication-arts/p-13.jpg" class="w-100" alt="speak-img">
             </div>
         </div>
     </div>
@@ -72,7 +72,7 @@ $ourCourse = $communicationArts->getCourses();
                     <h2 class="text-left mb-5 fw-bold">Speech Arts & Drama</h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/portfolio/awards.jpg" class="w-100" alt="awards-img" />
+                        <img src="assets/img/communication-arts/awards.jpg" class="w-100" alt="awards-img" />
                     </div>
 
                     <div class="d-grid gap-2">
@@ -105,20 +105,20 @@ $ourCourse = $communicationArts->getCourses();
                         <span>Shakespeare</span>
                     </p>
 
-                    <h2 class="fw-bold mt-3">Certificate and Diploma Granting:</h2>
+                    <h4 class="fw-bold mt-3 mb-3">Certificate and Diploma Granting:</h4>
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-1.png " class="cert-img">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/portfolio/l-2.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img">
                             </div>
 
-                            <div class="col-xl-4 col-sm-12">
-                                <img src="assets/img/portfolio/l-3.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-3.png" class="cert-img">
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ $ourCourse = $communicationArts->getCourses();
                     <h2 class="text-left mb-5 fw-bold">Public Speaking and Debate</h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/portfolio/speak.JPG" class="w-100" alt="speak-img" />
+                        <img src="assets/img/communication-arts/speak.JPG" class="w-100" alt="speak-img" />
                     </div>
 
                     <div class="d-grid gap-2">
@@ -171,16 +171,16 @@ $ourCourse = $communicationArts->getCourses();
                                 
                     <div class="d-flex justify-content-center certificate-container">
                         <div class="row">
-                            <div class="col-xl-4">
-                                <img src="assets/img/portfolio/l-1.png" class="cert-img w-100">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-1.png" class="cert-img">
                             </div>
 
-                            <div class="col-xl-4">
-                                <img src="assets/img/portfolio/l-2.png" class="cert-img w-100 mt-5">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-2.png" class="cert-img">
                             </div>
 
-                            <div class="col-xl-4">
-                                <img src="assets/img/portfolio/l-3.png" class="cert-img w-100 mt-5">
+                            <div class="col-md-4 col-sm-12">
+                                <img src="assets/img/communication-arts/l-3.png" class="cert-img">
                             </div>
                         </div>
                     </div>
@@ -190,13 +190,13 @@ $ourCourse = $communicationArts->getCourses();
     </section>
 
     <section class="why-take-exam">
-        <div class="text-left competitive-title secondary-bg">
+        <div class="secondary-bg">
             <div class="row">
-                <div class="col-md-6" style="padding: 8%;">
+                <div class="col-md-6 why-take-exam-content">
                     <div class="mb-5 m-5 text-left">
-                        <h1 class="fw-bold">Why Take Exams?</h1>
+                        <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
 
-                        <ul class="text-left font py-5">
+                        <ul>
                             <li>Structured and sequential Learning.</li>
                             <li>Certificate and diploma granting.</li>
                             <li>Stand out in Private school & US UK University <br>admissions.</li>
@@ -204,12 +204,11 @@ $ourCourse = $communicationArts->getCourses();
                             <li>Earn credentials and BC arts course credits</li>
                         </ul>
 
-                        <a href="#!" type="button" class="light-btn">Our Achievement</a>
+                        <a href="#!" type="button" class="light-btn w-100">Our Achievement</a>
                     </div>
                 </div>
 
-                <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: cover;">
-                </div>
+                <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;"></div>
             </div>
         </div>
     </section>
@@ -221,7 +220,7 @@ $ourCourse = $communicationArts->getCourses();
                     <h2 class="text-left mb-5 fw-bold">Interview Skills Program</h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/portfolio/p-10.jpg" class="w-100" alt="awards-img" />
+                        <img src="assets/img/communication-arts/p-10.jpg" class="w-100" alt="awards-img" />
                     </div>
 
                     <div class="d-grid gap-2">
@@ -249,7 +248,7 @@ $ourCourse = $communicationArts->getCourses();
                     <h2 class="text-left mb-5 fw-bold">Leadership & Etiquette</h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/portfolio/p-19.PNG" class="w-100" alt="debate-img" />
+                        <img src="assets/img/communication-arts/p-19.PNG" class="w-100" alt="debate-img" />
                     </div>
 
                     <div class="d-grid gap-2">
@@ -293,7 +292,7 @@ $ourCourse = $communicationArts->getCourses();
                     <h2 class="text-left mb-5 fw-bold">International Relations</h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/portfolio/p-12.jpg" class="w-100" alt="flag-img" />
+                        <img src="assets/img/communication-arts/p-12.jpg" class="w-100" alt="flag-img" />
                     </div>
 
                     <div class="d-grid gap-2">
@@ -318,23 +317,23 @@ $ourCourse = $communicationArts->getCourses();
     </section>
 
     <section id="" class="primary-bg">
-      <div class="container">
-        <div class="p-5">
-          <div class="row">
-            <div class="col-xl-12">
-                <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
-                <center><a href="#!" type="button" class="light-btn mt-5">Book an Appointment</a></center>
+        <div class="container">
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn speak with confidence, clarity, and conviction!</p>
+                        <center><a href="#!" type="button" class="light-btn">Book an Appointment</a></center>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 

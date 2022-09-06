@@ -17,27 +17,27 @@ $cardContent = $card->getContentWhere($page);
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs pb-0">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
         <div class="container">
-        <ol>
-            <li><a href="index.php">Home</a></li>
-            <li>Program</li>
-            <li>Early Learning</li>
-        </ol>
-        <h2>Early Learning Programs</h2>
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li>Program</li>
+                <li>Early Learning</li>
+            </ol>
+            <h2>Early Learning Programs</h2>
         </div>
     </section>
 
-    <div class="container p-0 primary-bg">
+    <div class ="container-fluid primary-bg">
         <div class="row">
-            <div class = "col-md-6" style="padding-right: 0px;">
-                <h1 class="text-left mt-5 px-5 pb-3 pt-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
-                <p class="text-left px-5 pb-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<p>
-                <div class = text-center><a href ="#press"> <i class="bi bi-chevron-compact-down  mx-auto"></i></a></div>
+            <div class="col-md-6 p-5 title-size">
+                <h1 class="-5 px-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
+                <h4 class="px-5 my-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<h4>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
             </div>
 
-            <div class="col-md-6">
-                <img src="assets/img/portfolio/p-17.jpg" class="w-100">
+            <div class="col-md-6 px-0">
+                <img src="assets/img/mcgraw-hill/p-27.jpg" class="w-100 children" alt="children">
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@ $cardContent = $card->getContentWhere($page);
                     <h2 class="text-left mb-5 fw-bold">Early Learning Program</h2>
 
                     <div class="d-flex justify-content-center">
-                        <img src="assets/img/portfolio/p-18.jpg" class="w-100" alt="harvard">
+                        <img src="assets/img/early-learning/p-18.jpg" class="w-100" alt="harvard">
                     </div>
 
                     <div class="d-grid gap-2">
@@ -86,57 +86,50 @@ $cardContent = $card->getContentWhere($page);
 
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="assets/img/portfolio/l-1.png" class="w-100">
+                            <img src="assets/img/early-learning/l-1.png" class="w-75 mb-1">
                         </div>
 
                         <div class="col-md-6">
-                            <img src="assets/img/portfolio/l-2.png" class="w-100">
+                            <img src="assets/img/early-learning/l-2.png" class="w-100 mt-5">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="p-0 secondary-bg">
-        <div class="text-left">
+    <section class="exam-early-learn pb-0">
+        <div class="secondary-bg">
             <div class="row">
-                <div class="col-md-6" style="padding: 9%;">
+                <div class="col-md-6 exam-early-learn-content">
                     <div class="mb-5 m-5 text-left">
-                        <h1><strong>Why exams for early learning?</strong></h1>
-        
-                        <ul class="text-left font py-5">
-                            <li>Provides an opportunity for young children to perform in an exam situation that will help them prepare for future exams, competitions, and interviews.</li>
-                            <li>Learn speaking and memorization of poetry, basic mime scenes, holding a conversation and discussion.</li>
-                            <li>Focus on enjoyment of speech arts and imaginative responses.</li>
-                        </ul>
-
-                        <a href="#!" type="button" class="light-btn">Our Achievement</a>
+                            <h4 class="mb-4 fs-1 fw-bold">Why exams for early learning?</h4>
                         
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                            <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
                     </div>
                 </div>
 
-                <div class="col-md-6" style="background: url('assets/img/portfolio/p-25.PNG') center center no-repeat; background-size: cover;">
-                </div>
+                <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;"></div>
             </div>
         </div>
     </section>
 
     <section id="" class="primary-bg">
         <div class="container">
-
-        <div class="p-5">
-            <div class="row">
-
-            <div class="col-xl-12">
-                <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn and speak with confidence, clarity, and conviction!</p>
-                <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">Give your child the opportunity to learn and speak with confidence, clarity, and conviction!</p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
+                    </div>
+                </div>
             </div>
-
-            </div>
-        </div>
-
         </div>
     </section>
 </main>

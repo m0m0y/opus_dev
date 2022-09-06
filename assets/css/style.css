@@ -10,152 +10,125 @@ body {
   color: #313030;
   font-size: 18px;
 }
-
 a {
   color: #29176e;
   text-decoration: none;
 }
-
 a:hover {
   color: #f0ce54;
   text-decoration: none;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
 .text-underline {
   text-decoration: underline;
 }
-
 .required {
   color: red;
 }
-
 .more-btn {
-  background: #7d757540;
+  background: #0d6efd;
   padding: 6px 30px 8px 30px;
-  color: #29176e;
-  border-radius: 50px;
+  color: white;
+  font-weight: 500;
   transition: all ease-in-out 0.4s;
 }
-
 .more-btn i {
   font-size: 14px;
 }
-
 .more-btn:hover {
   color: #e6e6e6;
-  background: #29176e;
+  background: #0d6efd;
 }
-
 .primary-btn {
   color: white;
   border: 1px solid #0d6efd; 
   background-color: #0d6efd;
   display: inline-block;
   font-weight: 800;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   padding: 1.15rem 5rem;
 }
-
 .primary-btn:hover {
   background: #dbaf10;
   border: 1px solid #dbaf10; 
   color: #fff;
 }
-
 .light-btn {
   color: #0d6efd;
   border: 1px solid #f8f9fa; 
   background-color: #f8f9fa;
   display: inline-block;
   font-weight: 800;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   padding: 1.15rem 3rem;
 }
-
+.title-size h1{
+  font-size: 60px;
+}
 .light-btn:hover {
   background: #1d57ae;
   border: 1px solid #0e3f89ae; 
   color: #fff;
 }
-
 .learnmore-btn {
   color: white;
   border: 1px solid #0d6efd; 
   background-color: #0d6efd;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   padding: 1rem 3rem;
 }
-
 .danger-btn {
   color: white;
-  border: 1px solid #dc3545; 
-  background-color: #dc3545;
+  border: 1px solid #b1233d; 
+  background-color: #b1233d;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   padding: 1rem 3rem;
 }
-
 .custom-badge span{
   display: inline-block;
   padding: 14px 25px;
   background: #f5f5f5;
   margin-right: 10px;
-  font-size: 15px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
-
 .section-container .text-content {
   padding-top: 5rem;
 }
 .section-container .certificate-container .cert-img {
   width: 100%;
 }
-
 .section-container .spacing {
   padding: 2rem 0;
 }
-
 .primary-bg {
   background-color: #0d6efd;
   color: white;
 }
-
 .secondary-bg {
   background-color: #29176e26;
 }
-
-.primary-bg .number {
-  font-weight: 950;
-  font-size: 90px;
-  color: white;
-}
-
 .warning-bg {
   background-color: #ffc107;
+  
 }
 .danger-bg{
   background-color:#b1233d;
@@ -164,11 +137,10 @@ h1, h2, h3, h4, h5, h6 {
 .white-bg
 {
   background-color: white;
+  padding: 2.5rem 1.5rem;
 }
-.white-bg ul {
-  list-style-type: disc !important;
-  padding-left: 1em !important;
-  margin-left: 1em;
+.why-us .exam-early-learn, p i {
+  color: #009400;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -180,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #29176e;
+  background: #0d6efd;;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -208,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 .bi-chevron-compact-down:hover{
   color: #313030;
 }
- /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Card for communication arts
 --------------------------------------------------------------*/
 @media (min-width: 768px) {
@@ -283,11 +255,9 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 60px; 
   border-radius: 1px;
 }
-
 .scrolled-offset {
   margin-top: 70px;
 }
-
 #main {
   z-index: 3;
 }
@@ -385,7 +355,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 100%;
   visibility: visible;
 }
-
 .navbar-btn {
   color: white !important;
   border: 1px solid #0d6efd; 
@@ -393,6 +362,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   padding: 0.5rem !important;
   margin-left: 7%;
+}
+.register-btn {
+  margin: 3%;
 }
 
 @media (max-width: 1366px) {
@@ -505,7 +477,6 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   /* filter: contrast(0.5); */
 }
-
 .banner-wrap {
   display: block;
   position: relative;
@@ -515,20 +486,17 @@ h1, h2, h3, h4, h5, h6 {
   background: #f1f1f1;
   overflow: hidden;
 }
-
 .banner-wrap .content {
   max-width: 1500px; 
   width: 90%;
   height: 100%;
 }
-
 .banner-wrap .inner {
   height: 100%; 
   position: absolute;
   right: 0; 
   width: 100%;
 }
-
 .banner-wrap .text-content {
   position: absolute; 
   left: 30%; 
@@ -536,11 +504,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -220%); 
   text-align:left;
 }
-
 .banner-wrap .text-content p{
   color:white;
 }
-
 .banner-wrap .banner-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -551,7 +517,6 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   z-index: 4;
 }
-
 .heroSwiper .swiper-wrapper .swiper-slide #harvard-img {
   width: 40% !important;
   filter: none !important;
@@ -563,7 +528,6 @@ section {
   padding: 60px 0px; /*60 default for vertical sepatation.*/
   overflow: hidden;
 }
-
 .section-title {
   padding-bottom: 35px;
   padding-top: 0;
@@ -573,10 +537,6 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding-top: 15px;
-}
-.breadcrumbs .container {
-  padding: 1.5rem;
   background: #f4f2f2;
 }
 .breadcrumbs h2 {
@@ -672,7 +632,6 @@ section {
   animation: none;
   border-radius: 0; 
 }
-
 .what-we-offer .content {
   padding: 30px;
   background: #29176e;
@@ -701,17 +660,16 @@ section {
   font-size: 15px;
   color: #716f6f;
 }
-
 .why-choose-opus .video-box {
   background: url("../img/hero/hero-1.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 100%;
   filter: contrast(0.7)
 }
 .why-choose-opus .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#29176e 50%, rgba(255, 88, 33, 0.185) 52%);
+  background: radial-gradient(#0a58ca 50%, rgba(255, 88, 33, 0.185) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -775,6 +733,11 @@ section {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
+}
+.counter .number {
+  font-weight: 950;
+  font-size: 90px;
+  color: white;
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -884,103 +847,6 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.why-choose-opus .video-box {
-  background: url("../img/hero/hero-1.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  filter: contrast(0.7)
-}
-.why-choose-opus .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#29176e 50%, rgba(255, 88, 33, 0.185) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-.why-choose-opus .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.why-choose-opus .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 88, 33, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-.why-choose-opus .play-btn:hover::after {
-  border-left: 15px solid #29176e;
-  transform: scale(20);
-}
-.why-choose-opus .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
 /*--------------------------------------------------------------
 # History and Team
 --------------------------------------------------------------*/
@@ -1017,7 +883,6 @@ section {
   line-height: 26px;
   color: #656262;
 }
-
 .team .icon-boxes .icon-box {
   border-radius: 10px;
   background: #fff;
@@ -1083,107 +948,15 @@ section {
 /*--------------------------------------------------------------
 # Admission Counselling
 --------------------------------------------------------------*/
-#admission-page-hero {
-  width: 100%;
-  height: 60vh;
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin-bottom: -200px;
+.our-counselling-services .circle-container, .your-exams-content .circle-container {
+  background-color: white;
+  border-radius: 50%;
+  width: 75%;
+  padding: 5%;
 }
-#admission-page-hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+.reaching-goal-content {
+  padding: 6%;
 }
-#admission-page-hero .container {
-  z-index: 2;
-}
-
-.addmission-counselling {
-  padding: 0 0 30px 0;
-  position: relative;
-  z-index: 3;
-}
-.addmission-counselling .content {
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
-}
-.addmission-counselling .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.addmission-counselling .content p {
-  margin-bottom: 30px;
-}
-
-.addmission-counselling .icon-boxes .icon-box {
-  text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  width: 100%;
-}
-.addmission-counselling .icon-boxes .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 30px 0;
-}
-.private-school-counselling h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.university-school-counselling h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.graduate-admission h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.addmission-counselling .icon-boxes .icon-box p {
-  font-size: 15px;
-  color: #716f6f;
-}
-.addmission-counselling .icon-boxes .icon-box img {
-  width: 100%;
-  margin-bottom: 15px;
-  min-height: auto;
-}
-.university-list .video-box {
-  background: url("../img/admission/building.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  filter: contrast(0.7)
-}
-.university-list .bg-color{
-  background-color: #29176e;
-  border-radius: 5px 5px;
-}
-.university-list {
-  color: #fff;
-}
-.university-list ul li {
-  font-size: 12px;
-}
-.graduate-admission .icon-box {
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
-  width: 100%;
-}
-
 
 /*--------------------------------------------------------------
 # Communication Arts
@@ -1198,7 +971,6 @@ section {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-
 .ourCourses .box {
   padding: 40px 20px;
   margin-top: 35px;
@@ -1208,6 +980,7 @@ section {
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin: 25px 0px;
+  width: 100%;
 }
 .ourCourses .title {
   font-weight: 700;
@@ -1223,6 +996,10 @@ section {
   margin: 1rem 0;
   padding: 0;
 }
+.why-take-exam-content {
+  padding: 8%;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1280,15 +1057,13 @@ section {
 # Competitive Debate Programs
 --------------------------------------------------------------*/
 .teach-us-debate {
-  background: url("../img/portfolio/p-23.jpg") center center no-repeat;
+  background: url("../img/competitive-debate/p-23.jpg") center center no-repeat;
   background-size: cover;
 }
-
 .teach-us-debate {
-  background: url("../img/portfolio/p-25.jpg") center center no-repeat;
+  background: url("../img/competitive-debate/p-25.jpg") center center no-repeat;
   background-size: cover;
 }
-
 .application-process .circle-container {
   background-color: #b1233d;
   border-radius: 50%;
@@ -1297,14 +1072,15 @@ section {
   width: 25%;
   padding: 5%;
 }
-
-.why-us p i {
-  color: #009400;
+.why-us-content, .exam-early-learn-content {
+  padding: 9%;
 }
-
 /*--------------------------------------------------------------
 # Academic Enrichment
 --------------------------------------------------------------*/
+.section-container .certificate-container .ap-img {
+  width: 160%;
+}
 
 /*--------------------------------------------------------------
 # Classical Music Program
@@ -1333,12 +1109,8 @@ section {
 /*--------------------------------------------------------------
 # Test Preparation
 --------------------------------------------------------------*/
-.standard-test-preparation .content {
-  position: relative;
-  padding: 30px;
-  background: #29176edb;
-  border-radius: 4px;
-  color: #fff;
+.writing-child {
+  height: 78vh;
 }
 
 /*--------------------------------------------------------------
@@ -1346,9 +1118,8 @@ section {
 --------------------------------------------------------------*/
 .redbird-program .mcgrawhill-img {
   width: 70%;
-  height: 425px;
+  height: 40vh;
 }
-
 .why-it-works .circle-container {
   background-color: white;
   border-radius: 50%;
@@ -1409,9 +1180,7 @@ section {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-
 .testimonials-page-section .icon-boxes .icon-box {
-  /* border-radius: 10px; */
   background: #fff;
   box-shadow: 0px 2px 20px rgb(0 0 0/ 10%);
   padding: 25px 30px;
@@ -1429,21 +1198,17 @@ section {
   list-style: none;
   padding: 0;
 }
-
 .sidebar .categories ul li + li {
   padding-top: 15px;
 }
-
 .test .row {
   background: #f8f9fa;
   margin-top: 30px;
   padding: 20px 0;
 }
-
 .test .col {
   border: solid 1px #6c757d;
 }
-
 .test .fixed-sidebar {
   position: -webkit-sticky;
   position: -moz-sticky;
@@ -1457,7 +1222,6 @@ section {
   top: 10px;
   bottom: auto;
 }
-
 .test .blog-entry-content {
   padding: 0 20px;
 }
@@ -1467,10 +1231,72 @@ section {
   padding: 15px;
 }
 
+
+/* 
+=================================================================================
+=================================================================================
+
+MEDIA SCREEN 
+
+=================================================================================
+================================================================================= 
+*/
+
+@media screen and (max-width: 2560px) {
+  .title-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title-size h1{
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .title-size {
+    padding: 2% !important;
+  }
+  .title-size h1{
+    font-size: 45px;
+    padding: 1rem !important;
+  }
+  .title-size h4{
+    padding: 1rem !important;
+    margin: 0 !important;
+    font-size: 18px;
+  }
+  .banner-wrap .text-content {
+    transform: translate(-50%, -190%);
+  }
+  .banner-wrap .inner {
+    left: 4%;
+  }
+  .redbird-program .mcgrawhill-img {
+    width: 70%;
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .register-btn {
+    margin-left: 2%;
+  }
+  .banner-wrap .inner {
+    left: 4%;
+  }
+  .title-size h1{
+    font-size: 40px;
+    padding: 1rem !important;
+  }
+  .title-size h4{
+    padding: 1rem !important;
+    margin: 0px !important;
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-    /*--------------------------------------------------------------
-    # General
-    --------------------------------------------------------------*/
   .py-5 {
     padding-right: 2rem!important;
     padding-left: 2rem!important;
@@ -1525,7 +1351,7 @@ section {
     display: flex !important;
     align-items: stretch !important;
   }
-  section.team, .align-items-stretch {
+  section.team, .founder, .co-founder {
     display: block !important;
   }
   section.careers .info-box h5 {
@@ -1534,16 +1360,71 @@ section {
   .careers .info-box i {
     font-size: 25px;
   }
-  div.footer-top, .row {
+  div.footer-top .row {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .light-btn, .primary-btn, .danger-btn, .learnmore-btn {
+    font-weight: 800;
+    font-size: 15px;
+    padding: 1rem 1rem !important;
+  }
+  .counter .number {
+    font-size: 80px;
+  }
+  .ourCourses .box h5 {
+    font-size: 15px;
+  }
+  .title-size {
+    padding: 1rem 2rem !important;
+  }
+  .title-size h1 {
+    font-size: 30px;
+  }
+  .title-size h4{
+    padding: 1rem !important;
+    font-size: 18px;
+  }
+  .application-process .circle-container {
+    width: 30%;
+  }
+  .why-it-works .circle-container {
+    width: 38%;
+  }
+  .why-us-content, .why-take-exam-content, .exam-early-learn-content  {
+    padding: 2%;
+  }
+  .why-take-exam-content .light-btn {
+    width: 100%;
+  }
+  section {
+    padding: 35px 0px !important;
+  }
+  .redbird-program .mcgrawhill-img {
+    width: 100%;
+    height: 50vh;
+  }
+  .section-container .ap-img {
+    width: 50% !important;
+  }
+  .writing-child {
+    height: 100%;
+  }
+  .children {
+    height: 100%;
+  }
 }
-
 
 @media screen and (max-width: 768px) {
   .banner-wrap .text-content {
-    transform: translate(4%, -200%);
+    transform: translate(0%, -120%);
+  }
+  .banner-wrap .text-content p {
+    font-size: 20px !important;
+  }
+  .banner-wrap .banner-btn {
+    font-size: 15px;
+    padding: 0.7rem 1rem;
   }
   .swiper-button-next, .swiper-button-prev {
     width: calc(var(--swiper-navigation-size)/ 44 * 0);
@@ -1597,6 +1478,9 @@ section {
   }
   .about .video-box {
     min-height: 325px;
+  }
+  .container-fluid .secondary-bg, .p-5 {
+    padding: 0 !important;
   }
 }
 
@@ -1748,12 +1632,11 @@ section {
 }
 
 @media screen and (max-width: 320px) {
-  .navbar a, .navbar a {
+  .navbar a, .navbar a .primary-btn {
     font-size: 12px;
     padding: 8px 0 15px 19px;
   }
   #main img {
     width: 100% !important;
-    /* margin: 0rem !important; */
   }
 }

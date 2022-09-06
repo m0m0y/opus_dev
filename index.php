@@ -15,7 +15,7 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="banner-wrap">
-            <img src="assets/img/hero/demowebbanner.jpg" alt="hero-banner">
+            <img src="assets/img/index/demowebbanner.jpg" alt="hero-banner">
 
             <div class="content">
               <div class="inner">
@@ -23,7 +23,7 @@ $homeCard = $homePage->getCardsContent($page);
                   <p class="fs-1 fw-bolder">Opus Academy will prepare your child for academic success.</p>
                   <p class="fs-3 fw-light">Now open for Fall registraions</p>
                   <div class="d-flex align-items-center">
-                    <a href="#!" class="banner-btn text-decoration-none">Register Today</a>
+                    <a href="#!" class="banner-btn btn-sm text-decoration-none">Register Today</a>
                   </div>
                 </div>
               </div>
@@ -70,27 +70,23 @@ $homeCard = $homePage->getCardsContent($page);
           }
         ?> -->
       </div>
-
       <div class="swiper-pagination"></div>
 
       <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
       <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
-
     </div>
 
     <div class="container-fluid secondary-bg p-5">
-      <div class="container">
+      <div class="container mb-5 mt-5">
         <div class="d-flex flex-column justify-content-center">
-          <div class="row">
-            <div class="col-xl-6 d-flex justify-content-center" style="background: url('assets/img/home/opusrecital.png') center center no-repeat; background-size: contain;"></div>
+          <div class="row m-5">
+            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: cover;"></div>
 
-            <div class="col-xl-6 d-flex align-items-stretch">
-              <div class="p-4">
-                <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
-                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
-                <div class="d-flex justify-content-center">
-                  <a href="#!" type="button" class="primary-btn mt-4">Our Story</a>
-                </div>
+            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+              <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
+              <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+              <div class="d-flex justify-content-left mt-5">
+                <a href="#!" type="button" class="primary-btn w-100 mt-3">Our Story</a>
               </div>
             </div>
           </div>
@@ -99,19 +95,15 @@ $homeCard = $homePage->getCardsContent($page);
     </div>
 
     <section id="what-we-offer" class="what-we-offer">
-      
       <div class="container text-center px-5">
-        <p class="mb-4 fs-1 fw-bold">What We Offer</p>
-
+        <h4 class="mb-4 fs-1 fw-bold">What We Offer</h4>
         <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
       </div>
-
 
       <div class="container">
         <div class="col-xl-12 col-lg-12 d-flex">
           <div class="d-flex flex-column justify-content-center">
             <div class="row">
-
               <?php 
               foreach($homeCard as $v) {
                 $card_title = $v["card_title"];
@@ -142,36 +134,35 @@ $homeCard = $homePage->getCardsContent($page);
                 <?php
                 }
               }
-
               ?>
-
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <section id="why-choose-opus" class="why-choose-opus secondary-bg">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <p class="mb-4 fs-1 fw-bold">Why Choose Opus?</p>
-            <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row m-5">
+            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+              <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
+              <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
-            <div class="d-flex justify-content-start mt-3">
-              <div class="d-flex justify-content-start me-2">
-                <a href="#!" type="button" class="light-btn">Our Testimonial</a>
-              </div>
+              <div class="d-flex justify-content-left mt-5">
+                <div class="d-flex justify-content-start me-2">
+                  <a href="#!" type="button" class="light-btn">Testimonial</a>
+                </div>
               
-              <div class="d-flex justify-content-end ms-2">
-                <a href="#!" type="button" class="light-btn">Our Acheivements</a>
+                <div class="d-flex justify-content-end ms-2">
+                  <a href="#!" type="button" class="light-btn">Achievements</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-            <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
+            <div class="col-xl-5 col-lg-6 video-box">
+              <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -179,18 +170,16 @@ $homeCard = $homePage->getCardsContent($page);
 
     <section id="team-and-expert" class="team-and-expert">
       <div class="container">
-
         <div class="d-flex flex-column justify-content-center">
-          <div class="row">
-            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: contain;"></div>
-            <div class="col-md-6 d-flex align-items-stretch ">
-              <div class="p-4">
-                <p class="mb-4 fs-1 fw-bold">Team of Expert Educators</p>
-                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+          <div class="row m-5">
+            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
 
-                <div class="d-flex justify-content-start">
-                  <a href="#!" type="button" class="primary-btn mt-4">Our Recent Competition Results</a>
-                </div>
+            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+              <h4 class="mb-4 fs-1 fw-bold">Team of Expert Educators</h4>
+              <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+
+              <div class="d-flex justify-content-left mt-5">
+                <a href="#!" type="button" class="primary-btn w-100">Our Recent Competition Results</a>
               </div>
             </div>
           </div>
@@ -198,35 +187,31 @@ $homeCard = $homePage->getCardsContent($page);
       </div>
     </section>
 
-    <section id="" class="primary-bg">
-      <div class="container">
-        <div class="p-5">
+    <section id="counter" class="counter primary-bg">
+      <div class="container p-5">
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-md-4">
               <p id="0101" class="number text-center m-0"></p>
               <p class="title text-center">Years Experience</p>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-md-4">
               <p class="number text-center m-0"><span id="0102"></span>+</p>
               <p class="title text-center">Students</p>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-md-4">
               <p class="number text-center m-0"><span id="0103"></span>+</p>
               <p class="title text-center">Awards, Certificates & Diplomas</p>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
     <section id="testimonials" class="testimonials">
       <div class="container position-relative">
-
         <div class="testimonials-slider swiper">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Vanessa</h3>
@@ -238,7 +223,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Andrew</h3>
@@ -250,7 +234,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Vicotria</h3>
@@ -262,7 +245,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Stacy</h3>
@@ -274,7 +256,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Brian</h3>
@@ -286,7 +267,6 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <h3>Albert</h3>
@@ -298,11 +278,9 @@ $homeCard = $homePage->getCardsContent($page);
                 </p>
               </div>
             </div>
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
     </section>
 
@@ -312,7 +290,7 @@ $homeCard = $homePage->getCardsContent($page);
 
   <?php require_once "assets/common/footer.php"; ?>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

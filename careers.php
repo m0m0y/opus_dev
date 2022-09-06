@@ -9,14 +9,14 @@ $hiringPostion = $careers->hiringPostion();
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs breadcrumbs py-3 px-5 mt-1">
         <div class="container">
-        <ol>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li>Careers</li>
-        </ol>
-        <h2>Opus Academy Careers</h2>
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li>Careers</li>
+            </ol>
+            <h2>Opus Academy Careers</h2>
         </div>
     </section>
 
@@ -56,7 +56,7 @@ $hiringPostion = $careers->hiringPostion();
 
                         <div class="col-xl-4 col-lg-4 mt-4">
                             <div class="info-box">
-                                <i class="bx bx-caret-right"></i>
+                            <i class='bx bxs-user'></i>
                                 <h5><?= $position ?></h5>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ $hiringPostion = $careers->hiringPostion();
             </div>
 
             <div class="d-flex align-items-center mt-3">
-                <i class="bx bxs-spreadsheet get-started-icon"></i>
-                <a href="https://www.jotform.me/82799226078471/" class="btn-get-started scrollto">Online Application Form</a>
+                <i class="bx bxs-spreadsheet get-started-icon mt-3"></i>
+                <a href="https://www.jotform.me/82799226078471/" class="btn-get-started scrollto mt-3">Online Application Form</a>
             </div>
 
         </div>
@@ -78,7 +78,7 @@ $hiringPostion = $careers->hiringPostion();
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

@@ -10,7 +10,7 @@ $classicalMusicContent = $classicalMusic->getContent();
 
     <main id="main">
 
-        <section id="breadcrumbs" class="breadcrumbs">
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
             <div class="container">
                 <ol>
                     <li><a href="index.php">Home</a></li>
@@ -145,7 +145,7 @@ $classicalMusicContent = $classicalMusic->getContent();
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

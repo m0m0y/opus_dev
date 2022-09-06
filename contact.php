@@ -8,22 +8,20 @@ $contactInfo = $contactInfo->getInformation();
 ?>
 
 <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs py-3 px-5 mt-1">
       <div class="container">
-        <ol>
-          <li><a href="index.php">Home</a></li>
-          <li>Contact Us</li>
-        </ol>
-        <h2>Contact Us</h2>
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li>Contact Us</li>
+            </ol>
+            <h2>Contact Us</h2>
       </div>
     </section>
 
     <section class="pt-3">
         <div class="container">
             <div class="row">
-                
                 <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column justify-content-center px-lg-5 info-box">
-
                     <?php 
                         foreach($contactInfo as $v) {
                             $title = $v["title"];
@@ -32,7 +30,6 @@ $contactInfo = $contactInfo->getInformation();
                             ?>
 
                             <?= ($status == 0 ? ($title == "Vancouver Location" ? '<h4><i class="bx bx-map"></i> '.$title.' </h4><p>'.$description.'</p> <br>' : '') : '') ?>
-
 
                             <?= ($status == 0 ? ($title == "Telephone & Fax" ? '<h5><i class="bx bx-phone-call"></i> '.$title.'</h5> <p>'.$description.'</p>' : '') : '') ?>
 
@@ -47,9 +44,7 @@ $contactInfo = $contactInfo->getInformation();
                 </div>
 
                 <div class="col-xl-7 col-lg-6 d-flex justify-content-center email-form">
-
                     <div class="container">
-
                         <div class="form-floating mt-3">
                             <input type="text" name="name" id="name" class="form-control"  aria-label="Floating label select example" autocomplete="off" required focus>
                             <label for="floatingSelect">Complete Name: <span class="required">*</span></label>
@@ -73,11 +68,8 @@ $contactInfo = $contactInfo->getInformation();
                         <div class="mt-3 d-flex justify-content-end">
                             <button type="submit" class="btn btn-md btn-primary btn-submit">Submit</button>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
@@ -92,7 +84,7 @@ $contactInfo = $contactInfo->getInformation();
 
 <?php require_once "assets/common/footer.php"; ?>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
