@@ -25,7 +25,7 @@ $testPreparation = $testPreparation->getContent();
             <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Standardized test preparation helps students reach their goals.</h1>
                 <h4 class="px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
-                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
+                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
             <div class="col-md-6 px-0">

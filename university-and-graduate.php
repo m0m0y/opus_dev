@@ -1,5 +1,5 @@
 <?php 
-$title = "Opus Academy";
+$title = "University & Graduates - Opus Academy";
 require_once "assets/common/header.php"; 
 ?>
 
@@ -19,8 +19,8 @@ require_once "assets/common/header.php";
         <div class="row">
             <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Our counsellors work with your family to assist you with your chosen school’s admission process.</h1>
-                <h4 class="px-5 my-5 lh-base">Your child’s higher education is one of the most important investments you will ever make. The admissions process has grown more complex than ever - a plethora of university choices and intense competition for highly selective universities. To be admitted into a highly selective college requires students to stand out from the rest. At Opus Academy, our counsellors will help guide your child in making the best decision for his or her university education.</h4>
-                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
+                <h4 class="px-5 my-5">Your child’s higher education is one of the most important investments you will ever make. The admissions process has grown more complex than ever - a plethora of university choices and intense competition for highly selective universities. To be admitted into a highly selective college requires students to stand out from the rest. At Opus Academy, our counsellors will help guide your child in making the best decision for his or her university education.</h4>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
             <div class="col-md-6 px-0">
@@ -180,15 +180,15 @@ require_once "assets/common/header.php";
                     <img src="assets/img/admin-counselling/university/c2.png" class ="w-25 mb-5">
                 </div>
                 
-                <div class="col-md-6 d-flex justify-content-start">
-                    <img src="assets/img/admin-counselling/university/c3.png" class ="w-25 pt-5">
+                <div class="col-md-6 d-flex justify-content-start mt-2">
+                    <img src="assets/img/admin-counselling/university/c3.png" class ="w-25 mt-5">
                 </div>
         
-                <div class="col-md-6 d-flex justify-content-end mt-2 px-5">
+                <div class="col-md-6 d-flex justify-content-end mt-2">
                     <img src="assets/img/admin-counselling/university/c22.png" class ="w-25 mb-5">
                 </div>
 
-                <div class="col-md-6 d-flex justify-content-start ">
+                <div class="col-md-6 d-flex justify-content-start mt-2">
                     <img src="assets/img/admin-counselling/university/c33.png" class ="w-25 mb-5">
                 </div>
             </div>

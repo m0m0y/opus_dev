@@ -89,7 +89,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section id="teach-us-debate" class="teach-us-debate">
+        <section id="teach-us-debate-ph" class="teach-us-debate-ph">
             <div class="container">
                 <h1 class=" m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
 
@@ -140,7 +140,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section class="why-us pb-0">
+        <section class="why-us p-0">
             <div class=" secondary-bg">
                 <div class="row">
                     <div class="col-md-6 why-us-content">
@@ -250,7 +250,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section id="teach-us-debate" class="teach-us-debate">
+        <section id="teach-us-debate-ca" class="teach-us-debate-ca">
             <div class="container">
                 <h1 class="mb-5 fw-bold text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
 
@@ -290,7 +290,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section class="why-us pb-0">
+        <section class="why-us p-0">
             <div class="secondary-bg">
                 <div class="row">
                     <div class="col-md-6 why-us-content">

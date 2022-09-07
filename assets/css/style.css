@@ -1056,11 +1056,11 @@ section {
 /*--------------------------------------------------------------
 # Competitive Debate Programs
 --------------------------------------------------------------*/
-.teach-us-debate {
+.teach-us-debate-ph {
   background: url("../img/competitive-debate/p-23.jpg") center center no-repeat;
   background-size: cover;
 }
-.teach-us-debate {
+.teach-us-debate-ca {
   background: url("../img/competitive-debate/p-25.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -1297,19 +1297,44 @@ MEDIA SCREEN
 }
 
 @media screen and (max-width: 1024px) {
-  .py-5 {
+  body {
+    font-size: 16px;
+  }
+  .my-5 {
+    margin-top: 2rem!important;
+    margin-bottom: 2rem!important;
+  }
+  .m-5 {
+    margin: 2rem!important;
+  }
+  .mt-5 {
+    margin-top: 2rem!important;
+  }
+  .mb-5 {
+    margin-bottom: 2rem!important;
+  }
+  .pt-5 {
+    padding-top: 2rem!important;
+  }
+  .px-lg-5, .px-5 {
     padding-right: 2rem!important;
     padding-left: 2rem!important;
   }
-  .px-lg-5 {
-    padding-right: 2rem!important;
-    padding-left: 2rem!important;
+  .py-5 {
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+  }
+  .custom-badge span {
+    padding: 10px 35px;
+  }
+  #topbar {
+    padding: 0px !important;
   }
   #topbar .contact-info i a, #topbar .contact-info i span {
-    font-size: 12px;
+    font-size: 13px;
   }
   .navbar a, .navbar a:focus {
-    font-size: 10px;
+    font-size: 11px;
     padding: 10px 0 10px 20px;
   }
   #header .logo img {
@@ -1323,7 +1348,7 @@ MEDIA SCREEN
   }
   .banner-wrap .text-content {
     position: relative;
-    transform: translate(23%, -200%);
+    transform: translate(23%, -222%);
     left: 0px;
     text-align: center;
   }
@@ -1339,6 +1364,9 @@ MEDIA SCREEN
   }
   .academic-subject-tutoring .tutor-img {
     width: 100%;
+  }
+  section {
+    padding: 90px 0px !important;
   }
   section .competitive-debate-programs, div .container {
     width: 100% !important;
@@ -1373,10 +1401,10 @@ MEDIA SCREEN
     font-size: 80px;
   }
   .ourCourses .box h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .title-size {
-    padding: 1rem 2rem !important;
+    padding: 0rem 2rem !important
   }
   .title-size h1 {
     font-size: 30px;
@@ -1391,14 +1419,15 @@ MEDIA SCREEN
   .why-it-works .circle-container {
     width: 38%;
   }
-  .why-us-content, .why-take-exam-content, .exam-early-learn-content  {
+  .why-take-exam {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .why-us-content, .why-take-exam-content, .exam-early-learn-content, .reaching-goal-content  {
     padding: 2%;
   }
   .why-take-exam-content .light-btn {
     width: 100%;
-  }
-  section {
-    padding: 35px 0px !important;
   }
   .redbird-program .mcgrawhill-img {
     width: 100%;
@@ -1413,11 +1442,17 @@ MEDIA SCREEN
   .children {
     height: 100%;
   }
+  .more-btn {
+    padding: 1% 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
   .banner-wrap .text-content {
-    transform: translate(0%, -120%);
+    transform: translate(0%, -162%);
   }
   .banner-wrap .text-content p {
     font-size: 20px !important;
@@ -1442,7 +1477,7 @@ MEDIA SCREEN
     font-size: 11px;
   }
   .navbar a, .navbar a:focus {
-    font-size: 14px;
+    font-size: 15px;
     padding: 10px 0 10px 30px;
   }
   .navbar a i, .navbar a:focus i {
@@ -1476,11 +1511,23 @@ MEDIA SCREEN
   .swiper-wrapper .swiper-slide .banner-wrap {
     max-height: 40vh;
   }
-  .about .video-box {
+  /* .about .video-box {
     min-height: 325px;
-  }
-  .container-fluid .secondary-bg, .p-5 {
+  } */
+  /* .container-fluid .secondary-bg, .p-5 {
     padding: 0 !important;
+  } */
+  .counter .number {
+    font-size: 65px !important;
+  } 
+  .welcome-opus-container-fluid {
+    padding: 8% 10px !important;
+  }
+  .welcome-opus-container {
+    margin: 0 !important;
+  }
+  .why-choose-opus-container .row, .team-and-expert-container .row, .counter-container .row {
+    margin: 0 !important;
   }
 }
 
@@ -1599,6 +1646,7 @@ MEDIA SCREEN
   section.breadcrumbs {
     margin-top: 0;
     margin-bottom: 20px;
+    padding: 20px 0 !important;
   }
   section {
     padding: 30px 0 !important;
@@ -1615,9 +1663,6 @@ MEDIA SCREEN
   #main img {
     width: 100% !important;
     margin-bottom: 20px !important;
-  }
-  section.breadcrumbs {
-    padding: 20px 0 !important;
   }
   .breadcrumbs h2 {
     font-size: 19px;

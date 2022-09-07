@@ -76,8 +76,8 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
     </div>
 
-    <div class="container-fluid secondary-bg p-5">
-      <div class="container mb-5 mt-5">
+    <div class="container-fluid secondary-bg p-5 welcome-opus-container-fluid">
+      <div class="container my-5 welcome-opus-container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
             <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: cover;"></div>
@@ -86,7 +86,7 @@ $homeCard = $homePage->getCardsContent($page);
               <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
               <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
               <div class="d-flex justify-content-left mt-5">
-                <a href="#!" type="button" class="primary-btn w-100 mt-3">Our Story</a>
+                <a href="#!" type="button" class="primary-btn w-100">Our Story</a>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ $homeCard = $homePage->getCardsContent($page);
                       <h4><?= $card_title ?></h4>
                       <p><?= html_entity_decode($content) ?></p>
                       
-                      <?= ($link == "" ? '' : '<a href="'.$link.'" target="blank" class="more-btn text-decoration-none">Learn More</a>') ?>
+                      <?= ($link == "" ? '' : '<div class="more-btn-container mt-4"><a href="'.$link.'" target="blank" class="more-btn text-decoration-none">Learn More</a></div>') ?>
                   
                     </div>
                   </div>
@@ -142,14 +142,14 @@ $homeCard = $homePage->getCardsContent($page);
     </section>
 
     <section id="why-choose-opus" class="why-choose-opus secondary-bg">
-      <div class="container">
+      <div class="container why-choose-opus-container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
-            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+            <div class="col-md-6 col-sm-12 d-flex align-items-stretch flex-column px-5">
               <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
               <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
-              <div class="d-flex justify-content-left mt-5">
+              <div class="d-flex justify-content-center mt-5">
                 <div class="d-flex justify-content-start me-2">
                   <a href="#!" type="button" class="light-btn">Testimonial</a>
                 </div>
@@ -160,7 +160,7 @@ $homeCard = $homePage->getCardsContent($page);
               </div>
             </div>
 
-            <div class="col-xl-5 col-lg-6 video-box">
+            <div class="col-md-6 col-sm-12 video-box">
               <a href="https://youtu.be/WuTk3Z4Wp5k" class="glightbox play-btn mb-4"></a>
             </div>
           </div>
@@ -169,7 +169,7 @@ $homeCard = $homePage->getCardsContent($page);
     </section>
 
     <section id="team-and-expert" class="team-and-expert">
-      <div class="container">
+      <div class="container team-and-expert-container">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
             <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/home/IMG_2566.JPG') center center no-repeat; background-size: cover;"></div>
@@ -188,8 +188,8 @@ $homeCard = $homePage->getCardsContent($page);
     </section>
 
     <section id="counter" class="counter primary-bg">
-      <div class="container p-5">
-          <div class="row">
+      <div class="container counter-container">
+          <div class="row m-5">
             <div class="col-md-4">
               <p id="0101" class="number text-center m-0"></p>
               <p class="title text-center">Years Experience</p>
