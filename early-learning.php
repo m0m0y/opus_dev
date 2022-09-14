@@ -33,7 +33,7 @@ $cardContent = $card->getContentWhere($page);
             <div class="col-md-6 p-5 title-size">
                 <h1 class="-5 px-5 fw-bold">Pre-school learning is integral to a child's school success.</h1>
                 <h4 class="px-5 my-5">Enrich your child's playtime with fun and educational activities at Opus Academy! Our Early Learning program promotes academic development and school readiness in an encouraging and fun environment focused on preparing them for grade school and encouraging an enthusiasm for lifelong learning. We believe in combining active play with structured educational activities, placing emphasis on language arts, reading readiness through phonics, as well as speaking skills, math, and printing. Your child will learn how to look at books, love them, and recognize how printed words convey meaning.<h4>
-                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
             <div class="col-md-6 px-0">

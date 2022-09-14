@@ -19,13 +19,13 @@ $summerCamps = $summerCamps->getContent();
                 <h2>Opus Summer Camps</h2>
             </div>
         </section>
-
-        <div class ="container-fluid warning-bg">
+        
+        <div class="container-fluid warning-bg">
             <div class="row">
-                <div class="col-md-6 p-5 title-size">
+                <div class = "col-md-6 p-5 title-size">
                     <h1 class="m-5 px-5 fw-bold">Opus Academy's Summer camps offer students a chance to get ahead in their education journey!</h1>
                     <h4 class="px-5 my-5">With Opus Academy’s test preparation programs, students will sharpen their skills to reach or even exceed their goals. Our students have seen great improvement in their scores, helping them to achieve their private school and/or college admission goals. We offer comprehensive standardized test preparation programs for the following exams, tailored for your student’s individual needs.</h4>
-                    <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
+                    <center><a href ="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 
                 <div class="col-md-6 px-0">

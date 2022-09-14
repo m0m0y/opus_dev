@@ -89,9 +89,9 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section id="teach-us-debate" class="teach-us-debate">
+        <section id="teach-us-debate-ph" class="teach-us-debate-ph">
             <div class="container">
-                <h1 class=" m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
+                <h1 class=" m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
 
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch">
@@ -140,7 +140,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section class="why-us pb-0">
+        <section class="why-us p-0">
             <div class=" secondary-bg">
                 <div class="row">
                     <div class="col-md-6 why-us-content">
@@ -223,7 +223,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     </div>
 
                     <div class="col-md-6 text-content">
-                        <br><p>The Harvard Debate Program is Opus Academy’s U.S. style debate program developed from our exclusive partnership with the Harvard Debate Council (HDC). Established for over 35 years, the HDC instructors have reached the highest levels of competitions as both coaches and competitors with international experience. They share a spirit of wanting to help students from around the world benefit from debate. Give your child the opportunity of a lifetime— empower future leaders through speech and debate. Learn to Speak! Speak to Learn! Speak with power, confidence, clarity, and conviction!Through debate, students deepen their understanding of the world and look for solutions to local, national, and global issues. Early debate training helps students listen carefully, think logically, and speak effectively. Students sharpen their reasoning and problem-solving skills by studying how to construct arguments, defend them through refutation, and cross-examine others. Debate teaches life skills essential to future success and is applicable to most any future career choice.</p>
+                        <br><p>The Harvard Debate Program is Opus Academy’s U.S. style debate program developed from our exclusive partnership with the Harvard Debate Council (HDC). Established for over 35 years, the HDC instructors have reached the highest levels of competitions as both coaches and competitors with international experience. They share a spirit of wanting to help students from around the world benefit from debate. Give your child the opportunity of a lifetime— empower future leaders through speech and debate. Learn to Speak! Speak to Learn! Speak with power, confidence, clarity, and conviction!<br><br>Through debate, students deepen their understanding of the world and look for solutions to local, national, and global issues. Early debate training helps students listen carefully, think logically, and speak effectively. Students sharpen their reasoning and problem-solving skills by studying how to construct arguments, defend them through refutation, and cross-examine others. Debate teaches life skills essential to future success and is applicable to most any future career choice.</p>
 
                         <h4 class="fw-bold mt-4">Certificate Granting For Completion</h4>
 
@@ -250,9 +250,9 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section id="teach-us-debate" class="teach-us-debate">
+        <section id="teach-us-debate-ca" class="teach-us-debate-ca">
             <div class="container">
-                <h1 class="mb-5 fw-bold text-center" style="color: white;">We Teach U.S. Debate Styles?</h1>
+                <h1 class="mb-5 fw-bold text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
 
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch">
@@ -290,7 +290,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-        <section class="why-us pb-0">
+        <section class="why-us p-0">
             <div class="secondary-bg">
                 <div class="row">
                     <div class="col-md-6 why-us-content">

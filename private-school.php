@@ -1,5 +1,5 @@
 <?php 
-$title = "Opus Academy";
+$title = "Private School - Opus Academy";
 require_once "assets/common/header.php"; 
 ?>
 
@@ -20,7 +20,7 @@ require_once "assets/common/header.php";
             <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Our counsellors work with your family to assist you with your chosen school’s admission process.</h1>
                 <h4 class="px-5 my-5">We are there every step of the way to ensure your child has the best chances. Whether interested in private schools on a national or international level, we will help your family make the best choice, and make your child’s individual needs our priority. Our counsellors help identify the private day schools or boarding schools that will best fit your child’s needs, and programs that your child will flourish in.</h4>
-                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
+                <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
             <div class="col-md-6 px-0">
@@ -31,7 +31,7 @@ require_once "assets/common/header.php";
 
     <section id="section-container" class="section-container">        
         <div class="container">
-            <div class="d-flex flex-column justify-content-center">
+            <div class="d-flex flex-column justify-content-center mb-5 mt-5">
             <div class="row">
                 <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">We Guide You through the Entire Admissions Process.</h4>

@@ -32,7 +32,7 @@ $cardContent = $card->getContentWhere($page);
         <div class="row">
             <div class = "col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">REDBIRD<br>Personalized math and English language arts enrichment education by Stanford and McGraw-Hill Education</h1>
-                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto mb-5"></i></a></center>
+                <center><a href ="#we-help-students" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
             <div class="col-md-6 px-0">
