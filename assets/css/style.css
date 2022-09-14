@@ -1075,6 +1075,9 @@ section {
 .why-us-content, .exam-early-learn-content {
   padding: 9%;
 }
+.harvard {
+  width: 60%;
+}
 /*--------------------------------------------------------------
 # Academic Enrichment
 --------------------------------------------------------------*/
@@ -1231,13 +1234,6 @@ section {
   padding: 15px;
 }
 
-/*--------------------------------------------------------------
-# Univesity_Graduates
---------------------------------------------------------------*/
-.university-graduates {
-  background: url("../img/admin-counselling/university/church.jpg") center center no-repeat;
-  background-size:cover;
-}
 
 /* 
 =================================================================================
@@ -1300,6 +1296,10 @@ MEDIA SCREEN
     padding: 1rem !important;
     margin: 0px !important;
     font-size: 20px;
+  }
+  .redbird-program .mcgrawhill-img {
+    width: 80%;
+    height: 55vh;
   }
 }
 
@@ -1439,6 +1439,7 @@ MEDIA SCREEN
   .redbird-program .mcgrawhill-img {
     width: 100%;
     height: 50vh;
+    padding: 0 !important;
   }
   .section-container .ap-img {
     width: 50% !important;
@@ -1500,6 +1501,9 @@ MEDIA SCREEN
   #footer .footer-top .footer-contact p img {
     width: 95%;
   }
+  section {
+    padding: 70px 0px !important;
+  }
   section.our-program-structure h5 .row,
   section.university-school-counselling .row{
     --bs-gutter-x: -13.5rem !important;
@@ -1518,12 +1522,6 @@ MEDIA SCREEN
   .swiper-wrapper .swiper-slide .banner-wrap {
     max-height: 40vh;
   }
-  /* .about .video-box {
-    min-height: 325px;
-  } */
-  /* .container-fluid .secondary-bg, .p-5 {
-    padding: 0 !important;
-  } */
   .counter .number {
     font-size: 65px !important;
   } 
@@ -1533,8 +1531,69 @@ MEDIA SCREEN
   .welcome-opus-container {
     margin: 0 !important;
   }
-  .why-choose-opus-container .row, .team-and-expert-container .row, .counter-container .row {
+  .why-choose-opus-container .row, .team-and-expert-container .row, .counter-container .row, .competitve-debate .row {
+    margin: 25px 0 !important;
+  }
+  .img-banner {
+    display: flex;
+  }
+  .ourCourses .box {
+    margin: 10px 0px;
+  }
+  .more-btn {
+    padding: 2% 80px;
+  }
+  .ourCourses .box h5 {
+    font-size: 15px;
+  }
+  .title-size h1 {
+    padding-top: 25px !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 25px;
+  }
+  .title-size h4{
+    padding: 10px 0px !important;
+    font-size: 16px;
+  }
+  .bi-chevron-compact-down {
+    font-size: 3rem;
+  }
+  .redbird-program .mcgrawhill-img {
+    height: 35vh;
+    padding: 0 !important;
+  }
+  .harvard {
+    width: 100%;
+  }
+  .button-container {
     margin: 0 !important;
+  }
+  .register-fall-btn, .courses-sched-btn, .apply-summer-btn {
+    padding: 5% !important;
+  }
+  .application-process .circle-container {
+    width: 35%;
+  }
+  .why-it-works .circle-container {
+    width: 45%;
+  }
+  .our-counselling-services .circle-container {
+    width: 100%;
+  }
+  .our-counselling-services .circle-container img {
+    padding: 1rem !important;
+  }
+  .our-counselling-services .icon-text {
+    font-size: 16px !important;
+  }
+  .fs-1{
+    font-size: 25px !important;
+  }
+  .what-we-offer .icon-box h4 {
+    font-size: 20px;
+    margin-bottom: 20px !important;
   }
 }
 
