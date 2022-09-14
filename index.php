@@ -21,7 +21,7 @@ $homeCard = $homePage->getCardsContent($page);
               <div class="inner">
                 <div class="text-content">
                   <p class="fs-1 fw-bolder">Opus Academy will prepare your child for academic success.</p>
-                  <p class="fs-3 fw-light">Now open for Fall registraions</p>
+                  <p class="fs-3 fw-light">Now open for Fall Registration</p>
                   <div class="d-flex align-items-center">
                     <a href="#!" class="banner-btn btn-sm text-decoration-none">Register Today</a>
                   </div>
@@ -71,7 +71,6 @@ $homeCard = $homePage->getCardsContent($page);
         ?> -->
       </div>
       <div class="swiper-pagination"></div>
-
       <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
       <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
     </div>
@@ -142,20 +141,20 @@ $homeCard = $homePage->getCardsContent($page);
     </section>
 
     <section id="why-choose-opus" class="why-choose-opus secondary-bg">
-      <div class="container why-choose-opus-container">
+      <div class="container why-choose-opus-container mt-5">
         <div class="d-flex flex-column justify-content-center">
           <div class="row m-5">
             <div class="col-md-6 col-sm-12 d-flex align-items-stretch flex-column px-5">
               <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
               <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
-              <div class="d-flex justify-content-center mt-5">
+              <div class="d-flex justify-content-center mt-5 mb-5">
                 <div class="d-flex justify-content-start me-2">
-                  <a href="#!" type="button" class="light-btn">Testimonial</a>
+                  <a href="#!" type="button" class="light-btn">Testimonials</a>
                 </div>
               
                 <div class="d-flex justify-content-end ms-2">
-                  <a href="#!" type="button" class="light-btn">Achievements</a>
+                  <a href="#!" type="button" class="light-btn">Achievements</a>w
                 </div>
               </div>
             </div>
@@ -207,6 +206,44 @@ $homeCard = $homePage->getCardsContent($page);
           </div>
       </div>
     </section>
+    <section id="portfolio" class="portfolio">
+                    <div class="container">
+
+                        <div class="row mt-5">
+
+                            <div class="col col-sm-12 d-flex">
+                                <img src="assets/img/index/p-8.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-sm-3">
+                                <img src="assets/img/index/p-1.jpg" class="mb-5" alt="" style="width: 100%;">
+                                <img src="assets/img/index/p-4.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-12 col-lg-3 col-md-6">
+                                <img src="assets/img/index/p-6.jpg" class="mb-5" alt="" style="width: 100%;">
+                                <img src="assets/img/index/p-2.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-12 col-lg-3 col-md-6">
+                                <img src="assets/img/index/p-7.jpg" class="mb-5" alt="" style="width: 100%;">
+                                <img src="assets/img/index/p-3.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+                            
+                            <div class="col col-12 col-lg-3 col-md-6">
+                                <img src="assets/img/index/p-5.jpg" class="mb-5" alt="" style="width: 100%;">
+                            </div>
+
+                            <div class="col col-12 col-lg-3 col-md-6">
+                      
+                            </div>
+                           
+
+                        </div>
+                        
+                    </div>
+                  
+                </section>
 
     <section id="testimonials" class="testimonials">
       <div class="container position-relative">

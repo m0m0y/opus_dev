@@ -31,7 +31,7 @@ require_once "assets/common/header.php";
 
     <section id="section-container" class="section-container">        
         <div class="container">
-            <div class="d-flex flex-column justify-content-center">
+            <div class="d-flex flex-column justify-content-center mb-5 mt-5">
             <div class="row">
                 <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">We Guide You through the Entire Admissions Process.</h4>

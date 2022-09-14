@@ -111,7 +111,7 @@ if ($page == "") {
 					<li><a class="nav-link <?= ($page == "index.php" ? "active" : "") ?>" href="index.php">Home</a></li>
 					<li class="dropdown"><a href="#!"><span>Programs</span> <i class="bi bi-chevron-down"></i></a>
 						<ul>
-							<li><a class="nav-link <?= ($page == "communication-arts.php" ? "active" : "") ?>" href="communication-arts.php">Opus Communication Arts</a></li>
+							<li><a class="nav-link <?= ($page == "communication-arts.php" ? "active" : "") ?>" href="communication-arts.php">Communication Arts</a></li>
 							<li class="dropdown"><a href="#!"><span>Competitive Debate Programs</span> <i class="bi bi-chevron-right"></i></a>
 								<ul>
 									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?canada" ? "active" : "") ?>" href="competitive-debate-programs.php?canada">Canada</a></li>
@@ -119,15 +119,15 @@ if ($page == "") {
 								</ul>
 							</li>
 							<li><a  class="nav-link <?= ($page == "mcgraw-hill-education-courses.php" ? "active" : "") ?>" href="mcgraw-hill-education-courses.php">McGraw Hill Education Courses</a></li>
-							<li><a  class="nav-link <?= ($page == "academic-enrichment.php" ? "active" : "") ?>" href="academic-enrichment.php">Opus Academic Subject Enrichment</a></li>
-							<li><a  class="nav-link <?= ($page == "test-preparation.php" ? "active" : "") ?>" href="test-preparation.php">Opus Standardized Test Preparation</a></li>
-							<li><a  class="nav-link <?= ($page == "early-learning.php" ? "active" : "") ?>" href="early-learning.php">Opus Early Learning</a></li>
-							<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Opus Classical Music</a></li>
+							<li><a  class="nav-link <?= ($page == "academic-enrichment.php" ? "active" : "") ?>" href="academic-enrichment.php">Academic Subject Enrichment</a></li>
+							<li><a  class="nav-link <?= ($page == "test-preparation.php" ? "active" : "") ?>" href="test-preparation.php">Standardized Test Preparation</a></li>
+							<li><a  class="nav-link <?= ($page == "early-learning.php" ? "active" : "") ?>" href="early-learning.php">Early Learning</a></li>
+							<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Classical Music</a></li>
 						</ul>
 					</li>
 					<!-- <li><a class="nav-link <?= ($page == "admission-counselling.php" ? "active" : "") ?>" href="admission-counselling.php">Admission Counselling</a></li> -->
 
-					<li class="dropdown"><a href="#!"><span>Admin Counselling</span> <i class="bi bi-chevron-down"></i></a>
+					<li class="dropdown"><a href="#!"><span>Admissions Counselling</span> <i class="bi bi-chevron-down"></i></a>
 					<ul>
 						
 					<li><a  class="nav-link <?= ($page == "private-school.php" ? "active" : "") ?>" href="private-school.php">Private School</a></li>
@@ -163,8 +163,9 @@ if ($page == "") {
 					<li class="dropdown">
 						<a class="nav-link" href="#!"><span> Opus News</span> <i class="bi bi-chevron-down"></i></a>
 						<ul>
-							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Blogs</a></li>
-							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Tags</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Opus News</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Latest News</a></li>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Achievement</a></li>
 							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Events</a></li>
 						</ul>
 					</li>

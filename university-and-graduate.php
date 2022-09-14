@@ -32,9 +32,9 @@ require_once "assets/common/header.php";
     <section id="section-container" class="section-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/admin-counselling/university/raised.jpg') center center no-repeat; background-size: contain;"></div>
+                <div class="col-md-6 d-flex justify-content-center mb-5 mt-5" style="background: url('assets/img/admin-counselling/university/raised.jpg') center center no-repeat; background-size: contain;"></div>
             
-                <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                <div class="col-md-6 d-flex align-items-stretch flex-column px-5 mb-5 mt-5">
                     <h4 class="mb-4 fs-1 fw-bold">Let Opus guide you through a personalized strategic plan</h4>
                     <p>We understand how demanding the university application process can be. With close guidance and attention from our select counsellors, your child will be able to navigate through the complex admissions process with ease. With so many selective programs to choose from, our team of counsellors will help students and identify their core values and goals and match them with the best-fit schools for them. Our counsellors are committed to providing personalized services and ensure that your child finds the right university for them. Through our assistance, we can help showcase every individual strength and talent, helping create a top-quality admission package that reaches their chosen universities.</p>
                 </div>
@@ -134,7 +134,7 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section id="universty-counselling" class="universty-counselling secondary-bg">
+    <section id="universty-counselling" class="university-graduates">
         <div class="container">
             <div class="row m-5">
                 <div class="col-md-6 d-flex align-items-stretch">
@@ -227,7 +227,7 @@ require_once "assets/common/header.php";
 
    <section id ="" class="secondary-bg">
         <div class="container">
-            <h1 class="text-center fw-bold mb-5">Graduate School Admissions Counselling</h1>
+            <h1 class="text-center fw-bold mb-5">Reaching Your Goals</h1>
             <p class="text-center mb-5">We are proud to have helped students admitted to the following top U.S. schools over the years:</p>
 
             <div class="row">   

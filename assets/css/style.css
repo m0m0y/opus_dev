@@ -1231,6 +1231,13 @@ section {
   padding: 15px;
 }
 
+/*--------------------------------------------------------------
+# Univesity_Graduates
+--------------------------------------------------------------*/
+.university-graduates {
+  background: url("../img/admin-counselling/university/church.jpg") center center no-repeat;
+  background-size:cover;
+}
 
 /* 
 =================================================================================

@@ -155,16 +155,16 @@ $ourCourse = $communicationArts->getCourses();
                     <h4 class="fw-bold mt-4">Our well-designed curricula include:</h4>
                     
                     <p class="custom-badge">
-                        <span>Vocal Technique</span>
-                        <span>Improvisation and Impromptu Speaking</span>
-                        <span>Story Telling</span>
-                        <span>Public Speaking</span>
-                        <span>Mime & Creative Movement</span>
-                        <span>Play Reading and Dramatization </span>
-                        <span>Acting Styles</span>
+                        <span>Elements of Public Speaking</span>
+                        <span>Mental Gymnastics</span>
+                        <span>Various types of speeches - persuasive, informative, entertaining, and demonstrative </span>
+                        <span>Speech writing</span>
+                        <span>Oral presentations</span>
+                        <span>Prepared Speeches</span>
+                        <span>Debate & Argumentation</span>
                         <span>Oral Interpetation (poetry and prose)</span>
-                        <span>Scene Study</span>
-                        <span>Shakespeare</span>
+                        <span>Discussion & Research</span>
+                        <span>Conversations & Speaking</span>
                     </p>
 
                     <h4 class="fw-bold mt-3">Certificate and Diploma Granting:</h4>
@@ -259,12 +259,12 @@ $ourCourse = $communicationArts->getCourses();
                 <div class="col-md-6 text-content">
                     <p>Time and again, science has proven that strong emotional intelligence in children leads to better decision making, motivation, and a heightened sense of self-awareness going forward in life. This program is especially designed to present a multitude of skills necessary for positive personality development and strengthened emotional intelligence. Students will develop stronger communication skills, organizational goals, and gain essential leadership skills. They will study the essential qualities of a leader and learn conflict resolution skills through understanding social concepts and dynamics. In addition, this program prepares young people to present themselves well in a variety of social situations and at job interviews. The practical side of our courses are designed to increase knowledge and appreciation of good manners and etiquette, improving self-esteem, and respecting others. </p><br>
 
-                    <p>
+                    <p class="fw-bold">
                         Class Size: Private, Group or Pair <br>
                         Formats: Online or In-Centre <br>
                         Grades: 1-10 <br>
-                        Courses Offered:  Youth Leadership Training
-                                Etiquette and Personality Empowerment for Youth
+                        Courses Offered:  Youth Leadership Training<br>
+                                Etiquette and Personality Empowerment for Youth<br>
                                 Etiquette for Kids
                     </p>
 
