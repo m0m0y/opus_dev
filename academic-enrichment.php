@@ -23,7 +23,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
             <div class="row">
                 <div class="col-md-6 p-5 title-size">
                     <h1 class="m-5 px-5 fw-bold">We provide academic enrichment in all core subjects.</h1>
-                    <h4 class="px-5 my-5">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </h4>
+                    <h4 class="px-5 my-5 lh-base">Our goal is for students to master the material and achieve academic success no matter their starting point. Our teachers are subject area experts and are dedicated to their students’ success. They teach not only subject content, but also the strategies and skills that enable students to meet their educational goals with ease. </h4>
                     <center><a href ="#ourCourses" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
                 </div>
 

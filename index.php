@@ -154,7 +154,7 @@ $homeCard = $homePage->getCardsContent($page);
                 </div>
               
                 <div class="d-flex justify-content-end ms-2">
-                  <a href="#!" type="button" class="light-btn">Achievements</a>w
+                  <a href="#!" type="button" class="light-btn">Achievements</a>
                 </div>
               </div>
             </div>

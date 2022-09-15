@@ -19,7 +19,7 @@ require_once "assets/common/header.php";
         <div class="row">
             <div class="col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">Our counsellors work with your family to assist you with your chosen school’s admission process.</h1>
-                <h4 class="px-5 my-5">Your child’s higher education is one of the most important investments you will ever make. The admissions process has grown more complex than ever - a plethora of university choices and intense competition for highly selective universities. To be admitted into a highly selective college requires students to stand out from the rest. At Opus Academy, our counsellors will help guide your child in making the best decision for his or her university education.</h4>
+                <h4 class="px-5 my-5 lh-base">Your child’s higher education is one of the most important investments you will ever make. The admissions process has grown more complex than ever - a plethora of university choices and intense competition for highly selective universities. To be admitted into a highly selective college requires students to stand out from the rest. At Opus Academy, our counsellors will help guide your child in making the best decision for his or her university education.</h4>
                 <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
