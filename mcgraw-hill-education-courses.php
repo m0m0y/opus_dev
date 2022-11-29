@@ -117,7 +117,7 @@ $cardContent = $card->getContentWhere($page);
     <section id="ourCourses" class="ourCourses secondary-bg">
         <div class="container">
             <div class="section-title">
-                <h2 class="text-center">Redbird Programs We Offer</h2>
+                <h2 class="text-center fw-bold">Redbird Programs We Offer</h2>
             </div>
 
             <div class="row">

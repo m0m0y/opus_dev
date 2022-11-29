@@ -952,7 +952,7 @@ section {
   background-color: white;
   border-radius: 50%;
   width: 75%;
-  padding: 5%;
+  /* padding: 5%; */
 }
 .reaching-goal-content {
   padding: 6%;
@@ -1459,6 +1459,13 @@ MEDIA SCREEN
   body {
     font-size: 15px;
   }
+  .breadcrumbs {
+    padding: 10px 2% !important;
+  }
+  .breadcrumbs h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
   .banner-wrap .text-content {
     transform: translate(0%, -162%);
   }
@@ -1551,11 +1558,11 @@ MEDIA SCREEN
     padding-bottom: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    font-size: 25px;
+    font-size: 20px;
   }
   .title-size h4{
     padding: 10px 0px !important;
-    font-size: 16px;
+    font-size: 15px;
   }
   .bi-chevron-compact-down {
     font-size: 3rem;
@@ -1574,10 +1581,10 @@ MEDIA SCREEN
     padding: 5% !important;
   }
   .application-process .circle-container {
-    width: 35%;
+    width: 30%;
   }
   .why-it-works .circle-container {
-    width: 45%;
+    width: 36%;
   }
   .our-counselling-services .circle-container {
     width: 100%;
@@ -1594,6 +1601,20 @@ MEDIA SCREEN
   .what-we-offer .icon-box h4 {
     font-size: 20px;
     margin-bottom: 20px !important;
+  }
+  .section-container .text-content {
+    padding-top: 6rem;
+  }
+  .custom-badge span {
+    font-size: 13px;
+    padding: 7px 25px;
+  }
+  .light-btn, .primary-btn, .danger-btn, .learnmore-btn {
+    font-size: 15px;
+    padding: 15px !important;
+  }
+  .entrance-exams .image-logo {
+    justify-content: none !important;
   }
 }
 

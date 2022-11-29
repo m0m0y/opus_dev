@@ -222,12 +222,15 @@ require_once "controller/controller.db.php";
 
                                 <div class="container">
 
-                                    <center>
+                                    <!-- <center>
                                         <div id="thumbnail-container">
                                             <img src="assets/img/hero-tumbnail.jpg" id="hero-image" class="w-100 p-1" onchange="previewImg()">
                                             <span class="note p-2"></span>
                                         </div>
-                                    </center>
+                                    </center> -->
+
+                                    <!-- <small>Uploaded BG Image Preview</small><br />
+                                    <img width="25%" height="25%" class="img-thumbnail img-fluid" id="blah" src="#" alt="your image" /> -->
                         
                                     <div class="mt-3">
                                         <div class="form-group row"> 
