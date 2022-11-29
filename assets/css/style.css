@@ -1088,25 +1088,20 @@ section {
 /*--------------------------------------------------------------
 # Classical Music Program
 --------------------------------------------------------------*/
-.music-program h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+.us-debate-style-bg {
+  background: url("../img/classical-music/piano-bg.jpg") center center no-repeat;
+  background-size: cover;
 }
-.music-studies h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+.classical-music .circle-container {
+  background-color: #0d6efd;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  width: 25%;
+  padding: 5%;
 }
-.course-include h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.additional-learning-opportunities h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
-}
-.application-procedure h4 {
-  border-left: 5px solid #29176e;
-  padding-left: 10px;
+.us-debate-style-bg .box {
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 25%);
 }
 
 /*--------------------------------------------------------------
