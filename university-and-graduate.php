@@ -48,7 +48,7 @@ require_once "assets/common/header.php";
             <p class="text-center">We offer various comprehensive planning packages for students, providing your child with individualized attention and the guidance to help them make the best decision. We assist with the following critical components to presenting a successful candidate to your chosen university:</p>
 
             <div class="row d-flex align-items-stretch justify-content-between">
-                <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
                     <div class="mb-4 circle-container w-75">
                         <img src="assets/img/admin-counselling/icons/mission.png" class="w-100 p-4" alt="mountain">
                     </div>
@@ -60,7 +60,7 @@ require_once "assets/common/header.php";
                     <p class="mt-4 fw-bold text-center">Competitions, Projects & Internships</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
                     <div class="mb-4 circle-container w-75">
                         <img src="assets/img/admin-counselling/icons/presentation.png" class="w-100 p-4" alt="presentation">
                     </div>
@@ -72,7 +72,7 @@ require_once "assets/common/header.php";
                     <p class="mb-4 fw-bold text-center">Portfolio Prep for Art, Music & Drama</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
                     <div class="mb-4 circle-container w-75">
                         <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
@@ -84,7 +84,7 @@ require_once "assets/common/header.php";
                     <p class="mb-4 fw-bold text-center">Interview Skills</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
                     <div class="mb-4 circle-container w-75">
                         <img src="assets/img/admin-counselling/icons/graduated.png" class="w-100 p-4" alt="graduated">
                     </div>
@@ -96,7 +96,7 @@ require_once "assets/common/header.php";
                     <p class="mt-4 fw-bold text-center">Deferral & Wait list Consultation</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
                     <div class="mb-4 circle-container w-75">
                         <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
@@ -139,14 +139,14 @@ require_once "assets/common/header.php";
             <div class="row m-5">
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="p-5 bg-light">
-                        <h1 class="text-center"><strong>Interview with Confidence</strong></h1>
+                        <h1 class="text-center fw-bold">Interview with Confidence</h1>
                         <p class="text-left">Some universities require face-to-face interviews with the applicants. These are high-stakes, nerve-wracking situations, but with preparation, this is where students can make themselves shine. Our interview coaches give insight into interview processes and prepare students so there are no surprises. Each school has something unique they are looking for in prospective students, so we ensure every applicant walks into interview prepared.</p>
                     </div>
                 </div>
                 
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div class="p-5 bg-light">
-                        <h1 class="text-center"><strong>Present the Best You.</strong></h1>
+                        <h1 class="text-center fw-bold">Present the Best You</h1>
                         <p class="text-left mt-5">Often the best way to stand out to admissions is through the creativity of an individual. Our counsellors help create a plan for applicants to showcase their individual talents, as well as brainstorm and review essays and personal statements produced by the applicant. Our goal is to help the student craft a unique and compelling story told through each section of their application.</p>
                     </div>
                 </div>

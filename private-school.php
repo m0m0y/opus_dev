@@ -49,40 +49,40 @@ require_once "assets/common/header.php";
         <div class="container">
             <h1 class="fw-bold mb-5 mt-5 text-center">Our Counselling Services Include</h1>
 
-            <div class="row d-flex align-items-stretch justify-content-between">
-                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-2 d-flex flex-wrap justify-content-center align-content-start">
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/mission.png" class="w-100 p-4" alt="mountain">
                     </div>
-                    <p class="mb-4 fs-5 fw-bold text-center">Regular meetings with our counsellors.</p>
+                    <p class="mb-4 fw-bold text-center">Regular meetings with our counsellors.</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                <div class="col-md-2 d-flex flex-wrap justify-content-center align-content-start">
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/puzzle.png" class="w-100 p-4" alt="puzzle">
                     </div>
-                    <p class="mb-5 fs-5 fw-bold text-center">Finding the right schools & Goals.</p>
+                    <p class="mb-5 fw-bold text-center">Finding the right schools & Goals.</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                <div class="col-md-2 d-flex flex-wrap justify-content-center align-content-start">
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
-                    <p class="mb-5 fs-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
+                    <p class="mb-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                <div class="col-md-2 d-flex flex-wrap justify-content-center align-content-start">
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/family.png" class="w-100 p-4" alt="family">
                     </div>
-                    <p class="mb-4 fs-5 fw-bold text-center">Interview Skills for Students and Parents</p>
+                    <p class="mb-4 fw-bold text-center">Interview Skills for Students and Parents</p>
                 </div>
 
-                <div class="col-md-2 d-flex flex-wrap justify-content-center">
+                <div class="col-md-2 d-flex flex-wrap justify-content-center align-content-start">
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/talk.png" class="w-100 p-4" alt="talk">
                     </div>
-                    <p class="mb-4 fs-5 fw-bold text-center">Application Guidance & Follow Up</p>
+                    <p class="mb-4 fw-bold text-center">Application Guidance & Follow Up</p>
                 </div>
             </div>
 
@@ -101,11 +101,11 @@ require_once "assets/common/header.php";
             <p class="text-center">We offer standardized test preparation for private and boarding school entrance exams including the Secondary School Admission Test (SSAT) and the Independent School Entrance Examination (ISEE). We tailor the curriculum to the strengths and weaknesses of the individual student, making sure to cover all possible content and ensuring an improvement in the score. </p>
 
             <div class="row mt-5">
-                <div class="col-lg-6 d-flex justify-content-end px-5">
+                <div class="col-lg-6 d-flex justify-content-end px-5 image-logo">
                     <img src="assets/img/admin-counselling/private/c11.png" class="" width="40%">
                 </div>
 
-                <div class="col-lg-6 d-flex justify-content-start px-5">
+                <div class="col-lg-6 d-flex justify-content-start px-5 image-logo">
                     <img src="assets/img/admin-counselling/private/c1.png" class="" width="40%">
                 </div>
             </div>

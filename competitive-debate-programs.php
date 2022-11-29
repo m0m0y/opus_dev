@@ -96,14 +96,14 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div class="p-5 bg-light">
-                            <h1 class="text-center"><strong>Intensive Public Speaking and Argumentation</strong></h1><br>
+                            <h1 class="text-center fs-1 fw-bold">Intensive Public Speaking and Argumentation</h1><br>
                             <p class="text-left">This course provides a solid foundation for communication in academic and career contexts. Students will learn the foundational elements of crafting outstanding persuasive speeches. Students will select a contemporary topic with a level of controversy and produce public policy and personal advocacy speeches.</p>
                         </div>
                     </div>
                     
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div class="p-5 bg-light">
-                            <h1 class="text-center"><strong>Intensive Public Forum</strong></h1><br>
+                            <h1 class="text-center fs-1 fw-bold">Intensive Public Forum</h1><br>
                             <p class="text-left">Public Forum has rapidly become the most popular format of debate both in the United States and internationally. In a public forum debate round, two teams of two students debate for approximately 45 minutes on a national topic that changes throughout the school year. Students will debate several topics over the course of the year and will prepare for regular tournament competitions.</p>
                         </div>
                     </div>
@@ -212,12 +212,12 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         </div>
 
                         <div class="row d-flex justify-content-center m-3">
-                            <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn w-100">Register Fall 2022</a>
+                            <div class="col-md-6 col-sm-12 px-1">
+                                <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
                             </div>
 
-                            <div class="col-md-6">
-                                <a href="#!" type="button" class="danger-btn w-100">Courses Schedule</a>
+                            <div class="col-md-6 col-sm-12 px-1">
+                                <a href="#!" type="button" class="danger-btn">Courses Schedule</a>
                             </div>
                         </div>
                     </div>
@@ -257,14 +257,14 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div class="p-5 bg-light">
-                            <h1 class="text-center"><strong>Public Forum</strong></h1><br>
+                            <h1 class="text-center fw-bold">Public Forum</h1><br>
                             <p class="text-left">Public Forum has rapidly become the most popular format of debate both in the United States and internationally. In a public forum debate round, two teams of two students debate for approximately 45 minutes on a national topic that changes throughout the school year. Students will debate several topics over the course of the year and will prepare for regular tournament competitions.</p>
                         </div>
                     </div>
                     
                     <div class="col-md-6 d-flex align-items-stretch">
                         <div class="p-5 bg-light">
-                            <h1 class="text-center"><strong>Policy Debate</strong></h1><br>
+                            <h1 class="text-center fw-bold">Policy Debate</h1><br>
                             <p class="text-left">one of the oldest forms of debate competition most common to US high schools and US universities, is also the format favoured for the Harvard Debate Council competitions. In a policy debate round, two teams of two debate for approximately one hour and thirty minutes on an annual national topic related to domesticc and/or international policy.</p>
                         </div>
                     </div>
