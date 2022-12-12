@@ -76,7 +76,7 @@ background-color: #f2f4f8;
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="banner-wrap">
-            <img src="assets/img/index/demowebbanner.jpg" alt="hero-banner">
+            <img src="assets/img/hero/demowebbanner.jpg" alt="hero-banner">
 
             <div class="content">
               <div class="inner">
@@ -95,7 +95,7 @@ background-color: #f2f4f8;
 
         <div class="swiper-slide">
           <div class="banner-wrap">
-            <img src="assets/img/index/mca-banner.jpg" alt="hero-banner">
+            <img src="assets/img/hero/mca-banner.jpg" alt="hero-banner">
 
             <div class="content"><br><br><br>
               <div class="inner">
@@ -111,52 +111,13 @@ background-color: #f2f4f8;
           </div>
 
         </div>
-
-
-        <!-- <?php
-          foreach($homePageHero as $v) {
-            $img = $v["img"];
-            $title = $v["title"];
-            $link_title = $v["link_title"];
-            $link = $v["link"];
-            $status = $v["status"];
-
-            if(!empty($img)) {
-              $image = explode("../", $img);
-              $image_url = $image[1];
-            }
-
-            if($status == 0) {
-              ?>
-
-              <div class="swiper-slide">
-                <div class="banner-wrap">
-                <?= ($image_url != "" ? '<img src="'. $image_url .'" alt="hero-banner">' : '<img src="admin/assets/img/hero-tumbnail.jpg" alt="hero-banner">') ?>
-                  <div class="content">
-                    <div class="inner">
-                      <div class="text-content">
-                        <h3><?= $title ?></h3>
-                        <div class="d-flex align-items-center">
-                            <?= ($link_title == "") ? '' : '<a href="'.$link.'" class="banner-btn">'.$link_title.'</a>' ?>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <?php
-            }
-
-          }
-        ?> -->
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
       <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
     </div>
 
-    <section class ="section-bg mt-5">
+    <section class="partnership-slider section-bg">
       <div class ="text-center mb-5">
         <h4>In Partnership with <b>A Better Way to College </b> to provide <b>ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</b></h4>
       </div>
@@ -278,7 +239,8 @@ background-color: #f2f4f8;
       </div>
    
     </section>
-    <section>
+
+    <section class="p-0">
       <div class="container-fluid secondary-bg p-5 welcome-opus-container-fluid">
         <div class="container my-5 welcome-opus-container">
           <div class="d-flex flex-column justify-content-center">
