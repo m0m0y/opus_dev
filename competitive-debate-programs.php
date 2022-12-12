@@ -6,6 +6,67 @@ require_once "admin/model/model.competitive_debate.php";
 $competitiveDebate = new CompetitiveDebate();
 $competitiveDebateContent = $competitiveDebate->getContent();
 ?>
+<style>
+.slider {
+height: 162PX;
+margin: auto;
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+.slider::before, .slider::after {
+background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+content: "";
+height: 140px;
+position: absolute;
+width: 140px;
+z-index: 2;
+}
+
+.slider::after {
+right: 0;
+top: 0;
+-webkit-transform: rotateZ(180deg);
+transform: rotateZ(180deg);
+}
+.slider::before {
+left: 0;
+top: 0;
+}
+.slider .slide-track {
+-webkit-animation: scroll 40s linear infinite;
+animation: scroll 40s linear infinite;
+display: flex;
+width: calc(250px * 14);
+}
+.slider .slide {
+height: 100px;
+width: 250px;
+}
+.section-bg {
+background-color: #f2f4f8;
+}
+@-webkit-keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+  }
+  @keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+  } 
+</style>
 <main id="main">
     <?php if(isset($_GET["ph"])) { ?>
         <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
@@ -19,6 +80,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
+        <section>
         <div class="container-fluid danger-bg">
             <div class="row">
                 <div class = "col-md-6 p-5 title-size">
@@ -32,6 +94,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 </div>
             </div>
         </div>
+        </section>
 
         <section id="section-container-ph" class="section-container">
             <div class="container">
@@ -175,7 +238,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
     
-    <?php } else { ?> 
+        <?php } if(isset($_GET["canada"])) { ?>
         <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
             <div class="container">
                 <ol>
@@ -187,6 +250,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
+        <section>
         <div class="container-fluid danger-bg">
             <div class="row">
                 <div class = "col-md-6 p-5 title-size">
@@ -200,6 +264,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 </div>
             </div>
         </div>
+        </section>
 
         <section id="section-container-ca" class="section-container">
             <div class="container">
@@ -325,7 +390,195 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </section>
 
-    <?php } ?>
+        <?php } if(isset($_GET["access_mca"])) { ?>
+        <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
+            <div class="container">
+                <ol>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Program</li>
+                    <li>Competitive Debate Programs</li>
+                </ol>
+                <h2>Michigan College Alliance (MCA)</h2>
+            </div>
+        </section>
+
+        <section>
+        <div class="container-fluid danger-bg">
+            <div class="row">
+                <div class = "col-md-6 p-5 title-size">
+                    <h1 class="m-5 px-5 fw-bold">In partnership with<br> A Better Way to College (ABWC), proudly provide Access MICHIGAN COLLEGE ALLIANCE (MCA)</h1>
+                    <h4 class="px-5 my-5  lh-base">Access MCA is a unique program offered by the Michigan College Alliance to US and international students specifically designed to provide a better way for students to approach college admissions. </h4>
+                    <center><a href ="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
+                </div>
+
+                <div class="col-md-6 px-0">
+                    <img src="assets/img/competitive-debate/mca_banner.jpg" class="w-100" alt="bridge-img">
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class ="section-bg">
+      <div class ="text-center mb-5">
+        <h4><b>The Michigan College Alliance is the association of 14 premier Colleges & Universities in Michigan.</b></h4>
+      </div>
+      <div class="slider">
+        <div class="slide-track">
+
+          <div class="slide ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/adrian-college.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+          <div class="slide ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/albion.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/alma-college.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/andrew.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/aquinas.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/calvin.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/detroit.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/hillsdale.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/hope.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/kalamazoo.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/madonna-university.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/olivet.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/sienna-height.png" class="w-100 card-img">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/spring.png" class="w-100 rounded-3 card-img">
+              </div>
+            </div>  
+          </div>
+          
+        </div>
+      </div>
+   
+    </section>
+        <section id="section-container-ca" class="section-container">
+            <div class="container">
+            <h2 class="fw-bold mb-5">Who can take Access MCA programs?</h2>
+                <div class="row">
+                    <div class="col-md-6 pe-5">
+                
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
+                        </div>
+
+                        <div class="row d-flex justify-content-center m-3">
+                            <div class="col-md-6 col-sm-12 px-1">
+                                <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Students as early as Gr 9 can take the MCA Scholars Program. Students at the end of high school or who recently graduated can take the Standard Program which is a full year of college leading to automatic admissions with sophomore status at MCA universities and colleges.</p>
+                        <h4 class="text-left mb-4 fw-bold">What is so special about the Access MCA program?</h4>
+                        <p><b>Head start for your future</b><p>
+                        <p>The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
+                        <li>Real credit for Real courses
+                        Earn college credits taught by MCA faculty in real time.</li>
+                        <li>Gold transfer for Transfer Credit
+                        Students can earn college credits transferrable to any MCA college  or any university  outside of MCA..</li>
+                        <li>Guaranteed Admissions to an MCA University
+                        Earn guaranteed admission to the Michi gan university or college </li>
+
+                        <p>Learn about the TWO programs:</p>
+                        <p><b>1. Access MCA Scholars Program</b></p>
+                        <p><b>2. Standard Program</b></p>  
+
+                        <h4 class="fw-bold mt-4">Certificate Granting For Completion</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <?php }?>
 </main>
 
 <?php require_once "assets/common/footer.php"; ?>

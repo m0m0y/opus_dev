@@ -28,6 +28,7 @@ $cardContent = $card->getContentWhere($page);
         </div>
     </section>
 
+    <section>
     <div class="container-fluid warning-bg">
         <div class="row">
             <div class = "col-md-6 p-5 title-size">
@@ -40,6 +41,7 @@ $cardContent = $card->getContentWhere($page);
             </div>
         </div>
     </div>
+    </section>
 
     <section id="redbird-program" class="redbird-program secondary-bg">
         <div class="container">
