@@ -10,9 +10,9 @@ class db_conn_mysql {
   private $dbname;
   
   protected function db_conn() {
-    $this->servername = "localhost:3324";
+    $this->servername = "localhost";
     $this->username = "root";
-    $this->password = "moy";
+    $this->password = "";
     $this->dbname = "opus";
 
     try {

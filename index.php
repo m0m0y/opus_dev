@@ -9,8 +9,69 @@ $homePageHero = $homePage->getHero();
 $page = "home.php";
 $homeCard = $homePage->getCardsContent($page);
 ?>
-  <main id="main">
+<style>
+  .slider {
+height: 162PX;
+margin: auto;
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+.slider::before, .slider::after {
+background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+content: "";
+height: 140px;
+position: absolute;
+width: 140px;
+z-index: 2;
+}
 
+.slider::after {
+right: 0;
+top: 0;
+-webkit-transform: rotateZ(180deg);
+transform: rotateZ(180deg);
+}
+.slider::before {
+left: 0;
+top: 0;
+}
+.slider .slide-track {
+-webkit-animation: scroll 40s linear infinite;
+animation: scroll 40s linear infinite;
+display: flex;
+width: calc(250px * 14);
+}
+.slider .slide {
+height: 100px;
+width: 250px;
+}
+.section-bg {
+background-color: #f2f4f8;
+}
+@-webkit-keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+  }
+  @keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+  } 
+</style>
+  <main id="main">
+  
     <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -31,6 +92,26 @@ $homeCard = $homePage->getCardsContent($page);
           </div>
 
         </div>
+
+        <div class="swiper-slide">
+          <div class="banner-wrap">
+            <img src="assets/img/index/mca-banner.jpg" alt="hero-banner">
+
+            <div class="content"><br><br><br>
+              <div class="inner">
+                <div class="text-content">
+                  <p class="fs-1 fw-bolder">In Partnership with<br> A Better Way to College </p>
+                  <p class="fs-3 fw-light">to provide ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#!" class="banner-btn btn-sm text-decoration-none">Register Today</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
 
         <!-- <?php
           foreach($homePageHero as $v) {
@@ -75,23 +156,147 @@ $homeCard = $homePage->getCardsContent($page);
       <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
     </div>
 
-    <div class="container-fluid secondary-bg p-5 welcome-opus-container-fluid">
-      <div class="container my-5 welcome-opus-container">
-        <div class="d-flex flex-column justify-content-center">
-          <div class="row m-5">
-            <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: cover;"></div>
+    <section class ="section-bg mt-5">
+      <div class ="text-center mb-5">
+        <h4>In Partnership with <b>A Better Way to College </b> to provide <b>ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</b></h4>
+      </div>
+      <div class="slider">
+        <div class="slide-track">
 
-            <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
-              <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
-              <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
-              <div class="d-flex justify-content-left mt-5">
-                <a href="#!" type="button" class="primary-btn w-100">Our Story</a>
+          <div class="slide ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/adrian-college.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+          <div class="slide ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/albion.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/alma-college.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/andrew.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/aquinas.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/calvin.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/detroit.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/hillsdale.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/hope.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/kalamazoo.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/madonna-university.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/olivet.png" class="w-100 card-img ">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/sienna-height.png" class="w-100 card-img">
+              </div>
+            </div>  
+          </div>
+
+          <div class="slide  ms-5">
+            <div class ="shadow bg-body rounded card">
+              <div class ="card-body">
+                <img src="assets/img/amichigan/spring.png" class="w-100 card-img">
+              </div>
+            </div>  
+          </div>
+          
+        </div>
+      </div>
+   
+    </section>
+    <section>
+      <div class="container-fluid secondary-bg p-5 welcome-opus-container-fluid">
+        <div class="container my-5 welcome-opus-container">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="row m-5">
+              <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/index/opusrecital.png') center center no-repeat; background-size: cover;"></div>
+
+              <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                <h4 class="mb-4 fs-1 fw-bold">Welcome to Opus Academy!</h4>
+                <p>At Opus Academy, we pride ourselves on the academic and personal success of our students. Our highly trained team of experts work towards empowering young minds to reach their potential while providing them with the knowledge and tools necessary to meet their goals.</p>
+                <div class="d-flex justify-content-left mt-5">
+                  <a href="#!" type="button" class="primary-btn w-100">Our Story</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section id="what-we-offer" class="what-we-offer">
       <div class="container text-center px-5">
