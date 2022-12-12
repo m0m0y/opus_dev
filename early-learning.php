@@ -103,15 +103,15 @@ $cardContent = $card->getContentWhere($page);
             <div class="row">
                 <div class="col-md-6 exam-early-learn-content">
                     <div class="mb-5 m-5 text-left">
-                            <h4 class="mb-4 fs-1 fw-bold">Why exams for early learning?</h4>
-                        
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
-                            <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
+                        <h4 class="mb-4 fs-1 fw-bold">Why exams for early learning?</h4>
+
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
+                        <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
                     </div>
                 </div>
 

@@ -44,7 +44,7 @@ $summerCamps = $summerCamps->getContent();
                             <h4 class="mb-4 fs-1 fw-bold">Summer Camp Registration</h4>
                             <p>We have a variety of summer camps available. See our schedule and register below.</p>
 
-                            <p class="fs-5 fw-bold mt-3">
+                            <p class="fs-5 fw-bold">
                                 Summer 2022 Registration: Closed<br>
                                 Summer 2023 Registration: TBA
                             </p>
@@ -129,8 +129,8 @@ $summerCamps = $summerCamps->getContent();
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center my-5">
-                    <a href="#!" type="button" class="primary-btn">Learn More</a>
+                <div class="d-flex justify-content-center my-5 summercamps-learnmore-container">
+                    <a href="#!" type="button" class="primary-btn summercamps-learnmore">Learn More</a>
                 </div>
             </div>
         </section>
@@ -141,7 +141,7 @@ $summerCamps = $summerCamps->getContent();
                     <div class="row">
                         <div class="col-xl-12">
                             <p class="fs-1 fw-bold text-center" style="color: white;">Opus can help your child nurture a lifelong love of learning.</p>
-                            <center><a href="#!" type="button" class="light-btn">Register for Summer 2022</a></center>
+                            <center><a href="#!" type="button" class="light-btn mt-3">Register for Summer 2022</a></center>
                         </div>
                     </div>
                 </div>

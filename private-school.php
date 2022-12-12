@@ -68,7 +68,7 @@ require_once "assets/common/header.php";
                     <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
-                    <p class="mb-5 fw-bold text-center">SSAT and ISEE Test Prep</p>
+                    <p class="mb-5 fw-bold text-center">SSAT and ISEE Test Preperation</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-wrap justify-content-center align-content-start">
@@ -87,7 +87,7 @@ require_once "assets/common/header.php";
             </div>
 
             <div class="d-flex justify-content-center mt-5">
-                <a href="testimonials.php" type="button" class="light-btn mb-5">Learn More</a>
+                <a href="testimonials.php" type="button" class="light-btn mb-5 our-counselling-btn">Learn More</a>
             </div>
         </div>
     </section>
@@ -115,7 +115,7 @@ require_once "assets/common/header.php";
     </section>
 
     <section id="reaching-goals" class="reaching-goals py-0">
-        <div class ="container-fluid">
+        <div class="container-fluid reaching-goal-container">
             <div class="row">
                 <div class="col-md-6 reaching-goal-content">
                     <div class="m-5 text-left">
@@ -151,14 +151,14 @@ require_once "assets/common/header.php";
             </div>
         </div>
     </section>
-    
+
     <section id="" class="primary-bg">
         <div class="container">
-            <div class="p-5">  
+            <div class="p-3">
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="fs-1 fw-bold text-center" style="color: white;">The Opus Way: Finding the Best Fit. Present the Best You. Interview With Confidence. Exam Power. Lifelong Impact.</p>
-                        <center><a href="#!" type="button" class="light-btn mt-5">Book An Inquiry</a></center>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book An Inquiry</a></center>
                     </div>
                 </div>
             </div>

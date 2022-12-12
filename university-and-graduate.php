@@ -49,60 +49,60 @@ require_once "assets/common/header.php";
 
             <div class="row d-flex align-items-stretch justify-content-between">
                 <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/mission.png" class="w-100 p-4" alt="mountain">
                     </div>
                     <p class="mb-4 fw-bold text-center">Regular meetings with our counsellors.</p>
 
-                    <div class="mt-4 circle-container w-75">
+                    <div class="mt-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/presentation.png" class="w-100 p-4" alt="presentation">
                     </div>
                     <p class="mt-4 fw-bold text-center">Competitions, Projects & Internships</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/presentation.png" class="w-100 p-4" alt="presentation">
                     </div>
                     <p class="mb-4 fw-bold text-center">Finding the right schools & Goals.</p><br>
 
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/creativity.png" class="w-100 p-4" alt="creativity">
                     </div>
                     <p class="mb-4 fw-bold text-center">Portfolio Prep for Art, Music & Drama</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
                     <p class="mb-4 fw-bold text-center">Test Preparation SAT, ACT, TOEFL, IELTS</p><br>
 
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/talk.png" class="w-100 p-4" alt="talk">
                     </div>
                     <p class="mb-4 fw-bold text-center">Interview Skills</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/graduated.png" class="w-100 p-4" alt="graduated">
                     </div>
                     <p class="mb-4 fw-bold text-center">Academic Subject Tutoring</p>
                 
-                    <div class="mt-4 circle-container w-75">
+                    <div class="mt-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/family.png" class="w-100 p-4" alt="family">
                     </div>
                     <p class="mt-4 fw-bold text-center">Deferral & Wait list Consultation</p>
                 </div>
 
                 <div class="col-md-2 d-flex flex-column align-items-center align-content-start">
-                    <div class="mb-4 circle-container w-75">
+                    <div class="mb-4 circle-container">
                         <img src="assets/img/admin-counselling/icons/test.png" class="w-100 p-4" alt="test">
                     </div>
                     <p class="mb-2 fw-bold text-center">Advanced Placement and International Baccalaureate Test</p>
 
-                    <div class="mt-3 circle-container w-75">
+                    <div class="mt-3 circle-container">
                         <img src="assets/img/admin-counselling/icons/talk.png" class="w-100 p-4" alt="talk">
                     </div>
                     <p class="mt-3 fw-bold text-center">Transfer Students Admissions</p>
@@ -110,7 +110,7 @@ require_once "assets/common/header.php";
             </div>
                     
             <div class="d-flex justify-content-center mt-5">
-                <a href="testimonials.php" type="button" class="light-btn mb-2">Learn More</a>
+                <a href="testimonials.php" type="button" class="light-btn mb-2 our-counselling-btn">Learn More</a>
             </div>
         </div>
     </section>
@@ -128,25 +128,25 @@ require_once "assets/common/header.php";
                 </div>
 
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="assets/img/admin-counselling/university/talk.jpg" class="w-100" alt="interview">
+                    <img src="assets/img/admin-counselling/university/talk.jpg" class="w-100 interview-img" alt="interview">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="universty-counselling" class="university-graduates">
+    <section id="university-graduates" class="university-graduates">
         <div class="container">
-            <div class="row m-5">
-                <div class="col-md-6 d-flex align-items-stretch">
-                    <div class="p-5 bg-light">
-                        <h1 class="text-center fw-bold">Interview with Confidence</h1>
+            <div class="row align-items-stretch">
+                <div class="col-md-6 d-flex interview-confidence-con">
+                    <div class="p-5 bg-light box">
+                        <h1 class="text-center fs-1 fw-bold">Interview with Confidence</h1><br>
                         <p class="text-left">Some universities require face-to-face interviews with the applicants. These are high-stakes, nerve-wracking situations, but with preparation, this is where students can make themselves shine. Our interview coaches give insight into interview processes and prepare students so there are no surprises. Each school has something unique they are looking for in prospective students, so we ensure every applicant walks into interview prepared.</p>
                     </div>
                 </div>
                 
-                <div class="col-md-6 d-flex align-items-stretch">
-                    <div class="p-5 bg-light">
-                        <h1 class="text-center fw-bold">Present the Best You</h1>
+                <div class="col-md-6 d-flex present-best-con">
+                    <div class="p-5 bg-light box">
+                        <h1 class="text-center fs-1 fw-bold">Present the Best You</h1><br>
                         <p class="text-left mt-5">Often the best way to stand out to admissions is through the creativity of an individual. Our counsellors help create a plan for applicants to showcase their individual talents, as well as brainstorm and review essays and personal statements produced by the applicant. Our goal is to help the student craft a unique and compelling story told through each section of their application.</p>
                     </div>
                 </div>
@@ -176,48 +176,51 @@ require_once "assets/common/header.php";
             <p class = "lh-base" >We offer standardized test preparation for exams including the<b> Scholastic Aptitude Test (SAT), American College Testing (ACT), International English Language Testing System (IELTS), and Test of English as a Foreign Language (TOEFL). </b> We tailor the curriculum to the strengths and weaknesses of the individual student, making sure to cover all possible content and ensuring an improvement in the score.</p1>
             
             <div class="row">
-                <div class="col-md-6 d-flex justify-content-end mt-2">
-                    <img src="assets/img/admin-counselling/university/c2.png" class ="w-25 mb-5">
+                <div class="col-md-6 d-flex justify-content-end mt-2 img-con">
+                    <img src="assets/img/admin-counselling/university/c2.png" class="w-25 mb-5 sat-img">
                 </div>
                 
-                <div class="col-md-6 d-flex justify-content-start mt-2">
-                    <img src="assets/img/admin-counselling/university/c3.png" class ="w-25 mt-5">
+                <div class="col-md-6 d-flex justify-content-start mt-2 img-con">
+                    <img src="assets/img/admin-counselling/university/c3.png" class="w-25 mt-5 ielts-img">
                 </div>
         
-                <div class="col-md-6 d-flex justify-content-end mt-2">
-                    <img src="assets/img/admin-counselling/university/c22.png" class ="w-25 mb-5">
+                <div class="col-md-6 d-flex justify-content-end mt-2 img-con">
+                    <img src="assets/img/admin-counselling/university/c22.png" class="w-25 mb-5 act-img">
                 </div>
 
-                <div class="col-md-6 d-flex justify-content-start mt-2">
-                    <img src="assets/img/admin-counselling/university/c33.png" class ="w-25 mb-5">
+                <div class="col-md-6 d-flex justify-content-start mt-2 img-con">
+                    <img src="assets/img/admin-counselling/university/c33.png" class="w-25 mb-5 toefl-img">
                 </div>
             </div>
             <center><a href="#!" type="button" class="primary-btn">Learn About Test Preparation</a></center>
         </div>
     </section>
 
-    <section>
-        <div class="container mt-5">
+    <section class="section-container">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <img src = "assets/img/admin-counselling/university/friends.jpg" class ="w-100">
-                </div>
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="row m-5">
+                        <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/admin-counselling/university/friends.jpg') center center no-repeat; background-size: cover;"></div>
 
-                <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
-                    <h4 class="mb-4 fs-1 fw-bold">Graduate School Admissions Counselling</h4>
-                    <p>Opus Academy can help guide graduate school applicants through the arduous task of compiling their candidacy portfolios. We provide excellent resources and access to instructors and counsellors who have years of expertise in numerous fields of study. We will guide you down the path of how best to increase test scores, publish articles, enhance work experience, and improve personal statements and application essays</p>
-                    <p>We provide Admissions Counselling for the following:</p>
+                        <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                            <h4 class="mb-4 fs-1 fw-bold">Graduate School Admissions Counselling</h4>
+                            <p>Opus Academy can help guide graduate school applicants through the arduous task of compiling their candidacy portfolios. We provide excellent resources and access to instructors and counsellors who have years of expertise in numerous fields of study. We will guide you down the path of how best to increase test scores, publish articles, enhance work experience, and improve personal statements and application essays</p>
 
-                    <ul class ="lh-lg">
-                        <li>Graduate School</li>
-                        <li>Law School Admissions </li>
-                        <li>Business School Admissions </li>
-                        <li>Medical School Admissions</li>
-                        <li>Dental School Admissions </li>
-                    </ul>
-                    
-                    <div class="d-flex justify-content-left mt-5">
-                        <a href="#!" type="button" class="primary-btn w-100">Learn More</a>
+                            <p>We provide Admissions Counselling for the following:</p>
+
+                            <ul class ="lh-lg list-of-schools">
+                                <li>Graduate School</li>
+                                <li>Law School Admissions </li>
+                                <li>Business School Admissions </li>
+                                <li>Medical School Admissions</li>
+                                <li>Dental School Admissions </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-start mt-5">
+                                <a href="#!" type="button" class="primary-btn w-100">Learn More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,60 +228,56 @@ require_once "assets/common/header.php";
    </section> 
 
 
-   <section id ="" class="secondary-bg">
+   <section class="reaching-your-goals secondary-bg">
         <div class="container">
             <h1 class="text-center fw-bold mb-5">Reaching Your Goals</h1>
             <p class="text-center mb-5">We are proud to have helped students admitted to the following top U.S. schools over the years:</p>
 
             <div class="row">   
                 <div class="col-sm-4">
-                    <h1 class="text-left fw-bold mb-5">Ivy League</h1>
-                    
-                    <div class="text-left">
-                        <ul class ="lh-lg">
-                            <li>Brown University </li>
-                            <li>Columbia University </li>
-                            <li>Cornell University </li>
-                            <li>Dartmouth College </li>
-                            <li>Harvard University </li>
-                            <li>University of Pennsylvania </li>
-                            <li>Princeton University </li>
-                            <li>Yale University </li>
-                        </ul>
-                    </div>
+                    <h1 class="fw-bold mb-5">Ivy League</h1>
+
+                    <ul class="lh-lg list-of-schools">
+                        <li>Brown University </li>
+                        <li>Columbia University </li>
+                        <li>Cornell University </li>
+                        <li>Dartmouth College </li>
+                        <li>Harvard University </li>
+                        <li>University of Pennsylvania </li>
+                        <li>Princeton University </li>
+                        <li>Yale University </li>
+                    </ul>
                 </div>
 
                 <div class="col-sm-4">
-                    <h1 class="text-left fw-bold mb-5">Other Top Schools</h1>
+                    <h1 class="fw-bold mb-5">Other Top Schools</h1>
 
-                    <div class="text-left">
-                        <ul class ="lh-lg">
-                            <li>Architectural Association - School of Architecture</li>
-                            <li>Babson College</li>
-                            <li>Barnard College</li>
-                            <li>Bentley University</li>
-                            <li>Boston College</li>
-                            <li>Boston University </li>
-                            <li>Brandeis University</li>
-                            <li>Colgate University</li>
-                            <li>Duke University </li>
-                            <li>Emerson College </li>
-                            <li>Georgetown University</li> 
-                            <li>Georgia Institute of Technology</li> 
-                            <li>Johns Hopkins University</li>
-                            <li>Middlebury College </li>
-                            <li>New York University </li>
-                            <li>Northwestern University</li>
-                            <li>Parsons School of Design</li>
-                            <li>Pratt Institute</li>
-                            <li>Rice University </li>
-                        </ul>
-                    </div>
+                    <ul class="lh-lg list-of-schools">
+                        <li>Architectural Association - School of Architecture</li>
+                        <li>Babson College</li>
+                        <li>Barnard College</li>
+                        <li>Bentley University</li>
+                        <li>Boston College</li>
+                        <li>Boston University </li>
+                        <li>Brandeis University</li>
+                        <li>Colgate University</li>
+                        <li>Duke University </li>
+                        <li>Emerson College </li>
+                        <li>Georgetown University</li> 
+                        <li>Georgia Institute of Technology</li> 
+                        <li>Johns Hopkins University</li>
+                        <li>Middlebury College </li>
+                        <li>New York University </li>
+                        <li>Northwestern University</li>
+                        <li>Parsons School of Design</li>
+                        <li>Pratt Institute</li>
+                        <li>Rice University </li>
+                    </ul>
                 </div>
 
-                <div class="col-sm-3 my-5">
-                    <div class="text-left mt-5">
-                        <ul class ="lh-lg">
+                <div class="col-sm-4 my-5">
+                    <div class="mt-5">
+                        <ul class ="lh-lg list-of-schools">
                             <li>Royal College of Surgeons</li>
                             <li>Santa Clara University</li>
                             <li>School of the Art Institute of Chicago </li>
@@ -303,17 +302,17 @@ require_once "assets/common/header.php";
         </div>
    </section> 
 
-   <section id="section-container" class="primary-bg">
-      <div class="container">
-        <div class="p-5">
-          <div class="row">
-            <div class="col-xl-12">
-                <p class="fs-1 fw-bold text-center" style="color: white;">The Opus Way: Finding the Best Fit. Present the Best You. Interview With Confidence. Exam Power. Lifelong Impact.</p>
-                <center><a href="#!" type="button" class="light-btn mt-5">Book an inquiry today</a></center>
+    <section id="" class="primary-bg">
+        <div class="container">
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="fs-1 fw-bold text-center" style="color: white;">The Opus Way: Finding the Best Fit. Present the Best You. Interview With Confidence. Exam Power. Lifelong Impact.</p>
+                        <center><a href="#!" type="button" class="light-btn mt-3">Book an inquiry today</a></center>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 </main>
 

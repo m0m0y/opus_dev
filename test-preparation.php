@@ -40,7 +40,7 @@ $testPreparation = $testPreparation->getContent();
                 <h2 class="text-center fw-bold">We help students prepare for a variety of exams</h2>
             </div>
 
-            <div class="row">
+            <div class="row img">
                 <div class="col-md-3 d-flex justify-content-center my-3 p-0">
                     <img src="assets/img/test-prep/c1.png" class="w-50">
                 </div>
@@ -111,7 +111,7 @@ $testPreparation = $testPreparation->getContent();
         </div>
     </section>
 
-    <section>
+    <section class="teaching-method">
         <div class="container">
             <div class="d-flex flex-column justify-content-center">
                 <div class="row m-5">

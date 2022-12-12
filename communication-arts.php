@@ -259,7 +259,7 @@ $ourCourse = $communicationArts->getCourses();
                 <div class="col-md-6 text-content">
                     <p>Time and again, science has proven that strong emotional intelligence in children leads to better decision making, motivation, and a heightened sense of self-awareness going forward in life. This program is especially designed to present a multitude of skills necessary for positive personality development and strengthened emotional intelligence. Students will develop stronger communication skills, organizational goals, and gain essential leadership skills. They will study the essential qualities of a leader and learn conflict resolution skills through understanding social concepts and dynamics. In addition, this program prepares young people to present themselves well in a variety of social situations and at job interviews. The practical side of our courses are designed to increase knowledge and appreciation of good manners and etiquette, improving self-esteem, and respecting others. </p><br>
 
-                    <p class="fw-bold">
+                    <p>
                         Class Size: Private, Group or Pair <br>
                         Formats: Online or In-Centre <br>
                         Grades: 1-10 <br>

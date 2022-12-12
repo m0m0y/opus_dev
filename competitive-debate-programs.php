@@ -93,16 +93,16 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             <div class="container">
                 <h1 class=" m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
 
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-stretch">
-                        <div class="p-5 bg-light">
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 d-flex public-speaking-con">
+                        <div class="p-5 bg-light box">
                             <h1 class="text-center fs-1 fw-bold">Intensive Public Speaking and Argumentation</h1><br>
                             <p class="text-left">This course provides a solid foundation for communication in academic and career contexts. Students will learn the foundational elements of crafting outstanding persuasive speeches. Students will select a contemporary topic with a level of controversy and produce public policy and personal advocacy speeches.</p>
                         </div>
                     </div>
                     
-                    <div class="col-md-6 d-flex align-items-stretch">
-                        <div class="p-5 bg-light">
+                    <div class="col-md-6 d-flex intensive-public-con">
+                        <div class="p-5 bg-light box">
                             <h1 class="text-center fs-1 fw-bold">Intensive Public Forum</h1><br>
                             <p class="text-left">Public Forum has rapidly become the most popular format of debate both in the United States and internationally. In a public forum debate round, two teams of two students debate for approximately 45 minutes on a national topic that changes throughout the school year. Students will debate several topics over the course of the year and will prepare for regular tournament competitions.</p>
                         </div>
@@ -164,7 +164,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="" class="danger-bg">
             <div class="container">
-                <div class="p-5">
+                <div class="p-3">
                     <div class="row">
                     <div class="col-xl-12">
                         <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>
@@ -211,12 +211,12 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                             <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                         </div>
 
-                        <div class="row d-flex justify-content-center m-3">
-                            <div class="col-md-6 col-sm-12 px-1">
+                        <div class="row d-flex justify-content-center m-3 ca-btn-container">
+                            <div class="col-md-6 col-sm-12 px-1 ca-btn-register">
                                 <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
                             </div>
 
-                            <div class="col-md-6 col-sm-12 px-1">
+                            <div class="col-md-6 col-sm-12 px-1 ca-btn-courses">
                                 <a href="#!" type="button" class="danger-btn">Courses Schedule</a>
                             </div>
                         </div>
@@ -254,15 +254,15 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             <div class="container">
                 <h1 class="mb-5 fw-bold text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
 
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-stretch">
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 d-flex public-forum-con">
                         <div class="p-5 bg-light">
                             <h1 class="text-center fw-bold">Public Forum</h1><br>
                             <p class="text-left">Public Forum has rapidly become the most popular format of debate both in the United States and internationally. In a public forum debate round, two teams of two students debate for approximately 45 minutes on a national topic that changes throughout the school year. Students will debate several topics over the course of the year and will prepare for regular tournament competitions.</p>
                         </div>
                     </div>
                     
-                    <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="col-md-6 d-flex policy-debate-con">
                         <div class="p-5 bg-light">
                             <h1 class="text-center fw-bold">Policy Debate</h1><br>
                             <p class="text-left">one of the oldest forms of debate competition most common to US high schools and US universities, is also the format favoured for the Harvard Debate Council competitions. In a policy debate round, two teams of two debate for approximately one hour and thirty minutes on an annual national topic related to domesticc and/or international policy.</p>
@@ -314,7 +314,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
         <section id="" class="primary-bg">
             <div class="container">
-                <div class="p-5">
+                <div class="p-3">
                     <div class="row">
                     <div class="col-xl-12">
                         <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>

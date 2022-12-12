@@ -55,7 +55,7 @@ $cardContent = $card->getContentWhere($page);
                         </p>
 
                         <div class="d-flex justify-content-start">
-                            <a href="https://www.mheducation.com/prek-12/explore/redbird.html" type="button" class="primary-btn mt-4 w-100">Learn More on the Redbird Website</a>
+                            <a href="https://www.mheducation.com/prek-12/explore/redbird.html" type="button" class="primary-btn mt-4 w-100 redbird-learn-more">Learn More on the Redbird Website</a>
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ $classicalMusicContent = $classicalMusic->getContent();
         </div>
     </div>
 
-    <section>
+    <section class="classical-music">
         <div class="container">
             <h2 class="text-center fw-bold">Classical Music Curriculum</h2>
             <h4 class="mt-3 lh-base mb-5">We offer a wide range of classical music through curriculum-based programs, as students can select from the following certifying bodies:</h4>
@@ -93,15 +93,17 @@ $classicalMusicContent = $classicalMusic->getContent();
         </div>
     </section>
     
-    <section id="section-container" class="">
+    <section id="section-container" class="section-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/img/classical-music/piano-1.jpg" class="w-100" alt="Piano">
+                <div class="col-md-6 pe-5">
+                    <div class="d-flex justify-content-start">
+                        <img src="assets/img/classical-music/piano-1.jpg" class="w-100" alt="Piano">
+                    </div>
                 </div>
 
-                <div class="col-md-6 text-content ps-5">
-                    <h2 class="text-left fw-bold ">Private Piano Instruction</h2>
+                <div class="col-md-6 private-piano-con">
+                    <h2 class="text-left fw-bold">Private Piano Instruction</h2>
                     <p>We offer private classes for classical piano instruction, and students can freely choose to obtain diplomas issued by the following conservatories:</p>
 
                     <li> Royal Conservatory of Music (RCM)</li>
@@ -115,21 +117,29 @@ $classicalMusicContent = $classicalMusic->getContent();
                     Ages: All Ages
                     </p>
                     
-                    <div class="row d-flex justify-content-center mb-5">
-                        <div class="col-md-6">
+                    <div class="row d-flex justify-content-center mb-5 btn-container">
+                        <div class="col-md-6 btn-div">
                             <a href="#!" type="button" class="learnmore-btn w-100">Learn More</a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 btn-div">
                             <a href="#!" type="button" class="learnmore-btn w-100">How to Apply</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-md-6 mt-5">
-                    <img src="assets/img/classical-music/piano-2.jpg" class="w-100" alt="Piano">
+        <div class="spacing"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pe-5">
+                    <div class="d-flex justify-content-start">
+                        <img src="assets/img/classical-music/piano-2.jpg" class="w-100" alt="Piano">
+                    </div>
                 </div>
 
-                <div class="col-md-6 text-content ps-5 mt-5">
+                <div class="col-md-6 music-theory-con">
                     <h2 class="text-left fw-bold">Music Theory</h2>
                     <p>We offer a complete range of theory classes at the Basic and Advanced levels to meet the exam requirements of Royal Conservatory of Music, Trinity College of London, London College of Music and ABRSM Diploma programs. </p><br>
 
@@ -166,7 +176,7 @@ $classicalMusicContent = $classicalMusic->getContent();
             
             <div class="d-flex justify-content-center certificate-container">
                 <div class="row">
-                    <div class="col-sm-4 col-sm-12 ">
+                    <div class="col-sm-4 col-sm-12">
                         <img src="assets/img/classical-music/AP_logoo.png" class="w-100 ap-img mb-4">
                     </div>
                 </div>
@@ -181,35 +191,34 @@ $classicalMusicContent = $classicalMusic->getContent();
             <h1 class="m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
 
             <div class="row align-items-stretch">
-                <div class="col-md-4 d-flex">
-                    <div class="p-5 bg-light d-flex flex-column align-content-center box">
-                        <h1 class="text-center"><strong>Master Classes</strong></h1><br>
+                <div class="col-md-4 d-flex master-class-con">
+                    <div class="p-5 bg-light box">
+                        <h1 class="text-center fs-1 fw-bold">Master Classes</h1><br>
                         <p class="text-left">Students can join Master Classes which will provide helpful evaluation leading to increased confidence and heightened musical learning experiences. Master Class students can join our annual grand recitals and other performance venues. </p>
                     </div>
                 </div>
                 
-                <div class="col-md-4 d-flex">
-                    <div class="p-5 bg-light d-flex flex-column align-content-center box">
-                        <h1 class="text-center"><strong>Music Festivals & Competitions</strong></h1><br>
-                        <p class="text-left">For a full musical learning experience, students may also participate in various local, national, or international festivals and competitions, such as Kiwanis Music Festival, Vancouver Music Festival, Student Performers Guild, Canadian Music Competition, and many more. </p>
+                <div class="col-md-4 d-flex music-competitions-con">
+                    <div class="p-5 bg-light box">
+                        <h1 class="text-center fs-1 fw-bold">Music Festivals & Competitions</h1><br>
+                        <p class="text-left">For a full musical learning experience, students may also participate in various local, national, or international festivals and competitions, such as Kiwanis Music Festival, Vancouver Music Festival, Student Performers Guild, Canadian Music Competition, and many more.</p>
                     </div>
                 </div>
 
-                <div class="col-md-4 d-flex">
-                    <div class="p-5 bg-light d-flex flex-column align-content-center box">
-                        <h1 class="text-center"><strong>Workshops</strong></h1><br>
-                        <p class="text-left">Special workshops focus on communication skills, pedagogy skills and learning theory. </p>
+                <div class="col-md-4 d-flex workshops-con">
+                    <div class="p-5 bg-light box">
+                        <h1 class="text-center fs-1 fw-bold">Workshops</h1><br>
+                        <p class="text-left">Special workshops focus on communication skills, pedagogy skills and learning theory.</p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 
-    <section id="" class="classical-music">
+    <section id="" class="how-to-apply">
         <div class="container">
-            <div class ="text-center">
-                <h1 class="fw-bold text-center mb-5">How to Apply the Program</h1>
+            <div class="text-center apply-program">
+                <h1 class="fw-bold mb-5 text-center">How to Apply the Program</h1>
                 <p1 class ="text-center mb-5">We welcome students of all ages and all levels to our Classical Music Program.Follow the steps below:<br>If you have any questions regardign the applications process, please contact <strong>service@opusacademy.com</strong></p1>
             </div>
 
@@ -223,9 +232,8 @@ $classicalMusicContent = $classicalMusic->getContent();
                 <div class="col-md-4">
                     <div><p class="mb-4 fs-1 fw-bold circle-container">2</p></div>
                     <p class="mb-4 fs-5 fw-bold">Interview & Audition</p>
-                    <p>Applicants are requested to play pieces of different styles, and to demonstrate sight reading skills and technique.<br><br></p>
-            
-                    <a href="#!" type="button" class="primary-btn mt-5">Book an Appointment</a>
+                    <p>Applicants are requested to play pieces of different styles, and to demonstrate sight reading skills and technique.</p>
+                    <a href="#!" type="button" class="primary-btn mb-2">Book an Appointment</a>
                 </div>
 
                 <div class="col-md-4">
@@ -238,18 +246,18 @@ $classicalMusicContent = $classicalMusic->getContent();
     </section>
 
     <!-- <section class="secondary-bg"> -->
-        <div class="container-fluid secondary-bg">
-            <div class="mx-auto">
+        <div class="container-fluid secondary-bg our-expert-teacher">
+            <div class="our-expert-content">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4 d-flex flex-column justify-content-center">
                         <h1 class="px-5 fw-5 text-left fw-bold">Our Expert teacher</h1>
                         <h5 class="px-5 my-3 lh-base">Our highly qualified and experienced teachers are committed to students' musical and artistic growth—motivating, encouraging, and inspiring young musicians to realize their dreams and reach their full potential. Each one of our teachers are highly trained experts with extensive musical background and specialization. </h5>
                         
-                        <a href="#!" type="button" class="light-btn mx-5">Read our Testimonial</a>
+                        <a href="#!" type="button" class="light-btn mx-5 read-testimonials-btn">Read our Testimonial</a>
                     </div> 
 
                     <div class="col-md-4">
-                        <img src = "assets/img/classical-music/alexx.jpg" class= "w-100" alt="alex">
+                        <img src = "assets/img/classical-music/alexx.jpg" class= "w-100 alex-img" alt="alex">
                     </div>
                 </div>
             </div>
