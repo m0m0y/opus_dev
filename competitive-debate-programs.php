@@ -46,6 +46,13 @@ width: 250px;
 .section-bg {
 background-color: #f2f4f8;
 }
+.fa-solid{
+    color: #06bcc1;
+}
+.fa-regular{
+    color: #06bcc1;
+}
+
 @-webkit-keyframes scroll {
   0% {
   -webkit-transform: translateX(0);
@@ -539,45 +546,103 @@ background-color: #f2f4f8;
       </div>
    
     </section>
-        <section id="section-container-ca" class="section-container">
+
+    <section id="section-container-ca" class="section-container">
             <div class="container">
             <h2 class="fw-bold mb-5">Who can take Access MCA programs?</h2>
                 <div class="row">
                     <div class="col-md-6 pe-5">
-                
                         <div class="d-flex justify-content-center">
                             <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
                         </div>
+                        <div class="col-sm-12 mt-3 ca-btn-courses">
+                                <a href="#" type="button" data-bs-toggle="collapse" data-bs-target="#accessMCA" aria-expanded="false" aria-controls="collapseExample" class="w-100 danger-btn">Access MCA Scholars Program</a>
+                            <div class="collapse" id="accessMCA">
+                            <a href="https://www.abetterwaytocollege.com/application" class="card-link">
+                                <div class="card shadow card-body">
+                                    <h2 class="text-secondary mb-4 fw-bold">Access MCA Scholars Program</h2>
+                                    <p class ="text-secondary fw-lighter">By taking one course each term in Grades 10, 11, and 12 students can guarantee admission to an MCA university or college.</p>
+                                    <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
+                                    <hr class="m-3 mb-2 mt-0"></hr>
+                                    <div class=" ms-3 text-secondary fw-bold">
+                                        <p><span class="fa-solid fa-circle me-3"></span>Application Open Year Round</p>
+                                        <p><span class="fa-solid fa-circle me-3"></span>Courses Start in September, January, and Summer</p>
+                                        <p><span class="fa-solid fa-circle me-3"></span>Summer Residential Options Available</p>
+                                    </div>
+                                    <div class="text-secondary fw-bold ms-5">
+                                        <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
+                                        <p><span class="fa-regular fa-circle me-3"></span>Gain Laboratory and Research  Experience</p>
+                                        <p><span class="fa-regular fa-circle me-3"></span>Summer Residential Options Available</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="row d-flex justify-content-center m-3">
-                            <div class="col-md-6 col-sm-12 px-1">
-                                <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
+                    <div class="col-md-6">
+                        <p>Students as early as Gr 9 can take the MCA Scholars Program. Students at the end of high school or who recently graduated can take the Standard Program which is a full year of college leading to automatic admissions with sophomore status at MCA universities and colleges.</p>
+                        <h4 class="text-left mb-4 fw-bold">What is so special about the Access MCA program?</h4>
+                        <p class ="fw-bold">Head start for your future<p>
+                        <p class ="ms-2">The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
+                        <p class ="fw-bold">Real credit for Real courses</p>
+                        <p class ="ms-2">Earn college credits taught by MCA faculty in real time.</p>
+                        <p class ="fw-bold">Gold transfer for Transfer Credit</p>
+                        <p class ="ms-2"> can earn college credits transferrable to any MCA college  or any university  outside of MCA..</p>
+                        <p class ="fw-bold">Guaranteed Admissions to an MCA University</p>
+                        <p class ="ms-2">Earn guaranteed admission to the Michi gan university or college </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <section id="section-container-ca" class="section-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 pe-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/amichigan/sophomores.jpg" alt="harvard" class="w-100">
+                        </div>
+
+                        <div class="col-sm-12 mt-3 ca-btn-courses">
+                                <a href="#" type="button" data-bs-toggle="collapse" data-bs-target="#standardProgram" aria-expanded="false" aria-controls="collapseExample" class="w-100 danger-btn">Standard Program</a>
+                                <div class="collapse" id="standardProgram">
+                                <a href="https://www.abetterwaytocollege.com/application" class="card-link">
+                                <div class="card shadow card-body">
+                                    <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
+                                    <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.<p> 
+                                    <hr class="m-3 mb-2 mt-0"></hr>
+                                    <div class=" ms-3 text-secondary fw-bold">
+                                        <p><span class="fa-solid fa-circle me-3"></span>Summer - Orientation (Residential or Online)</p>
+                                        <p><span class="fa-solid fa-circle me-3"></span>Fall - Online semester(4 courses + advisory)</p>
+                                        <p><span class="fa-solid fa-circle me-3"></span>Spring - Online semester (4 +courses + advisory)</p>
+                                        <p><span class="fa-solid fa-circle me-3"></span>Summer - Residential<p>
+                                    </div>
+                                    <div class="text-secondary fw-bold ms-5">
+                                        <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
+                                        <p><span class="fa-regular fa-circle me-3"></span>Co-op or Internship (optional)</p>
+                                        <p><span class="fa-regular fa-circle me-3"></span>Orientation for Sophomore year</p>
+                                    </div>
+                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <p>Students as early as Gr 9 can take the MCA Scholars Program. Students at the end of high school or who recently graduated can take the Standard Program which is a full year of college leading to automatic admissions with sophomore status at MCA universities and colleges.</p>
-                        <h4 class="text-left mb-4 fw-bold">What is so special about the Access MCA program?</h4>
-                        <p><b>Head start for your future</b><p>
-                        <p>The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
-                        <li>Real credit for Real courses
-                        Earn college credits taught by MCA faculty in real time.</li>
-                        <li>Gold transfer for Transfer Credit
-                        Students can earn college credits transferrable to any MCA college  or any university  outside of MCA..</li>
-                        <li>Guaranteed Admissions to an MCA University
-                        Earn guaranteed admission to the Michi gan university or college </li>
-
-                        <p>Learn about the TWO programs:</p>
-                        <p><b>1. Access MCA Scholars Program</b></p>
-                        <p><b>2. Standard Program</b></p>  
-
-                        <h4 class="fw-bold mt-4">Certificate Granting For Completion</h4>
+                        <h4 class="fw-bold mb-4">The Standard Program equals the first year of college and prepares students to start as sophomores.</h4>
+                        <p class ="fw-bold"> Admission to an MCA University or College</p>
+                        <p class ="ms-2">-Avoid the Admission queue</p>
+                        <p class ="ms-2">-NO SAT or ACT required</p>
+                        <p class ="ms-2">-Accelerated decision timeline</p>
+                        <p class ="">Students complete a year of university courses in their own country and then are granted automatic admission with transfer of all their credits to the university or college that is their best fit. </p>
+                        
                     </div>
                 </div>
             </div>
         </section>
-        
+    
     <?php }?>
 </main>
 

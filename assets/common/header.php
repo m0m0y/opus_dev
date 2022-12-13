@@ -33,8 +33,9 @@ if ($page == "") {
 	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3096b4ed49.js" crossorigin="anonymous"></script>
 
     <script src="assets/vendor/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="assets/vendor/dist/sweetalert2.min.css">
