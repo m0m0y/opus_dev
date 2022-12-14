@@ -7,7 +7,6 @@ $competitiveDebate = new CompetitiveDebate();
 $competitiveDebateContent = $competitiveDebate->getContent();
 ?>
 
-
 <main id="main">
 <?php if(isset($_GET["ph"])) { ?>
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
