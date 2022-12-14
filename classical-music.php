@@ -250,7 +250,7 @@ $classicalMusicContent = $classicalMusic->getContent();
             <div class="our-expert-content">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4 d-flex flex-column justify-content-center">
-                        <h1 class="px-5 fw-5 text-left fw-bold">Our Expert teacher</h1>
+                        <h1 class="px-5 fw-5 text-left fw-bold">Our Expert Teachers</h1>
                         <h5 class="px-5 my-3 lh-base">Our highly qualified and experienced teachers are committed to students' musical and artistic growth—motivating, encouraging, and inspiring young musicians to realize their dreams and reach their full potential. Each one of our teachers are highly trained experts with extensive musical background and specialization. </h5>
                         
                         <a href="#!" type="button" class="light-btn mx-5 read-testimonials-btn">Read our Testimonial</a>
