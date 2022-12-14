@@ -109,7 +109,7 @@ $classicalMusicContent = $classicalMusic->getContent();
                     <li> Royal Conservatory of Music (RCM)</li>
                     <li> Associated Board of the Royal Schools of Music (ABRSM)</li>
                     <li> Trinity College of London (TCL)</li>
-                    <li>London College of Music (LCM)</li><br>
+                    <li> London College of Music (LCM)</li><br>
 
                     <p>Requirements: Application for enrollment interview and audition<br>
                     Class Size: Private<br>
@@ -186,7 +186,7 @@ $classicalMusicContent = $classicalMusic->getContent();
         </div>
      </section>
 
-     <section class="us-debate-style-bg">
+     <section class="we-teach-us-debate">
         <div class="container">
             <h1 class="m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
 

@@ -196,13 +196,13 @@ $ourCourse = $communicationArts->getCourses();
                     <div class="mb-5 m-5 text-left">
                         <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
 
-                        <ul>
-                            <li>Structured and sequential Learning.</li>
-                            <li>Certificate and diploma granting.</li>
-                            <li>Stand out in Private school & US UK University <br>admissions.</li>
-                            <li>Competition and award opportunities.</li>
-                            <li>Earn credentials and BC arts course credits</li>
-                        </ul>
+                        <li>Structured and sequential Learning.</li>
+                        <li>Certificate and diploma granting.</li>
+                        <li>Stand out in Private school & US UK University <br>admissions.</li>
+                        <li>Competition and award opportunities.</li>
+                        <li>Earn credentials and BC arts course credits</li> 
+
+                        <br>
 
                         <a href="#!" type="button" class="light-btn w-100">Our Achievement</a>
                     </div>

@@ -126,7 +126,16 @@ $teamList = $historyAndTeams->getTeamList();
                 <div class="icon-boxes d-flex flex-column justify-content-center">
                     <div class="row">
 
-                        <?php 
+                        <div class="col-xl-6 d-flex align-items-stretch">
+                            <div class="icon-box mt-4 mt-xl-0">
+
+                                <h3 class="title"><?= $name ?></h3>
+                                <?= html_entity_decode($introduction) ?>
+
+                            </div>
+                        </div>
+
+                        <!-- <?php 
                         foreach($teamList as $v) {
                             $img = $v["img"];
                             $name = $v["name"];
@@ -171,7 +180,7 @@ $teamList = $historyAndTeams->getTeamList();
                                 }
                             }
                         }
-                        ?>
+                        ?> -->
 
                     </div>
                </div>

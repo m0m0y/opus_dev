@@ -536,68 +536,6 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.slider {
-  height: 162PX;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 140px;
-  position: absolute;
-  width: 140px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  height: 100px;
-  width: 250px;
-}
-.section-bg {
-  background-color: #f2f4f8;
-}
-
-@-webkit-keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(calc(-250px * 7));
-      transform: translateX(calc(-250px * 7));
-    }
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-    transform: translateX(calc(-250px * 7));
-  }
-}
-
-
 .breadcrumbs {
   background: #f4f2f2;
 }
@@ -823,6 +761,65 @@ section {
     opacity: 0;
   }
 }
+
+.slider {
+  height: 162PX;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 140px;
+  position: absolute;
+  width: 140px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
 
 .testimonials {
   padding: 80px 0;
@@ -1158,7 +1155,7 @@ section {
 /*--------------------------------------------------------------
 # Classical Music Program
 --------------------------------------------------------------*/
-.us-debate-style-bg {
+.we-teach-us-debate {
   background: url("../img/classical-music/piano-bg.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -1170,7 +1167,7 @@ section {
   width: 25%;
   padding: 5%;
 }
-.us-debate-style-bg .box {
+.we-teach-us-debate .box {
   box-shadow: 0px 2px 15px rgb(0 0 0 / 25%);
 }
 
@@ -1837,11 +1834,11 @@ MEDIA SCREEN
   .teach-us-debate-ph, .application-process, 
   .redbird-program, .use-redbird, .why-it-works, 
   .we-help-students, .teaching-method, 
-  .classical-music, .how-to-apply, .us-debate-style-bg, .our-expert-teacher,
+  .classical-music, .how-to-apply, .we-teach-us-debate, .our-expert-teacher,
   .reaching-goals, .our-counselling-services,
   .entrance-exams, .knowledge-admission,
   .university-graduates, .life-long-impact, .your-exams-content,
-  .reaching-your-goals, .summer-camp-registration, .team {
+  .reaching-your-goals, .summer-camp-registration, .team, .partnership-slider {
     padding: 25px 0% !important;
   }
   .why-take-exam-content, .why-us-content, .exam-early-learn-content {
@@ -1913,6 +1910,19 @@ MEDIA SCREEN
     font-size: 20px !important;
     margin-bottom: 0 !important;
   }
+  .slider::before, .slider::after {
+    background: none;
+  }
+  .slider .slide-track {
+    width: calc(200px * 15);
+  }
+  .partnership-slider h4.slider-title {
+    font-weight: 500 !important;
+    font-size: 17px;
+    padding: 0px 5%;
+    margin: 0px;
+  }
+  
 
 
 
@@ -2025,7 +2035,6 @@ MEDIA SCREEN
   }
 
 
-
   .redbird-program .mcgrawhill-img {
     height: 255px;
   }
@@ -2079,11 +2088,14 @@ MEDIA SCREEN
     padding: 0;
     margin-bottom: 10px;
   }
-  .us-debate-style-bg .master-class-con,
-  .us-debate-style-bg .music-competitions-con,
-  .us-debate-style-bg .workshops-con {
+  .we-teach-us-debate .master-class-con,
+  .we-teach-us-debate .music-competitions-con,
+  .we-teach-us-debate .workshops-con {
     padding: 0 !important;
     margin-bottom: 20px;
+  }
+  .we-teach-us-debate .bg-light {
+    padding: 11% !important;
   }
   .how-to-apply .apply-program {
     margin-bottom: 50px;
@@ -2138,6 +2150,9 @@ MEDIA SCREEN
   .entrance-exams .image-logo img {
     width: 50% !important;
     margin-bottom: 0px !important;
+  }
+  .reaching-goals-li {
+    padding: 0px !important;
   }
 
 

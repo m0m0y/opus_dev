@@ -58,8 +58,9 @@ $homeCard = $homePage->getCardsContent($page);
 
   <section class="partnership-slider section-bg">
     <div class ="text-center mb-5">
-      <h4>In Partnership with <b>A Better Way to College </b> to provide <b>ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</b></h4>
+      <h4 class="slider-title">In Partnership with <b>A Better Way to College </b> to provide <b>ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</b></h4>
     </div>
+    
     <div class="slider">
       <div class="slide-track">
 

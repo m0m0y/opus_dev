@@ -44,7 +44,7 @@ require_once "assets/common/header.php";
 
     <section id="our-counselling-services" class="our-counselling-services primary-bg">
         <div class="container">
-            <h1 class="fw-bold mb-5 mt-5 text-center">Our Counselling Services Include</h1>
+            <h1 class="fw-bold mb-5 text-center">Our Counselling Services Include</h1>
             <p class="text-center">We offer various comprehensive planning packages for students, providing your child with individualized attention and the guidance to help them make the best decision. We assist with the following critical components to presenting a successful candidate to your chosen university:</p>
 
             <div class="row d-flex align-items-stretch justify-content-between">
@@ -172,7 +172,7 @@ require_once "assets/common/header.php";
 
     <section id="your-exams-content" class="your-exams-content secondary-bg">
         <div class="container">
-            <h1 class="text-center fw-bold mt-5 mb-5">We can Help You Prepare  for Your Exams.</h1>
+            <h1 class="text-center fw-bold mb-5">We can Help You Prepare  for Your Exams.</h1>
             <p class = "lh-base" >We offer standardized test preparation for exams including the<b> Scholastic Aptitude Test (SAT), American College Testing (ACT), International English Language Testing System (IELTS), and Test of English as a Foreign Language (TOEFL). </b> We tailor the curriculum to the strengths and weaknesses of the individual student, making sure to cover all possible content and ensuring an improvement in the score.</p1>
             
             <div class="row">
@@ -209,13 +209,14 @@ require_once "assets/common/header.php";
 
                             <p>We provide Admissions Counselling for the following:</p>
 
-                            <ul class ="lh-lg list-of-schools">
-                                <li>Graduate School</li>
-                                <li>Law School Admissions </li>
-                                <li>Business School Admissions </li>
-                                <li>Medical School Admissions</li>
-                                <li>Dental School Admissions </li>
-                            </ul>
+
+                            <li>Graduate School</li>
+                            <li>Law School Admissions </li>
+                            <li>Business School Admissions </li>
+                            <li>Medical School Admissions</li>
+                            <li>Dental School Admissions </li>
+                            
+                            <br>
 
                             <div class="d-flex justify-content-start mt-5">
                                 <a href="#!" type="button" class="primary-btn w-100">Learn More</a>

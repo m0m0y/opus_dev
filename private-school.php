@@ -123,25 +123,21 @@ require_once "assets/common/header.php";
                         <p class="text-left">Since its founding, Opus Academy has provided students with educational counseling services for admissions to private day/boarding schools, in the United States, Canada, Australia, and the United Kingdom. We are proud to have helped numerous students admitted to the following top private and boarding schools over the years:</p>
                     
                         <div class="row mt-5">
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>Crofton House School</li>
-                                    <li>St. George’s School</li>
-                                    <li>West Point Grey Academy</li>
-                                    <li>York House School</li>
-                                    <li>Collingwood School</li>
-                                    <li>Mulgrave School</li>
-                                </ul>
+                            <div class="col-md-6 reaching-goals-li">
+                                <li>Crofton House School</li>
+                                <li>St. George’s School</li>
+                                <li>West Point Grey Academy</li>
+                                <li>York House School</li>
+                                <li>Collingwood School</li>
+                                <li>Mulgrave School</li>
                             </div>
 
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>Southridge School</li>
-                                    <li>St. John’s School</li>
-                                    <li>Vancouver College</li>
-                                    <li>Southpointe Academy</li>
-                                    <p>And more</p>
-                                </ul>
+                            <div class="col-md-6 reaching-goals-li">
+                                <li>Southridge School</li>
+                                <li>St. John’s School</li>
+                                <li>Vancouver College</li>
+                                <li>Southpointe Academy</li>
+                                <p>And more</p>
                             </div>
                         </div>
                     </div>
