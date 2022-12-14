@@ -116,7 +116,7 @@ if ($page == "") {
 							<li class="dropdown"><a href="#!"><span>Competitive Debate Programs</span> <i class="bi bi-chevron-right"></i></a>
 								<ul>
 									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?canada" ? "active" : "") ?>" href="competitive-debate-programs.php?canada">Canada</a></li>
-									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?ph" ? "active" : "") ?>" href="competitive-debate-programs.php?ph">Phillippines</a></li>
+									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?ph" ? "active" : "") ?>" href="competitive-debate-programs.php?ph">Philippines</a></li>
 									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?access_mca" ? "active" : "") ?>" href="competitive-debate-programs.php?access_mca">Access MCA</a></li>
 								</ul>
 							</li>
@@ -146,7 +146,7 @@ if ($page == "") {
 									<li><a href="assets/pdf/2021_Pre_Collegiate_Pathways_International_Explorations_C_proof.pdf">- Pre Collegiate Pathways</a></li>
 									<li><a href="assets/pdf/Application_Precedure_b.pdf">- Application Procedure</a></li>
 									<li><a href="https://form.jotform.com/211169418873058">- Online Form</a></li>
-									<li><a href="#!">Phillippines</a></li>
+									<li><a href="#!">Philippines</a></li>
 									<li><a href="assets/pdf/pcp-opus-ph.pdf">- Pre Collegiate Pathways</a></li>
 									<li><a href="assets/pdf/Application_Precedure_PH.pdf">- Application Procedure</a></li>
 									<li><a href="https://form.jotform.com/211169418873058">- Online Form</a></li>
