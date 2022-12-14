@@ -171,7 +171,7 @@ $classicalMusicContent = $classicalMusic->getContent();
 
     <section id="#" class="ourCourses secondary-bg">
         <div class="container text-center">
-            <h1 class="text-center fw-bold mb-5">Advanced Placement (AP) Music Theory Program:</h1>
+            <h1 class="text-center fw-bold mb-5">Advanced Placement (AP) Music Theory Program.</h1>
             <h5 class="text-center mb-4 lh-base">AP is recognized in the US, Canada and more than 40 countries.  Students can earn credit or advanced standing in North American and international colleges and universities.</h5>
             
             <div class="d-flex justify-content-center certificate-container">
@@ -188,7 +188,7 @@ $classicalMusicContent = $classicalMusic->getContent();
 
      <section class="us-debate-style-bg">
         <div class="container">
-            <h1 class="m-5 px-5 fw-bold mb-5 text-center" style="color: white;">We Teach U.S. Debate Styles</h1>
+            <h1 class="m-5 px-5 fw-bold mb-5 text-center" style="color: white;">Other Learning Opportunities</h1>
 
             <div class="row align-items-stretch">
                 <div class="col-md-4 d-flex master-class-con">
@@ -233,7 +233,7 @@ $classicalMusicContent = $classicalMusic->getContent();
                     <div><p class="mb-4 fs-1 fw-bold circle-container">2</p></div>
                     <p class="mb-4 fs-5 fw-bold">Interview & Audition</p>
                     <p>Applicants are requested to play pieces of different styles, and to demonstrate sight reading skills and technique.</p>
-                    <a href="#!" type="button" class="primary-btn mb-2">Book an Appointment</a>
+                    <a href="#!" type="button" class="primary-btn mt-5">Book an Appointment</a>
                 </div>
 
                 <div class="col-md-4">

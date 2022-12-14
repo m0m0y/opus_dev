@@ -65,7 +65,7 @@ $classicalMusicContent = $classicalMusic->getContent();
                             <div class="card-body">
 
                                 <div class="d-none">
-                                    <input type="hidden" name="id" id="id" value="<?= $classicalMusicWhere["id"] ?>" class="form-control" readonly>
+                                    <input type="hidden" name="id" id="id" value="<?= $classicalMusicWhere["id"] ?>" class="fomasrm-control" readonly>
                                 </div>
 
                                 <div class="row mb-4">

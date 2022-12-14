@@ -36,14 +36,11 @@ $homeCard = $homePage->getCardsContent($page);
         <div class="banner-wrap">
           <img src="assets/img/hero/mca-banner.jpg" alt="hero-banner">
 
-          <div class="content"><br><br><br>
+          <div class="content">
             <div class="inner">
               <div class="text-content">
                 <p class="fs-1 fw-bolder">In Partnership with<br> A Better Way to College </p>
                 <p class="fs-3 fw-light">to provide ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</p>
-                <div class="d-flex align-items-center">
-                  <a href="#!" class="banner-btn btn-sm text-decoration-none">Register Today</a>
-                </div>
               </div>
             </div>
           </div>
@@ -55,129 +52,6 @@ $homeCard = $homePage->getCardsContent($page);
     <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
     <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
   </div>
-
-  <section class="partnership-slider section-bg">
-    <div class ="text-center mb-5">
-      <h4>In Partnership with <b>A Better Way to College </b> to provide <b>ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</b></h4>
-    </div>
-    <div class="slider">
-      <div class="slide-track">
-
-        <div class="slide ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/adrian-college.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-        <div class="slide ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/albion.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/alma-college.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/andrew.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/aquinas.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/calvin.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/detroit.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/hillsdale.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/hope.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/kalamazoo.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/madonna-university.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/olivet.png" class="w-100 card-img ">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/sienna-height.png" class="w-100 card-img">
-            </div>
-          </div>  
-        </div>
-
-        <div class="slide  ms-5">
-          <div class ="shadow bg-body rounded card">
-            <div class ="card-body">
-              <img src="assets/img/amichigan/spring.png" class="w-100 card-img">
-            </div>
-          </div>  
-        </div>
-        
-      </div>
-    </div>
-  
-  </section>
 
   <section class="p-0">
     <div class="container-fluid secondary-bg p-5 welcome-opus-container-fluid">
@@ -255,11 +129,11 @@ $homeCard = $homePage->getCardsContent($page);
             <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
             <div class="d-flex justify-content-center mt-5 mb-5">
-              <div class="d-flex justify-content-start me-2">
+              <div class="d-flex justify-content-start me-5">
                 <a href="#!" type="button" class="light-btn">Testimonials</a>
               </div>
             
-              <div class="d-flex justify-content-end ms-2">
+              <div class="d-flex justify-content-end">
                 <a href="#!" type="button" class="light-btn">Achievements</a>
               </div>
             </div>
