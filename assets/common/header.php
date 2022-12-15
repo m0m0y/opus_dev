@@ -126,13 +126,13 @@ if ($page == "") {
 							<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Classical Music</a></li>
 						</ul>
 					</li>
-					<!-- <li><a class="nav-link <?= ($page == "admission-counselling.php" ? "active" : "") ?>" href="admission-counselling.php">Admission Counselling</a></li> -->
 
 					<li class="dropdown"><a href="#!"><span>Admissions Counselling</span> <i class="bi bi-chevron-down"></i></a>
+					
 					<ul>
 						
-					<li><a  class="nav-link <?= ($page == "private-school.php" ? "active" : "") ?>" href="private-school.php">Private School</a></li>
-					<li><a  class="nav-link <?= ($page == "university-and-graduate.php" ? "active" : "") ?>" href="university-and-graduate.php">University and Graduate</a></li>
+						<li><a  class="nav-link <?= ($page == "private-school.php" ? "active" : "") ?>" href="private-school.php">Private School</a></li>
+						<li><a  class="nav-link <?= ($page == "university-and-graduate.php" ? "active" : "") ?>" href="university-and-graduate.php">University and Graduate</a></li>
 
 					</ul>
 
@@ -164,6 +164,7 @@ if ($page == "") {
 					<li class="dropdown">
 						<a class="nav-link" href="#!"><span> Opus News</span> <i class="bi bi-chevron-down"></i></a>
 						<ul>
+							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="https://opusacademy.com/opus_dev/blog-site/">Blog</a></li>
 							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Latest News</a></li>
 							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Achievement</a></li>
 							<li><a class="nav-link <?= ($page == "" ? "" : "") ?>" href="#!">Events</a></li>
