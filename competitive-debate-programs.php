@@ -24,7 +24,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
         <div class="row">
             <div class = "col-md-6 p-5 title-size">
                 <h1 class="m-5 px-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience in the Philippines.</h1>
-                <h4 class="px-5 my-5  lh-base">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the oppor tunity for students to train with the world's leading experts in international debate practices.</h4>
+                <h4 class="px-5 my-5  lh-base">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
                 <center><a href ="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
@@ -168,7 +168,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             <div class="p-3">
                 <div class="row">
                 <div class="col-xl-12">
-                    <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>
+                    <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate learn to Speak! Speak to Learn!</p>
                     <center><a href="#!" type="button" class="light-btn mt-3">Apply for Summer 2023</a></center>
                 </div>
                 </div>
@@ -250,6 +250,10 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 </div>
             </div>
         </div>
+
+        <div class="spacing"></div>
+
+        
     </section>
 
     <section id="teach-us-debate-ca" class="teach-us-debate-ca">
@@ -319,7 +323,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             <div class="p-3">
                 <div class="row">
                 <div class="col-xl-12">
-                    <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate.Learn to Speak! Speak to Learn!</p>
+                    <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate. Learn to Speak! Speak to Learn!</p>
                     <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
                 </div>
                 </div>
@@ -329,247 +333,246 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
 <?php } if(isset($_GET["access_mca"])) { ?>
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-            <div class="container">
-                <ol>
-                    <li><a href="index.php">Home</a></li>
-                    <li>Program</li>
-                    <li>Competitive Debate Programs</li>
-                </ol>
-                <h2>Michigan College Alliance (MCA)</h2>
+        <div class="container">
+            <ol>
+                <li><a href="index.php">Home</a></li>
+                <li>Program</li>
+                <li>Competitive Debate Programs</li>
+            </ol>
+            <h2>Michigan College Alliance (MCA)</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid danger-bg">
+        <div class="row">
+            <div class = "col-md-6 p-5 title-size">
+                <h1 class="m-5 px-5 fw-bold">In partnership with<br> A Better Way to College (ABWC), proudly provide Access MICHIGAN COLLEGE ALLIANCE (MCA)</h1>
+                <h4 class="px-5 my-5  lh-base">Access MCA is a unique program offered by the Michigan College Alliance to US and international students specifically designed to provide a better way for students to approach college admissions. </h4>
+                <center><a href ="#section-container-mca" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
-        </section>
 
-        <section>
-        <div class="container-fluid danger-bg">
-            <div class="row">
-                <div class = "col-md-6 p-5 title-size">
-                    <h1 class="m-5 px-5 fw-bold">In partnership with<br> A Better Way to College (ABWC), proudly provide Access MICHIGAN COLLEGE ALLIANCE (MCA)</h1>
-                    <h4 class="px-5 my-5  lh-base">Access MCA is a unique program offered by the Michigan College Alliance to US and international students specifically designed to provide a better way for students to approach college admissions. </h4>
-                    <center><a href ="#section-container-ph" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
-                </div>
-
-                <div class="col-md-6 px-0">
-                    <img src="assets/img/competitive-debate/mca_banner.jpg" class="w-100" alt="bridge-img">
-                </div>
+            <div class="col-md-6 px-0">
+                <img src="assets/img/competitive-debate/mca_banner.jpg" class="w-100" alt="bridge-img">
             </div>
         </div>
-        </section>
-        <section class ="section-bg">
-      <div class ="text-center mb-5">
-        <h4><b>The Michigan College Alliance is the association of 14 premier Colleges & Universities in Michigan.</b></h4>
-      </div>
-      <div class="slider">
-        <div class="slide-track">
+    </div>
 
-          <div class="slide ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/adrian-college.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-          <div class="slide ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/albion.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/alma-college.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/andrew.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/aquinas.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/calvin.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/detroit.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/hillsdale.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/hope.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/kalamazoo.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/madonna-university.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/olivet.png" class="w-100 card-img ">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/sienna-height.png" class="w-100 card-img">
-              </div>
-            </div>  
-          </div>
-
-          <div class="slide  ms-5">
-            <div class ="shadow bg-body rounded card">
-              <div class ="card-body">
-                <img src="assets/img/amichigan/spring.png" class="w-100 rounded-3 card-img">
-              </div>
-            </div>  
-          </div>
-          
+    <section class ="secondary-bg">
+        <div class ="text-center mb-5">
+            <h4><b>The Michigan College Alliance is the association of 14 premier Colleges & Universities in Michigan.</b></h4>
         </div>
-      </div>
+        <div class="slider">
+            <div class="slide-track">
+
+            <div class="slide ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/adrian-college.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+            <div class="slide ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/albion.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/alma-college.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/andrew.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/aquinas.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/calvin.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/detroit.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/hillsdale.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/hope.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/kalamazoo.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/madonna-university.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/olivet.png" class="w-100 card-img ">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/sienna-height.png" class="w-100 card-img">
+                </div>
+                </div>  
+            </div>
+
+            <div class="slide  ms-5">
+                <div class ="shadow bg-body rounded card">
+                <div class ="card-body">
+                    <img src="assets/img/amichigan/spring.png" class="w-100 rounded-3 card-img">
+                </div>
+                </div>  
+            </div>
+            
+            </div>
+        </div>
    
     </section>
 
-    <section id="section-container-ca" class="section-container">
+    <section id="section-container-mca" class="section-container">
         <div class="container">
-            <h2 class="fw-bold mb-5">Who can take Access MCA programs?</h2>
-                <div class="row">
-                    <div class="col-md-6 pe-5">
-                        <div class="d-flex justify-content-center">
-                            <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
-                        </div>
-                        <div class="col-sm-12 mt-3 ca-btn-courses">
-                                <a href="#" type="button" data-bs-toggle="collapse" data-bs-target="#accessMCA" aria-expanded="false" aria-controls="collapseExample" class="w-100 danger-btn">Access MCA Scholars Program</a>
-                            <div class="collapse" id="accessMCA">
-                            <a href="https://www.abetterwaytocollege.com/application" class="card-link">
-                                <div class="card shadow card-body">
-                                    <h2 class="text-secondary mb-4 fw-bold">Access MCA Scholars Program</h2>
-                                    <p class ="text-secondary fw-lighter">By taking one course each term in Grades 10, 11, and 12 students can guarantee admission to an MCA university or college.</p>
-                                    <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
-                                    <hr class="m-3 mb-2 mt-0"></hr>
-                                    <div class=" ms-3 text-secondary fw-bold">
-                                        <p><span class="fa-solid fa-circle me-3"></span>Application Open Year Round</p>
-                                        <p><span class="fa-solid fa-circle me-3"></span>Courses Start in September, January, and Summer</p>
-                                        <p><span class="fa-solid fa-circle me-3"></span>Summer Residential Options Available</p>
-                                    </div>
-                                    <div class="text-secondary fw-bold ms-5">
-                                        <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
-                                        <p><span class="fa-regular fa-circle me-3"></span>Gain Laboratory and Research  Experience</p>
-                                        <p><span class="fa-regular fa-circle me-3"></span>Summer Residential Options Available</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+            <div class="row">
+               <div class="col-md-6 pe-5">
+                    <h2 class="text-left mb-5 fw-bold">OPUS Critical Reading and Writing</h2>
+                    <div class="d-flex justify-content-start">
+                        <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Access MCA Scholars Program</a>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 text-content">
                     <p>Students as early as Gr 9 can take the MCA Scholars Program. Students at the end of high school or who recently graduated can take the Standard Program which is a full year of college leading to automatic admissions with sophomore status at MCA universities and colleges.</p>
                     <h4 class="text-left mb-4 fw-bold">What is so special about the Access MCA program?</h4>
                     <p class ="fw-bold">Head start for your future<p>
-                    <p class ="ms-2">The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
+                    <p>The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
                     <p class ="fw-bold">Real credit for Real courses</p>
-                    <p class ="ms-2">Earn college credits taught by MCA faculty in real time.</p>
+                    <p>Earn college credits taught by MCA faculty in real time.</p>
                     <p class ="fw-bold">Gold transfer for Transfer Credit</p>
-                    <p class ="ms-2"> can earn college credits transferrable to any MCA college  or any university  outside of MCA..</p>
+                    <p> can earn college credits transferrable to any MCA college  or any university  outside of MCA..</p>
                     <p class ="fw-bold">Guaranteed Admissions to an MCA University</p>
-                    <p class ="ms-2">Earn guaranteed admission to the Michi gan university or college </p>
+                    <p>Earn guaranteed admission to the Michi gan university or college </p>
+
+                    <div class="mt-4">
+                        <div class="card shadow card-body">
+                            <h2 class="text-secondary mb-4 fw-bold">Access MCA Scholars Program</h2>
+                            <p class ="text-secondary fw-lighter">By taking one course each term in Grades 10, 11, and 12 students can guarantee admission to an MCA university or college.</p>
+                            <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
+                            <hr class="m-3 mb-2 mt-0"></hr>
+                            <div class=" ms-3 text-secondary fw-bold">
+                                <p><span class="fa-solid fa-circle me-3"></span>Application Open Year Round</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Courses Start in September, January, and Summer</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Summer Residential Options Available</p>
+                            </div>
+                            <div class="text-secondary fw-bold ms-5">
+                                <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
+                                <p><span class="fa-regular fa-circle me-3"></span>Gain Laboratory and Research  Experience</p>
+                                <p><span class="fa-regular fa-circle me-3"></span>Summer Residential Options Available</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            </div>
         </div>
-    </section>
 
-    <section id="section-container-ca" class="section-container">
+        <div class="spacing"></div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-6 pe-5">
+                    <h2 class="text-left mb-5 fw-bold">The Standard Programs</h2>
                     <div class="d-flex justify-content-center">
                         <img src="assets/img/amichigan/sophomores.jpg" alt="harvard" class="w-100">
                     </div>
 
-                    <div class="col-sm-12 mt-3 ca-btn-courses">
-                            <a href="#" type="button" data-bs-toggle="collapse" data-bs-target="#standardProgram" aria-expanded="false" aria-controls="collapseExample" class="w-100 danger-btn">Standard Program</a>
-                            <div class="collapse" id="standardProgram">
-                            <a href="https://www.abetterwaytocollege.com/application" class="card-link">
-                            <div class="card shadow card-body">
-                                <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
-                                <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.<p> 
-                                <hr class="m-3 mb-2 mt-0"></hr>
-                                <div class=" ms-3 text-secondary fw-bold">
-                                    <p><span class="fa-solid fa-circle me-3"></span>Summer - Orientation (Residential or Online)</p>
-                                    <p><span class="fa-solid fa-circle me-3"></span>Fall - Online semester(4 courses + advisory)</p>
-                                    <p><span class="fa-solid fa-circle me-3"></span>Spring - Online semester (4 +courses + advisory)</p>
-                                    <p><span class="fa-solid fa-circle me-3"></span>Summer - Residential<p>
-                                </div>
-                                <div class="text-secondary fw-bold ms-5">
-                                    <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
-                                    <p><span class="fa-regular fa-circle me-3"></span>Co-op or Internship (optional)</p>
-                                    <p><span class="fa-regular fa-circle me-3"></span>Orientation for Sophomore year</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
+                    <div class="col-sm-12 mt-3 mca-btn-courses">
+                        <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Standard Program</a>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 text-content">
                     <h4 class="fw-bold mb-4">The Standard Program equals the first year of college and prepares students to start as sophomores.</h4>
                     <p class ="fw-bold"> Admission to an MCA University or College</p>
-                    <p class ="ms-2">-Avoid the Admission queue</p>
-                    <p class ="ms-2">-NO SAT or ACT required</p>
-                    <p class ="ms-2">-Accelerated decision timeline</p>
-                    <p class ="">Students complete a year of university courses in their own country and then are granted automatic admission with transfer of all their credits to the university or college that is their best fit. </p>
+                    <p>- Avoid the Admission queue</p>
+                    <p>- NO SAT or ACT required</p>
+                    <p>- Accelerated decision timeline</p>
+                    <p>Students complete a year of university courses in their own country and then are granted automatic admission with transfer of all their credits to the university or college that is their best fit. </p>
                     
+                    <div class="mt-4">
+                        <div class="card shadow card-body">
+                            <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
+                            <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.<p> 
+                            <hr class="m-3 mb-2 mt-0"></hr>
+                            <div class=" ms-3 text-secondary fw-bold">
+                                <p><span class="fa-solid fa-circle me-3"></span>Summer - Orientation (Residential or Online)</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Fall - Online semester(4 courses + advisory)</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Spring - Online semester (4 +courses + advisory)</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Summer - Residential<p>
+                            </div>
+                            <div class="text-secondary fw-bold ms-5">
+                                <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
+                                <p><span class="fa-regular fa-circle me-3"></span>Co-op or Internship (optional)</p>
+                                <p><span class="fa-regular fa-circle me-3"></span>Orientation for Sophomore year</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
         
 <?php }?>
