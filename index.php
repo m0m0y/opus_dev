@@ -32,6 +32,27 @@ $homeCard = $homePage->getCardsContent($page);
 
       </div>
 
+      <div class="swiper-slide">
+        <div class="banner-wrap">
+          <img src="assets/img/hero/mca-banner.jpg" alt="hero-banner">
+
+          <div class="content">
+            <div class="inner">
+              <div class="text-content">
+                <p class="fs-1 fw-bolder">In Partnership with<br> A Better Way to College </p>
+                <p class="fs-3 fw-light">to provide ACCESS MICHIGAN COLLEGE ALLIANCE (MCA) Programs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev ms-5" style="color: #f8f9fa;"></div>
+    <div class="swiper-button-next me-5" style="color: #f8f9fa;"></div>
+  </div>
+
   <section class="p-0">
     <div class="container-fluid secondary-bg p-5 welcome-opus-container-fluid">
       <div class="container my-5 welcome-opus-container">
@@ -108,11 +129,11 @@ $homeCard = $homePage->getCardsContent($page);
             <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
             <div class="d-flex justify-content-center mt-5 mb-5">
-              <div class="d-flex justify-content-start me-2">
+              <div class="d-flex justify-content-start me-5">
                 <a href="#!" type="button" class="light-btn">Testimonials</a>
               </div>
             
-              <div class="d-flex justify-content-end ms-2">
+              <div class="d-flex justify-content-end">
                 <a href="#!" type="button" class="light-btn">Achievements</a>
               </div>
             </div>

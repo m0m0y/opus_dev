@@ -28,7 +28,7 @@ $academicEnrichmentContent = $academicEnrichment->getContent();
                 </div>
 
                 <div class="col-md-6 px-0">
-                    <img src="assets/img/academic-enrichment/p-13.jpg" class="w-100" alt="speak-img">
+                    <img src="assets/img/academic-enrichment/Academic Enrichment.png" class="w-100" alt="speak-img">
                 </div>
             </div>
         </div>
