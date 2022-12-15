@@ -693,6 +693,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <div class="col-sm-12 mt-3 mca-btn-courses">
                         <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Standard Program</a>
                     </div>
+                </div>
 
                 <div class="col-md-6 text-content">
                     <h4 class="fw-bold mb-4">The Standard Program equals the first year of college and prepares students to start as sophomores.</h4>
