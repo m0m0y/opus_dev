@@ -133,7 +133,7 @@ $homeCard = $homePage->getCardsContent($page);
                 <a href="#!" type="button" class="light-btn">Testimonials</a>
               </div>
             
-              <div class="d-flex justify-content-end">
+              <div class="d-flex justify-content-end ms-2">
                 <a href="#!" type="button" class="light-btn">Achievements</a>
               </div>
             </div>
