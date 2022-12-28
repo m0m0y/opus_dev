@@ -31,7 +31,7 @@ $aboutContent = $about->getContent();
       if($section == "Section I") {
         ?>
 
-        <section class="pt-3">
+        <section class="about-us-sec pt-3">
           <div class="container">
 
             <h3><?= $title ?></h3>
@@ -46,7 +46,7 @@ $aboutContent = $about->getContent();
       else if ($section == "Section II") {
         ?>
 
-        <section class="pt-3">
+        <section class="about-us-sec pt-3">
           <div class="container">
 
             <h3><?= $title ?></h3>
@@ -61,7 +61,7 @@ $aboutContent = $about->getContent();
       else if ($section == "Section III") {
         ?>
 
-        <section class="pt-3">
+        <section class="about-us-sec pt-3">
           <div class="container">
    
             <h3><?= $title ?></h3>
@@ -72,28 +72,6 @@ $aboutContent = $about->getContent();
 
         <?php        
       }
-
-      else if ($section == "Section IV") {
-        ?>
-
-        <section class="pt-3">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xl-12 col-lg-12 icon-boxes justify-content-center px-lg-5">
-
-                <h3><?= $title ?></h3>
-                <?= $content ?>
-
-              </div>
-              
-            </div>
-          </div>
-        </section>
-        
-        <?php
-      }
-
     }
   }
   ?>

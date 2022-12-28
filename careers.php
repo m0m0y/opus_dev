@@ -42,7 +42,6 @@ $hiringPostion = $careers->hiringPostion();
                     <?php
                 }
             }
-
             ?>
 
             <div class="row">

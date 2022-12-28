@@ -35,7 +35,7 @@ $contactInfo = $contactInfo->getInformation();
 					?>
 				</p>
 
-				<img src="assets/img/wechat_id/qr_scan.png" alt="wechat_qr_code" width="110%">
+				<img src="assets/img/wechat_id/qr_scan.png" alt="wechat_qr_code" width="100%">
 			</div>
 
 			<div class="col-lg-4 col-md-6 footer-links">

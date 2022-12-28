@@ -30,7 +30,7 @@ $teamList = $historyAndTeams->getTeamList();
 
         if($status == 0) {
             ?>
-            <section class="pt-3">
+            <section class="history pt-3">
                 <div class="container">
 
                     <div class="section-title">
@@ -84,7 +84,7 @@ $teamList = $historyAndTeams->getTeamList();
                                     </div>
                                 </div>
     
-                                <div class="col-lg-8 col-md-12">
+                                <div class="col-lg-8 col-md-12 intro-div">
                                     <?= html_entity_decode($introduction) ?>
                                 </div>
 
@@ -106,7 +106,7 @@ $teamList = $historyAndTeams->getTeamList();
                                     </div>
                                 </div>
     
-                                <div class="col-lg-8 col-md-12">
+                                <div class="col-lg-8 col-md-12 intro-div">
                                     <?= html_entity_decode($introduction) ?>
                                 </div>
                                 <?php
@@ -126,16 +126,7 @@ $teamList = $historyAndTeams->getTeamList();
                 <div class="icon-boxes d-flex flex-column justify-content-center">
                     <div class="row">
 
-                        <div class="col-xl-6 d-flex align-items-stretch">
-                            <div class="icon-box mt-4 mt-xl-0">
-
-                                <h3 class="title"><?= $name ?></h3>
-                                <?= html_entity_decode($introduction) ?>
-
-                            </div>
-                        </div>
-
-                        <!-- <?php 
+                        <?php 
                         foreach($teamList as $v) {
                             $img = $v["img"];
                             $name = $v["name"];
@@ -154,7 +145,7 @@ $teamList = $historyAndTeams->getTeamList();
                                 if($position == "Teachers") {
                                     ?>
 
-                                    <div class="col-xl-6 d-flex align-items-stretch">
+                                    <div class="col-xl-6 d-flex align-items-stretch other-teams">
                                         <div class="icon-box mt-4 mt-xl-0">
 
                                             <h3 class="title"><?= $name ?></h3>
@@ -167,7 +158,7 @@ $teamList = $historyAndTeams->getTeamList();
                                 } else if($position == "University Counsellors") {
                                     ?>
 
-                                    <div class="col-xl-6 d-flex align-items-stretch">
+                                    <div class="col-xl-6 d-flex align-items-stretch other-teams">
                                         <div class="icon-box mt-4 mt-xl-0">
 
                                             <h3 class="title"><?= $name ?></h3>
@@ -180,7 +171,7 @@ $teamList = $historyAndTeams->getTeamList();
                                 }
                             }
                         }
-                        ?> -->
+                        ?>
 
                     </div>
                </div>

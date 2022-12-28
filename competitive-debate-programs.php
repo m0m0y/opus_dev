@@ -488,7 +488,8 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <div class="d-flex justify-content-start">
                         <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
                     </div>
-                    <div class="d-grid gap-2">
+
+                    <div class="col-sm-12 mt-3 mca-btn-courses">
                         <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Access MCA Scholars Program</a>
                     </div>
                 </div>
@@ -506,16 +507,19 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <p>Earn guaranteed admission to the Michi gan university or college </p>
 
                     <div class="mt-4">
-                        <div class="card shadow card-body">
+                        <div class="card card-body">
                             <h2 class="text-secondary mb-4 fw-bold">Access MCA Scholars Program</h2>
                             <p class ="text-secondary fw-lighter">By taking one course each term in Grades 10, 11, and 12 students can guarantee admission to an MCA university or college.</p>
                             <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
+
                             <hr class="m-3 mb-2 mt-0"></hr>
+
                             <div class=" ms-3 text-secondary fw-bold">
                                 <p><span class="fa-solid fa-circle me-3"></span>Application Open Year Round</p>
                                 <p><span class="fa-solid fa-circle me-3"></span>Courses Start in September, January, and Summer</p>
                                 <p><span class="fa-solid fa-circle me-3"></span>Summer Residential Options Available</p>
                             </div>
+
                             <div class="text-secondary fw-bold ms-5">
                                 <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
                                 <p><span class="fa-regular fa-circle me-3"></span>Gain Laboratory and Research  Experience</p>
@@ -552,7 +556,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <p>Students complete a year of university courses in their own country and then are granted automatic admission with transfer of all their credits to the university or college that is their best fit. </p>
                     
                     <div class="mt-4">
-                        <div class="card shadow card-body">
+                        <div class="card card-body">
                             <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
                             <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.<p> 
                             <hr class="m-3 mb-2 mt-0"></hr>

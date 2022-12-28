@@ -159,7 +159,7 @@ if ($page == "") {
 							<li><a class="nav-link <?= ($page == "about.php" ? "active" : "") ?>" href="about.php">About Us</a></li>
 							<li><a class="nav-link <?= ($page == "history-and-team.php" ? "active" : "") ?>" href="history-and-team.php">History and Our Team</a></li>
 							<li><a class="nav-link <?= ($page == "careers.php" ? "active" : "") ?>" href="careers.php">Careers</a></li>
-							<li><a class="nav-link <?= ($page == "testimonials.php" ? "active" : "") ?>" href="careers.php">Testimonials</a></li>
+							<li><a class="nav-link <?= ($page == "testimonials.php" ? "active" : "") ?>" href="testimonials.php">Testimonials</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

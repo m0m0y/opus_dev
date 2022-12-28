@@ -1252,7 +1252,7 @@ section {
   border-left: 5px solid #29176e;
   padding-left: 10px;
 }
-.testimonials-page-section .icon-boxes .icon-box {
+.testimonials-section .icon-boxes .icon-box {
   background: #fff;
   box-shadow: 0px 2px 20px rgb(0 0 0/ 10%);
   padding: 25px 30px;
@@ -1752,7 +1752,7 @@ MEDIA SCREEN
   section.team .icon-boxes .icon-box {
     padding: 40px;
   }
-  section.testimonials-page-section #sidebar {
+  section.testimonials-section #sidebar {
     margin-top: 35px;
   }
   #admission-page-hero, #debate-programs-page-hero {
@@ -1833,7 +1833,12 @@ MEDIA SCREEN
 }
 
 @media screen and (max-width: 320px) {
-  section.communicationArts, .certificate-and-diploma, .public-speaking, .certificate-and-diploma-grant, .interview-skills-program, .youth-lead-program, .international-relations, .awards-and-honor, .container, .our-expert-content, .reaching-goal-container {
+  section.communicationArts, .certificate-and-diploma, 
+  .public-speaking, .certificate-and-diploma-grant, 
+  .interview-skills-program, .youth-lead-program, 
+  .international-relations, .awards-and-honor, 
+  .container, .our-expert-content, 
+  .reaching-goal-container {
     padding-left: 7%;
     padding-right: 7%;
   }
@@ -1841,11 +1846,15 @@ MEDIA SCREEN
   .teach-us-debate-ph, .application-process, 
   .redbird-program, .use-redbird, .why-it-works, 
   .we-help-students, .teaching-method, 
-  .classical-music, .how-to-apply, .we-teach-us-debate, .our-expert-teacher,
+  .classical-music, .how-to-apply, 
+  .we-teach-us-debate, .our-expert-teacher, 
   .reaching-goals, .our-counselling-services,
   .entrance-exams, .knowledge-admission,
-  .university-graduates, .life-long-impact, .your-exams-content,
-  .reaching-your-goals, .summer-camp-registration, .team, .partnership-slider {
+  .university-graduates, .life-long-impact, 
+  .your-exams-content, .reaching-your-goals, 
+  .summer-camp-registration, .team, 
+  .partnership-slider, .history, .careers, .about-us-sec, 
+  .testimonials-section{
     padding: 25px 0% !important;
   }
   .why-take-exam-content, .why-us-content, .exam-early-learn-content {
@@ -1883,7 +1892,7 @@ MEDIA SCREEN
     margin: 0 !important;
   }
   section {
-    padding: 15px 3% !important;
+    padding: 50px 3% !important;
   }
   section.breadcrumbs {
     margin-bottom: 0px;
@@ -1915,7 +1924,7 @@ MEDIA SCREEN
   }
   .primary-bg p.fs-1 {
     font-size: 20px !important;
-    margin-bottom: 0 !important;
+    line-height: 30px;
   }
   .slider::before, .slider::after {
     background: none;
@@ -2212,10 +2221,61 @@ MEDIA SCREEN
 
 
 
-  .team .founder {
+  .team .founder, .team .co-founder {
     padding: 0px !important;
   }
+  section.team .icon-boxes .icon-box {
+    padding: 30px;
+    margin-top: 0px !important;
+  }
+  section.team .member-img img.img-fluid {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+  .intro-div {
+    padding: 0px !important;
+  }
+  .intro-div img {
+    display: none;
+  }
+  .other-teams {
+    padding: 0px !important;
+    margin-bottom: 20px;
+  }
 
+
+
+  .get-started-icon {
+    display: none;
+  }
+  .btn-get-started {
+    margin: 0px 10%;
+    border-radius: unset;
+    letter-spacing: normal;
+  }
+
+
+  .about-us-sec img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 15px !important; 
+  }
+
+
+  .testimonial-content {
+    padding: 8px;
+  }
+  .testimonials-section .icon-boxes .icon-box {
+    padding: 25px 25px;
+  }
+  .testimonial-content .my-5 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important
+  }
+  section.testimonials-section #sidebar {
+    margin-top: 35px;
+    padding: 0;
+  }
 
 
   #footer .footer-contact {

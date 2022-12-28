@@ -13,14 +13,11 @@ require_once "assets/common/header.php";
             </div>
         </section>
 
-        <section class="testimonials-page-section pt-3">
+        <section class="testimonials-section pt-3">
 
             <div class="container">
-
                 <div class="row">
-
                     <div class="col-xl-8 col-sm-12 testimonial-content">
-
                         <div class="communication-arts-speech my-5" id="communication-arts-speech">
 
                             <div class="section-title">
