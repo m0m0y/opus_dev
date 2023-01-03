@@ -128,13 +128,13 @@ $homeCard = $homePage->getCardsContent($page);
             <h4 class="mb-4 fs-1 fw-bold">Why Choose Opus?</h4>
             <p>As Greater Vancouver's premier after-school enrichment provider, we offer a range of rewarding learning experiences and diverse coursework. Take a moment to learn more about our services below, as we look forward to helping your child on their path to success.</p>
 
-            <div class="d-flex justify-content-center mt-5 mb-5">
-              <div class="d-flex justify-content-start me-5">
-                <a href="#!" type="button" class="light-btn">Testimonials</a>
+            <div class="d-flex justify-content-around mt-5 mb-5">
+              <div class="d-flex justify-content-start testimonials-btn-container">
+                <a href="#!" type="button" class="testimonials-btn light-btn">Testimonials</a>
               </div>
             
-              <div class="d-flex justify-content-end">
-                <a href="#!" type="button" class="light-btn">Achievements</a>
+              <div class="d-flex justify-content-end achievements-btn-container">
+                <a href="#!" type="button" class="achievements-btn light-btn">Achievements</a>
               </div>
             </div>
           </div>

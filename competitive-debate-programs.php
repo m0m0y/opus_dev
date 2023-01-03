@@ -225,7 +225,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 </div>
 
                 <div class="col-md-6 text-content">
-                    <br><p>The Harvard Debate Program is Opus Academy’s U.S. style debate program developed from our exclusive partnership with the Harvard Debate Council (HDC). Established for over 35 years, the HDC instructors have reached the highest levels of competitions as both coaches and competitors with international experience. They share a spirit of wanting to help students from around the world benefit from debate. Give your child the opportunity of a lifetime— empower future leaders through speech and debate. Learn to Speak! Speak to Learn! Speak with power, confidence, clarity, and conviction!<br><br>Through debate, students deepen their understanding of the world and look for solutions to local, national, and global issues. Early debate training helps students listen carefully, think logically, and speak effectively. Students sharpen their reasoning and problem-solving skills by studying how to construct arguments, defend them through refutation, and cross-examine others. Debate teaches life skills essential to future success and is applicable to most any future career choice.</p>
+                    <p>The Harvard Debate Program is Opus Academy’s U.S. style debate program developed from our exclusive partnership with the Harvard Debate Council (HDC). Established for over 35 years, the HDC instructors have reached the highest levels of competitions as both coaches and competitors with international experience. They share a spirit of wanting to help students from around the world benefit from debate. Give your child the opportunity of a lifetime— empower future leaders through speech and debate. Learn to Speak! Speak to Learn! Speak with power, confidence, clarity, and conviction!<br><br>Through debate, students deepen their understanding of the world and look for solutions to local, national, and global issues. Early debate training helps students listen carefully, think logically, and speak effectively. Students sharpen their reasoning and problem-solving skills by studying how to construct arguments, defend them through refutation, and cross-examine others. Debate teaches life skills essential to future success and is applicable to most any future career choice.</p>
 
                     <h4 class="fw-bold mt-4">Certificate Granting For Completion</h4>
 
@@ -249,12 +249,10 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="spacing"></div>
-
-        
+        </div>        
     </section>
+
+    <div class="spacing"></div>
 
     <section id="teach-us-debate-ca" class="teach-us-debate-ca">
         <div class="container">
@@ -357,8 +355,8 @@ $competitiveDebateContent = $competitiveDebate->getContent();
         </div>
     </div>
 
-    <section class ="secondary-bg">
-        <div class ="text-center mb-5">
+    <section class="school-partners-banner secondary-bg">
+        <div class="text-center mb-5">
             <h4><b>The Michigan College Alliance is the association of 14 premier Colleges & Universities in Michigan.</b></h4>
         </div>
         <div class="slider">
