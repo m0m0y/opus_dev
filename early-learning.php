@@ -37,7 +37,7 @@ $cardContent = $card->getContentWhere($page);
             </div>
 
             <div class="col-md-6 px-0">
-                <img src="assets/img/early-learning/kidss.png" class="w-100 children" alt="children">
+                <img src="assets/img/early-learning/p-17.jpg" class="w-100 children" alt="children">
             </div>
         </div>
     </div>
