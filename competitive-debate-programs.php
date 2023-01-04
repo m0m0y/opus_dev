@@ -6,6 +6,11 @@ require_once "admin/model/model.competitive_debate.php";
 $competitiveDebate = new CompetitiveDebate();
 $competitiveDebateContent = $competitiveDebate->getContent();
 ?>
+<style>
+    .fa-solid{
+  background-color: #06bcc1;
+}
+</style>
 <main id="main">
 <?php if(isset($_GET["ph"])) { ?>
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
@@ -664,7 +669,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                             <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
                             <hr class="m-3 mb-2 mt-0"></hr>
                             <div class=" ms-3 text-secondary fw-bold">
-                                <p><span class="fa-solid fa-circle me-3"></span>Application Open Year Round</p>
+                                <p><span class="fa-solid fa-circle green me-3"></span>Application Open Year Round</p>
                                 <p><span class="fa-solid fa-circle me-3"></span>Courses Start in September, January, and Summer</p>
                                 <p><span class="fa-solid fa-circle me-3"></span>Summer Residential Options Available</p>
                             </div>

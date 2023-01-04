@@ -13,6 +13,14 @@ class StandardTestPreparation extends db_conn_mysql {
 
         return $response;
     }
+    
+    public function getCardContent() {
+        $query = $this->conn->prepare("SELECT * FROM test_prep_card");
+        $query->execute();
+        $response = $query->fetchAll();
+
+        return $response;
+    }
 
     public function getContentWhere($test_preparation_id) {
         $query = $this->conn->prepare("SELECT * FROM standardized_test_preparation WHERE id = ?");
@@ -22,9 +30,21 @@ class StandardTestPreparation extends db_conn_mysql {
         return $response;
     }
 
-    public function updateContent($id, $title, $content, $status) {
-        $query = $this->conn->prepare("UPDATE standardized_test_preparation SET title = ?, content = ?, status = ? WHERE id = ?");
-        $query->execute([$title, $content, $status, $id]);
+    public function updateContent($id, $title, $img, $content,  $status) {
+      
+        $query = $this->conn->prepare("UPDATE standardized_test_preparation SET title = ?, img = ?, content = ?, status = ? WHERE id = ?");
+        $query->execute([$title, $img, $content, $status, $id]);
+
     }
 
-}
+    function getImg($id) {
+
+        $query = $this->conn->prepare("SELECT img FROM standardized_test_preparation WHERE id=?");
+        $query->execute([$id]);
+        $return = $query->fetch();
+
+        return $return;
+
+    }
+
+} 

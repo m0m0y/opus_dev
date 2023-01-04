@@ -7,6 +7,7 @@ $communicationArts = new CommunicationArts();
 
 $communicationArtsContent = $communicationArts->getContent();
 $ourCourse = $communicationArts->getCourses();
+$getcurricula = $communicationArts->getCurricula();
 ?>
 
 <main id="main">
@@ -23,15 +24,30 @@ $ourCourse = $communicationArts->getCourses();
 
     <div class ="container-fluid warning-bg">
         <div class="row">
+        <?php
+                foreach($communicationArtsContent as $v) {
+                    $section = $v["section"];
+                    $title = $v["title"];
+                    $img = $v["img"];
+                    $content = $v["content"];
+                    $status = $v["status"];
+                    if($status == 0) {
+                        if($section == "Section I") {
+                    ?>
+
             <div class="col-md-6 p-5 title-size">
-                <h1 class="m-5 px-5 fw-bold">Effective spoken communication is<br>critical for success in today's highly competitive world.</h1>
-                <h4 class="px-5 my-5 lh-base">At opus, we are commited to teaching students the art of public speaking,debate, speech arts and drama to develop their creativity and expression.Our goal is to train students of all ages to speak and perform with self assurance, empowering them for a lifetime of success in their and professional lives.</h4>
+                <h1 class="m-5 px-5 fw-bold"><?= $title ?></h1>
+                <h4 class="px-5 my-5 lh-base"><?= $content ?></h4>
                 <center><a href ="#section-container" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
             </div>
 
             <div class="col-md-6 px-0">
-                <img src="assets/img/communication-arts/p-13.jpg" class="w-100" alt="speak-img">
+                <img src="assets/img/communication-arts/<?= $img ?>" class="w-100" alt="speak-img">
             </div>
+            <?php    }
+                   } 
+                }
+             ?>
         </div>
     </div>
 
@@ -63,47 +79,53 @@ $ourCourse = $communicationArts->getCourses();
                 ?>
             </div>
         </div>
-    </section>
+    </section>   
 
     <section id="section-container" class="section-container">
         <div class="container">
             <div class="row">
+            <?php
+                foreach($communicationArtsContent as $v) {
+                    $section = $v["section"];
+                    $title = $v["title"];
+                    $img = $v["img"];
+                    $content = $v["content"];
+                    $status = $v["status"];
+                    if($status == 0) {
+                        if($section == "Section II") {
+                    ?>
                 <div class="col-md-6 pe-5">
-                    <h2 class="text-left mb-5 fw-bold">Speech Arts & Drama</h2>
+                    <h2 class="text-left mb-5 fw-bold"><?= $title?></h2>
 
                     <div class="d-flex justify-content-start">
-                        <img src="assets/img/communication-arts/awards.jpg" class="w-100" alt="awards-img" />
+                        <img src="assets/img/communication-arts/<?= $img ?>" class="w-100" alt="awards-img" />
                     </div>
 
-                    <div class="d-grid gap-2">
+                    <div class="d-grid gap-2">   
                         <a href="#!" type="button" class="learnmore-btn mt-4">Learn More</a>
                     </div>
                 </div>
 
                 <div class="col-md-6 text-content">
-                    <p>We Offer a wide selection of Speech & Drama syllabi tailored to your child's individuals needs and interests.Student learn through a structured framework and partake in a series of graded examinations leading to a diploma.Students can choose diffrent syllabi strands from international certification board such as Royal Conservatory of Music (Canada), London College of music (UK) and Trinity College of London (UK).Significant long-term benefits includethe potential of various courses counting towards high school, as well as performance opportunities including recitals, workshops, festivals and competitions.<br><br>At Opus,we pride  ourselves on our comprehensive program, allowing students to discover their own voices through a creative mix of prose, poetry, drama, storytelling, and imporivasation. At Opus, Students learn to interpret and perform a variety of literary forms from western classical and modern literature.Our courses build on a young learner's expressive potential and teaches the accompanying vocabulary and language skills necessary for appreciating and performing various litery art forms.Alongside impovisation techniques, drama games, and other activities to stimulate their imaginations,we help young learners build their character through exressive movement and voice.Students learn relaxation methods, proper breathing techniques, as well as projection and articulation.</p><br>
-
-                    <p>
-                        Class Size:Private,Group or Pair<br>
-                        Format:Online or In-Centre<br>
-                        Grades: K-12 <br>
-                        Courses Offered:Exam Based or Non-exam Based
-                    </p>
+                    <p><?= $content ?></p>
                     
                     <h4 class="fw-bold mt-5">Our well-designed curricula include:</h4>
-                    
-                    <p class="custom-badge">
-                        <span>Vocal Technique</span>
-                        <span>Improvisation and Impromptu Speaking</span>
-                        <span>Story Telling</span>
-                        <span>Public Speaking</span>
-                        <span>Mime & Creative Movement</span>
-                        <span>Play Reading and Dramatization </span>
-                        <span>Acting Styles</span>
-                        <span>Oral Interpetation (poetry and prose)</span>
-                        <span>Scene Study</span>
-                        <span>Shakespeare</span>
-                    </p>
+                    <div class = "row">
+                <?php
+                foreach($getcurricula as $v) {
+                    $course = $v["course"];
+                    $status = $v["status"];
+
+                    if($status == 0) {
+                        ?>
+                    <div class="col-md-12 col-md-6">
+                        <p class="custom-badge "><span><?= $course ?></span></p>
+                    </div>
+                    <?php 
+                        }
+                    }
+                    ?>
+                    </div>
 
                     <h4 class="fw-bold mt-3 mb-3">Certificate and Diploma Granting:</h4>
                                 
@@ -123,6 +145,11 @@ $ourCourse = $communicationArts->getCourses();
                         </div>
                     </div>
                 </div>
+                <?php
+                        }
+                    }
+                }
+                ?>
             </div>
         </div>
 

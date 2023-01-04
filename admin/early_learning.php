@@ -10,6 +10,8 @@ $earlyLearning = new EarlyLearning();
 $card = new Cards();
 
 $earlyLearningContent = $earlyLearning->getEarlyLearningContent();
+$earlyLearning_courses = $earlyLearning->getEarly_learning_courses();
+
 
 $page = "early-learning.php";
 $cardContent = $card->getContentWhere($page);
@@ -109,6 +111,7 @@ $cardContent = $card->getContentWhere($page);
                             foreach ($earlyLearningContent as $v) {
                                 $id = $v["id"];
                                 $title = $v["title"];
+                                $img = $v["img"];
                                 $content = $v["content"];
                                 $status = $v["status"];
                                 $date_update = $v["date_update"];
@@ -119,7 +122,7 @@ $cardContent = $card->getContentWhere($page);
                                     <div class="card-header py-3">
                                         <div class="d-sm-flex align-items-center justify-content-between">
         
-                                            <h6 class="m-0 font-weight-bold text-primary">
+                                            <h6 class="m-0 font-weight-bold text-primary ">
                                                 <?= $title ?> <span class="badge bg-secondary" style="color: white;">Last update: <?= $v['date_update'] ?></span>
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
                                             </h6>
@@ -133,11 +136,17 @@ $cardContent = $card->getContentWhere($page);
                                     </div>
                                         
                                     <div class="card-body">
-        
-                                        <div class="container-fluid">
+                                    <div class = "row">
+
+                                        <div class="container-fluid col-sm-6">
                                             <div class="skeleton content_load"><?= $content ?></div>
                                         </div>
-        
+
+                                        <div class="container-fluid col-sm-6">
+                                                <div class="skeleton content_load"><img src= "assets/img/uploads/early-learning/<?= $img ?>" class="w-50 img-thumbnail" /></div>
+                                            </div>
+                                    </div>
+
                                     </div>
         
                                 </div>
@@ -147,12 +156,13 @@ $cardContent = $card->getContentWhere($page);
                             }
                         }
                         ?>
+                        
 
                         <div class="card shadow mb-4">
             
                             <div class="card-header py-3">
                                 <div class="d-sm-flex align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Early Learning Stage</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">In these classes, young children will learn to:</h6>
                                 </div>
                             </div>
 
@@ -161,47 +171,40 @@ $cardContent = $card->getContentWhere($page);
                                     <div class="card-body col-xl-12 d-flex align-items-stretch">
 
                                         <?php
-                                        if(!empty($cardContent)) {
-
-                                            foreach ($cardContent as $v) {
-                                                $card_id = $v["card_id"];
-                                                $card_title = $v["card_title"];
-                                                $content = $v["content"];
-                                                $card_status = $v["card_status"];
+                                        if(!empty($earlyLearning_courses)) {
+                                            foreach ($earlyLearning_courses as $v) {
+                                                $id = $v["id"];
+                                                $course = $v["course"];
+                                                $sort = $v["sort"];
+                                                $status = $v["status"];
                                                 $date_update = $v["date_update"];
                                                 ?>
 
-                                                <div class="container card shadow py-4 m-3">
-                                                    
-                                                    <div class="d-sm-flex align-items-center justify-content-end">
-                                                        <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $card_id ?>', '<?= $card_title ?>', '<?= $content ?>',  '<?= $card_status ?>')">Update &rarr; </a>
-                                                    </div>
+                                                    <div class="col-lg-4 col-sm-12">
 
-                                                        <div class="d-flex flex-column justify-content-center">
-
-                                                            <div class="card-body align-items-stretch">
-
-                                                            <h5 class="text-gray-900"><?= $card_title ?> <?= ($card_status == 0 ? "" : '<small class="badge bg-warning" style="color: black;">Disabled</small>') ?></h5>
+                                                    <div class="card-body">
+                                                        <div class="container card shadow py-3">
                                                             
-
-                                                            <?= html_entity_decode($content) ?>                                                                    
-
+                                                            <div class="d-sm-flex align-items-center justify-content-between">
+                                                                <span"><?= $course ?></span>
+                                                                <p><span class="badge">Last update: <?= $date_update ?></span></p>
                                                             </div>
 
-                                                        </div>
+                                                            <?= ($status == 0 ? '<span class="text-primary"> Enable</span>' : ' <span class="text-warning">Disabled</span>') ?>
 
-                                                        <div class="d-flex justify-content-end">
-                                                            <p><span class="badge text-gray-900">Last update: <?= $date_update ?></span></p>
+                                                            <div class="d-flex justify-content-end">
+                                                                <a href="#!" class="text-danger text-decoration-none" onclick="deleteLink('<?= $id ?>')">Delete &nbsp;</a> <br>
+                                                                <a href="#!" class="text-info text-decoration-none" onclick="updateLink('<?= $id ?>', '<?= $course ?>', '<?= $sort_by ?>', '<?= $status ?>')">Update &rarr; </a>
+                                                            </div>
                                                         </div>
-                                                    
-                                                </div>
+                                                    </div>
 
+                                                    </div>
                                                 <?php
                                             }
 
                                         }
                                         ?>
-
                                     </div>
                                 </div>
                             </div>
@@ -209,8 +212,11 @@ $cardContent = $card->getContentWhere($page);
                         <?php
                     }
                     ?>
+                     
 
                 </div>
+                
+                <p>asdfasdsa</p>
                 
             </div>
 

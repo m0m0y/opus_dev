@@ -61,6 +61,12 @@ $(function() {
             disableUpload: false
         }
     });
+    var status_module = window.localStorage.getItem("stat");
+
+    if (status_module == "success") {
+        sucessAlert();
+        localStorage.clear();
+    }
 
     $('#btn-save').on('click', function() {
         var id = $('#id').val();
@@ -75,12 +81,7 @@ $(function() {
         }
     })
 
-    var status_module = window.localStorage.getItem("stat");
 
-    if (status_module == "success") {
-        sucessAlert();
-        localStorage.clear();
-    }
 
 })
 

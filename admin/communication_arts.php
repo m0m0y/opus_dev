@@ -14,7 +14,22 @@ $ourCourses = $communicationArts->getCourses();
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
 <script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
+<style>
+     .preview{
+   width: 1000px;
+   height: 1000px;
+   border: 1px solid black;
+   margin: 0 auto;
+   background: white;
+  }
+  .image-upload>input {
+  display: none;
+}
 
+    .preview img{
+    display: none;
+    }
+</style>
 <body id="page-top">
 
     <div id="wrapper">
@@ -35,7 +50,8 @@ $ourCourses = $communicationArts->getCourses();
                         $id = $_GET["update"];
                         $communicationArtsWhere = $communicationArts->getContentWhere($id);
                         ?>
-
+                    
+                    <form action="" method="POST"  class="ajax-form" enctype="multipart/form-data" id="myform">
                         <div class="card shadow mb-4">
 
                             <div class="card-header py-3">
@@ -76,6 +92,20 @@ $ourCourses = $communicationArts->getCourses();
                                 </div>
 
                                 <div class="row mb-4">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Image:</label>
+                                        <div class="col-sm-4 ">       
+                                                              
+                                            <input type="file" id="img" name="img" class="form-control p-1" value="<?= $communicationArtsWhere["img"] ?>" onchange='Test.UpdatePreview(this)' >
+                                        </div>
+                                        
+                                        <div class="col-sm-3">
+                                                <div id = "preview">
+                                                    <img src="assets/img/uploads/communication-arts/<?= $communicationArtsWhere["img"] ?>" class="w-75 img-thumbnail">
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="row mb-4">
                                     <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Content:</label>
                                     <div class="col-sm-9">
                                         <textarea name="page_content" id="page_content" class="form-control" required><?= $communicationArtsWhere['content'] ?></textarea>
@@ -95,6 +125,7 @@ $ourCourses = $communicationArts->getCourses();
                             </div>
 
                         </div>
+                    </form>
 
                         <?php
                     } else {
@@ -160,6 +191,7 @@ $ourCourses = $communicationArts->getCourses();
                             foreach ($communicationArtsContent as $v) {
                                 $id = $v["id"];
                                 $title = $v["title"];
+                                $img = $v["img"];
                                 $content = $v["content"];
                                 $status = $v["status"];
                                 $date_update = $v["date_update"];
@@ -175,20 +207,28 @@ $ourCourses = $communicationArts->getCourses();
                                                 <?= ($status == 0 ? "" : '<span class="badge bg-warning" style="color: black;">Disabled</span>') ?>
                                             </h6>
         
-                                            <a href="communication_arts.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split">
-                                                <span class="icon"><i class="fas fa-pen"></i></span>
+                                            <a href="communication_arts.php?update=<?= $id ?>" class="btn btn-sm btn-info btn-icon-split ">
+                                                 <span class="icon"><i class="fas fa-pen"></i></span>
                                                 <span class="text">Update</span>
                                             </a>
-        
+
+                                            
+
+                                            
                                         </div>
                                     </div>
-                                        
                                     <div class="card-body">
-        
-                                        <div class="container-fluid">
-                                            <div class="skeleton content_load"><?= $content ?></div>
+                                        <div class = "row">
+
+                                            <div class="container-fluid col-sm-5 d-flex justify-content-start">
+                                                <div class="skeleton content_load"><?= $content ?></div>
+                                            </div>
+
+                                            <div class="container-fluid col-sm-6 d-flex justify-content-end">
+                                                <div class="skeleton content_load"><img src= "assets/img/uploads/communication-arts/<?= $img ?>" class="w-50 img-thumbnail"></div>
+                                            </div>
                                         </div>
-        
+
                                     </div>
         
                                 </div>

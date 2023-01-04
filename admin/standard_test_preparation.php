@@ -6,12 +6,32 @@ require_once "controller/controller.db.php";
 require_once "model/model.standard_test_preparation.php";
 
 $standardTestPreparation = new StandardTestPreparation();
+
 $standardTestPreparationContent = $standardTestPreparation->getContent();
+// $standardTestPreparationImg = $standardTestPreparationImg->getImage();
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
 <script type="text/javascript" charset="utf8" src="lib/summernote/summernote-bs4.min.js"></script>
 <script src="lib/summernote/summernote-image-attributes/summernote-image-attributes.js"></script>
+
+<style>
+     .preview{
+   width: 1000px;
+   height: 1000px;
+   border: 1px solid black;
+   margin: 0 auto;
+   background: white;
+  }
+  .image-upload>input {
+  display: none;
+}
+
+    .preview img{
+    display: none;
+    }
+</style>
+</style>
 
 <body id="page-top">
 
@@ -33,9 +53,11 @@ $standardTestPreparationContent = $standardTestPreparation->getContent();
 
                         $test_preparation_id = $_GET["update"];
                         $standardTestPreparationContentWhere = $standardTestPreparation->getContentWhere($test_preparation_id);
+                        // $test_preparation_img = $standardTestPreparation->getImage($img);
                         ?>
+                      <form action="" method="POST"  class="ajax-form" enctype="multipart/form-data" id="myform">
 
-                        <div class="card shadow mb-4">
+                        <div class="cardshadow mb-4">
 
                             <div class="card-header py-3">
                                 <div class="d-sm-flex align-items-center justify-content-between">
@@ -75,9 +97,23 @@ $standardTestPreparationContent = $standardTestPreparation->getContent();
                                 </div>
 
                                 <div class="row mb-4">
+                                    <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Image:</label>
+                                        <div class="col-sm-4">
+                                            <input type="file" id="img" name="img" class="form-control p-1" value="<?= $standardTestPreparationContentWhere["img"] ?>" onchange='Test.UpdatePreview(this)' >
+                                        </div>
+                                        
+                                        <div class="col-sm-3">
+                                            <div id = "preview">
+                                                <img src="assets/img/uploads/test-prep/<?= $standardTestPreparationContentWhere["img"] ?>" class="w-75 img-thumbnail"> 
+                                            </div>
+                                        </div>
+                                </div>
+                            
+
+                                <div class="row mb-4">
                                     <label class="col-sm-2 col-form-label text-right"><span class="required">*</span> Content:</label>
                                     <div class="col-sm-9">
-                                        <textarea name="page_content" id="page_content" class="form-control" required><?= $standardTestPreparationContentWhere['content'] ?></textarea>
+                                        <textarea name="page_content" id="page_content" class="form-control"  required><?= $standardTestPreparationContentWhere['content'] ?></textarea>
                                     </div>
                                 </div>
 
@@ -90,10 +126,9 @@ $standardTestPreparationContent = $standardTestPreparation->getContent();
                                         </select>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
+                        </form>
 
                         <?php
                     } else {
@@ -102,6 +137,7 @@ $standardTestPreparationContent = $standardTestPreparation->getContent();
                             foreach ($standardTestPreparationContent as $v) {
                                 $id = $v["id"];
                                 $title = $v["title"];
+                                $img = $v["img"];
                                 $content = $v["content"];
                                 $status = $v["status"];
                                 $date_update = $v["date_update"];
@@ -124,25 +160,28 @@ $standardTestPreparationContent = $standardTestPreparation->getContent();
     
                                         </div>
                                     </div>
+
     
-                                    <div class="card-body">
-    
-                                        <div class="container-fluid">
-                                            <div class="skeleton content_load"><?= $content ?></div>
+                                    <div class="card-body"> 
+
+                                        <div class = "row">
+                                            <div class="container-fluid col-sm-6">
+                                                <div class="skeleton content_load"><?= $content ?></div>
+                                            </div>
+
+                                            <div class="container-fluid col-sm-6">
+                                                <div class="skeleton content_load"><img src="assets/img/uploads/test-prep/<?= $img; ?>" class="w-50 img-thumbnail" /></div>
+                                            </div>
+                                            
                                         </div>
-    
                                     </div>
-    
                                 </div>
-    
                                 <?php
                             }
                         }
-    
                     }
 
                     ?>
-
                 </div>
             </div>
 
@@ -153,11 +192,8 @@ $standardTestPreparationContent = $standardTestPreparation->getContent();
                     </div>
                 </div>
             </footer>
-
+            </div>
         </div>
-
-    </div>
-
     <div id="preloader" style="display: none;"></div>
 
     <a class="scroll-to-top rounded" href="#page-top">

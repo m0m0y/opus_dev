@@ -13,7 +13,7 @@ $(function() {
             ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
             ['para', ['paragraph']],
             ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
+            // ['insert', ['link', 'picture', 'video']],
             ['view', ['fullscreen']],
         ],
         
@@ -32,18 +32,26 @@ $(function() {
         }
     });
 
-    $('#btn-save').on('click', function() {
-       var id = $('#id').val();
-       var title = $('#title').val();
-       var content = $('#page_content').val();
-       var status = $('#status').val();
+    $(function(){
+        Test = {
+            UpdatePreview: function(obj){
+              // if IE < 10 doesn't support FileReader
+              if(!window.FileReader){
+                 // don't know how to proceed to assign src to image tag
+              } else {
+                 var reader = new FileReader();
+                 var target = null;
+                 
+                 reader.onload = function(e) {
+                  target =  e.target || e.srcElement;
+                   $("img").prop("src", target.result);
+                 };
+                  reader.readAsDataURL(obj.files[0]);
+              }
+            }
+        };
+    });
 
-       if(title == "" || $('#page_content').summernote('isEmpty')) {
-            errorAlert();
-       } else {
-        submit(id, title, content, status);
-       }
-    })
 
     $('#addPosition').on('click', function() {
         $('#staticBackdrop').addClass('addPositionModal').modal('show');
@@ -79,23 +87,28 @@ $(function() {
 
 })
 
-function submit(id, title, content, status) {
-    $.ajax({
-        url: 'controller/controller.communication_arts.php?mode=updateContent',
-        method: 'POST',
-        data: {
-            id:id, 
-            title:title, 
-            content:content, 
-            status:status
-        },
-        success:function() {
-            $('#preloader').show();
-            window.localStorage.setItem("stat", "success");
-            window.location.href="communication_arts.php";
-        }
-    });
-}
+$('#myform').on('submit', function(e){
+        e.preventDefault();
+			var formData = new FormData(this);
+
+            // var img = img.substring(img.lastIndexOf("\\") + 1, img.length);
+			$.ajax({
+				type: "POST",
+                url: 'controller/controller.communication_arts.php?mode=updateContent',
+				data: formData,
+				cache: false,
+				contentType: false,
+				processData: false,
+				success:function(data){
+                    $('#preloader').show();
+                    window.localStorage.setItem("stat", "success");
+                    window.location.href="communication_arts.php";
+              
+					findImage(data);
+               
+				}
+			});
+		});
 
 function updateLink(id, course, sort_by, status) {
     $('#staticBackdrop').addClass('updateModal').modal('show');
@@ -106,7 +119,7 @@ function updateLink(id, course, sort_by, status) {
     $('#sort_by').val(sort_by);
     $('#status').val(status);
 
-    $('.submit-btn').on('click', function() {
+    $('.submit-btnn').on('click', function() {
        var course_id = $('#course_id').val();
        var course = $('#course').val();
        var sort_by = $('#sort_by').val();

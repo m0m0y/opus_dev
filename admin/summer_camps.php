@@ -16,7 +16,7 @@ $summerCampsContent = $summerCamps->getContent();
 <body id="page-top">
 
     <div id="wrapper">
-        
+    bm       
         <?php require_once "assets/common/side_bar.php"; ?>
 
         <div id="content-wrapper" class="d-flex flex-column">

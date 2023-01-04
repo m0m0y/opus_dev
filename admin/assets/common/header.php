@@ -18,6 +18,6 @@
 
     <script src="lib/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="lib/dist/sweetalert2.min.css">
-    
+    <script src="https://kit.fontawesome.com/3096b4ed49.js" crossorigin="anonymous"></script>
     <script src="lib/jquery/jquery.js"></script>
 </head>

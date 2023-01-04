@@ -8,16 +8,42 @@ $mode = isset($_GET["mode"]) ? $_GET["mode"] : NULL;
 
 switch ($mode) {
 
-    case "updateContent";
-        $id = $_POST["id"];
-        $title = $_POST["title"];
-        $content = $_POST["content"];
-        $status = $_POST["status"];
-        $standardTestPreparation = $standardTestPreparation->updateContent($id, $title, $content, $status);
-        
-        $response = array("message" => "Success Update");
-        break;
+    case "updateContent";             
+    
+                if($_FILES['img']['name']!="") {
+                    // update with img
+                    $target_dir = "../assets/img/uploads/test-prep/";
+                    $file = $_FILES['img']['name'];
+                    $path = pathinfo($file);
+                    $ext = $path['extension'];
+                    $temp_name = $_FILES['img']['tmp_name'];
+                    $path_filename_ext = $target_dir.$file;
 
+                    $id = $_POST["id"];
+                    $title = $_POST["title"];           
+                    $content = $_POST["page_content"];
+                    $status = $_POST["status"];
+
+                    move_uploaded_file($temp_name,$path_filename_ext);
+                    
+                    $standardTestPreparation = $standardTestPreparation->updateContent($id, $title, $file, $content, $status);
+                    $response = array("message" => "Success Update");
+                } else {
+                    // update without img
+                    $id = $_POST["id"];
+                    $title = $_POST["title"];           
+                    $content = $_POST["page_content"];
+                    $status = $_POST["status"];
+
+                    $img = $standardTestPreparation->getImg($id);
+                    $file = $img[0];
+                    
+                    $standardTestPreparation = $standardTestPreparation->updateContent($id, $title, $file, $content, $status);
+                    $response = array("message" => "Success Update");
+                }
+  
+        break;
+        
     default: 
         header("Location: ../404.php");
 
