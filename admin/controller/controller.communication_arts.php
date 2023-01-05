@@ -56,33 +56,33 @@ switch($mode) {
         $response = array("message" => "Delete Success");
         break;
 
-        case "addCourse";
-        $course = $_POST["course"];
-        $sort_by = $_POST["sort_by"];
-        $status = $_POST["status"];
-        $communicationArts = $communicationArts->addCourse($course, $sort_by, $status);
+    //     case "addCourse";
+    //     $course = $_POST["course"];
+    //     $sort_by = $_POST["sort_by"];
+    //     $status = $_POST["status"];
+    //     $communicationArts = $communicationArts->addCourse($course, $sort_by, $status);
 
-        $response = array("message" => "Success Insert");
-        break;
+    //     $response = array("message" => "Success Insert");
+    //     break;
 
-    case "updateCourse";
-        $course_id = $_POST["course_id"];
-        $course = $_POST["course"];
-        $sort_by = $_POST["sort_by"];
-        $status = $_POST["status"];  
-        $communicationArts = $communicationArts->updateCourse($course_id, $course, $sort_by, $status);
+    // case "updateCourse";
+    //     $course_id = $_POST["course_id"];
+    //     $course = $_POST["course"];
+    //     $sort_by = $_POST["sort_by"];
+    //     $status = $_POST["status"];  
+    //     $communicationArts = $communicationArts->updateCourse($course_id, $course, $sort_by, $status);
 
-        $response = array("message" => "Update Success");
-        break;
+    //     $response = array("message" => "Update Success");
+    //     break;
 
-    case "deleteCourse";
-        $id = $_POST["id"];
-        $communicationArts = $communicationArts->deleteCourse($id);
+    // case "deleteCourse";
+    //     $id = $_POST["id"];
+    //     $communicationArts = $communicationArts->deleteCourse($id);
 
-        $response = array("message" => "Delete Success");
-        break;
+    //     $response = array("message" => "Delete Success");
+    //     break;
         // --------------------------------Communication_curricula--------------------------------------
-        case "addCurricula";
+        case "             ";
         $course = $_POST["course"];
         $sort_by = $_POST["sort_by"];
         $status = $_POST["status"];

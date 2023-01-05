@@ -9,6 +9,7 @@ $communicationArts = new CommunicationArts();
 
 $communicationArtsContent = $communicationArts->getContent();
 $ourCourses = $communicationArts->getCourses();
+$ourcurricula = $communicationArts->getcurricula();
 ?>
 
 <link rel="stylesheet" type="text/css" href="lib/summernote/summernote-bs4.css">
@@ -132,7 +133,6 @@ $ourCourses = $communicationArts->getCourses();
                         ?>
 
                         <div class="card shadow mb-4">
-
                             <div class="card-header py-3">
                                 <div class="d-sm-flex align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Our Courses</span></h6>
@@ -185,6 +185,59 @@ $ourCourses = $communicationArts->getCourses();
 
                             </div>
                         </div>
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <div class="d-sm-flex align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Our well-designed curricula include:</span></h6>
+
+                                    <button type="button" id="addPositionCurricula" class="btn btn-sm btn-primary btn-icon-split">
+                                        <span class="icon"><i class="fas fa-plus-square"></i> </span>
+                                        <span class="text">Add New</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <?php
+                                if(!empty($ourcurricula)) {
+                                    foreach($ourcurricula as $v) {
+                                        $id = $v["id"];
+                                        $course = $v["course"];
+                                        $sort_by = $v["sort"];
+                                        $status = $v["status"];
+                                        $date_update = $v["date_update"];
+                                        ?>
+
+                                        <div class="col-lg-4 col-sm-12">
+
+                                            <div class="card-body">
+                                                <div class="container card shadow py-3">
+                                                    
+                                                    <div class="d-sm-flex align-items-center justify-content-between">
+                                                        <h5><?= $course ?></h5>
+                                                        <p><span class="badge">Last update: <?= $date_update ?></span></p>
+                                                    </div>
+
+                                                    <?= ($status == 0 ? '<span class="text-primary"> Enable</span>' : ' <span class="text-warning">Disabled</span>') ?>
+
+                                                    <div class="d-flex justify-content-end">
+                                                        <a href="#!" class="text-danger text-decoration-none" onclick="deleteCurricula('<?= $id ?>')">Delete &nbsp;</a> <br>
+                                                        <a href="#!" class="text-info text-decoration-none" onclick="updateInfo('<?= $id ?>', '<?= $course ?>', '<?= $sort_by ?>', '<?= $status ?>')">Update &rarr; </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <?php
+                                    }
+                                }
+                                ?>
+
+                            </div>
+                        </div>
 
                         <?php
                         if(!empty($communicationArtsContent)) {
@@ -212,9 +265,6 @@ $ourCourses = $communicationArts->getCourses();
                                                 <span class="text">Update</span>
                                             </a>
 
-                                            
-
-                                            
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -228,20 +278,15 @@ $ourCourses = $communicationArts->getCourses();
                                                 <div class="skeleton content_load"><img src= "assets/img/uploads/communication-arts/<?= $img ?>" class="w-50 img-thumbnail"></div>
                                             </div>
                                         </div>
-
                                     </div>
-        
                                 </div>
-                            
+                
                                 <?php
-
                             }
                         }
                     }
                     ?>
-
                 </div>
-                
             </div>
 
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" aria-labelledby="staticBackdropLabel">
@@ -250,6 +295,54 @@ $ourCourses = $communicationArts->getCourses();
 
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalTitle"></h5>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="d-none">
+                                <input type="hidden" id="course_id" name="course_id" class="form-control" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Position: <span class="required">*</span></label>
+                                <input type="text" class="form-control" name="course" id="course" placeholder="Type Here...">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Sort By:</label>
+                                <input type="number" class="form-control" name="sort_by" id="sort_by" value="0">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Status: </label>
+                                <select class="form-control" id="status" name="status">
+                                    <option value="0">Enabled</option>
+                                    <option value="1">Disabled</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="close" class="btn btn-sm btn-secondary btn-icon-split closeBtn" data-dismiss="modal">
+                                <span class="icon"><i class="fas fa-window-close"></i></span>
+                                <span class="text">Close</span>
+                            </button>
+
+                            <button type="submit" class="btn btn-sm btn-primary btn-icon-split submit-btn">
+                                <span class="icon"><i class="fas fa-save"></i></span>
+                                <span class="text">Save</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" aria-labelledby="staticBackdropLabel">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleCurricula"></h5>
                         </div>
 
                         <div class="modal-body">
