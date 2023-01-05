@@ -44,18 +44,18 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                     </div>
 
-                    <div class="row d-flex justify-content-center m-3">
-                        <div class="col-md-6">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 ph-btn-harvard-summer-program">
                             <a href="#!" type="button" class="danger-btn w-100">Register Fall 2022</a>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 ph-btn-harvard-summer-program">
                             <a href="#!" type="button" class="danger-btn w-100">Courses Schedule</a>
                         </div>
                     </div>
 
-                    <div class="row d-flex justify-content-center mt-3">
-                        <div class="col-md-6">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 ph-btn-harvard-summer-program">
                             <a href="#!" type="button" class="danger-btn w-100">Apply Summer 2023</a>
                         </div>
                     </div>
@@ -328,85 +328,6 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </div>
     </section>
-    
-<?php } if(isset($_GET["canada"])) { ?>
-
-    <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
-        <div class="container">
-            <ol>
-                <li><a href="index.php">Home</a></li>
-                <li>Program</li>
-                <li>Competitive Debate Programs</li>
-            </ol>
-            <h2>Opus Competitive Debate Programs</h2>
-        </div>
-    </section>
-
-    <div class="container-fluid danger-bg">
-        <div class="row">
-            <div class = "col-md-6 p-5 title-size">
-                <h1 class="m-5 px-5 fw-bold">In partnership with the Harvard Debate Council bringing you the best debate learning experience.</h1>
-                <h4 class="px-5 my-5  lh-base">Learn from the master coaches from the Harvard Debate Council! Opus Academy is proud to be in partnership with Harvard Debate Council, providing the opportunity for students to train with the world's leading experts in international debate practices.</h4>
-                <center><a href ="#section-container-ca" class="mx-5"><i class="bi bi-chevron-compact-down mx-auto"></i></a></center>
-            </div>
-
-            <div class="col-md-6 px-0">
-                <img src="assets/img/competitive-debate/bridge.jpg" class="w-100" alt="bridge-img">
-            </div>
-        </div>
-    </div>
-
-    <section id="section-container-ca" class="section-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 pe-5">
-                    <h2 class="text-left mb-5 fw-bold">Harvard Competitive Debate</h2>
-
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
-                    </div>
-
-                    <div class="row d-flex justify-content-center m-3 ca-btn-container">
-                        <div class="col-md-6 col-sm-12 px-1 ca-btn-register">
-                            <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12 px-1 ca-btn-courses">
-                            <a href="#!" type="button" class="danger-btn">Courses Schedule</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;"></div>
-                </div>
-            </div>
-        </section>
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> Exclusive partnership with Harvard Debate Council</p>
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> Top - level Harvard Debate Instructors</p>
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> College Prowler</p>
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> Highly developed Curriculum</p>
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> Years of Excellence (Harvard Debate Council: established over 35 years and Opus Academy: established over 16 years)
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> Excellent student-faculty ratio</p>
-                        <p><i class='bx bx-check fs-4 fw-bold'></i> Harvard Debate Council Certificate of completion of program</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6" style="background: url('assets/img/communication-arts/p-25.PNG') center center no-repeat; background-size: cover;"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="" class="primary-bg">
-        <div class="container">
-            <div class="p-3">
-                <div class="row">
-                <div class="col-xl-12">
-                    <p class="fs-1 fw-bold text-center" style="color: white;">Empower future leaders through speech and debate. Learn to Speak! Speak to Learn!</p>
-                    <center><a href="#!" type="button" class="light-btn mt-3">Book an Appointment</a></center>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 <?php } if(isset($_GET["access_mca"])) { ?>
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
@@ -565,25 +486,6 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <div class="d-flex justify-content-start">
                         <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
                     </div>
-
-                    <div class="mt-4">
-                        <div class="card shadow card-body">
-                            <h2 class="text-secondary mb-4 fw-bold">Access MCA Scholars Program</h2>
-                            <p class ="text-secondary fw-lighter">By taking one course each term in Grades 10, 11, and 12 students can guarantee admission to an MCA university or college.</p>
-                            <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
-                            <hr class="m-3 mb-2 mt-0"></hr>
-                            <div class=" ms-3 text-secondary fw-bold">
-                                <p><span class="fa-solid fa-circle me-3"></span>Application Open Year Round</p>
-                                <p><span class="fa-solid fa-circle me-3"></span>Courses Start in September, January, and Summer</p>
-                                <p><span class="fa-solid fa-circle me-3"></span>Summer Residential Options Available</p>
-                            </div>
-                            <div class="text-secondary fw-bold ms-5">
-                                <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>
-                                <p><span class="fa-regular fa-circle me-3"></span>Gain Laboratory and Research  Experience</p>
-                                <p><span class="fa-regular fa-circle me-3"></span>Summer Residential Options Available</p>
-                    <div class="col-sm-12 mt-3 mca-btn-courses">
-                        <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Access MCA Scholars Program</a>
-                    </div>
                 </div>
 
                 <div class="col-md-6 text-content">
@@ -633,25 +535,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <div class="d-flex justify-content-center">
                         <img src="assets/img/amichigan/sophomores.jpg" alt="harvard" class="w-100">
                     </div>
-                </div>
-            </div>
-            </div>
-        </div>
 
-        <div class="spacing"></div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 pe-5">
-                    <h2 class="text-left mb-5 fw-bold">The Standard Programs</h2>
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/img/amichigan/sophomores.jpg" alt="harvard" class="w-100">
-                    </div>
-
-                    <div class="col-sm-12 mt-3 mca-btn-courses">
-                        <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Standard Program</a>
-                    </div>
-                </div>
                     <div class="col-sm-12 mt-3 mca-btn-courses">
                         <a href="https://www.abetterwaytocollege.com/application" type="button" class="w-100 danger-btn">Standard Program</a>
                     </div>
@@ -666,11 +550,11 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <p>Students complete a year of university courses in their own country and then are granted automatic admission with transfer of all their credits to the university or college that is their best fit. </p>
                     
                     <div class="mt-4">
-                        <div class="card shadow card-body">
+                        <div class="card card-body">
                             <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
                             <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.<p> 
                             <hr class="m-3 mb-2 mt-0"></hr>
-                            <div class=" ms-3 text-secondary fw-bold">
+                            <div class="mt-4 text-secondary fw-bold">
                                 <p><span class="fa-solid fa-circle me-3"></span>Summer - Orientation (Residential or Online)</p>
                                 <p><span class="fa-solid fa-circle me-3"></span>Fall - Online semester(4 courses + advisory)</p>
                                 <p><span class="fa-solid fa-circle me-3"></span>Spring - Online semester (4 +courses + advisory)</p>
