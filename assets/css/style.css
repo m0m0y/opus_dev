@@ -73,6 +73,16 @@ h1, h2, h3, h4, h5, h6 {
 .title-size h1{
   font-size: 60px;
 }
+.btn-collapse {
+    color: #fff;
+    background-color: #3f5372;
+    border-color: #3f5372;
+}
+.btn-collapse:hover {
+  color: #fff;
+  
+}
+
 .light-btn:hover {
   background: #1d57ae;
   border: 1px solid #0e3f89ae; 

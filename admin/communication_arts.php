@@ -370,7 +370,7 @@ $ourcurricula = $communicationArts->getcurricula();
                         </div>
 
                         <div class="modal-footer">
-                            <button type="close" class="btn btn-sm btn-secondary btn-icon-split closeBtn" data-dismiss="modal">
+                            <button type0="close" class="btn btn-sm btn-secondary btn-icon-split closeBtn" data-dismiss="modal">
                                 <span class="icon"><i class="fas fa-window-close"></i></span>
                                 <span class="text">Close</span>
                             </button>
