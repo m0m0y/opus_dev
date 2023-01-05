@@ -743,8 +743,9 @@ $competitiveDebateContent = $competitiveDebate->getContent();
     <section>
         <div class ="container">
             <div class ="row m-5 justify-content-center">
-                <div class ="col-md-8">
-                    <h2 class="fw-bold text-center">Access MCA Scholars - Courses Offered Spring Term 2023</h2>
+            <h2 class="fw-bold text-secondary text-center mb-3">Access MCA Scholars - Courses Offered Spring Term 2023</h2>
+                <div class ="col-md-9">
+                    
                     <p class="">The following courses are available for individual enrollment.  Interested students should complete the individual course application.  All courses begin January 23, 2023.</p>
                     
                     <a class="btn btn-collapse p-4 w-100" data-bs-toggle="collapse" href="#BIO_160" role="button" aria-expanded="false" aria-controls="collapseExample"><h5 class ="fw-bold d-flex justify-content-start">BIO 160: Ecological and Evolutionary Systems (Environmental Science)</h5></a>
