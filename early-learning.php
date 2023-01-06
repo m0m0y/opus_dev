@@ -86,11 +86,11 @@ $cardContent = $card->getContentWhere($page);
 
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="assets/img/early-learning/l-1.png" class="w-75 mb-1">
+                            <img src="assets/img/early-learning/l-1.png" class="w-100">
                         </div>
 
                         <div class="col-md-6">
-                            <img src="assets/img/early-learning/l-2.png" class="w-100 mt-5">
+                            <img src="assets/img/early-learning/l-2.png" class="w-100">
                         </div>
                     </div>
                 </div>

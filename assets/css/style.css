@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 .white-bg
 {
   background-color: white;
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 2.5rem;
 }
 .why-us .exam-early-learn, p i {
   color: #009400;
@@ -916,6 +916,11 @@ section {
 /*--------------------------------------------------------------
 # University and Graduate
 --------------------------------------------------------------*/
+.university-graduates {
+  background: url("../img/admin-counselling/university/church.jpg") no-repeat;
+  background-size: cover;
+  padding: 8%;
+}
 .university-graduates .box {
   box-shadow: 0px 2px 15px rgb(0 0 0 / 25%);
 }
@@ -1175,6 +1180,9 @@ section {
 .we-teach-us-debate {
   background: url("../img/classical-music/piano-bg.jpg") center center no-repeat;
   background-size: cover;
+}
+.classical-music .classical-music-img-con {
+  margin-bottom: 35px;
 }
 .how-to-apply .circle-container {
   background-color: #0d6efd;
@@ -1794,53 +1802,6 @@ MEDIA SCREEN
 }
 
 @media screen and (max-width: 375px) {
-  /* .swiper-button-prev {
-    left: -30px;
-  }
-  .swiper-button-next {
-    right: -30px;
-  }
-  .banner-wrap .inner .text-content h3 {
-    font-size: 15px;
-  }
-  .navbar-mobile ul {
-    height: 410px; 
-  }
-  .navbar-mobile .dropdown > .dropdown-active {
-    height: auto;
-  }
-  section.breadcrumbs {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding: 20px 0 !important;
-  }
-  section {
-    padding: 30px 0 !important;
-  }
-  section.public-speaking .content, .competitive-debate-programs .content {
-    padding: 20px !important;
-  }
-  #footer .footer-top .footer-contact p img {
-    margin: 3%;
-  }
-  .testimonials {
-    padding: 20px 0 !important
-  }
-  #main img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .breadcrumbs h2 {
-    font-size: 19px;
-  }
-  .addmission-counselling .content h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .section-title {
-    padding-bottom: 20px;
-  } */
-
   .section.communicationArts, .certificate-and-diploma, 
   .public-speaking, .certificate-and-diploma-grant, 
   .interview-skills-program, .youth-lead-program, 
@@ -1882,7 +1843,6 @@ MEDIA SCREEN
   .how-to-apply .circle-container,
   .our-counselling-services .circle-container {
     width: 22%;
-    margin-bottom: 5px !important;
   }
   .px-lg-5, .px-5 {
     padding: 0!important;
@@ -1917,23 +1877,23 @@ MEDIA SCREEN
   .breadcrumbs ol li + li::before {
     padding-right: 5px;
   }
-   .breadcrumbs h2 {
+  .breadcrumbs h2 {
     margin: 0px;
     font-size: 20px;
     font-weight: 500;
   }
-  /* .title-size {
-    padding: 0rem 1rem !important;
-  } */
-  .title-size h1 {
+  .title-size {
+    padding: 0rem 0.50rem !important;
+  }
+  /* .title-size h1 {
     padding-top: 20px !important
-  }
-  .title-size h4 {
+  } */
+  /* .title-size h4 {
     padding: 5px 0px !important;
-  }
-  .section-title {
+  } */
+  /* .section-title {
     padding-bottom: 0px;
-  }
+  } */
   .section-container .spacing {
     padding: 15px 0;
   }
@@ -1953,15 +1913,15 @@ MEDIA SCREEN
     padding: 0px 5%;
     margin: 0px;
   }
-  .container-fluid {
-    padding-right: 0%;
-    padding-left: 0%;
+  .learnmore-btn {
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
   }
 
 
   
   #topbar .contact-info i span {
-    font-size: xx-small;
+    font-size: smaller;
   }
   .navbar a, .navbar a .primary-btn {
     font-size: 12px;
@@ -2014,7 +1974,7 @@ MEDIA SCREEN
   }
   .ourCourses .box {
     margin: 5px 0;
-    padding: 25px 10px;
+    padding: 25px 25px;
   }
   .ourCourses .align-items-stretch {
     padding: 0 !important;
@@ -2095,32 +2055,194 @@ MEDIA SCREEN
 
 
 
-  .learnmore-btn {
-    margin-top: 0px !important;
-    margin-bottom: 20px !important;
-  }
-
-
-
-  /* .we-help-students .section-title h2 {
+  .we-help-students .section-title h2 {
     margin-bottom: 0;
-  }
-  .we-help-students .img {
-    margin: 25px 0 !important;
   }
   .we-help-students .align-items-stretch {
     margin-bottom: 25px;
-  }
-  .we-help-students .white-bg {
-    padding: 3rem 1.5rem;
-  }
-  .we-help-students .rounded h2 {
-    margin-bottom: 20px !important;
+    padding: 0px;
   }
   .we-help-students .rounded ul {
     padding-left: 20px;
     margin-bottom: 0;
-  } */
+  }
+  .we-help-students img {
+    margin: 0 !important;
+  }
+
+
+
+  .exam-early-learn {
+    padding: 0 !important;
+  }
+
+
+
+  .classical-music .classical-music-img-con img {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  .section-container .private-piano-con, 
+  .section-container .music-theory-con {
+    padding: 1rem 0;
+  }
+  .section-container .btn-container .btn-private-piano-div {
+    padding: 0;
+  }
+  .we-teach-us-debate .master-class-con,
+  .we-teach-us-debate .music-competitions-con,
+  .we-teach-us-debate .workshops-con {
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .we-teach-us-debate .bg-light {
+    padding: 11% !important;
+  }
+  .how-to-apply .apply-program {
+    margin-bottom: 50px;
+  }
+  .how-to-apply .col-md-4 {
+    margin: 15px 0;
+    padding: 0 !important;
+  }
+  .classical-music h4 {
+    font-size: 19px !important;
+    text-align: center;
+  }
+  .ourCourses h5 {
+    margin-bottom: 0 !important;
+  }
+  .ourCourses .certificate-container .ap-img{
+    width: 50% !important;
+    margin-bottom: 10px !important;
+  }
+  .our-expert-content .col-md-4 {
+    padding: 0;
+  }
+  .our-expert-content h5 {
+    margin: 15px 0% !important;
+  }
+  .our-expert-content img {
+    margin: 15px 0%;
+  }
+  .our-expert-content a.read-testimonials-btn {
+    margin: 10px 0% !important;
+  }
+  .our-expert-teacher .alex-img {
+    margin: 0px !important;
+    display: none;
+  }
+
+
+
+
+  .reaching-goal-content {
+    padding: 0px;
+  }
+  .our-counselling-services .circle-container img {
+    display: flex;
+    margin-bottom: 0px !important;
+  }
+  .our-counselling-services .our-counselling-btn {
+    width: 100%;
+  }
+  .entrance-exams .image-logo {
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+  .entrance-exams .image-logo img {
+    width: 50% !important;
+    margin-bottom: 0px !important;
+  }
+  .reaching-goals-li {
+    padding: 0px !important;
+  }
+
+
+
+  .our-counselling-services p.text-center {
+    margin: 0 !important;
+  }
+  .our-counselling-services .circle-container {
+    margin: 15px 0% !important;
+  }
+  .our-counselling-services .col-md-2 {
+    padding: 0 !important;
+    margin: 15px 0% !important;
+  }
+  .our-counselling-services .our-counselling-btn {
+    width: 100%;
+  }
+  .knowledge-admission .interview-img {
+    display: none;
+  }
+  .university-graduates .interview-confidence-con,
+  .university-graduates .present-best-con {
+    padding: 0px !important;
+    margin: 15px 0%;
+  }
+  .university-graduates .interview-confidence-con .box,
+  .university-graduates .present-best-con .box {
+    padding: 35px 12% !important;
+  }
+  .img-con {
+    display: none !important;
+  }
+  .list-of-schools {
+    padding-left: 20px !important;
+  }
+  .reaching-your-goals .my-5 {
+    margin: 0px !important;
+  }
+
+
+
+
+  .summercamps-learnmore {
+    width: 100% !important;
+  }
+  .summercamps-learnmore-container {
+    margin: 15px 0% !important;
+  }
+  .btn-summer-camp {
+    padding: 5px !important;
+  }
+
+
+
+  .team .founder, .team .co-founder {
+    padding: 0px !important;
+  }
+  section.team .icon-boxes .icon-box {
+    padding: 30px;
+    margin-top: 0px !important;
+  }
+  section.team .member-img img.img-fluid {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+  .intro-div {
+    padding: 0px !important;
+  }
+  .intro-div img {
+    display: none;
+  }
+  .other-teams {
+    padding: 0px !important;
+    margin-bottom: 20px;
+  }
+
+
+  
+  #footer .footer-contact {
+    margin-bottom: 30px;
+  }
+  #footer .footer-links {
+    margin-bottom: 20px;
+  }
+  #footer .footer-top {
+    padding: 40px 6%;
+  }
 
 }
 
@@ -2232,7 +2354,10 @@ MEDIA SCREEN
     padding: 0px 5%;
     margin: 0px;
   }
-  
+  .learnmore-btn {
+    margin-top: 15px !important;
+    margin-bottom: auto !important;
+  }
 
 
 
@@ -2348,6 +2473,10 @@ MEDIA SCREEN
   .ca-btn-register, .ca-btn-courses {
     width: fit-content !important;
     padding: 0 !important;
+    margin: 1%;
+  }
+  .ph-btn-harvard-summer-program {
+    margin: 1%;
   }
   .school-partners-banner {
     padding-top: 0 !important;
@@ -2406,9 +2535,8 @@ MEDIA SCREEN
   .section-container .music-theory-con {
     padding: 1rem 0;
   }
-  .section-container .btn-container .btn-div {
+  .section-container .btn-container .btn-private-piano-div {
     padding: 0;
-    margin-bottom: 10px;
   }
   .we-teach-us-debate .master-class-con,
   .we-teach-us-debate .music-competitions-con,
@@ -2428,6 +2556,7 @@ MEDIA SCREEN
   }
   .classical-music h4 {
     font-size: 19px !important;
+    text-align: center;
   }
   .ourCourses h5 {
     margin-bottom: 0 !important;
@@ -2450,6 +2579,7 @@ MEDIA SCREEN
   }
   .our-expert-teacher .alex-img {
     margin: 0px !important;
+    display: none;
   }
 
 
@@ -2523,7 +2653,9 @@ MEDIA SCREEN
   .summercamps-learnmore-container {
     margin: 15px 0% !important;
   }
-
+  .btn-summer-camp {
+    padding: 5px !important;
+  }
 
 
   .team .founder, .team .co-founder {

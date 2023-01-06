@@ -54,18 +54,18 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                     </div>
 
-                    <div class="row d-flex justify-content-center m-3">
-                        <div class="col-md-6">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 ph-btn-harvard-summer-program">
                             <a href="#!" type="button" class="danger-btn w-100">Register Fall 2022</a>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 ph-btn-harvard-summer-program">
                             <a href="#!" type="button" class="danger-btn w-100">Courses Schedule</a>
                         </div>
                     </div>
 
-                    <div class="row d-flex justify-content-center mt-3">
-                        <div class="col-md-6">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 ph-btn-harvard-summer-program">
                             <a href="#!" type="button" class="danger-btn w-100">Apply Summer 2023</a>
                         </div>
                     </div>
@@ -337,7 +337,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
             </div>
         </div>
     </section>
-    
+
 <?php } if(isset($_GET["access_mca"])) { ?>
     <section id="breadcrumbs" class="breadcrumbs py-3 px-5">
         <div class="container">
@@ -532,6 +532,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     </div>
                 </div>
             </div>
+            </div>
         </div>
 
         <div class="spacing"></div>
@@ -541,7 +542,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                 <div class="col-md-6 pe-5">
                     <h2 class="text-left mb-5 fw-bold">The Standard Programs</h2>
                     <div class="d-flex justify-content-center">
-                        <img src="assets/img/amichigan/sophomores.jpg" alt="harvard" class="w-100 ">
+                        <img src="assets/img/amichigan/sophomores.jpg" alt="harvard" class="w-100">
                     </div>
 
                     <div class="col-sm-12 mt-3 mca-btn-courses">
@@ -557,17 +558,16 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     <p>- Accelerated decision timeline</p>
                     <p>Students complete a year of university courses in their own country and then are granted automatic admission with transfer of all their credits to the university or college that is their best fit. </p>
                     
-                    <div class="mt-5">
-                        <div class="card shadow card-body">
-                        <a href="https://www.abetterwaytocollege.com/application"></a>
+                    <div class="mt-4">
+                        <div class="card card-body">
                             <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
                             <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.</p> 
                             <hr class="m-3 mb-2 mt-0"></hr>
-                            <div class=" ms-3 text-secondary fw-bold">
-                                <p><span class="fa-solid fa-circle green me-3"></span>Summer - Orientation (Residential or Online)</p>
-                                <p><span class="fa-solid fa-circle green me-3"></span>Fall - Online semester(4 courses + advisory)</p>
-                                <p><span class="fa-solid fa-circle green me-3"></span>Spring - Online semester (4 +courses + advisory)</p>
-                                <p><span class="fa-solid fa-circle green me-3"></span>Summer - Residential<p>
+                            <div class="mt-4 text-secondary fw-bold">
+                                <p><span class="fa-solid fa-circle me-3"></span>Summer - Orientation (Residential or Online)</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Fall - Online semester(4 courses + advisory)</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Spring - Online semester (4 +courses + advisory)</p>
+                                <p><span class="fa-solid fa-circle me-3"></span>Summer - Residential<p>
                             </div>
                             <div class="text-secondary fw-bold ms-5">
                                 <p><span class="fa-regular fa-circle me-3"></span>Complete Coursework</p>

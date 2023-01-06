@@ -51,11 +51,11 @@ $summerCamps = $summerCamps->getContent();
 
                             <div class="d-flex justify-content-left mt-5">
                                 <div class="d-flex justify-content-start me-2">
-                                    <a href="#!" type="button" class="primary-btn p-3">Register Summer 2022</a>
+                                    <a href="#!" type="button" class="primary-btn btn-summer-camp p-3">Register Summer 2022</a>
                                 </div>
                                 
                                 <div class="d-flex justify-content-end ms-2">
-                                    <a href="#!" type="button" class="primary-btn p-3">Summer 2022 Schedule</a>
+                                    <a href="#!" type="button" class="primary-btn btn-summer-camp p-3">Summer 2022 Schedule</a>
                                 </div>
                             </div>
                         </div>

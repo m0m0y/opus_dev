@@ -40,28 +40,21 @@ $classicalMusicContent = $classicalMusic->getContent();
             <h2 class="text-center fw-bold">Classical Music Curriculum</h2>
             <h4 class="mt-3 lh-base mb-5">We offer a wide range of classical music through curriculum-based programs, as students can select from the following certifying bodies:</h4>
 
-            <div class="row">
+            <div class="row classical-music-img-con">
                 <div class="col-lg-3 col-md-6">
-                    <div class="box">
-                        <img src= "assets/img/classical-music/l-1.png" class = "w-75">
-                    </div>
+                    <img src= "assets/img/classical-music/l-1.png" class ="w-100">
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <div class="box">
-                    <img src= "assets/img/classical-music/l-2.png" class = "w-75">
-                    </div>
+                    <img src= "assets/img/classical-music/l-2a.png" class = "w-100">    
                 </div>
-
+                
                 <div class="col-lg-3 col-md-6">
-                    <div class="box">
-                    <img src= "assets/img/classical-music/l-3.png" class = "w-75">
-                    </div>
+                    <img src= "assets/img/classical-music/l-3.png" class = "w-100">
                 </div>
+                
                 <div class="col-lg-3 col-md-6">
-                    <div class="box">
-                    <img src= "assets/img/classical-music/abrsm.png" class = "w-75">
-                    </div>
+                    <img src= "assets/img/classical-music/abrsm.png" class = "w-100">
                 </div>
             </div>
         </div>
@@ -118,10 +111,10 @@ $classicalMusicContent = $classicalMusic->getContent();
                     </p>
                     
                     <div class="row d-flex justify-content-center mb-5 btn-container">
-                        <div class="col-md-6 btn-div">
+                        <div class="col-md-6 btn-private-piano-div">
                             <a href="#!" type="button" class="learnmore-btn w-100">Learn More</a>
                         </div>
-                        <div class="col-md-6 btn-div">
+                        <div class="col-md-6 btn-private-piano-div">
                             <a href="#!" type="button" class="learnmore-btn w-100">How to Apply</a>
                         </div>
                     </div>
@@ -159,7 +152,7 @@ $classicalMusicContent = $classicalMusic->getContent();
                     History courses are taught using a stimulating combination of lecture and audio-visual presentation of diverse works and composers.</p>
 
                     <p><b>Ear Training and Sight Reading:</b>
-                    Students focus on technique, ear training, note reading, rhythm, keyboard theory and singing.</p><br>
+                    Students focus on technique, ear training, note reading, rhythm, keyboard theory and singing.</p>
 
                     <div class="d-grid gap-2">
                         <a href="#!" type="button" class="primary-btn w-100">Learn more</a>

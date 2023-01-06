@@ -115,10 +115,10 @@ require_once "assets/common/header.php";
         </div>
     </section>
 
-    <section class="knowledge-admission" class="knowledge-admission">
+    <div class="knowledge-admission" class="knowledge-admission">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                <div class="col-md-6 d-flex align-items-stretch justify-content-center flex-column px-5">
                     <h4 class="mb-4 fs-1 fw-bold">Knowledgeable Admissions Counsellors</h4>
                     <p>Our admissions counsellors offer a wealth of knowledge, experience, and expertise to the university admissions process. Not only do we have a deep and objective understanding of many universities their offerings, the application form, and personal essays, but we also expertly understand the application process in general. Our counsellors stay in touch with current trends and spend much time touring campuses and talking with university counselling professionals and admission officers. Our team-based approach ensures that students gain valuable insights from a multiplicity of perspectives.</p>
 
@@ -132,7 +132,7 @@ require_once "assets/common/header.php";
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section id="university-graduates" class="university-graduates">
         <div class="container">
@@ -176,52 +176,48 @@ require_once "assets/common/header.php";
             <p class = "lh-base" >We offer standardized test preparation for exams including the<b> Scholastic Aptitude Test (SAT), American College Testing (ACT), International English Language Testing System (IELTS), and Test of English as a Foreign Language (TOEFL). </b> We tailor the curriculum to the strengths and weaknesses of the individual student, making sure to cover all possible content and ensuring an improvement in the score.</p1>
             
             <div class="row">
-                <div class="col-md-6 d-flex justify-content-end mt-2 img-con">
-                    <img src="assets/img/admin-counselling/university/c2.png" class="w-25 mb-5 sat-img">
+                <div class="col-md-6 d-flex justify-content-end img-con">
+                    <img src="assets/img/admin-counselling/university/c2.png" class="w-25 m-2 sat-img">
                 </div>
                 
-                <div class="col-md-6 d-flex justify-content-start mt-2 img-con">
-                    <img src="assets/img/admin-counselling/university/c3.png" class="w-25 mt-5 ielts-img">
+                <div class="col-md-6 d-flex justify-content-start img-con">
+                    <img src="assets/img/admin-counselling/university/c3.png" class="w-25 m-2 ielts-img">
                 </div>
         
-                <div class="col-md-6 d-flex justify-content-end mt-2 img-con">
-                    <img src="assets/img/admin-counselling/university/c22.png" class="w-25 mb-5 act-img">
+                <div class="col-md-6 d-flex justify-content-end img-con">
+                    <img src="assets/img/admin-counselling/university/c22.png" class="w-25 m-2 act-img">
                 </div>
 
-                <div class="col-md-6 d-flex justify-content-start mt-2 img-con">
-                    <img src="assets/img/admin-counselling/university/c33.png" class="w-25 mb-5 toefl-img">
+                <div class="col-md-6 d-flex justify-content-start img-con">
+                    <img src="assets/img/admin-counselling/university/c33.png" class="w-25 m-2 toefl-img">
                 </div>
             </div>
-            <center><a href="#!" type="button" class="primary-btn">Learn About Test Preparation</a></center>
+            <center><a href="#!" type="button" class="primary-btn mt-5">Learn About Test Preparation</a></center>
         </div>
     </section>
 
     <section class="section-container">
         <div class="container">
             <div class="row">
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="row m-5">
-                        <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/admin-counselling/university/friends.jpg') center center no-repeat; background-size: cover;"></div>
+                <div class="col-md-6 d-flex justify-content-center" style="background: url('assets/img/admin-counselling/university/friends.jpg') center center no-repeat; background-size: cover;"></div>
+            
+                <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                    <h4 class="mb-4 fs-1 fw-bold">Graduate School Admissions Counselling</h4>
+                    <p>Opus Academy can help guide graduate school applicants through the arduous task of compiling their candidacy portfolios. We provide excellent resources and access to instructors and counsellors who have years of expertise in numerous fields of study. We will guide you down the path of how best to increase test scores, publish articles, enhance work experience, and improve personal statements and application essays</p>
 
-                        <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
-                            <h4 class="mb-4 fs-1 fw-bold">Graduate School Admissions Counselling</h4>
-                            <p>Opus Academy can help guide graduate school applicants through the arduous task of compiling their candidacy portfolios. We provide excellent resources and access to instructors and counsellors who have years of expertise in numerous fields of study. We will guide you down the path of how best to increase test scores, publish articles, enhance work experience, and improve personal statements and application essays</p>
-
-                            <p>We provide Admissions Counselling for the following:</p>
+                    <p>We provide Admissions Counselling for the following:</p>
 
 
-                            <li>Graduate School</li>
-                            <li>Law School Admissions </li>
-                            <li>Business School Admissions </li>
-                            <li>Medical School Admissions</li>
-                            <li>Dental School Admissions </li>
-                            
-                            <br>
+                    <li>Graduate School</li>
+                    <li>Law School Admissions </li>
+                    <li>Business School Admissions </li>
+                    <li>Medical School Admissions</li>
+                    <li>Dental School Admissions </li>
+                    
+                    <br>
 
-                            <div class="d-flex justify-content-start mt-5">
-                                <a href="#!" type="button" class="primary-btn w-100">Learn More</a>
-                            </div>
-                        </div>
+                    <div class="d-flex justify-content-start mt-5">
+                        <a href="#!" type="button" class="primary-btn w-100">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -299,7 +295,7 @@ require_once "assets/common/header.php";
                 </div>
             </div>
 
-            <center><a href="#!" type="button" class="primary-btn mb-5">Read Our Testimonials</a></center>
+            <center><a href="#!" type="button" class="primary-btn mt-5 mb-5">Read Our Testimonials</a></center>
         </div>
    </section> 
 
