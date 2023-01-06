@@ -41,26 +41,7 @@ $(function() {
         localStorage.clear();
     }
 
-    $('#blah').attr('src', 'assets/img/img-thumbnail.jpg');
-
-    $('#image').change(function(){
-        readImg(this);
-    })
-
 });
-
-function readImg(input) {
-
-    if(input.files && input.files[0]) {
-        var read = new FileReader();
-
-        read.onload = function(e) {
-            $('#blah').attr('src', e.target.result);
-        }
-
-        read.readAsDataURL(input.files[0]);
-    }
-}
 
 function cardData() {
     $('#dataTable').DataTable({

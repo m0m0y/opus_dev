@@ -33,9 +33,7 @@ if ($page == "") {
 	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/3096b4ed49.js" crossorigin="anonymous"></script>
 
     <script src="assets/vendor/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="assets/vendor/dist/sweetalert2.min.css">
@@ -117,7 +115,6 @@ if ($page == "") {
 								<ul>
 									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?canada" ? "active" : "") ?>" href="competitive-debate-programs.php?canada">Canada</a></li>
 									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?ph" ? "active" : "") ?>" href="competitive-debate-programs.php?ph">Philippines</a></li>
-									<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?access_mca" ? "active" : "") ?>" href="competitive-debate-programs.php?access_mca">Access MCA</a></li>
 								</ul>
 							</li>
 							<li><a  class="nav-link <?= ($page == "mcgraw-hill-education-courses.php" ? "active" : "") ?>" href="mcgraw-hill-education-courses.php">McGraw Hill Education Courses</a></li>
@@ -125,6 +122,7 @@ if ($page == "") {
 							<li><a  class="nav-link <?= ($page == "test-preparation.php" ? "active" : "") ?>" href="test-preparation.php">Standardized Test Preparation</a></li>
 							<li><a  class="nav-link <?= ($page == "early-learning.php" ? "active" : "") ?>" href="early-learning.php">Early Learning</a></li>
 							<li><a  class="nav-link <?= ($page == "classical-music.php" ? "active" : "") ?>" href="classical-music.php">Classical Music</a></li>
+							<li><a class="nav-link <?= ($page == "competitive-debate-programs.php?access_mca" ? "active" : "") ?>" href="competitive-debate-programs.php?access_mca">Access MCA</a></li>
 						</ul>
 					</li>
 

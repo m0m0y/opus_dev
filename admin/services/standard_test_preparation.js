@@ -13,7 +13,7 @@ $(function() {
             ['font', ['bold', 'italic', 'underline', 'clear', 'fontname', 'fontsize', 'color']],
             ['para', ['paragraph']],
             ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
+            // ['insert', ['link', 'picture', 'video']],
             ['view', ['fullscreen']],
         ],
 
@@ -31,43 +31,50 @@ $(function() {
             disableUpload: false
         }
     });
+    
+    $(function(){
+        Test = {
+            UpdatePreview: function(obj){
 
-    $('#btn-save').on('click', function() {
-        var id = $('#id').val();
-        var title = $('#title').val();
-        var content = $('#page_content').val();
-        var status = $('#status').val();
-
-        if(title == "" || $('#page_content').summernote('isEmpty')) {
-            errorAlert();
-        } else {
-            submit(id, title, content, status);
-        }
+              if(!window.FileReader){
+  
+              } else {
+                 var reader = new FileReader();
+                 var target = null;
+                 
+                 reader.onload = function(e) {
+                  target =  e.target || e.srcElement;
+                   $("img").prop("src", target.result);
+                 };
+                  reader.readAsDataURL(obj.files[0]);
+              }
+            }
+        };
     });
-
     var status_module = window.localStorage.getItem("stat");
 
     if (status_module == "success") {
         sucessAlert();
         localStorage.clear();
     }
-    
-})
 
-function submit(id, title, content, status) {
-    $.ajax({
-        url: 'controller/controller.standard_test_preparation.php?mode=updateContent',
-        method: 'POST',
-        data: {
-            id:id,
-            title:title,
-            content:content,
-            status:status
-        },
-        success:function() {
-            $('#preloader').show();
-            window.localStorage.setItem("stat", "success");
-            window.location.href="standard_test_preparation.php";
-        }
+    $('#myform').on('submit', function(e){
+        e.preventDefault();
+			var formData = new FormData(this);
+
+			$.ajax({
+				type: "POST",
+                url: 'controller/controller.standard_test_preparation.php?mode=updateContent',
+				data: formData,
+				cache: false,
+				contentType: false,
+				processData: false,
+				success:function(data){
+                    $('#preloader').show();
+                    window.localStorage.setItem("stat", "success");
+                    window.location.href="standard_test_preparation.php";
+					// findImage(data);
+				}
+			});
+		});
     });
-}
