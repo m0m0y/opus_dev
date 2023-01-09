@@ -222,13 +222,13 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                         <img src="assets/img/competitive-debate/p-21.png" alt="harvard" style="width: 60%;">
                     </div>
 
-                    <div class="row d-flex justify-content-center m-3 ca-btn-container">
-                        <div class="col-md-6 col-sm-12 px-1 ca-btn-register">
-                            <a href="#!" type="button" class="danger-btn">Register Fall 2022</a>
+                    <div class="row my-3 ca-btn-container">
+                        <div class="col-md-6 col-sm-12 px-1 d-flex justify-content-around ca-btn-register">
+                            <a href="#!" type="button" class="danger-btn w-100">Register Fall 2022</a>
                         </div>
 
-                        <div class="col-md-6 col-sm-12 px-1 ca-btn-courses">
-                            <a href="#!" type="button" class="danger-btn">Courses Schedule</a>
+                        <div class="col-md-6 col-sm-12 px-1 d-flex justify-content-around ca-btn-courses">
+                            <a href="#!" type="button" class="danger-btn w-100">Courses Schedule</a>
                         </div>
                     </div>
                 </div>
@@ -343,10 +343,9 @@ $competitiveDebateContent = $competitiveDebate->getContent();
         <div class="container">
             <ol>
                 <li><a href="index.php">Home</a></li>
-                <li>Program</li>
-                <li>Competitive Debate Programs</li>
+                <li>Programs</li>
             </ol>
-            <h2>Michigan College Alliance (MCA)</h2>
+            <h2>Access Michigan College Alliance (MCA)</h2>
         </div>
     </section>
 
@@ -489,29 +488,22 @@ $competitiveDebateContent = $competitiveDebate->getContent();
 
     <section id="section-container-mca" class="section-container">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 pe-5">
-                    <h2 class="text-left mb-5 fw-bold">OPUS Critical Reading and Writing</h2>
-                    <div class="d-flex justify-content-start">
-                        <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
-                    </div>
-                </div>
+            <div class="d-flex flex-column justify-content-center mb-5 mt-5">
+                <div class="row">
 
-                <div class="col-md-6 text-content">
-                    <p>Students as early as Gr 9 can take the MCA Scholars Program. Students at the end of high school or who recently graduated can take the Standard Program which is a full year of college leading to automatic admissions with sophomore status at MCA universities and colleges.</p>
-                    <h4 class="text-left mb-4 fw-bold">What is so special about the Access MCA program?</h4>
-                    <p class ="fw-bold">Head start for your future<p>
-                    <p>The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
-                    <p class ="fw-bold">Real credit for Real courses</p>
-                    <p>Earn college credits taught by MCA faculty in real time.</p>
-                    <p class ="fw-bold">Gold transfer for Transfer Credit</p>
-                    <p> can earn college credits transferrable to any MCA college  or any university  outside of MCA..</p>
-                    <p class ="fw-bold">Guaranteed Admissions to an MCA University</p>
-                    <p>Earn guaranteed admission to the Michi gan university or college </p>
+                    <div class="col-md-6 d-flex align-items-stretch flex-column px-5">
+                        <h4 class="mb-4 fw-bold">What is so special about the Access MCA program?</h4>
+                        <p class ="fw-bold">Head start for your future</p>
+                        <p>The Access MCA Scholars Program lets academically advanced high school students take individual college courses as early as Gr. 9</p>
+                        <p class ="fw-bold">Real credit for Real courses</p>
+                        <p>Earn college credits taught by MCA faculty in real time.</p>
+                        <p class ="fw-bold">Gold transfer for Transfer Credit</p>
+                        <p> can earn college credits transferrable to any MCA college  or any university  outside of MCA..</p>
+                        <p class ="fw-bold">Guaranteed Admissions to an MCA University</p>
+                        <p>Earn guaranteed admission to the Michi gan university or college </p>
 
-                    <div class="mt-4">
                         <div class="card card-body">
-                            <h2 class="text-secondary mb-4 fw-bold">Access MCA Scholars Program</h2>
+                            <h4 class="text-secondary fw-bold">Access MCA Scholars Program</h4>
                             <p class ="text-secondary fw-lighter">By taking one course each term in Grades 10, 11, and 12 students can guarantee admission to an MCA university or college.</p>
                             <p class ="text-secondary">Access MCA Scholars take individual college courses beginning as young as Grade 9.  Students completing 6-8 semester courses are designated Access MCA Scholars and earn automatic admission to an MCA university or college.  Students can enter as a sophomore or transfer courses to other colleges.<p> 
 
@@ -529,7 +521,45 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                                 <p><span class="fa-regular fa-circle me-3"></span>Summer Residential Options Available</p>
                             </div>
                         </div>
+
+                        <div class="row my-3 mca-btn-container">
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-around ca-btn-register">
+                                <a href="assets/pdf/2023-MCA-Course-Flyer.pdf" type="button" class="danger-btn w-100">Access MCA Flyer English</a>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-around ca-btn-courses">
+                                <a href="assets/pdf/2022-23-MCA-Schedule.pdf" type="button" class="danger-btn w-100">Course Schedule</a>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <div class="col-md-6 pe-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/amichigan/graduation.jpg" alt="harvard" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacing"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pe-5">
+                    <h2 class="text-left mb-5 fw-bold">Access MCA Scholars Program</h2>
+                    <div class="d-flex justify-content-start">
+                        <img src="assets/img/amichigan/access_mca.jpg" alt="harvard" class="w-100">
+                    </div>
+
+                    <div class="col-sm-12 mt-3 mca-btn-courses">
+                        <a href="https://opus.accessmca.com/" type="button" class="w-100 danger-btn">Apply for Scholars Program</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-content">
+                    <p>Students as early as Gr 9 can take the MCA Scholars Program. Students at the end of high school or who recently graduated can take the Standard Program which is a full year of college leading to automatic admissions with sophomore status at MCA universities and colleges.</p>
                 </div>
             </div>
             </div>
@@ -560,7 +590,7 @@ $competitiveDebateContent = $competitiveDebate->getContent();
                     
                     <div class="mt-4">
                         <div class="card card-body">
-                            <h2 class="text-secondary mb-4 fw-bold">Standard Program</h2>
+                            <h2 class="text-secondary fw-bold">Standard Program</h2>
                             <p class ="text-secondary">The standard program consists of 2 academic semesters, plus 2 summers, over a 14 month period and is ideal for students who wish to begin in June and complete a year of coursework over 2 semesters in order to matriculate at college in the following Autumn.</p> 
                             <hr class="m-3 mb-2 mt-0"></hr>
                             <div class="mt-4 text-secondary fw-bold">
